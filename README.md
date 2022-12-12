@@ -11,6 +11,14 @@ A Pokémon themed clicker/idle/incremental game that is still in very early deve
 
 Source is built in TypeScript along with vanilla JavaScript.
 
+# Project State
+
+Currently, PokéEggs is not a playable game whatsoever.
+
+The state of PokéEggs is currently in early development.
+
+I plan to solo dev this project for the foreseeable future. Eventually, I may branch out with accepting more direct help with it when it's something more complete. We'll see.
+
 # Documentation
 
 You may check out the [Wiki section](https://github.com/Ephenia/PokeEggs/wiki) for more information about other things regarding PokéEggs. This will include general information as far as detailing different gameplay features and or mechanics and how they work. Please note that information may not be present and or still needs to be added. It will always be a WIP.
