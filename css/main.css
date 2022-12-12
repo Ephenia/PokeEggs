@@ -1,5 +1,5 @@
 body {
-    background: url(/assets/background/background.png) no-repeat center center fixed;
+    background: url(../assets/background/background.png) no-repeat center center fixed;
     background-color: #1e2124;
     background-size: cover;
     font-family: "Roboto", sans-serif;
@@ -281,14 +281,14 @@ main {
 
 /* Extra */
 .shiny-name::before {
-    content: url(/assets/shiny/small.png);
+    content: url(../assets/shiny/small.png);
     margin-right: 4px;
 }
 
 /* Fonts */
 @font-face {
     font-family: pkmnfont;
-    src: url(/assets/fonts/pokemon.ttf);
+    src: url(../assets/fonts/pokemon.ttf);
 }
 
 .pkmnfont {
