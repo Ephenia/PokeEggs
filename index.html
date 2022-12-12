@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PokéEggs</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/egg.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/tooltip.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/lib/localforage.min.js" defer></script>
+    <script src="/build/save.system.js" defer></script>
+    <script src="/build/debug.js" defer></script>
+    <script src="/build/types.js" defer></script>
+    <script src="/build/global.js" defer></script>
+    <script src="/build/buffs.js" defer></script>
+    <script src="/build/party.js" defer></script>
+    <script src="/build/item.bag.js" defer></script>
+    <script src="/build/nav.js" defer></script>
+    <script src="/build/menu.js" defer></script>
+    <script src="/build/modal.js" defer></script>
+    <script src="/build/tooltip.js" defer></script>
+    <script src="/build/modal.data.js" defer></script>
+    <script src="/build/item.data.js" defer></script>
+    <script src="/build/pkmn.data.js" defer></script>
+    <script src="/build/species.data.js" defer></script>
+    <script src="/build/main.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <div id="navigation"></div>
+      <div id="main-menu" class="pkmnfont">
+        <button id="main-menu-btn" class="menu-style pkmnfont">Menu⮟</button>
+        <div id="menu-options" class="menu-style pkmnfont"></div>
+      </div>
+      <div id="party-cont" class="main-content main-border" view-index="0"></div>
+      <div id="pkmn-box-cont" class="main-content main-border" view-index="1"></div>
+      <div id="item-bag-cont" class="main-content main-border" view-index="2"></div>
+      <div id="poke-radar-cont" class="main-content main-border" view-index="3"></div>
+      <div id="daycare-cont" class="main-content main-border" view-index="4"></div>
+      <div id="buff-cont"></div>
+      <div id="tooltip" style="display: none">
+        <div id="tooltip-cont"></div>
+      </div>
+      <div id="modal" style="display: none">
+        <div id="modal-main">
+          <h1 id="modal-title"></h1>
+          <div id="modal-content"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

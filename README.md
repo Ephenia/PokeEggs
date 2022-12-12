@@ -5,16 +5,28 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/Ephenia/PokeEggs?color=%23F33A6A)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Ephenia/PokeEggs?color=%2369359c)
 
+# About
+
 A Pokémon themed clicker/idle/incremental game that is still in very early development.
 
 Source is built in TypeScript along with vanilla JavaScript.
+
+# Documentation
+
+You may check out the [Wiki section](https://github.com/Ephenia/PokeEggs/wiki) for more information about other things regarding PokéEggs. This will include general information as far as detailing different gameplay features and or mechanics and how they work. Please note that information may not be present and or still needs to be added. It will always be a WIP.
+
+# Other
+
+<a href="https://discord.gg/nfbT8zJSkd" target="_blank"><img src="https://discordapp.com/api/guilds/950947559474618440/widget.png?style=banner2" alt="Discord Banner 2"/></a>
+
+You may also [join my Discord server](https://discord.gg/nfbT8zJSkd) (can also click the banner above) if you'd like to keep up more with the development with the project.
 
 # Libraries Used
 • [LocalForage](https://github.com/localForage/localForage)
 
 # Other Resources Used
 • Smogon's various Sprite Projects that can be found [over on their forums](https://www.smogon.com/forums/forums/smeargles-laptop.325/).<br>
-• Pokemon icons from the project [PokéSprite](https://github.com/msikma/pokesprite).<br>
+• Pokémon icons from the project [PokéSprite](https://github.com/msikma/pokesprite).<br>
 • [PokéAPI](https://github.com/PokeAPI/pokeapi) for getting data for various things.
 
 # License

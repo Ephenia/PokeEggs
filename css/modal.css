@@ -1,0 +1,40 @@
+#modal {
+    align-items: center;
+    background-color: rgba(30, 33, 36, 0.5);
+    height: -webkit-fill-available;
+    justify-content: center;
+    position: absolute;
+    width: -webkit-fill-available;
+    z-index: 10;
+}
+
+#modal-main {
+    align-items: center;
+    background-color: #1e2124;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: flex-start;
+    max-width: 800px;
+    min-width: 600px;
+    outline-color: #7289da;
+    outline-style: outset;
+    user-select: none;
+}
+
+#modal-content {
+    border: 1px solid #7289da;
+    display: flex;
+    height: 380px;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 10px;
+    width: 90%;
+}
+
+.modal-changelog {
+    text-align: center;
+    white-space: pre-wrap;
+}

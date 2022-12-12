@@ -1,0 +1,93 @@
+December 10th, 2022
+
+• Implemented support for egg validation (will be important for egg storage, egg freezing, etc.)
+
+December 7th, 2022
+
+• Reverse egg hatching/progression logic (current EHP will increment instead of reducing).
+• Implemented support for eggs continuing to hatch upon loading a save.
+
+December 6th, 2022
+
+• Added "Reset Game" to the menu, this is for clearing your save and starting a new game.
+• Added "Save Game" to the menu, this is for forcing a save to occur.
+• Implemented support for asynchronous buffs on loading a save.
+• Fixed an issue that added another second to buffs upon cast.
+
+December 5th, 2022
+
+• Implemented saving on page refresh/close.
+• Implemented support for an auto save function that happens every minute (this may be an adjustable setting later).
+
+December 4th, 2022
+
+• Fixed initial page rendering with main/navigation content.
+• Started implementation for the save system.
+
+December 3rd, 2022
+
+• Started working on implementing the Item Bag (Item Inventory).
+• Implemented basic functioning for Navigation.
+• Fixed rendering issues with the Party when going somewhere else through Navigation and coming back to your Party.
+
+December 1st, 2022
+
+• Implemented egg hatching (click to hatch!).
+• Started implementation for the Poké Radar.
+
+November 29th, 2022
+
+• Added visual progression bars for eggs (to help indicate their hatching progress).
+• Changed how time is shown on buffs, minutes will only show in white, while anything < 60 seconds remaining will change in color (to show that it is expiring easier at glance).
+• Started working on the Navigation pane.
+• Implemented egg hatching progression.
+
+November 28th, 2022
+
+• Did a rewrite of the Buff System. Now, buffs will work and be timed individually from one another. This means now that buffs are more responsive (can be shown instantly, more precise, etc.).
+• Implemented buff cancelling (right click to cancel buff).
+• Fixed an issue where tooltips on buffs were not disposed of when cancelling them.
+• Implemented resuming buffs (meaning they will be savable).
+• Started working on basic egg creation.
+
+November 24th, 2022
+
+• Added more data regarding Pokémon (Species data).
+
+November 23rd, 2022
+
+• Added basic egg assets.
+• Started working on Party creation.
+
+November 18th, 2022
+
+• Started working on adding data for Pokémon and structuring it.
+
+November 15th, 2022
+
+• Created functional buff icons.
+• Started working on functional tooltips.
+• Implemented support for infinite duration buffs.
+• Added a visual time countdown to buff icons (permanent buffs don't show this).
+
+November 14th, 2022
+
+• Started working on the start of a Buff System.
+
+November 11th, 2022
+
+• Added the "Changelog" option to the Menu (you can now see this, yay).
+• Started working on implementing a modal system.
+• Added support for debug/testing options to the Menu.
+
+November 10th, 2022
+
+• Added main page background.
+• Started working on implementing a basic functioning menu.
+• Added favicon for the project (smol little egg).
+
+November 9th, 2022
+
+• Initially created the PokéEggs project.
+
+——————————
