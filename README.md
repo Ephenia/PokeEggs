@@ -3,16 +3,16 @@
 
 A Pokémon themed clicker/idle/incremental game that is still in very early development.
 
-Source is built in TypeScript along with vanilla Javascript.
+Source is built in TypeScript along with vanilla JavaScript.
 
 # Libraries Used
 • [LocalForage](https://github.com/localForage/localForage)
 
-# Other Recources Used
-• Smogon's various Sprite Projects that can be found [over on their forums](https://www.smogon.com/forums/forums/smeargles-laptop.325/).
+# Other Resources Used
+• Smogon's various Sprite Projects that can be found [over on their forums](https://www.smogon.com/forums/forums/smeargles-laptop.325/).<br>
 • [PokéAPI](https://github.com/PokeAPI/pokeapi) for getting data for various things.
 
 # License
 The sprite images and or assets used are © Nintendo/Creatures Inc./GAME FREAK Inc.
 
-Everything else falls under the [GPL Liscense](https://github.com/Ephenia/PokeEggs/blob/master/LICENSE).
+Everything else falls under the [GPL License](https://github.com/Ephenia/PokeEggs/blob/master/LICENSE).
