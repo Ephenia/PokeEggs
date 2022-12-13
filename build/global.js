@@ -1,7 +1,9 @@
 "use strict";
 //For elements
 function disposeElement(element) {
-    element.innerHTML = '';
+    if (element.innerHTML !== '') {
+        element.innerHTML = '';
+    }
 }
 function isHidden(element) {
     return element.offsetParent === null;

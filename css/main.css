@@ -40,6 +40,10 @@ main {
     background-color: #36393e;
 }
 
+.nav-select {
+    color: #30C5FF;
+}
+
 /* Menu */
 #main-menu {
     align-items: center;
@@ -121,6 +125,7 @@ main {
     width: calc(100% / 3);
     z-index: 1;
     align-items: center;
+    pointer-events: none;
 }
 
 .egg-progress-bar {
@@ -143,6 +148,21 @@ main {
     font-size: 1.30em;
     cursor: pointer;
     display: none;
+}
+
+#party-menu {
+    position: absolute;
+    z-index: 9;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #1e2124;
+    cursor: pointer;
+}
+
+#party-menu > div {
+    padding: 5px;
 }
 
 /* Item Bag */

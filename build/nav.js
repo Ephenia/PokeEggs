@@ -1,5 +1,6 @@
 "use strict";
 const mainNav = document.getElementById('navigation');
+let navOpts;
 const navOptions = {
     0: {
         name: 'Party',
@@ -34,6 +35,8 @@ function buildNav() {
         //Main nav opt
         const navDiv = document.createElement('div');
         navDiv.classList.add('navigation-item');
+        if (player.prefs.nav === +opt)
+            navDiv.classList.add('nav-select');
         navDiv.addEventListener('click', () => {
             if (player.prefs.nav === +opt)
                 return;
@@ -51,4 +54,10 @@ function buildNav() {
         frag.appendChild(navDiv);
     }
     mainNav.appendChild(frag);
+    navOpts = document.getElementsByClassName('navigation-item');
+}
+function navSelect() {
+    for (let i = 0; i < navOpts.length; i++) {
+        player.prefs.nav === i ? navOpts[i].classList.add('nav-select') : navOpts[i].classList.remove('nav-select');
+    }
 }

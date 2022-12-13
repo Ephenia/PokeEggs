@@ -49,6 +49,16 @@ const menuOptions = {
         }
     },
     4: {
+        name: 'Item System Test',
+        description: 'Tests the Item System.',
+        src: 'itemtest',
+        modal: false,
+        debug: true,
+        custom() {
+            randomitem();
+        }
+    },
+    5: {
         name: 'Clear Party',
         description: 'Clears the Party.',
         src: 'clearparty',
@@ -58,7 +68,7 @@ const menuOptions = {
             clearParty();
         }
     },
-    5: {
+    6: {
         name: 'Save Game',
         description: 'Saves your game.',
         src: 'createsave',
@@ -68,7 +78,7 @@ const menuOptions = {
             createSave();
         }
     },
-    6: {
+    7: {
         name: 'Reset Game',
         description: 'Resets your game and creates a new save.',
         src: 'deletesave',
@@ -78,7 +88,7 @@ const menuOptions = {
             deleteSave();
         }
     },
-    7: {
+    8: {
         name: 'Debug Mode',
         description: 'Switches On/Off Debug mode.',
         src: 'debugmode',

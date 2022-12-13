@@ -13,6 +13,7 @@ const invNames = {
     8: ['key', 'Key Items'],
 };
 function renderItemBag(index) {
+    disposeElement(itemBagView);
     const frag = document.createDocumentFragment();
     for (const item in player.items) {
         const thisItem = player.items[item];

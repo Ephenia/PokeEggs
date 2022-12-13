@@ -76,6 +76,7 @@ function renderMain(index) {
     if (index === 2)
         renderItemBag(player.prefs.bag);
     player.prefs.nav = index;
+    navSelect();
 }
 function createParty() {
     const frag = new DocumentFragment();
@@ -138,11 +139,10 @@ function advanceChain(pokeID, shiny) {
     const radar = player.radarHandler;
     if (radar.active) {
         const buff = document.querySelector(`[buff-src="408"]`);
-        const counter = buff.querySelector('.buff-counter');
         if (radar.chain === 0 || radar.lastHatch === pokeID) {
             radar.lastHatch = pokeID;
             radar.chain++;
-            counter.innerHTML = `${radar.chain}`;
+            buffCounter(408, radar.chain);
             if (shiny)
                 radarOff();
         }
@@ -175,3 +175,8 @@ function chainOdds(chain) {
     }
     return Math.round(65536 / odds);
 }
+//Global Click Handler
+document.addEventListener('click', (e) => {
+    const element = e.target;
+    partyMenu.style.display = 'none';
+});

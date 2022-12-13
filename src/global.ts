@@ -1,6 +1,6 @@
 //For elements
 function disposeElement(element: HTMLElement) {
-    element.innerHTML = '';
+    if (element.innerHTML !== '') { element.innerHTML = ''; }
 }
 
 function isHidden(element: HTMLElement) {

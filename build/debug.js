@@ -6,3 +6,8 @@ function clearParty() {
     }
     renderParty(true);
 }
+function randomitem() {
+    const items = Object.entries(itemData);
+    const rand = randInt(items.length);
+    gainItem(+items[rand][0], 1);
+}

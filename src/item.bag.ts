@@ -13,6 +13,7 @@ const invNames: BagTabLayout = {
 }
 
 function renderItemBag(index: number) {
+    disposeElement(itemBagView);
     const frag = document.createDocumentFragment();
     for (const item in player.items) {
         const thisItem = player.items[item];

@@ -1,4 +1,5 @@
 const partyCont = document.getElementById('party-cont')!;
+const partyMenu = document.getElementById('party-menu')!;
 let partySlots: any;
 
 function renderParty(full = false, index: number = -1) {
@@ -174,6 +175,26 @@ function convertEgg(member: any) {
     delete member.progress;
     delete member.eggSprite;
 }
+
+//Right Click Menu
+const menuItems = ['Box', 'Salvage'];
+menuItems.forEach(function (menuItem) {
+    const opt = document.createElement('div');
+    opt.classList.add('menu-item');
+    opt.innerHTML = menuItem;
+    partyMenu.appendChild(opt);
+});
+
+partyCont.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    const elem: any = e.target;
+    const index = +elem.getAttribute('data-src');
+    if (player.party[index].isEgg !== null) {
+        partyMenu.style.top = `${e.pageY}px`;
+        partyMenu.style.left = `${e.pageX}px`;
+        partyMenu.style.display = 'flex';
+    }
+});
 
 // function progressEgss() {
 //     const eggProg: HTMLCollection = document.getElementsByClassName('egg-progress');

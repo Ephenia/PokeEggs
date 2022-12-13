@@ -1,3 +1,10 @@
+December 13th, 2022
+
+• Added a right click menu specifically for Pokémon and Eggs in the Party (this will be for helping manage them).
+• Poké Radar buff now shows its counter (chain number) on loading a save. Coming with this is support for other buffs that will function/behave similarly.
+• Fixed an issue with items visually duplicating when switching navigation from and to the Item Bag.
+• The current Navigation selection is now highlighted in blue to better visually indicate where you are.
+
 December 12th, 2022
 
 • Items will now display in the correct tab based off of their type (berries, ball, key, etc.)
