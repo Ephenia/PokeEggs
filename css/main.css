@@ -194,6 +194,20 @@ main {
     width: 95%;
     position: absolute;
     background-color: #36393e;
+    color: white;
+    overflow-y: auto;
+}
+
+.item-bag-view-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.item-bag-view-row > div {
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 4);
 }
 
 /* Buffs */

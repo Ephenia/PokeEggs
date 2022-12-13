@@ -1,4 +1,5 @@
 const itemBagCont = document.getElementById('item-bag-cont')!;
+let itemBagView: any;
 const invNames: BagTabLayout = {
     0: ['medicine', 'Medicine'],
     1: ['ball', 'Poké Balls'],
@@ -12,7 +13,39 @@ const invNames: BagTabLayout = {
 }
 
 function renderItemBag(index: number) {
-
+    const frag = document.createDocumentFragment();
+    for (const item in player.items) {
+        const thisItem = player.items[item];
+        const getItem = itemData[item];
+        if (invNames[player.prefs.bag][0] === getItem.type) {
+            console.log(getItem)
+            //Item Row
+            const itemRow = document.createElement('div');
+            itemRow.classList.add('item-bag-view-row');
+            //Item Icon
+            const itemIcon = document.createElement('div');
+            const itemImg = document.createElement('img');
+            itemImg.src = `assets/items/${getItem.src}.png`;
+            itemIcon.appendChild(itemImg);
+            itemRow.appendChild(itemIcon);
+            //Item Name
+            const itemName = document.createElement('div');
+            itemName.textContent = `${getItem.name}`;
+            itemRow.appendChild(itemName);
+            //Item Quantity
+            const itemAmnt = document.createElement('div');
+            itemAmnt.textContent = `x${formNum(thisItem.quantity)}`;
+            itemRow.appendChild(itemAmnt);
+            //Item Function
+            const itemFunc = document.createElement('div');
+            const useBtn = document.createElement('button');
+            useBtn.textContent = 'Use item';
+            itemFunc.appendChild(useBtn);
+            itemRow.appendChild(itemFunc);
+            frag.appendChild(itemRow);
+        }
+    }
+    itemBagView.appendChild(frag);
 }
 
 function changeItemBag(index: number) {
@@ -23,6 +56,9 @@ function changeItemBag(index: number) {
         +getIndex === index ? tab.classList.add('item-bag-tab-active') : tab.classList.remove('item-bag-tab-active');
         +getIndex === index ? getIcon.classList.add('item-bag-tab-icon') : getIcon.classList.remove('item-bag-tab-icon');
     }
-    renderItemBag(index);
-    player.prefs.bag = index;
+    if (player.prefs.bag !== index) {
+        player.prefs.bag = index;
+        disposeElement(itemBagView);
+        renderItemBag(index);
+    }
 }

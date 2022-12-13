@@ -44,7 +44,7 @@ interface EggSystem {
 }
 
 interface PlayerPreference {
-    [key: string]: number
+    [key: string]: any,
 }
 
 interface ItemData {

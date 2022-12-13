@@ -26,7 +26,7 @@ function createEgg(random = false, pokeID: number) {
     console.log(thisPoke)
     const toHatch = thisPoke.hatch_counter * 257;
     const shiny = 0 === randInt(4096);
-    return { id: pokeID, isEgg: true, name: thisPoke.names, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID() };
+    return { id: pokeID, isEgg: true, name: thisPoke.names, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID() };
 }
 
 function randPoke(): Object {
@@ -44,7 +44,7 @@ function canBeEgg() {
 
 //For party
 function emptyMember() {
-    return { id: null, isEgg: null, name: null, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null };
+    return { id: null, isEgg: null, name: null, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null };
 }
 
 //For Items
@@ -52,8 +52,9 @@ function gainItem(itemID: number, amount: number) {
     if (!player.items.hasOwnProperty(itemID) && itemData.hasOwnProperty(itemID)) {
         player.items = Object.assign({ [itemID]: { quantity: amount } }, player.items);
     } else {
-        console.log('Can\t add item as the player already has it or for an unknown reason.')
+        console.log('Can\'t add item as the player already has it or for an unknown reason.')
     }
+    renderItemBag(player.prefs.bag);
 }
 
 //Format

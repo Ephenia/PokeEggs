@@ -1,3 +1,13 @@
+December 12th, 2022
+
+• Items will now display in the correct tab based off of their type (berries, ball, key, etc.)
+• Started working on items displaying in the Item Bag.
+• Fixed the Item Bag from rendering twice when loading a save while currently navigated to it.
+• Fixed not being to view the Changelog (on git's end).
+• Handling for Egg to Pokémon conversion when Eggs hatch.
+• Added a "Debug Mode" option to the Menu and support for this. This will toggle Debug Mode On/Off (Debug Mode is Off by default).
+• [Old] Support for asynchronous hatching of eggs, including upon loading your save (similar case to buffs).
+
 December 10th, 2022
 
 • Implemented support for egg validation (will be important for egg storage, egg freezing, etc.)

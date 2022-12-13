@@ -30,7 +30,7 @@ function renderParty(full = false, index: number = -1) {
             //Pokemon EHP
             const pkmnEHP = document.createElement("div");
             pkmnEHP.classList.add('egg-progress');
-            pkmnEHP.innerHTML = `${formNum(member.progress)} /<br> ${formNum(member.ehp)}`;
+            pkmnEHP.innerHTML = member.isEgg ? `${formNum(member.progress)} /<br> ${formNum(member.ehp)}` : formNum(member.exp);
             frag.appendChild(pkmnEHP);
             partySlots[index].appendChild(frag);
             //Egg progress bar
@@ -45,7 +45,7 @@ function renderParty(full = false, index: number = -1) {
             eggHatch.textContent = 'Hatch!';
             eggHatch.addEventListener('click', () => {
                 eggHatch.style.display = 'none';
-                member.isEgg = false;
+                convertEgg(member);
                 disposeParty(false, index);
                 drawPoke(index);
                 console.log(member)
@@ -82,6 +82,7 @@ function progressEgg(index: number, delay: number = 0) {
     setTimeout(() => {
         console.log(thisEgg.UUID)
         player.eggHandler[index] = thisEgg.UUID;
+        thisEgg.frozen = false;
         eggTick(delay > 0 ? false : true, index);
         startEgg();
     }, delay);
@@ -165,8 +166,13 @@ function pauseEggTimer(full: boolean = false, index: number = -1) {
     }
 }
 
-function covertEgg() {
-
+function convertEgg(member: any) {
+    member.isEgg = false;
+    delete member.lastTick;
+    delete member.eggPause;
+    delete member.ehp
+    delete member.progress;
+    delete member.eggSprite;
 }
 
 // function progressEgss() {

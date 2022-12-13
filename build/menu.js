@@ -77,6 +77,17 @@ const menuOptions = {
         custom() {
             deleteSave();
         }
+    },
+    7: {
+        name: 'Debug Mode',
+        description: 'Switches On/Off Debug mode.',
+        src: 'debugmode',
+        modal: false,
+        debug: false,
+        custom() {
+            player.prefs.debug = !player.prefs.debug;
+            location.reload();
+        }
     }
 };
 function buildMenu() {
@@ -84,20 +95,25 @@ function buildMenu() {
     const frag = document.createDocumentFragment();
     for (const opt in menuOptions) {
         const thisOpt = menuOptions[opt];
-        const btn = document.createElement('button');
-        btn.textContent = thisOpt.name;
-        btn.setAttribute('title', thisOpt.description);
-        btn.setAttribute('class', 'pkmnfont');
-        btn.addEventListener('click', () => {
-            if (thisOpt.modal) {
-                setModalTitle(thisOpt.name);
-                openModal(thisOpt.src);
-            }
-            else {
-                thisOpt.custom();
-            }
-        });
-        frag.appendChild(btn);
+        if (!player.prefs.debug && thisOpt.debug) {
+            //Do Nothing
+        }
+        else {
+            const btn = document.createElement('button');
+            btn.textContent = thisOpt.name;
+            btn.setAttribute('title', thisOpt.description);
+            btn.setAttribute('class', 'pkmnfont');
+            btn.addEventListener('click', () => {
+                if (thisOpt.modal) {
+                    setModalTitle(thisOpt.name);
+                    openModal(thisOpt.src);
+                }
+                else {
+                    thisOpt.custom();
+                }
+            });
+            frag.appendChild(btn);
+        }
     }
     menuOpts.appendChild(frag);
     menuActive = true;

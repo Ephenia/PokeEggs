@@ -10,7 +10,7 @@ const modalData: any = {
 }
 
 function createChangelog() {
-    fetch('/changelog.txt')
+    fetch('./changelog.txt')
         .then(response => response.text())
         .then((data) => {
             modalContent.innerHTML = `${data}`;

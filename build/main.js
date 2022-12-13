@@ -31,7 +31,8 @@ let player = {
     eggHandler: {},
     prefs: {
         nav: 0,
-        bag: 0
+        bag: 0,
+        debug: false
     }
 };
 initialize();
@@ -114,6 +115,7 @@ function createItemBag() {
     frag.appendChild(tabRow);
     frag.appendChild(bagView);
     itemBagCont.appendChild(frag);
+    itemBagView = document.getElementById('item-bag-view');
 }
 //For new initilization purposes
 function newParty() {

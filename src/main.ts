@@ -21,7 +21,8 @@ let player: PlayerLayout = {
     eggHandler: {},
     prefs: {
         nav: 0,
-        bag: 0
+        bag: 0,
+        debug: false
     }
 };
 
@@ -104,6 +105,7 @@ function createItemBag() {
     frag.appendChild(tabRow);
     frag.appendChild(bagView);
     itemBagCont.appendChild(frag);
+    itemBagView = document.getElementById('item-bag-view')!;
 }
 
 //For new initilization purposes
