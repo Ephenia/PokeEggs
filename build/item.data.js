@@ -8,6 +8,7 @@ const itemData = {
         name: 'Poké Ball',
         src: 'poke-ball',
         type: 'ball',
+        usable: false,
         voidable: true
     },
     50: {
@@ -18,6 +19,7 @@ const itemData = {
         name: 'Rare Candy',
         src: 'rare-candy',
         type: 'medicine',
+        usable: true,
         voidable: true
     },
     250: {
@@ -28,6 +30,7 @@ const itemData = {
         name: 'Flame Orb',
         src: 'flame-orb',
         type: 'key',
+        usable: false,
         voidable: true
     },
     408: {
@@ -38,6 +41,7 @@ const itemData = {
         name: 'Poké Radar',
         src: 'poke-radar',
         type: 'key',
+        usable: false,
         voidable: false
     },
     591: {
@@ -48,6 +52,7 @@ const itemData = {
         name: 'Fire Gem',
         src: 'fire-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     592: {
@@ -58,6 +63,7 @@ const itemData = {
         name: 'Water Gem',
         src: 'water-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     593: {
@@ -68,6 +74,7 @@ const itemData = {
         name: 'Electric Gem',
         src: 'electric-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     594: {
@@ -78,6 +85,7 @@ const itemData = {
         name: 'Grass Gem',
         src: 'grass-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     595: {
@@ -88,6 +96,7 @@ const itemData = {
         name: 'Ice Gem',
         src: 'ice-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     596: {
@@ -98,6 +107,7 @@ const itemData = {
         name: 'Fighting Gem',
         src: 'fighting-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     597: {
@@ -108,6 +118,7 @@ const itemData = {
         name: 'Poison Gem',
         src: 'poison-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     598: {
@@ -118,6 +129,7 @@ const itemData = {
         name: 'Ground Gem',
         src: 'ground-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     599: {
@@ -128,6 +140,7 @@ const itemData = {
         name: 'Flying Gem',
         src: 'flying-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     600: {
@@ -138,6 +151,7 @@ const itemData = {
         name: 'Psychic Gem',
         src: 'psychic-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     601: {
@@ -148,6 +162,7 @@ const itemData = {
         name: 'Bug Gem',
         src: 'bug-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     602: {
@@ -158,6 +173,7 @@ const itemData = {
         name: 'Rock Gem',
         src: 'rock-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     603: {
@@ -168,6 +184,7 @@ const itemData = {
         name: 'Ghost Gem',
         src: 'ghost-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     604: {
@@ -178,6 +195,7 @@ const itemData = {
         name: 'Dark Gem',
         src: 'dark-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     605: {
@@ -188,6 +206,7 @@ const itemData = {
         name: 'Steel Gem',
         src: 'steel-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     668: {
@@ -198,6 +217,7 @@ const itemData = {
         name: 'Dragon Gem',
         src: 'dragon-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     669: {
@@ -208,6 +228,7 @@ const itemData = {
         name: 'Normal Gem',
         src: 'normal-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     731: {
@@ -218,6 +239,7 @@ const itemData = {
         name: 'Fairy Gem',
         src: 'fairy-gem',
         type: 'treasure',
+        usable: false,
         voidable: true
     },
     878: {
@@ -228,6 +250,7 @@ const itemData = {
         name: 'Forage Bag',
         src: 'forage-bag',
         type: 'key',
+        usable: false,
         voidable: true
     },
     1139: {
@@ -238,6 +261,7 @@ const itemData = {
         name: 'Pokémon Box Link',
         src: 'pokemon-box-link',
         type: 'key',
+        usable: false,
         voidable: true
     }
 };

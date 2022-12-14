@@ -1,3 +1,13 @@
+December 14th, 2022
+
+• Items that have a quantity of 0 will not render in the Item Bag.
+• Improved Item handling when obtaining items (things like Key Items for example will never go over a quantity of 1, etc).
+• Implemented support for the ability to "Salvage" Pokémon, this is essentially being able to release Pokemon (you gain gems based off of the Pokémon's type).
+• Item Bag won't render/re-render under any circumstances unless you're currently navigated to it.
+• Added usable type to items, this will dictate whether they can be used from within your Item Bag or not.
+• Fixed not being able to hatch eggs with the addition of the new menu for Party members.
+• [Old] The Party won't render/re-render under any circumstances unless you're currently navigated to it.
+
 December 13th, 2022
 
 • Added a right click menu specifically for Pokémon and Eggs in the Party (this will be for helping manage them).

@@ -13,12 +13,13 @@ const invNames: BagTabLayout = {
 }
 
 function renderItemBag(index: number) {
+    if (isHidden(itemBagCont)) return;
     disposeElement(itemBagView);
     const frag = document.createDocumentFragment();
     for (const item in player.items) {
         const thisItem = player.items[item];
         const getItem = itemData[item];
-        if (invNames[player.prefs.bag][0] === getItem.type) {
+        if (invNames[player.prefs.bag][0] === getItem.type && thisItem.quantity !== 0) {
             console.log(getItem)
             //Item Row
             const itemRow = document.createElement('div');
@@ -40,7 +41,8 @@ function renderItemBag(index: number) {
             //Item Function
             const itemFunc = document.createElement('div');
             const useBtn = document.createElement('button');
-            useBtn.textContent = 'Use item';
+            getItem.usable ? useBtn.textContent = 'Use item' : useBtn.textContent = '----';
+            if (!getItem.usable) useBtn.disabled = true;
             itemFunc.appendChild(useBtn);
             itemRow.appendChild(itemFunc);
             frag.appendChild(itemRow);

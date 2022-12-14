@@ -42,17 +42,39 @@ function canBeEgg() {
     return pkmnArr[randInt(pkmnArr.length)];
 }
 
+function salvagePoke(index: number) {
+    const member = player.party[index];
+    console.log(member)
+    const getPoke = pkmnData[member.id];
+    console.log(getPoke)
+    console.log(getPoke.types)
+    for (const type of getPoke.types) {
+        if (type !== 'None') {
+            const gemID = +Object.entries(itemData).filter(([key, value]) => value.name === `${type} Gem`)[0][0];
+            gainItem(gemID, 1);
+            console.log(type)
+        }
+    }
+    player.party[index] = emptyMember();
+    renderParty(false, index);
+}
+
 //For party
 function emptyMember() {
     return { id: null, isEgg: null, name: null, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null };
 }
 
 //For Items
-function gainItem(itemID: number, amount: number) {
-    if (!player.items.hasOwnProperty(itemID) && itemData.hasOwnProperty(itemID)) {
+function gainItem(itemID: number, amount: number = 1) {
+    if (!itemData.hasOwnProperty(itemID)) return;
+    const getItem = itemData[itemID];
+    if (getItem.type === 'key') amount = 1;
+    if (!player.items.hasOwnProperty(itemID)) {
         player.items = Object.assign({ [itemID]: { quantity: amount } }, player.items);
+    } else if (player.items.hasOwnProperty(itemID)) {
+        if (getItem.type !== 'key') player.items[itemID].quantity += amount;
     } else {
-        console.log('Can\'t add item as the player already has it or for an unknown reason.')
+        console.log('Can\'t add item for an unknown reason.')
     }
     renderItemBag(player.prefs.bag);
 }

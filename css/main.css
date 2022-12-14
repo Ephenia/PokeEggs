@@ -74,6 +74,7 @@ main {
 #menu-options>button {
     padding: 10px;
     width: inherit;
+    cursor: pointer;
 }
 
 .menu-active {
@@ -126,6 +127,7 @@ main {
     z-index: 1;
     align-items: center;
     pointer-events: none;
+    user-select: none;
 }
 
 .egg-progress-bar {
@@ -148,6 +150,7 @@ main {
     font-size: 1.30em;
     cursor: pointer;
     display: none;
+    pointer-events: all;
 }
 
 #party-menu {
@@ -158,11 +161,12 @@ main {
     align-items: center;
     color: white;
     background-color: #1e2124;
-    cursor: pointer;
 }
 
-#party-menu > div {
+#party-menu > button {
     padding: 5px;
+    width: -webkit-fill-available;
+    cursor: pointer;
 }
 
 /* Item Bag */
@@ -222,6 +226,7 @@ main {
     display: flex;
     align-items: center;
     padding: 10px 0px 10px 0px;
+    text-align: center;
 }
 
 .item-bag-view-row > div {

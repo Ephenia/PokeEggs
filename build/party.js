@@ -175,13 +175,6 @@ function convertEgg(member) {
     delete member.eggSprite;
 }
 //Right Click Menu
-const menuItems = ['Box', 'Salvage'];
-menuItems.forEach(function (menuItem) {
-    const opt = document.createElement('div');
-    opt.classList.add('menu-item');
-    opt.innerHTML = menuItem;
-    partyMenu.appendChild(opt);
-});
 partyCont.addEventListener('contextmenu', function (e) {
     e.preventDefault();
     const elem = e.target;
@@ -190,8 +183,31 @@ partyCont.addEventListener('contextmenu', function (e) {
         partyMenu.style.top = `${e.pageY}px`;
         partyMenu.style.left = `${e.pageX}px`;
         partyMenu.style.display = 'flex';
+        console.log('building...');
+        buildPartyMenu(+index);
     }
 });
+function buildPartyMenu(index) {
+    disposeElement(partyMenu);
+    const member = player.party[index];
+    const menuItems = ['Box', 'Salvage'];
+    for (const opt in menuItems) {
+        const menuOpt = document.createElement('button');
+        menuOpt.classList.add('menu-item');
+        menuOpt.innerHTML = menuItems[opt];
+        if (member.isEgg)
+            menuOpt.disabled = true;
+        menuOpt.addEventListener('click', (e) => {
+            if (opt === '0') {
+                //This will be for sending a Pokemon to a box
+            }
+            else if (opt === '1') {
+                salvagePoke(index);
+            }
+        });
+        partyMenu.appendChild(menuOpt);
+    }
+}
 // function progressEgss() {
 //     const eggProg: HTMLCollection = document.getElementsByClassName('egg-progress');
 //     for (const index in player.party) {
