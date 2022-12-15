@@ -33,7 +33,8 @@ If you'd like to help support the project, you may drop a ★ on it.
 You may also [join my Discord server](https://discord.gg/nfbT8zJSkd) (can also click the banner above) if you'd like to keep up more with the development with the project.
 
 # Libraries Used
-• [LocalForage](https://github.com/localForage/localForage)
+• [LocalForage](https://github.com/localForage/localForage)<br>
+• [Hotkeys](https://github.com/jaywcjlove/hotkeys)
 
 # Other Resources Used
 • Smogon's various Sprite Projects that can be found [over on their forums](https://www.smogon.com/forums/forums/smeargles-laptop.325/).<br>
