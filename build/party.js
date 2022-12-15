@@ -49,6 +49,7 @@ function renderParty(full = false, index = -1) {
             eggHatch.textContent = 'Hatch!';
             eggHatch.addEventListener('click', () => {
                 eggHatch.style.display = 'none';
+                player.eggHandler[index] = null;
                 convertEgg(member);
                 disposeParty(false, index);
                 drawPoke(index);
@@ -78,9 +79,10 @@ function disposeParty(full = false, index = -1) {
 //Egg functions
 function progressEgg(index, delay = 0) {
     const thisEgg = player.party[index];
-    const eggProg = document.getElementsByClassName('egg-progress');
-    const eggProgBar = document.getElementsByClassName('egg-progress-bar');
-    const eggHatch = document.getElementsByClassName('egg-hatcher');
+    const eggCont = partyCont.querySelector(`[data-src="${index}"]`);
+    const eggProg = eggCont.querySelector('.egg-progress');
+    const eggProgBar = eggCont.querySelector('.egg-progress-bar');
+    const eggHatch = eggCont.querySelector('.egg-hatcher');
     let eggLoop;
     setTimeout(() => {
         console.log(thisEgg.UUID);
@@ -104,10 +106,10 @@ function progressEgg(index, delay = 0) {
             thisEgg.lastTick = Date.now();
         }
         if (!isHidden(partyCont)) {
-            eggProg[index].innerHTML = `${formNum(thisEgg.progress)} /<br> ${formNum(thisEgg.ehp)}`;
-            eggProgBar[index].setAttribute('style', eggProgStyle(true, thisEgg.progress, thisEgg.ehp));
+            eggProg.innerHTML = `${formNum(thisEgg.progress)} /<br> ${formNum(thisEgg.ehp)}`;
+            eggProgBar.setAttribute('style', eggProgStyle(true, thisEgg.progress, thisEgg.ehp));
             if (thisEgg.progress === thisEgg.ehp)
-                eggHatch[index].setAttribute('style', 'display:flex');
+                eggHatch.setAttribute('style', 'display:flex');
         }
         if (thisEgg.progress === thisEgg.ehp)
             clearInterval(eggLoop);
@@ -158,7 +160,7 @@ function pauseEggTimer(full = false, index = -1) {
         }
     }
     else {
-        //pauseEgg(player.party[index]);
+        pauseEgg(player.party[index], index);
     }
     function pauseEgg(member, index) {
         member.eggPause = Date.now();
@@ -200,6 +202,7 @@ function buildPartyMenu(index) {
         menuOpt.addEventListener('click', (e) => {
             if (opt === '0') {
                 //This will be for sending a Pokemon to a box
+                sendToBox(index);
             }
             else if (opt === '1') {
                 salvagePoke(index);

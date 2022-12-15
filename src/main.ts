@@ -1,6 +1,7 @@
 let player: PlayerLayout = {
     party: {},
     items: {},
+    pokemonBox: {},
     buffHandler: {
         // 408: {
         //     duration: Infinity,

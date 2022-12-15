@@ -38,3 +38,10 @@
     text-align: center;
     white-space: pre-wrap;
 }
+
+.modal-debug-tools {
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    row-gap: 10px;
+}

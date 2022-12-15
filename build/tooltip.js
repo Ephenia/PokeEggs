@@ -1,18 +1,14 @@
 "use strict";
 const mainTooltip = document.getElementById('tooltip');
 const tooltipCont = document.getElementById('tooltip-cont');
-window.addEventListener('mousemove', (event) => {
-    const element = event.target;
+window.addEventListener('mousemove', (e) => {
+    const element = e.target;
     const tooltipType = element.getAttribute('tooltip-src');
     if (tooltipType) {
-        const mouseX = event.pageX;
-        const mouseY = event.pageY;
-        //console.log(mouseX)
-        //console.log(mouseY)
         mainTooltip.style.display = 'flex';
-        mainTooltip.style.left = `${mouseX}px`;
-        mainTooltip.style.top = `${mouseY + 16}px`;
-        clearTooltip();
+        mainTooltip.style.left = `${e.pageX}px`;
+        mainTooltip.style.top = `${e.pageY + 16}px`;
+        disposeElement(tooltipCont);
         tooltipStyle(element, tooltipType);
     }
     else {
@@ -51,9 +47,6 @@ function tooltipStyle(element, type) {
     tooltipBottom.classList.add('tooltip-bottom');
     frag.appendChild(tooltipBottom);
     tooltipCont.appendChild(frag);
-}
-function clearTooltip() {
-    tooltipCont.innerHTML = '';
 }
 function hideTooltip() {
     mainTooltip.style.display = 'none';

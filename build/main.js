@@ -11,6 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 let player = {
     party: {},
     items: {},
+    pokemonBox: {},
     buffHandler: {
     // 408: {
     //     duration: Infinity,

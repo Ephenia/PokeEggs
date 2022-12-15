@@ -11,16 +11,19 @@ interface NavLayout {
 }
 
 interface PlayerLayout {
-    party: {
-        [key: number]: {
-            [key: string]: any
-        }
-    },
+    party: Pokemon,
     items: ItemInventory,
+    pokemonBox: Pokemon,
     buffHandler: BuffSystem,
     radarHandler: PokeRadar,
     eggHandler: EggSystem,
     prefs: PlayerPreference
+}
+
+interface Pokemon {
+    [key: number]: {
+        [key: string]: any
+    }
 }
 
 interface ItemInventory {

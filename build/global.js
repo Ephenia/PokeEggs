@@ -24,7 +24,7 @@ function createEgg(random = false, pokeID) {
     console.log(thisPoke);
     const toHatch = thisPoke.hatch_counter * 257;
     const shiny = 0 === randInt(4096);
-    return { id: pokeID, isEgg: true, name: thisPoke.names, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID() };
+    return { id: pokeID, isEgg: true, name: thisPoke.names, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs() };
 }
 function randPoke() {
     const pkmnLen = Object.keys(pkmnData).length;
@@ -37,6 +37,14 @@ function canBeEgg() {
             pkmnArr.push(value);
     });
     return pkmnArr[randInt(pkmnArr.length)];
+}
+function genIVs() {
+    return new Array(6).fill(null, 0).map(() => {
+        return randInt(32);
+    });
+}
+function sendToBox(index) {
+    const member = player.party[index];
 }
 function salvagePoke(index) {
     const member = player.party[index];

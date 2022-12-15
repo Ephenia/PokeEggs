@@ -11,3 +11,8 @@ function randomitem() {
     const rand = randInt(items.length);
     gainItem(+items[rand][0], 1);
 }
+function randomBuff() {
+    const buffIDs = Object.keys(itemData);
+    const randBuff = +buffIDs[randInt(buffIDs.length)];
+    createBuff(randBuff);
+}

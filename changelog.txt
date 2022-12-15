@@ -1,8 +1,19 @@
+December 15th, 2022
+
+• Added assets (Pokémon Icons).
+• Modals are impossible to be opened again while they are already currently open.
+• Added support in for a hotkey system.
+• Added "Statistics" to the menu.
+• Added "Settings" to the menu.
+• Random IV generation for eggs on creation.
+• Adjusted the logic with how egg hatching is handled within the Party, this fixes the Party breaking when you did stuff like Salvage Pokémon while eggs were currently hatching.
+• The eggHandler is now cleared when hatching an egg.
+
 December 14th, 2022
 
 • Items that have a quantity of 0 will not render in the Item Bag.
-• Improved Item handling when obtaining items (things like Key Items for example will never go over a quantity of 1, etc).
-• Implemented support for the ability to "Salvage" Pokémon, this is essentially being able to release Pokemon (you gain gems based off of the Pokémon's type).
+• Improved Item handling when obtaining items (things like Key Items for example will never go over a quantity of 1, etc.).
+• Implemented support for the ability to "Salvage" Pokémon, this is essentially being able to release Pokémon (you gain gems based off of the Pokémon's type).
 • Item Bag won't render/re-render under any circumstances unless you're currently navigated to it.
 • Added usable type to items, this will dictate whether they can be used from within your Item Bag or not.
 • Fixed not being able to hatch eggs with the addition of the new menu for Party members.

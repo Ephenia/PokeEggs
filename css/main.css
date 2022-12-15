@@ -87,6 +87,8 @@ main {
     position: absolute;
     margin-top: 60px;
     display: none;
+    height: 600px;
+    width: 500px;
 }
 
 .main-border {
@@ -101,9 +103,7 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
-    height: 600px;
     justify-content: center;
-    width: 500px;
 }
 
 .party-slot {
@@ -171,8 +171,6 @@ main {
 
 /* Item Bag */
 #item-bag-cont {
-    height: 600px;
-    width: 500px;
     justify-content: center;
 }
 
