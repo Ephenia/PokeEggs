@@ -27,7 +27,8 @@ function createDebugTools() {
         0: ['Cast a random Item Buff.', 'Cast Buff', 'randomBuff()'],
         1: ['Add an egg to the party.', 'Add Egg', 'addEgg()'],
         2: ['Clears the party.', 'Clear Party', 'clearParty()'],
-        3: ['Add a random item to the Item Bag.', 'Add Item', 'randomitem()']
+        3: ['Add a random item to the Item Bag.', 'Add Item', 'randomitem()'],
+        4: ['Clears the Item Bag.', 'Clear Item Bag', 'clearItemBag()']
     };
     for (const index in tests) {
         const thisTest = tests[index];

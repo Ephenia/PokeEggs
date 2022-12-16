@@ -1,3 +1,14 @@
+December 16th, 2022
+
+• The "Party" option in the menu for Pokémon in the Pokémon Box is now disabled if your Party is currently full.
+• Implemented being able to send Pokémon from the Pokémon Box back to the Party.
+• Implemented support for being able to Salvage Pokémon from within the Pokémon Box.
+• Added menu support for Pokémon that are in the Pokémon Box.
+• Fixed not being able to right-click on eggs that are in the Hatch Ready state inside the Party.
+• Pokémon now render inside the Pokémon Box.
+• The "Box" option now works when right-clicking Pokémon in your Party, this will send them to the Pokémon Box.
+• Started implementation for the Pokémon Box.
+
 December 15th, 2022
 
 • Added assets (Pokémon Icons).

@@ -153,7 +153,7 @@ main {
     pointer-events: all;
 }
 
-#party-menu {
+#pkmn-menu {
     position: absolute;
     z-index: 9;
     display: none;
@@ -163,10 +163,34 @@ main {
     background-color: #1e2124;
 }
 
-#party-menu > button {
+#pkmn-menu > button {
     padding: 5px;
     width: -webkit-fill-available;
     cursor: pointer;
+}
+
+/* Pokemon Box */
+#pkmn-box-cont {
+    align-items: center;
+    justify-content: center;
+}
+
+#pkmn-box-view {
+    height: 95%;
+    width: 95%;
+    position: absolute;
+    background-color: #36393e;
+    color: white;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    column-gap: 11px;
+}
+
+.pkmn-box-slot > img {
+    pointer-events: none;
 }
 
 /* Item Bag */

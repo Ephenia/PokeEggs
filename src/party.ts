@@ -1,5 +1,4 @@
 const partyCont = document.getElementById('party-cont')!;
-const partyMenu = document.getElementById('party-menu')!;
 let partySlots: any;
 
 function renderParty(full = false, index: number = -1) {
@@ -44,6 +43,8 @@ function renderParty(full = false, index: number = -1) {
             eggHatch.classList.add('egg-hatcher');
             eggHatch.style.display = member.isEgg && member.progress === member.ehp ? 'flex' : 'none';
             eggHatch.textContent = 'Hatch!';
+            eggHatch.setAttribute('data-src', `${index}`);
+            eggHatch.setAttribute('pkmn-menu', 'party');
             eggHatch.addEventListener('click', () => {
                 eggHatch.style.display = 'none';
                 player.eggHandler[index] = null;
@@ -76,10 +77,6 @@ function disposeParty(full = false, index: number = -1) {
 //Egg functions
 function progressEgg(index: number, delay: number = 0) {
     const thisEgg = player.party[index];
-    const eggCont: HTMLElement = partyCont.querySelector(`[data-src="${index}"]`)!;
-    const eggProg: HTMLElement = eggCont.querySelector('.egg-progress')!;
-    const eggProgBar: HTMLElement = eggCont.querySelector('.egg-progress-bar')!;
-    const eggHatch: HTMLElement = eggCont.querySelector('.egg-hatcher')!;
     let eggLoop: any;
 
     setTimeout(() => {
@@ -105,6 +102,10 @@ function progressEgg(index: number, delay: number = 0) {
             thisEgg.lastTick = Date.now();
         }
         if (!isHidden(partyCont)) {
+            const eggCont: HTMLElement = partyCont.querySelector(`[data-src="${index}"]`)!;
+            const eggProg: HTMLElement = eggCont.querySelector('.egg-progress')!;
+            const eggProgBar: HTMLElement = eggCont.querySelector('.egg-progress-bar')!;
+            const eggHatch: HTMLElement = eggCont.querySelector('.egg-hatcher')!;
             eggProg.innerHTML = `${formNum(thisEgg.progress)} /<br> ${formNum(thisEgg.ehp)}`;
             eggProgBar.setAttribute('style', eggProgStyle(true, thisEgg.progress, thisEgg.ehp));
             if (thisEgg.progress === thisEgg.ehp) eggHatch.setAttribute('style', 'display:flex');
@@ -137,22 +138,6 @@ function eggProgStyle(isEgg: boolean = true, progress: number, ehp: number) {
     return `width:${width}px`;
 }
 
-function addEgg() {
-    let findNull: any = false;
-    findNull = Object.entries(player.party).find(([key, value]) => {
-        if (value.isEgg === null) {
-            return [key, value];
-        }
-    });
-    console.log(findNull)
-    if (findNull) {
-        const nullIndex = findNull[0];
-        player.party[nullIndex] = createEgg(false, 1);
-        renderParty(false, nullIndex);
-        progressEgg(nullIndex);
-    }
-}
-
 function pauseEggTimer(full: boolean = false, index: number = -1) {
     if (full) {
         for (const index in player.party) {
@@ -176,41 +161,6 @@ function convertEgg(member: any) {
     delete member.ehp
     delete member.progress;
     delete member.eggSprite;
-}
-
-//Right Click Menu
-partyCont.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-    const elem: any = e.target;
-    const index = +elem.getAttribute('data-src');
-    if (player.party[index].isEgg !== null) {
-        partyMenu.style.top = `${e.pageY}px`;
-        partyMenu.style.left = `${e.pageX}px`;
-        partyMenu.style.display = 'flex';
-        console.log('building...')
-        buildPartyMenu(+index);
-    }
-});
-
-function buildPartyMenu(index: number) {
-    disposeElement(partyMenu);
-    const member = player.party[index];
-    const menuItems = ['Box', 'Salvage'];
-    for (const opt in menuItems) {
-        const menuOpt = document.createElement('button');
-        menuOpt.classList.add('menu-item');
-        menuOpt.innerHTML = menuItems[opt];
-        if (member.isEgg) menuOpt.disabled = true;
-        menuOpt.addEventListener('click', (e) => {
-            if (opt === '0') {
-                //This will be for sending a Pokemon to a box
-                sendToBox(index);
-            } else if (opt === '1') {
-                salvagePoke(index);
-            }
-        });
-        partyMenu.appendChild(menuOpt);
-    }
 }
 
 // function progressEgss() {

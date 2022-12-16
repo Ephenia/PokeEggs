@@ -1,6 +1,5 @@
 "use strict";
 const partyCont = document.getElementById('party-cont');
-const partyMenu = document.getElementById('party-menu');
 let partySlots;
 function renderParty(full = false, index = -1) {
     if (isHidden(partyCont))
@@ -47,6 +46,8 @@ function renderParty(full = false, index = -1) {
             eggHatch.classList.add('egg-hatcher');
             eggHatch.style.display = member.isEgg && member.progress === member.ehp ? 'flex' : 'none';
             eggHatch.textContent = 'Hatch!';
+            eggHatch.setAttribute('data-src', `${index}`);
+            eggHatch.setAttribute('pkmn-menu', 'party');
             eggHatch.addEventListener('click', () => {
                 eggHatch.style.display = 'none';
                 player.eggHandler[index] = null;
@@ -79,10 +80,6 @@ function disposeParty(full = false, index = -1) {
 //Egg functions
 function progressEgg(index, delay = 0) {
     const thisEgg = player.party[index];
-    const eggCont = partyCont.querySelector(`[data-src="${index}"]`);
-    const eggProg = eggCont.querySelector('.egg-progress');
-    const eggProgBar = eggCont.querySelector('.egg-progress-bar');
-    const eggHatch = eggCont.querySelector('.egg-hatcher');
     let eggLoop;
     setTimeout(() => {
         console.log(thisEgg.UUID);
@@ -106,6 +103,10 @@ function progressEgg(index, delay = 0) {
             thisEgg.lastTick = Date.now();
         }
         if (!isHidden(partyCont)) {
+            const eggCont = partyCont.querySelector(`[data-src="${index}"]`);
+            const eggProg = eggCont.querySelector('.egg-progress');
+            const eggProgBar = eggCont.querySelector('.egg-progress-bar');
+            const eggHatch = eggCont.querySelector('.egg-hatcher');
             eggProg.innerHTML = `${formNum(thisEgg.progress)} /<br> ${formNum(thisEgg.ehp)}`;
             eggProgBar.setAttribute('style', eggProgStyle(true, thisEgg.progress, thisEgg.ehp));
             if (thisEgg.progress === thisEgg.ehp)
@@ -136,21 +137,6 @@ function eggProgStyle(isEgg = true, progress, ehp) {
     console.log(width);
     return `width:${width}px`;
 }
-function addEgg() {
-    let findNull = false;
-    findNull = Object.entries(player.party).find(([key, value]) => {
-        if (value.isEgg === null) {
-            return [key, value];
-        }
-    });
-    console.log(findNull);
-    if (findNull) {
-        const nullIndex = findNull[0];
-        player.party[nullIndex] = createEgg(false, 1);
-        renderParty(false, nullIndex);
-        progressEgg(nullIndex);
-    }
-}
 function pauseEggTimer(full = false, index = -1) {
     if (full) {
         for (const index in player.party) {
@@ -175,41 +161,6 @@ function convertEgg(member) {
     delete member.ehp;
     delete member.progress;
     delete member.eggSprite;
-}
-//Right Click Menu
-partyCont.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-    const elem = e.target;
-    const index = +elem.getAttribute('data-src');
-    if (player.party[index].isEgg !== null) {
-        partyMenu.style.top = `${e.pageY}px`;
-        partyMenu.style.left = `${e.pageX}px`;
-        partyMenu.style.display = 'flex';
-        console.log('building...');
-        buildPartyMenu(+index);
-    }
-});
-function buildPartyMenu(index) {
-    disposeElement(partyMenu);
-    const member = player.party[index];
-    const menuItems = ['Box', 'Salvage'];
-    for (const opt in menuItems) {
-        const menuOpt = document.createElement('button');
-        menuOpt.classList.add('menu-item');
-        menuOpt.innerHTML = menuItems[opt];
-        if (member.isEgg)
-            menuOpt.disabled = true;
-        menuOpt.addEventListener('click', (e) => {
-            if (opt === '0') {
-                //This will be for sending a Pokemon to a box
-                sendToBox(index);
-            }
-            else if (opt === '1') {
-                salvagePoke(index);
-            }
-        });
-        partyMenu.appendChild(menuOpt);
-    }
 }
 // function progressEgss() {
 //     const eggProg: HTMLCollection = document.getElementsByClassName('egg-progress');

@@ -8,6 +8,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+const pkmnBoxCont = document.getElementById('pkmn-box-cont');
+let pkmnBoxView;
 let player = {
     party: {},
     items: {},
@@ -54,6 +56,7 @@ function loadMain() {
     console.log(player.party);
     buildNav();
     createParty();
+    createPokeBox();
     createItemBag();
     renderMain(player.prefs.nav);
     changeItemBag(player.prefs.bag);
@@ -70,12 +73,18 @@ function renderMain(index) {
         view.setAttribute('style', 'display: none');
     }
     getView[index].setAttribute('style', 'display:flex');
-    //For Party
-    if (index === 0)
+    if (index === 0) {
+        //For Party
         renderParty(true);
-    //For Item Bag
-    if (index === 2)
+    }
+    else if (index === 1) {
+        //For Pokemon Box
+        renderPokeBox();
+    }
+    else if (index === 2) {
+        //For Item Bag
         renderItemBag(player.prefs.bag);
+    }
     player.prefs.nav = index;
     navSelect();
 }
@@ -84,12 +93,22 @@ function createParty() {
     const partyLen = Object.keys(player.party).length;
     for (let i = 0; i < partyLen; i++) {
         const slot = document.createElement("div");
-        slot.setAttribute('data-src', `${i}`);
         slot.classList.add('party-slot');
+        slot.setAttribute('data-src', `${i}`);
+        slot.setAttribute('pkmn-menu', 'party');
         frag.appendChild(slot);
     }
     partyCont.appendChild(frag);
     partySlots = document.getElementsByClassName('party-slot');
+}
+function createPokeBox() {
+    const frag = new DocumentFragment();
+    const boxView = document.createElement("div");
+    boxView.id = 'pkmn-box-view';
+    boxView.classList.add('main-border');
+    frag.appendChild(boxView);
+    pkmnBoxCont.appendChild(frag);
+    pkmnBoxView = document.getElementById('pkmn-box-view');
 }
 function createItemBag() {
     const frag = new DocumentFragment();
@@ -135,6 +154,27 @@ function newEggHandler() {
         player.eggHandler = new Array(6).fill(null, 0);
     });
 }
+//Pokemon Box
+function renderPokeBox() {
+    if (isHidden(pkmnBoxCont))
+        return;
+    disposeElement(pkmnBoxView);
+    const frag = document.createDocumentFragment();
+    for (const poke in player.pokemonBox) {
+        const member = player.pokemonBox[poke];
+        //const getPoke = pkmnData[member.id];
+        const pkmnDiv = document.createElement('div');
+        pkmnDiv.classList.add('pkmn-box-slot');
+        pkmnDiv.setAttribute('data-src', poke);
+        pkmnDiv.setAttribute('pkmn-menu', 'box');
+        const pkmnIcon = document.createElement('img');
+        pkmnIcon.src = `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
+        pkmnIcon.setAttribute('loading', 'lazy');
+        pkmnDiv.appendChild(pkmnIcon);
+        frag.appendChild(pkmnDiv);
+    }
+    pkmnBoxView.appendChild(frag);
+}
 //Poké Radar functions
 function advanceChain(pokeID, shiny) {
     const radar = player.radarHandler;
@@ -179,5 +219,5 @@ function chainOdds(chain) {
 //Global Click Handler
 document.addEventListener('click', (e) => {
     const element = e.target;
-    partyMenu.style.display = 'none';
+    pkmnMenu.style.display = 'none';
 });
