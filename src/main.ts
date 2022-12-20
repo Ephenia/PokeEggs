@@ -1,7 +1,9 @@
 const pkmnBoxCont = document.getElementById('pkmn-box-cont')!;
+const leadPokeCont = document.getElementById('lead-pkmn')!;
 let pkmnBoxView: any;
 
 let player: PlayerLayout = {
+    leadPoke: {},
     party: {},
     items: {},
     pokemonBox: {},
@@ -36,6 +38,7 @@ async function initialize() {
     if (await hasSave()) {
         await loadSave();
     } else {
+        await newLead();
         await newParty();
         await newEggHandler();
         await createSave();
@@ -46,6 +49,7 @@ async function initialize() {
 function loadMain() {
     console.log(player.party)
     buildNav();
+    renderLead();
     createParty();
     createPokeBox();
     createItemBag();
@@ -79,12 +83,29 @@ function renderMain(index: number) {
     navSelect();
 }
 
+function renderLead() {
+    disposeElement(leadPokeCont);
+    const frag = new DocumentFragment();
+    const member: any = player.leadPoke;
+    const view = document.createElement("div");
+    if (member.isEgg !== null) {
+        //Pokemon Icon
+        const pkmnIcon = document.createElement('img');
+        pkmnIcon.src = `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
+        view.appendChild(pkmnIcon);
+    } else {
+        view.textContent = 'Lead is empty.'
+    }
+    frag.appendChild(view);
+    leadPokeCont.appendChild(frag);
+}
+
 function createParty() {
     const frag = new DocumentFragment();
     const partyLen = Object.keys(player.party).length;
     for (let i = 0; i < partyLen; i++) {
         const slot = document.createElement("div");
-        slot.classList.add('party-slot');
+        slot.classList.add('party-slot', 'main-bg');
         slot.setAttribute('data-src', `${i}`);
         slot.setAttribute('pkmn-menu', 'party');
         frag.appendChild(slot);
@@ -132,6 +153,10 @@ function createItemBag() {
 }
 
 //For new initilization purposes
+async function newLead() {
+    player.leadPoke = Object.assign(emptyMember(), player.leadPoke);
+}
+
 async function newParty() {
     //For player.party
     let newParty: any = new Object();
@@ -150,18 +175,25 @@ function renderPokeBox() {
     if (isHidden(pkmnBoxCont)) return;
     disposeElement(pkmnBoxView);
     const frag = document.createDocumentFragment();
-    for (const poke in player.pokemonBox) {
-        const member = player.pokemonBox[poke];
-        //const getPoke = pkmnData[member.id];
-        const pkmnDiv = document.createElement('div');
-        pkmnDiv.classList.add('pkmn-box-slot');
-        pkmnDiv.setAttribute('data-src', poke);
-        pkmnDiv.setAttribute('pkmn-menu', 'box');
-        const pkmnIcon = document.createElement('img');
-        pkmnIcon.src = `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
-        pkmnIcon.setAttribute('loading', 'lazy');
-        pkmnDiv.appendChild(pkmnIcon);
-        frag.appendChild(pkmnDiv);
+    const boxLen = Object.keys(player.pokemonBox).length;
+    if (boxLen !== 0) {
+        pkmnBoxView.classList.remove('empty-box');
+        for (const poke in player.pokemonBox) {
+            const member = player.pokemonBox[poke];
+            //const getPoke = pkmnData[member.id];
+            const pkmnDiv = document.createElement('div');
+            pkmnDiv.classList.add('pkmn-box-slot');
+            pkmnDiv.setAttribute('data-src', poke);
+            pkmnDiv.setAttribute('pkmn-menu', 'box');
+            const pkmnIcon = document.createElement('img');
+            pkmnIcon.src = member.isEgg ? 'assets/pkmnicon/egg.png' : `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
+            pkmnIcon.setAttribute('loading', 'lazy');
+            pkmnDiv.appendChild(pkmnIcon);
+            frag.appendChild(pkmnDiv);
+        }
+    } else {
+        pkmnBoxView.classList.add('empty-box');
+        frag.textContent = 'Your Pokémon Box is empty.'
     }
     pkmnBoxView.appendChild(frag);
 }

@@ -17,22 +17,25 @@ localforage.config({
     storeName: 'keyvaluepairs',
     description: ''
 });
+let preventSave = false;
 let clearSave = false;
 window.addEventListener('beforeunload', function (e) {
     return __awaiter(this, void 0, void 0, function* () {
-        if (!clearSave) {
-            preserveOnSave();
-            createSave();
+        if (!clearSave && !preventSave) {
+            yield preserveOnSave();
+            yield createSave();
         }
     });
 }, false);
 function preserveOnSave() {
-    //Preserve buffs
-    for (const buff in player.buffHandler) {
-        player.buffHandler[buff].buffPause = Date.now();
-    }
-    //Preserve eggs
-    pauseEggTimer(true);
+    return __awaiter(this, void 0, void 0, function* () {
+        //Preserve buffs
+        for (const buff in player.buffHandler) {
+            player.buffHandler[buff].buffPause = Date.now();
+        }
+        //Preserve eggs
+        pauseEggTimer(true);
+    });
 }
 function hasSave() {
     return __awaiter(this, void 0, void 0, function* () {

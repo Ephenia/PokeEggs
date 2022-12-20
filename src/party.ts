@@ -162,14 +162,3 @@ function convertEgg(member: any) {
     delete member.progress;
     delete member.eggSprite;
 }
-
-// function progressEgss() {
-//     const eggProg: HTMLCollection = document.getElementsByClassName('egg-progress');
-//     for (const index in player.party) {
-//         const member = player.party[index];
-//         if (member.isEgg) {
-//             member.progress -= 1;
-//             eggProg[index].innerHTML = `${formNum(member.progress)} /<br> ${formNum(member.ehp)}`;
-//         }
-//     }
-// }

@@ -1,5 +1,8 @@
 "use strict";
 const modalData = {
+    settings() {
+        createSettings();
+    },
     //For viewing the changelog
     changelog() {
         createChangelog();
@@ -13,6 +16,8 @@ const modalData = {
         createDebugTools();
     }
 };
+function createSettings() {
+}
 function createChangelog() {
     fetch('./changelog.txt')
         .then(response => response.text())

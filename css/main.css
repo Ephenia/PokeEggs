@@ -11,17 +11,47 @@ main {
     justify-content: center;
 }
 
-/* Navigation */
-#navigation {
-    position: absolute;
-    width: 200px;
+/* General styling */
+.main-bg {
     background-color: #282b30;
+}
+
+.main-content {
+    position: absolute;
+    margin-top: 60px;
+    display: none;
     height: 600px;
-    left: 10px;
-    top: 5px;
+    width: 500px;
+}
+
+.main-border {
     outline-color: #7289da;
     outline-style: outset;
     border-radius: 5px;
+}
+
+.pane-cont {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+/* Player Pane */
+#lead-pkmn {
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    width: 200px;
+    height: 56px;
+    align-items: center;
+}
+
+/* Navigation */
+#navigation {
+    width: 200px;
+    height: 600px;
     color: white;
     font-family: pkmnfont;
     font-size: 0.85em;
@@ -81,22 +111,6 @@ main {
     background-color: skyblue;
 }
 
-/* General styling */
-.main-content {
-    background-color: #1e2124;
-    position: absolute;
-    margin-top: 60px;
-    display: none;
-    height: 600px;
-    width: 500px;
-}
-
-.main-border {
-    outline-color: #7289da;
-    outline-style: outset;
-    border-radius: 5px;
-}
-
 /* Party */
 #party-cont {
     align-items: center;
@@ -108,7 +122,6 @@ main {
 
 .party-slot {
     align-items: center;
-    background-color: #282b30;
     display: flex;
     height: calc(100% / 6);
     width: 100%;
@@ -191,6 +204,12 @@ main {
 
 .pkmn-box-slot > img {
     pointer-events: none;
+}
+
+.empty-box {
+    justify-content: center !important;
+    flex-direction: column;
+    align-content: center !important;
 }
 
 /* Item Bag */

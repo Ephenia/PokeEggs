@@ -1,4 +1,7 @@
 const modalData: any = {
+    settings() {
+        createSettings();
+    },
     //For viewing the changelog
     changelog() {
         createChangelog();
@@ -11,6 +14,10 @@ const modalData: any = {
     debugtools() {
         createDebugTools();
     }
+}
+
+function createSettings() {
+    
 }
 
 function createChangelog() {

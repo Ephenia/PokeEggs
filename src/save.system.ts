@@ -8,16 +8,17 @@ localforage.config({
     description: ''
 });
 
+let preventSave: boolean = false;
 let clearSave: boolean = false;
 
 window.addEventListener('beforeunload', async function (e) {
-    if (!clearSave) {
-        preserveOnSave();
-        createSave();
+    if (!clearSave && !preventSave) {
+        await preserveOnSave();
+        await createSave();
     }
 }, false);
 
-function preserveOnSave() {
+async function preserveOnSave() {
     //Preserve buffs
     for (const buff in player.buffHandler) {
         player.buffHandler[buff].buffPause = Date.now();

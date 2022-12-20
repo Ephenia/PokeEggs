@@ -11,6 +11,7 @@ interface NavLayout {
 }
 
 interface PlayerLayout {
+    leadPoke: Pokemon,
     party: Pokemon,
     items: ItemInventory,
     pokemonBox: Pokemon,

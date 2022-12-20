@@ -1,3 +1,13 @@
+December 20th, 2022
+
+• You can now make a Pokémon your Lead Pokémon from the Party and the Pokémon Box.
+• The Pokémon Box will now display a message when it is empty.
+• Eggs will continue to hatch when taken out of the Pokémon Box and sent back to the Party.
+• The eggHandler is now appropriately handled when sending eggs to and from the Pokémon Box.
+• Override for F5 (refreshing), this should ensure the game being saved before the page actually refreshes.
+• Eggs are now able to be sent from Party to Box, vice versa.
+• Started working on support for Lead Pokémon.
+
 December 16th, 2022
 
 • The "Party" option in the menu for Pokémon in the Pokémon Box is now disabled if your Party is currently full.
