@@ -38,7 +38,13 @@ let player = {
         nav: 0,
         bag: 0,
         debug: false
-    }
+    },
+    flags: {
+        kantoStarter: false,
+        highestRegion: 0,
+    },
+    notifyTrack: {},
+    statistics: {}
 };
 initialize();
 function initialize() {
@@ -66,6 +72,9 @@ function loadMain() {
     changeItemBag(player.prefs.bag);
     resumeBuffs();
     resumeEggs();
+    resumeNotify();
+    if (!player.flags.kantoStarter)
+        openModal('starterselect', 'Select Starter');
     setInterval(function () {
         //createSave();
     }, 60000);
@@ -102,9 +111,11 @@ function renderLead() {
         const pkmnIcon = document.createElement('img');
         pkmnIcon.src = `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
         view.appendChild(pkmnIcon);
+        leadPokeCont.classList.add('lead-pkmn-active');
     }
     else {
         view.textContent = 'Lead is empty.';
+        leadPokeCont.classList.remove('lead-pkmn-active');
     }
     frag.appendChild(view);
     leadPokeCont.appendChild(frag);

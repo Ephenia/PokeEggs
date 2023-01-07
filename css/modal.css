@@ -45,3 +45,32 @@
     justify-content: flex-start !important;
     row-gap: 10px;
 }
+
+.modal-select-starter {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-select-starter > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-select-starter > div > label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.modal-select-starter-disabled {
+    filter: grayscale();
+    pointer-events: none;
+}
+
+.modal-select-starter-active {
+    background-color: rgb(154 205 50 / 50%);
+}

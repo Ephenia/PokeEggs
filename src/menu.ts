@@ -24,8 +24,7 @@ function buildMenu() {
             btn.setAttribute('class', 'pkmnfont');
             btn.addEventListener('click', () => {
                 if (thisOpt.modal) {
-                    setModalTitle(thisOpt.name);
-                    openModal(thisOpt.src);
+                    openModal(thisOpt.src, thisOpt.name);
                 } else {
                     thisOpt.custom();
                 }

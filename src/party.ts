@@ -110,7 +110,10 @@ function progressEgg(index: number, delay: number = 0) {
             eggProgBar.setAttribute('style', eggProgStyle(true, thisEgg.progress, thisEgg.ehp));
             if (thisEgg.progress === thisEgg.ehp) eggHatch.setAttribute('style', 'display:flex');
         }
-        if (thisEgg.progress === thisEgg.ehp) clearInterval(eggLoop);
+        if (thisEgg.progress === thisEgg.ehp) {
+            clearInterval(eggLoop);
+            Notify('eggReady');
+        }
     }
 }
 

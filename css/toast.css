@@ -1,0 +1,9 @@
+.toast-align {
+    display: flex;
+    align-items: flex-start;
+}
+
+.toast-egg-icon {
+    position: relative;
+    margin-top: -8px;
+}

@@ -42,10 +42,14 @@ main {
 #lead-pkmn {
     display: flex;
     color: white;
-    justify-content: flex-start;
+    justify-content: center;
     width: 200px;
     height: 56px;
     align-items: center;
+}
+
+.lead-pkmn-active {
+    justify-content: flex-start !important;
 }
 
 /* Navigation */

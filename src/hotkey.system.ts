@@ -10,6 +10,5 @@ hotkeys('f5', async function (event, handler) {
 hotkeys('d', function (event, handler) {
     event.preventDefault();
     if (!player.prefs.debug) return;
-    setModalTitle('Debug Tools');
-    openModal('debugtools');
+    openModal('debugtools', 'Debug Tools');
 });

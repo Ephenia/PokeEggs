@@ -112,8 +112,10 @@ function progressEgg(index, delay = 0) {
             if (thisEgg.progress === thisEgg.ehp)
                 eggHatch.setAttribute('style', 'display:flex');
         }
-        if (thisEgg.progress === thisEgg.ehp)
+        if (thisEgg.progress === thisEgg.ehp) {
             clearInterval(eggLoop);
+            Notify('eggReady');
+        }
     }
 }
 function eggValidation(member, index) {

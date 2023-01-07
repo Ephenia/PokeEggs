@@ -1,3 +1,7 @@
+const dataImg = {
+    'eggIcon': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAATdJREFUWEftVaEOwjAQfTh+oxIkEoncL0wOBxKHBYdkjslJ7CQSHBLkLH8AbuS23VKWkdyRLQtJK5b2erv37t21HaDnMegZH46AU8Ap8PcKZNY98lMyP/0EIAe+3RYV/ngc8lwVU+VcImTrgwczAfxR8HGRRmGC5Soimziu2LEOTus6AbJpSagJHK5ezqUJnOxpekJZDlFskRNnv98FCBYFgfqI77n0mA4NTslLXAoVgefz+PXxZALpFfCnRqxCawSI2SYuVOiMAB07Y2bgbO0+oNrbQ9oHKgWoB2beEOdXWtWbJvG5WHP2XfUAxc/sy6cOziS284SmouRETpa0GavANjt7sj0uQBR1RyBXgT62EkyizFycvcqx4fzZDxFvaxWV1enr4W9hQ824BcyPEI6AU8Ap0LsCbw3FYyE2M9K7AAAAAElFTkSuQmCC'
+}
+
 //Pokemon Handler functions
 function sendToLead(index: number, type: string) {
     const getLead: any = player.leadPoke;
@@ -141,4 +145,29 @@ function buildBoxMenu(index: number) {
         });
         pkmnMenu.appendChild(menuOpt);
     }
+}
+
+function trimImage(htmlID: string) {
+    // Get a reference to the canvas element
+    const canvas: any = document.getElementById('canvas')!;
+
+    // Get a reference to the image element
+    const image: any = document.getElementById(htmlID)!;
+
+    // Set the canvas dimensions to the same as the image
+    canvas.width = 32;
+    canvas.height = 32;
+
+    // Get a reference to the canvas context
+    const ctx = canvas.getContext('2d');
+
+    // Draw the image to the canvas
+    ctx.drawImage(image, -18, -30);
+
+    // Trim the image by specifying the source and destination coordinates
+    //ctx.drawImage(image, 10, 10, 32, 32, 10, 10, 32, 32);
+
+    const trimmedImageUrl = canvas.toDataURL();
+
+    console.log(trimmedImageUrl)
 }

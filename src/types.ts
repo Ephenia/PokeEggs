@@ -18,7 +18,10 @@ interface PlayerLayout {
     buffHandler: BuffSystem,
     radarHandler: PokeRadar,
     eggHandler: EggSystem,
-    prefs: PlayerPreference
+    prefs: PlayerPreference,
+    flags: Flags,
+    notifyTrack: Notifications,
+    statistics: Statistics
 }
 
 interface Pokemon {
@@ -48,7 +51,19 @@ interface EggSystem {
 }
 
 interface PlayerPreference {
-    [key: string]: any,
+    [key: string]: any
+}
+
+interface Flags {
+    [key: string]: any
+}
+
+interface Notifications {
+    [key: string]: any
+}
+
+interface Statistics {
+    [key: string]: any
 }
 
 interface ItemData {

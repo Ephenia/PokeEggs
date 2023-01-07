@@ -23,12 +23,12 @@ function UUID() {
 }
 
 //For Pokemon
-function createEgg(random = false, pokeID: number) {
+function createEgg(pokeID: number, random = false) {
     const thisPoke = random ? canBeEgg() : speciesData[pokeID];
     console.log(thisPoke)
     const toHatch = thisPoke.hatch_counter * 257;
     const shiny = 0 === randInt(4096);
-    return { id: pokeID, isEgg: true, name: thisPoke.names, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs() };
+    return { id: pokeID, isEgg: true, name: thisPoke.names, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(pokeID) };
 }
 
 function randPoke(): Object {
@@ -50,9 +50,15 @@ function genIVs() {
     });
 }
 
+function calcGender(pokeID: number) {
+    const rate = speciesData[pokeID].gender_rate;
+    const gender = (100 / 8) * rate;
+    return rate === -1 ? 'genderless': randInt(101) <= gender ? 'female' : 'male';
+}
+
 //For party
 function emptyMember() {
-    return { id: null, isEgg: null, name: null, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null };
+    return { id: null, isEgg: null, name: null, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null };
 }
 
 function findEmptyParty(): number {

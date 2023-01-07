@@ -23,7 +23,7 @@ function randomBuff() {
     createBuff(randBuff);
 }
 
-function addEgg() {
+function addEgg(pokeID: number) {
     let findNull: any = false;
     findNull = Object.entries(player.party).find(([key, value]) => {
         if (value.isEgg === null) {
@@ -33,7 +33,7 @@ function addEgg() {
     console.log(findNull)
     if (findNull) {
         const nullIndex = findNull[0];
-        player.party[nullIndex] = createEgg(false, 1);
+        player.party[nullIndex] = createEgg(pokeID, false);
         renderParty(false, nullIndex);
         progressEgg(nullIndex);
     }
