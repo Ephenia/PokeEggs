@@ -70,7 +70,7 @@ function pickStarter() {
     btn.disabled = true;
     btn.addEventListener('click', () => {
         const id = document.querySelector('input[name="starter"]:checked').getAttribute('value');
-        addEgg(id);
+        addEgg(+id);
         closeModal();
         player.flags.kantoStarter = true;
     });

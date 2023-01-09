@@ -27,8 +27,14 @@ function createEgg(pokeID: number, random = false) {
     const thisPoke = random ? canBeEgg() : speciesData[pokeID];
     console.log(thisPoke)
     const toHatch = thisPoke.hatch_counter * 257;
-    const shiny = 0 === randInt(4096);
-    return { id: pokeID, isEgg: true, name: thisPoke.names, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(pokeID) };
+    let shiny;
+    const radar = player.radarHandler;
+    if (radar.active && radar.lastHatch === pokeID) {
+        shiny = 0 === randInt(chainOdds(radar.chain));
+    } else {
+        shiny = 0 === randInt(4096);
+    }
+    return { id: pokeID, isEgg: true, name: thisPoke.names, level: 1, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(pokeID) };
 }
 
 function randPoke(): Object {
@@ -58,7 +64,7 @@ function calcGender(pokeID: number) {
 
 //For party
 function emptyMember() {
-    return { id: null, isEgg: null, name: null, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null };
+    return { id: null, isEgg: null, name: null, level: 0, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null };
 }
 
 function findEmptyParty(): number {
@@ -76,13 +82,21 @@ function gainItem(itemID: number, amount: number = 1) {
     const getItem = itemData[itemID];
     if (getItem.type === 'key') amount = 1;
     if (!player.items.hasOwnProperty(itemID)) {
-        player.items = Object.assign({ [itemID]: { quantity: amount } }, player.items);
+        player.items = Object.assign({ [itemID]: { type: getItem.type, quantity: amount } }, player.items);
     } else if (player.items.hasOwnProperty(itemID)) {
         if (getItem.type !== 'key') player.items[itemID].quantity += amount;
     } else {
         console.log('Can\'t add item for an unknown reason.')
     }
     renderItemBag(player.prefs.bag);
+}
+
+function checkItemAmnt(itemID: number) {
+    return player.items.hasOwnProperty(itemID) ? player.items[itemID].quantity : 0;
+}
+
+function itemImg(itemID: number) {
+    return `<img src="assets/items/${itemData[itemID].src}.png">`;
 }
 
 //Sorting
@@ -92,6 +106,12 @@ function sortBox() {
     Object.entries(tempObj).map((value, index) => {
         player.pokemonBox[index] = value[1];
     })
+}
+
+//Conversion
+function fracToPerc(denom: number) {
+    const decimal = (1 / denom) * 100;
+    return decimal.toFixed(4);
 }
 
 //Format

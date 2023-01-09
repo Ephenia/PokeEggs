@@ -18,8 +18,13 @@ function Notify(name, args = null, uuid = null, resume = false) {
                     dismiss: true
                 }];
             break;
-        case y:
-            // code block
+        case 'itemUnusable':
+            opts.message = `Item function is not yet implemented.`;
+            opts.status = 'danger';
+            opts.timeout = 5000;
+            opts.actions = [{
+                    dismiss: true
+                }];
             break;
         default:
         // code block

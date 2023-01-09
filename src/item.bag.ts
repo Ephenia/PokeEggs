@@ -16,37 +16,48 @@ function renderItemBag(index: number) {
     if (isHidden(itemBagCont)) return;
     disposeElement(itemBagView);
     const frag = document.createDocumentFragment();
-    for (const item in player.items) {
-        const thisItem = player.items[item];
-        const getItem = itemData[item];
-        if (invNames[player.prefs.bag][0] === getItem.type && thisItem.quantity !== 0) {
-            console.log(getItem)
-            //Item Row
-            const itemRow = document.createElement('div');
-            itemRow.classList.add('item-bag-view-row');
-            //Item Icon
-            const itemIcon = document.createElement('div');
-            const itemImg = document.createElement('img');
-            itemImg.src = `assets/items/${getItem.src}.png`;
-            itemIcon.appendChild(itemImg);
-            itemRow.appendChild(itemIcon);
-            //Item Name
-            const itemName = document.createElement('div');
-            itemName.textContent = `${getItem.name}`;
-            itemRow.appendChild(itemName);
-            //Item Quantity
-            const itemAmnt = document.createElement('div');
-            itemAmnt.textContent = `x${formNum(thisItem.quantity)}`;
-            itemRow.appendChild(itemAmnt);
-            //Item Function
-            const itemFunc = document.createElement('div');
-            const useBtn = document.createElement('button');
-            getItem.usable ? useBtn.textContent = 'Use item' : useBtn.textContent = '----';
-            if (!getItem.usable) useBtn.disabled = true;
-            itemFunc.appendChild(useBtn);
-            itemRow.appendChild(itemFunc);
-            frag.appendChild(itemRow);
+    const typeItems = Object.entries(player.items).filter(([key, value]) => value.type === invNames[player.prefs.bag][0]);
+    if (typeItems.length > 0) {
+        itemBagView.classList.remove('empty-pocket');
+        for (const index of typeItems) {
+            const itemID = +index[0];
+            const thisItem = index[1];
+            const getItem = itemData[itemID];
+            if (thisItem.quantity !== 0) {
+                console.log(getItem)
+                //Item Row
+                const itemRow = document.createElement('div');
+                itemRow.classList.add('item-bag-view-row');
+                //Item Icon
+                const itemIcon = document.createElement('div');
+                const itemImg = document.createElement('img');
+                itemImg.src = `assets/items/${getItem.src}.png`;
+                itemIcon.appendChild(itemImg);
+                itemRow.appendChild(itemIcon);
+                //Item Name
+                const itemName = document.createElement('div');
+                itemName.textContent = `${getItem.name}`;
+                itemRow.appendChild(itemName);
+                //Item Quantity
+                const itemAmnt = document.createElement('div');
+                itemAmnt.textContent = `x${formNum(thisItem.quantity)}`;
+                itemRow.appendChild(itemAmnt);
+                //Item Function
+                const itemFunc = document.createElement('div');
+                const useBtn = document.createElement('button');
+                getItem.usable ? useBtn.textContent = 'Use item' : useBtn.textContent = '----';
+                if (!getItem.usable) useBtn.disabled = true;
+                useBtn.addEventListener('click', () => {
+                    useItem(itemID);
+                });
+                itemFunc.appendChild(useBtn);
+                itemRow.appendChild(itemFunc);
+                frag.appendChild(itemRow);
+            }
         }
+    } else {
+        itemBagView.classList.add('empty-pocket');
+        frag.textContent = 'Item Bag pocket is empty.'
     }
     itemBagView.appendChild(frag);
 }

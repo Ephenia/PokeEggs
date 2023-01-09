@@ -22,6 +22,7 @@ main {
     display: none;
     height: 600px;
     width: 500px;
+    color: white;
 }
 
 .main-border {
@@ -36,6 +37,19 @@ main {
     position: absolute;
     left: 10px;
     top: 5px;
+}
+
+.active-text {
+    color: greenyellow;
+}
+
+.inactive-text {
+    color: #E34234;
+}
+
+.shiny-symbol::before {
+    content: '✨';
+    margin-left: -21.97px;
 }
 
 /* Player Pane */
@@ -118,7 +132,6 @@ main {
 /* Party */
 #party-cont {
     align-items: center;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,7 +276,6 @@ main {
     width: 95%;
     position: absolute;
     background-color: #36393e;
-    color: white;
     overflow-y: auto;
 }
 
@@ -278,6 +290,72 @@ main {
     display: flex;
     justify-content: center;
     width: calc(100% / 4);
+}
+
+.empty-pocket {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Poke Radar */
+#poke-radar-cont {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#poke-radar-state {
+    margin-top: 10px;
+}
+
+#poke-radar-chain-info {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    justify-content: center;
+}
+
+#poke-radar-chain-info > div {
+    display: flex;
+    min-height: 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(114 137 218 / 25%);
+    width: 100%;
+    justify-content: space-between;
+}
+
+#poke-radar-chain-info > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 21px;
+    background-color: #36393e;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#poke-radar-chain-len {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#poke-radar-cost {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    align-items: center;
+}
+
+#poke-radar-cost > div {
+    display: flex;
+    align-items: center;
+    margin-left: -16px;
 }
 
 /* Buffs */

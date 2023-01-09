@@ -1,3 +1,13 @@
+January 9th, 2023
+
+• Fixed an issue with Starter eggs causing issues with the Poké Radar.
+• Fixed small issue with Poké Radar not properly resetting the Pokémon being chained when a chain breaks.
+• Started working more on the Poké Radar section (more implementation).
+• Notification added for when using items that are currently not yet implemented with their function.
+• Started working on item function handling.
+• A message now displays for pockets within the Item Bag that are empty.
+• Reworked a bit of the handling with how items are displayed within the Item Bag.
+
 January 7th, 2023
 
 • Gender calculation for Pokémon.

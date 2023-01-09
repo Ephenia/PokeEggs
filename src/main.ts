@@ -1,5 +1,6 @@
 const pkmnBoxCont = document.getElementById('pkmn-box-cont')!;
 const leadPokeCont = document.getElementById('lead-pkmn')!;
+const pokeRadarCont = document.getElementById('poke-radar-cont')!;
 let pkmnBoxView: any;
 
 let player: PlayerLayout = {
@@ -22,7 +23,9 @@ let player: PlayerLayout = {
     radarHandler: {
         active: false,
         chain: 0,
-        lastHatch: null
+        lastHatch: null,
+        hatchNormal: 0,
+        hatchShiny: 0
     },
     eggHandler: {},
     prefs: {
@@ -86,6 +89,10 @@ function renderMain(index: number) {
     } else if (index === 2) {
         //For Item Bag
         renderItemBag(player.prefs.bag);
+    }
+    else if (index === 3) {
+        //For Poke Radar
+        renderPokeRadar();
     }
     player.prefs.nav = index;
     navSelect();
@@ -217,9 +224,17 @@ function advanceChain(pokeID: number, shiny: boolean) {
             radar.lastHatch = pokeID;
             radar.chain++;
             buffCounter(408, radar.chain);
-            if (shiny) radarOff();
+            if (shiny) {
+                radar.hatchShiny++;
+                radarOff();
+            } else {
+                radar.hatchNormal++;
+            }
         } else {
             radar.chain = 0;
+            radar.lastHatch = null;
+            radar.hatchNormal = 0;
+            radar.hatchShiny = 0;
             radarOff();
         }
         function radarOff() {
@@ -228,6 +243,7 @@ function advanceChain(pokeID: number, shiny: boolean) {
             buff.remove();
         }
     }
+    renderPokeRadar();
 }
 
 function chainOdds(chain: number) {
@@ -244,6 +260,70 @@ function chainOdds(chain: number) {
         odds = (15 + 30 + 37 + charm) << (chainLen - 37);
     }
     return Math.round(65536 / odds);
+}
+
+function renderPokeRadar() {
+    if (isHidden(pokeRadarCont)) return;
+    disposeElement(pokeRadarCont);
+    const frag = document.createDocumentFragment();
+    const radar = player.radarHandler;
+    //If the Poke Radar is active or not
+    const stateDiv = document.createElement('div');
+    stateDiv.id = 'poke-radar-state';
+    stateDiv.innerHTML = `The Poké Radar is currently <b class="${radar.active ? 'active-text' : 'inactive-text'}">${radar.active ? 'ACTIVE' : 'INACTIVE'}</b>.`;
+    frag.appendChild(stateDiv);
+    //Poke Radar cost & turning on
+    if (!radar.active) {
+        const costDiv = document.createElement('div');
+        costDiv.id = 'poke-radar-cost';
+        const canBuy = checkItemAmnt(593) >= 50;
+        costDiv.innerHTML = `<div>${itemImg(593)}${checkItemAmnt(593).toLocaleString()} / 50</div>`;
+        const buyBtn = document.createElement('button');
+        buyBtn.textContent = 'Turn On';
+        //buyBtn.disabled = !canBuy ? true : false;
+        buyBtn.addEventListener('click', () => {
+            createBuff(408);
+            renderPokeRadar();
+        });
+        costDiv.appendChild(buyBtn);
+        frag.appendChild(costDiv);
+    }
+    //Currently chaining info
+    const chainDiv = document.createElement('div');
+    chainDiv.id = 'poke-radar-chain-info';
+    chainDiv.classList.add('main-border');
+    const normalPkmn = document.createElement('div');
+    const normalImg = document.createElement('img');
+    const shinyPkmn = document.createElement('div');
+    const shinyImg = document.createElement('img');
+    if (radar.lastHatch !== null) {
+        normalImg.src = `assets/pkmn/normal/${pkmnData[radar.lastHatch].name}.png`;
+        shinyImg.src = `assets/pkmn/shiny/${pkmnData[radar.lastHatch].name}.png`;
+    } else {
+        normalImg.src = 'assets/pkmnicon/unknown-gen5.png';
+        shinyImg.src = 'assets/pkmnicon/unknown-gen5.png';
+    }
+    normalPkmn.appendChild(normalImg);
+    shinyPkmn.appendChild(shinyImg);
+    const nhatchDiv = document.createElement('div');
+    nhatchDiv.textContent = `${radar.hatchNormal.toLocaleString()}`;
+    normalPkmn.appendChild(nhatchDiv);
+    const shatchDiv = document.createElement('div');
+    shatchDiv.classList.add('shiny-symbol');
+    shatchDiv.textContent = `${radar.hatchShiny.toLocaleString()}`;
+    shinyPkmn.appendChild(shatchDiv);
+    chainDiv.appendChild(normalPkmn);
+    chainDiv.appendChild(shinyPkmn);
+    frag.appendChild(chainDiv);
+    //Chain length
+    const lenDiv = document.createElement('div');
+    lenDiv.id = 'poke-radar-chain-len';
+    lenDiv.textContent = `Chain: ${radar.chain.toLocaleString('en')}`;
+    frag.appendChild(lenDiv);
+    const oodsDiv = document.createElement('div');
+    oodsDiv.textContent = `✨ Shiny Odds: ${fracToPerc(chainOdds(radar.chain))}%`;
+    frag.appendChild(oodsDiv);
+    pokeRadarCont.appendChild(frag);
 }
 
 //Global Click Handler

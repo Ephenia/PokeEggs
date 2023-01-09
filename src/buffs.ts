@@ -80,6 +80,7 @@ function castBuff(buffID: number, delay: number = 0, resume: boolean = false) {
         if (buffID === 408) {
             player.radarHandler.active = true;
             buffCounter(408, player.radarHandler.chain);
+            renderPokeRadar();
         }
         return;
     } else if (thisBuff.time !== 0) {
@@ -124,7 +125,7 @@ function cancelBuff(buffLoop: any, buffIcon: any, buffID: any) {
 function buffCounter(buffID: number, value: number) {
     const buff = document.querySelector(`[buff-src="${buffID}"]`)!;
     const counter = buff.querySelector('.buff-counter')!;
-    counter.innerHTML = `${value}`;
+    counter.innerHTML = `${value !== 0 ? value : ''}`;
 }
 
 function buffTimeSimple(buff: any) {

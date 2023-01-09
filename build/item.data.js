@@ -41,7 +41,7 @@ const itemData = {
         name: 'Poké Radar',
         src: 'poke-radar',
         type: 'key',
-        usable: false,
+        usable: true,
         voidable: false
     },
     591: {

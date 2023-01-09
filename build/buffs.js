@@ -76,6 +76,7 @@ function castBuff(buffID, delay = 0, resume = false) {
         if (buffID === 408) {
             player.radarHandler.active = true;
             buffCounter(408, player.radarHandler.chain);
+            renderPokeRadar();
         }
         return;
     }
@@ -117,7 +118,7 @@ function cancelBuff(buffLoop, buffIcon, buffID) {
 function buffCounter(buffID, value) {
     const buff = document.querySelector(`[buff-src="${buffID}"]`);
     const counter = buff.querySelector('.buff-counter');
-    counter.innerHTML = `${value}`;
+    counter.innerHTML = `${value !== 0 ? value : ''}`;
 }
 function buffTimeSimple(buff) {
     return buff.time >= 60 ? Math.floor(buff.time / 60) : buff.time;
