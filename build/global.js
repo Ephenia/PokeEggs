@@ -56,6 +56,10 @@ function calcGender(pokeID) {
     const gender = (100 / 8) * rate;
     return rate === -1 ? 'genderless' : randInt(101) <= gender ? 'female' : 'male';
 }
+function pokeToId(name) {
+    const findPoke = Object.entries(pkmnData).find(([key, value]) => value.names === name);
+    return findPoke ? +findPoke[0] : null;
+}
 //For party
 function emptyMember() {
     return { id: null, isEgg: null, name: null, level: 0, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null };
@@ -86,6 +90,7 @@ function gainItem(itemID, amount = 1) {
         console.log('Can\'t add item for an unknown reason.');
     }
     renderItemBag(player.prefs.bag);
+    renderMain(player.prefs.nav);
 }
 function checkItemAmnt(itemID) {
     return player.items.hasOwnProperty(itemID) ? player.items[itemID].quantity : 0;
@@ -130,3 +135,4 @@ function colorLog(message, type = 'log') {
     }
     console.warn(`%c[${type.toUpperCase()}] ${message}`, `color:${color}`);
 }
+var test = 'hiiiiiii';

@@ -1,3 +1,13 @@
+January 14th, 2023
+
+• A message for notifying requirements when clicking on a locked Navigation area.
+• Support for conditions for accessing areas through Navigation.
+• Added "Mining" to Navigation.
+• Added "Crafting" to Navigation.
+• Added "Buff Caster" to Navigation.
+• Added "Pokédex" to Navigation.
+• Added in egg designs for most Pokémon.
+
 January 9th, 2023
 
 • Fixed an issue with Starter eggs causing issues with the Poké Radar.

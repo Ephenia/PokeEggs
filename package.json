@@ -1,0 +1,30 @@
+{
+  "name": "pokeeggs",
+  "version": "1.0.0",
+  "description": "[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FEphenia%2FPokeEggs&count_bg=%23004953&title_bg=%23555555&icon=rubygems.svg&icon_color=%237FFFD4&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)\r ![GitHub Repo stars](https://img.shields.io/github/stars/Ephenia/PokeEggs?color=maroon&logo=apachespark&logoColor=yellow)\r ![license](https://img.shields.io/badge/license-GPL-blue)\r ![GitHub last commit](https://img.shields.io/github/last-commit/Ephenia/PokeEggs?color=%23c46210)\r ![Lines of code](https://img.shields.io/tokei/lines/github/Ephenia/PokeEggs?color=%23F33A6A)\r ![GitHub repo size](https://img.shields.io/github/repo-size/Ephenia/PokeEggs?color=%2369359c)",
+  "main": "tempCodeRunnerFile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "npm install && gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ephenia/PokeEggs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ephenia/PokeEggs/issues"
+  },
+  "homepage": "https://github.com/Ephenia/PokeEggs#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-terser": "^2.1.0"
+  }
+}

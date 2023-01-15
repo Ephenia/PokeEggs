@@ -33,6 +33,28 @@ const itemData = {
         usable: false,
         voidable: true
     },
+    405: {
+        buffdesc: '',
+        countable: false,
+        desc: 'A bag filled with convenient tools for exploring. It provides access to the Underground in the Sinnoh region.',
+        duration: Infinity,
+        name: 'Explorer Kit',
+        src: 'explorer-kit',
+        type: 'key',
+        usable: true,
+        voidable: true
+    },
+    407: {
+        buffdesc: 'What are you looking at?',
+        countable: false,
+        desc: 'OBEY',
+        duration: Infinity,
+        name: 'Pokédex',
+        src: 'rule-book',
+        type: 'key',
+        usable: true,
+        voidable: true
+    },
     408: {
         buffdesc: 'Records and displays your current chain.',
         countable: true,
@@ -43,6 +65,17 @@ const itemData = {
         type: 'key',
         usable: true,
         voidable: false
+    },
+    415: {
+        buffdesc: '',
+        countable: true,
+        desc: 'A large key for operating the doors of the Valley Windworks in the canyon. It was held by a Team Galactic Grunt.',
+        duration: Infinity,
+        name: 'Works Key',
+        src: 'works-key',
+        type: 'key',
+        usable: true,
+        voidable: true
     },
     591: {
         buffdesc: '',
@@ -240,6 +273,17 @@ const itemData = {
         src: 'fairy-gem',
         type: 'treasure',
         usable: false,
+        voidable: true
+    },
+    785: {
+        buffdesc: '',
+        countable: false,
+        desc: 'This cuff contains an untold power that somehow enables Pokémon carrying a Mega Stone to Mega Evolve in battle.',
+        duration: 60,
+        name: 'Mega Bracelet',
+        src: 'mega-bracelet',
+        type: 'key',
+        usable: true,
         voidable: true
     },
     878: {

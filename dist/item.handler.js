@@ -1,0 +1,1 @@
+"use strict";function useItem(e){if(408===e)player.prefs.nav=4,renderMain(player.prefs.nav);else Notify("itemUnusable")}

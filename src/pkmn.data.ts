@@ -1,5 +1,5 @@
 let pkmnData: PokemonData = {
-  1: {
+  "1": {
     types: ["Grass", "Poison"],
     stats: [45, 49, 49, 65, 65, 45],
     abilities: [
@@ -19,9 +19,9 @@ let pkmnData: PokemonData = {
     name: "bulbasaur",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Bulbasaur",
   },
-  2: {
+  "2": {
     types: ["Grass", "Poison"],
     stats: [60, 62, 63, 80, 80, 60],
     abilities: [
@@ -41,9 +41,9 @@ let pkmnData: PokemonData = {
     name: "ivysaur",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Ivysaur",
   },
-  3: {
+  "3": {
     types: ["Grass", "Poison"],
     stats: [80, 82, 83, 100, 100, 80],
     abilities: [
@@ -63,9 +63,9 @@ let pkmnData: PokemonData = {
     name: "venusaur",
     base_exp: 263,
     is_mega: false,
-    names: "",
+    names: "Venusaur",
   },
-  4: {
+  "4": {
     types: ["Fire", "None"],
     stats: [39, 52, 43, 60, 50, 65],
     abilities: [
@@ -85,9 +85,9 @@ let pkmnData: PokemonData = {
     name: "charmander",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Charmander",
   },
-  5: {
+  "5": {
     types: ["Fire", "None"],
     stats: [58, 64, 58, 80, 65, 80],
     abilities: [
@@ -107,9 +107,9 @@ let pkmnData: PokemonData = {
     name: "charmeleon",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Charmeleon",
   },
-  6: {
+  "6": {
     types: ["Fire", "Flying"],
     stats: [78, 84, 78, 109, 85, 100],
     abilities: [
@@ -129,9 +129,9 @@ let pkmnData: PokemonData = {
     name: "charizard",
     base_exp: 267,
     is_mega: false,
-    names: "",
+    names: "Charizard",
   },
-  7: {
+  "7": {
     types: ["Water", "None"],
     stats: [44, 48, 65, 50, 64, 43],
     abilities: [
@@ -151,9 +151,9 @@ let pkmnData: PokemonData = {
     name: "squirtle",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Squirtle",
   },
-  8: {
+  "8": {
     types: ["Water", "None"],
     stats: [59, 63, 80, 65, 80, 58],
     abilities: [
@@ -173,9 +173,9 @@ let pkmnData: PokemonData = {
     name: "wartortle",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Wartortle",
   },
-  9: {
+  "9": {
     types: ["Water", "None"],
     stats: [79, 83, 100, 85, 105, 78],
     abilities: [
@@ -195,9 +195,9 @@ let pkmnData: PokemonData = {
     name: "blastoise",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Blastoise",
   },
-  10: {
+  "10": {
     types: ["Bug", "None"],
     stats: [45, 30, 35, 20, 20, 45],
     abilities: [
@@ -217,9 +217,9 @@ let pkmnData: PokemonData = {
     name: "caterpie",
     base_exp: 39,
     is_mega: false,
-    names: "",
+    names: "Caterpie",
   },
-  11: {
+  "11": {
     types: ["Bug", "None"],
     stats: [50, 20, 55, 25, 25, 30],
     abilities: [
@@ -234,9 +234,9 @@ let pkmnData: PokemonData = {
     name: "metapod",
     base_exp: 72,
     is_mega: false,
-    names: "",
+    names: "Metapod",
   },
-  12: {
+  "12": {
     types: ["Bug", "Flying"],
     stats: [60, 45, 50, 90, 80, 70],
     abilities: [
@@ -256,9 +256,9 @@ let pkmnData: PokemonData = {
     name: "butterfree",
     base_exp: 198,
     is_mega: false,
-    names: "",
+    names: "Butterfree",
   },
-  13: {
+  "13": {
     types: ["Bug", "Poison"],
     stats: [40, 35, 30, 20, 20, 50],
     abilities: [
@@ -278,9 +278,9 @@ let pkmnData: PokemonData = {
     name: "weedle",
     base_exp: 39,
     is_mega: false,
-    names: "",
+    names: "Weedle",
   },
-  14: {
+  "14": {
     types: ["Bug", "Poison"],
     stats: [45, 25, 50, 25, 25, 35],
     abilities: [
@@ -295,9 +295,9 @@ let pkmnData: PokemonData = {
     name: "kakuna",
     base_exp: 72,
     is_mega: false,
-    names: "",
+    names: "Kakuna",
   },
-  15: {
+  "15": {
     types: ["Bug", "Poison"],
     stats: [65, 90, 40, 45, 80, 75],
     abilities: [
@@ -317,9 +317,9 @@ let pkmnData: PokemonData = {
     name: "beedrill",
     base_exp: 178,
     is_mega: false,
-    names: "",
+    names: "Beedrill",
   },
-  16: {
+  "16": {
     types: ["Normal", "Flying"],
     stats: [40, 45, 40, 35, 35, 56],
     abilities: [
@@ -344,9 +344,9 @@ let pkmnData: PokemonData = {
     name: "pidgey",
     base_exp: 50,
     is_mega: false,
-    names: "",
+    names: "Pidgey",
   },
-  17: {
+  "17": {
     types: ["Normal", "Flying"],
     stats: [63, 60, 55, 50, 50, 71],
     abilities: [
@@ -371,9 +371,9 @@ let pkmnData: PokemonData = {
     name: "pidgeotto",
     base_exp: 122,
     is_mega: false,
-    names: "",
+    names: "Pidgeotto",
   },
-  18: {
+  "18": {
     types: ["Normal", "Flying"],
     stats: [83, 80, 75, 70, 70, 101],
     abilities: [
@@ -398,9 +398,9 @@ let pkmnData: PokemonData = {
     name: "pidgeot",
     base_exp: 216,
     is_mega: false,
-    names: "",
+    names: "Pidgeot",
   },
-  19: {
+  "19": {
     types: ["Normal", "None"],
     stats: [30, 56, 35, 25, 35, 72],
     abilities: [
@@ -425,9 +425,9 @@ let pkmnData: PokemonData = {
     name: "rattata",
     base_exp: 51,
     is_mega: false,
-    names: "",
+    names: "Rattata",
   },
-  20: {
+  "20": {
     types: ["Normal", "None"],
     stats: [55, 81, 60, 50, 70, 97],
     abilities: [
@@ -452,9 +452,9 @@ let pkmnData: PokemonData = {
     name: "raticate",
     base_exp: 145,
     is_mega: false,
-    names: "",
+    names: "Raticate",
   },
-  21: {
+  "21": {
     types: ["Normal", "Flying"],
     stats: [40, 60, 30, 31, 31, 70],
     abilities: [
@@ -474,9 +474,9 @@ let pkmnData: PokemonData = {
     name: "spearow",
     base_exp: 52,
     is_mega: false,
-    names: "",
+    names: "Spearow",
   },
-  22: {
+  "22": {
     types: ["Normal", "Flying"],
     stats: [65, 90, 65, 61, 61, 100],
     abilities: [
@@ -496,9 +496,9 @@ let pkmnData: PokemonData = {
     name: "fearow",
     base_exp: 155,
     is_mega: false,
-    names: "",
+    names: "Fearow",
   },
-  23: {
+  "23": {
     types: ["Poison", "None"],
     stats: [35, 60, 44, 40, 54, 55],
     abilities: [
@@ -523,9 +523,9 @@ let pkmnData: PokemonData = {
     name: "ekans",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Ekans",
   },
-  24: {
+  "24": {
     types: ["Poison", "None"],
     stats: [60, 95, 69, 65, 79, 80],
     abilities: [
@@ -550,9 +550,9 @@ let pkmnData: PokemonData = {
     name: "arbok",
     base_exp: 157,
     is_mega: false,
-    names: "",
+    names: "Arbok",
   },
-  25: {
+  "25": {
     types: ["Electric", "None"],
     stats: [35, 55, 40, 50, 50, 90],
     abilities: [
@@ -572,9 +572,9 @@ let pkmnData: PokemonData = {
     name: "pikachu",
     base_exp: 112,
     is_mega: false,
-    names: "",
+    names: "Pikachu",
   },
-  26: {
+  "26": {
     types: ["Electric", "None"],
     stats: [60, 90, 55, 90, 80, 110],
     abilities: [
@@ -594,9 +594,9 @@ let pkmnData: PokemonData = {
     name: "raichu",
     base_exp: 243,
     is_mega: false,
-    names: "",
+    names: "Raichu",
   },
-  27: {
+  "27": {
     types: ["Ground", "None"],
     stats: [50, 75, 85, 20, 30, 40],
     abilities: [
@@ -616,9 +616,9 @@ let pkmnData: PokemonData = {
     name: "sandshrew",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Sandshrew",
   },
-  28: {
+  "28": {
     types: ["Ground", "None"],
     stats: [75, 100, 110, 45, 55, 65],
     abilities: [
@@ -638,9 +638,9 @@ let pkmnData: PokemonData = {
     name: "sandslash",
     base_exp: 158,
     is_mega: false,
-    names: "",
+    names: "Sandslash",
   },
-  29: {
+  "29": {
     types: ["Poison", "None"],
     stats: [55, 47, 52, 40, 40, 41],
     abilities: [
@@ -665,9 +665,9 @@ let pkmnData: PokemonData = {
     name: "nidoran-f",
     base_exp: 55,
     is_mega: false,
-    names: "",
+    names: "Nidoran♀",
   },
-  30: {
+  "30": {
     types: ["Poison", "None"],
     stats: [70, 62, 67, 55, 55, 56],
     abilities: [
@@ -692,9 +692,9 @@ let pkmnData: PokemonData = {
     name: "nidorina",
     base_exp: 128,
     is_mega: false,
-    names: "",
+    names: "Nidorina",
   },
-  31: {
+  "31": {
     types: ["Poison", "Ground"],
     stats: [90, 92, 87, 75, 85, 76],
     abilities: [
@@ -719,9 +719,9 @@ let pkmnData: PokemonData = {
     name: "nidoqueen",
     base_exp: 253,
     is_mega: false,
-    names: "",
+    names: "Nidoqueen",
   },
-  32: {
+  "32": {
     types: ["Poison", "None"],
     stats: [46, 57, 40, 40, 40, 50],
     abilities: [
@@ -746,9 +746,9 @@ let pkmnData: PokemonData = {
     name: "nidoran-m",
     base_exp: 55,
     is_mega: false,
-    names: "",
+    names: "Nidoran♂",
   },
-  33: {
+  "33": {
     types: ["Poison", "None"],
     stats: [61, 72, 57, 55, 55, 65],
     abilities: [
@@ -773,9 +773,9 @@ let pkmnData: PokemonData = {
     name: "nidorino",
     base_exp: 128,
     is_mega: false,
-    names: "",
+    names: "Nidorino",
   },
-  34: {
+  "34": {
     types: ["Poison", "Ground"],
     stats: [81, 102, 77, 85, 75, 85],
     abilities: [
@@ -800,9 +800,9 @@ let pkmnData: PokemonData = {
     name: "nidoking",
     base_exp: 253,
     is_mega: false,
-    names: "",
+    names: "Nidoking",
   },
-  35: {
+  "35": {
     types: ["Fairy", "None"],
     stats: [70, 45, 48, 60, 65, 35],
     abilities: [
@@ -827,9 +827,9 @@ let pkmnData: PokemonData = {
     name: "clefairy",
     base_exp: 113,
     is_mega: false,
-    names: "",
+    names: "Clefairy",
   },
-  36: {
+  "36": {
     types: ["Fairy", "None"],
     stats: [95, 70, 73, 95, 90, 60],
     abilities: [
@@ -854,9 +854,9 @@ let pkmnData: PokemonData = {
     name: "clefable",
     base_exp: 242,
     is_mega: false,
-    names: "",
+    names: "Clefable",
   },
-  37: {
+  "37": {
     types: ["Fire", "None"],
     stats: [38, 41, 40, 50, 65, 65],
     abilities: [
@@ -876,9 +876,9 @@ let pkmnData: PokemonData = {
     name: "vulpix",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Vulpix",
   },
-  38: {
+  "38": {
     types: ["Fire", "None"],
     stats: [73, 76, 75, 81, 100, 100],
     abilities: [
@@ -898,9 +898,9 @@ let pkmnData: PokemonData = {
     name: "ninetales",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Ninetales",
   },
-  39: {
+  "39": {
     types: ["Normal", "Fairy"],
     stats: [115, 45, 20, 45, 25, 20],
     abilities: [
@@ -925,9 +925,9 @@ let pkmnData: PokemonData = {
     name: "jigglypuff",
     base_exp: 95,
     is_mega: false,
-    names: "",
+    names: "Jigglypuff",
   },
-  40: {
+  "40": {
     types: ["Normal", "Fairy"],
     stats: [140, 70, 45, 85, 50, 45],
     abilities: [
@@ -952,9 +952,9 @@ let pkmnData: PokemonData = {
     name: "wigglytuff",
     base_exp: 218,
     is_mega: false,
-    names: "",
+    names: "Wigglytuff",
   },
-  41: {
+  "41": {
     types: ["Poison", "Flying"],
     stats: [40, 45, 35, 30, 40, 55],
     abilities: [
@@ -974,9 +974,9 @@ let pkmnData: PokemonData = {
     name: "zubat",
     base_exp: 49,
     is_mega: false,
-    names: "",
+    names: "Zubat",
   },
-  42: {
+  "42": {
     types: ["Poison", "Flying"],
     stats: [75, 80, 70, 65, 75, 90],
     abilities: [
@@ -996,9 +996,9 @@ let pkmnData: PokemonData = {
     name: "golbat",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Golbat",
   },
-  43: {
+  "43": {
     types: ["Grass", "Poison"],
     stats: [45, 50, 55, 75, 65, 30],
     abilities: [
@@ -1018,9 +1018,9 @@ let pkmnData: PokemonData = {
     name: "oddish",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Oddish",
   },
-  44: {
+  "44": {
     types: ["Grass", "Poison"],
     stats: [60, 65, 70, 85, 75, 40],
     abilities: [
@@ -1040,9 +1040,9 @@ let pkmnData: PokemonData = {
     name: "gloom",
     base_exp: 138,
     is_mega: false,
-    names: "",
+    names: "Gloom",
   },
-  45: {
+  "45": {
     types: ["Grass", "Poison"],
     stats: [75, 80, 85, 110, 90, 50],
     abilities: [
@@ -1062,9 +1062,9 @@ let pkmnData: PokemonData = {
     name: "vileplume",
     base_exp: 245,
     is_mega: false,
-    names: "",
+    names: "Vileplume",
   },
-  46: {
+  "46": {
     types: ["Bug", "Grass"],
     stats: [35, 70, 55, 45, 55, 25],
     abilities: [
@@ -1089,9 +1089,9 @@ let pkmnData: PokemonData = {
     name: "paras",
     base_exp: 57,
     is_mega: false,
-    names: "",
+    names: "Paras",
   },
-  47: {
+  "47": {
     types: ["Bug", "Grass"],
     stats: [60, 95, 80, 60, 80, 30],
     abilities: [
@@ -1116,9 +1116,9 @@ let pkmnData: PokemonData = {
     name: "parasect",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Parasect",
   },
-  48: {
+  "48": {
     types: ["Bug", "Poison"],
     stats: [60, 55, 50, 40, 55, 45],
     abilities: [
@@ -1143,9 +1143,9 @@ let pkmnData: PokemonData = {
     name: "venonat",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Venonat",
   },
-  49: {
+  "49": {
     types: ["Bug", "Poison"],
     stats: [70, 65, 60, 90, 75, 90],
     abilities: [
@@ -1170,9 +1170,9 @@ let pkmnData: PokemonData = {
     name: "venomoth",
     base_exp: 158,
     is_mega: false,
-    names: "",
+    names: "Venomoth",
   },
-  50: {
+  "50": {
     types: ["Ground", "None"],
     stats: [10, 55, 25, 35, 45, 95],
     abilities: [
@@ -1197,9 +1197,9 @@ let pkmnData: PokemonData = {
     name: "diglett",
     base_exp: 53,
     is_mega: false,
-    names: "",
+    names: "Diglett",
   },
-  51: {
+  "51": {
     types: ["Ground", "None"],
     stats: [35, 100, 50, 50, 70, 120],
     abilities: [
@@ -1224,9 +1224,9 @@ let pkmnData: PokemonData = {
     name: "dugtrio",
     base_exp: 149,
     is_mega: false,
-    names: "",
+    names: "Dugtrio",
   },
-  52: {
+  "52": {
     types: ["Normal", "None"],
     stats: [40, 45, 35, 40, 40, 90],
     abilities: [
@@ -1251,9 +1251,9 @@ let pkmnData: PokemonData = {
     name: "meowth",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Meowth",
   },
-  53: {
+  "53": {
     types: ["Normal", "None"],
     stats: [65, 70, 60, 65, 65, 115],
     abilities: [
@@ -1278,9 +1278,9 @@ let pkmnData: PokemonData = {
     name: "persian",
     base_exp: 154,
     is_mega: false,
-    names: "",
+    names: "Persian",
   },
-  54: {
+  "54": {
     types: ["Water", "None"],
     stats: [50, 52, 48, 65, 50, 55],
     abilities: [
@@ -1305,9 +1305,9 @@ let pkmnData: PokemonData = {
     name: "psyduck",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Psyduck",
   },
-  55: {
+  "55": {
     types: ["Water", "None"],
     stats: [80, 82, 78, 95, 80, 85],
     abilities: [
@@ -1332,9 +1332,9 @@ let pkmnData: PokemonData = {
     name: "golduck",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Golduck",
   },
-  56: {
+  "56": {
     types: ["Fighting", "None"],
     stats: [40, 80, 35, 35, 45, 70],
     abilities: [
@@ -1359,9 +1359,9 @@ let pkmnData: PokemonData = {
     name: "mankey",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Mankey",
   },
-  57: {
+  "57": {
     types: ["Fighting", "None"],
     stats: [65, 105, 60, 60, 70, 95],
     abilities: [
@@ -1386,9 +1386,9 @@ let pkmnData: PokemonData = {
     name: "primeape",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Primeape",
   },
-  58: {
+  "58": {
     types: ["Fire", "None"],
     stats: [55, 70, 45, 70, 50, 60],
     abilities: [
@@ -1413,9 +1413,9 @@ let pkmnData: PokemonData = {
     name: "growlithe",
     base_exp: 70,
     is_mega: false,
-    names: "",
+    names: "Growlithe",
   },
-  59: {
+  "59": {
     types: ["Fire", "None"],
     stats: [90, 110, 80, 100, 80, 95],
     abilities: [
@@ -1440,9 +1440,9 @@ let pkmnData: PokemonData = {
     name: "arcanine",
     base_exp: 194,
     is_mega: false,
-    names: "",
+    names: "Arcanine",
   },
-  60: {
+  "60": {
     types: ["Water", "None"],
     stats: [40, 50, 40, 40, 40, 90],
     abilities: [
@@ -1467,9 +1467,9 @@ let pkmnData: PokemonData = {
     name: "poliwag",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Poliwag",
   },
-  61: {
+  "61": {
     types: ["Water", "None"],
     stats: [65, 65, 65, 50, 50, 90],
     abilities: [
@@ -1494,9 +1494,9 @@ let pkmnData: PokemonData = {
     name: "poliwhirl",
     base_exp: 135,
     is_mega: false,
-    names: "",
+    names: "Poliwhirl",
   },
-  62: {
+  "62": {
     types: ["Water", "Fighting"],
     stats: [90, 95, 95, 70, 90, 70],
     abilities: [
@@ -1521,9 +1521,9 @@ let pkmnData: PokemonData = {
     name: "poliwrath",
     base_exp: 255,
     is_mega: false,
-    names: "",
+    names: "Poliwrath",
   },
-  63: {
+  "63": {
     types: ["Psychic", "None"],
     stats: [25, 20, 15, 105, 55, 90],
     abilities: [
@@ -1548,9 +1548,9 @@ let pkmnData: PokemonData = {
     name: "abra",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Abra",
   },
-  64: {
+  "64": {
     types: ["Psychic", "None"],
     stats: [40, 35, 30, 120, 70, 105],
     abilities: [
@@ -1575,9 +1575,9 @@ let pkmnData: PokemonData = {
     name: "kadabra",
     base_exp: 140,
     is_mega: false,
-    names: "",
+    names: "Kadabra",
   },
-  65: {
+  "65": {
     types: ["Psychic", "None"],
     stats: [55, 50, 45, 135, 95, 120],
     abilities: [
@@ -1602,9 +1602,9 @@ let pkmnData: PokemonData = {
     name: "alakazam",
     base_exp: 250,
     is_mega: false,
-    names: "",
+    names: "Alakazam",
   },
-  66: {
+  "66": {
     types: ["Fighting", "None"],
     stats: [70, 80, 50, 35, 35, 35],
     abilities: [
@@ -1629,9 +1629,9 @@ let pkmnData: PokemonData = {
     name: "machop",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Machop",
   },
-  67: {
+  "67": {
     types: ["Fighting", "None"],
     stats: [80, 100, 70, 50, 60, 45],
     abilities: [
@@ -1656,9 +1656,9 @@ let pkmnData: PokemonData = {
     name: "machoke",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Machoke",
   },
-  68: {
+  "68": {
     types: ["Fighting", "None"],
     stats: [90, 130, 80, 65, 85, 55],
     abilities: [
@@ -1683,9 +1683,9 @@ let pkmnData: PokemonData = {
     name: "machamp",
     base_exp: 253,
     is_mega: false,
-    names: "",
+    names: "Machamp",
   },
-  69: {
+  "69": {
     types: ["Grass", "Poison"],
     stats: [50, 75, 35, 70, 30, 40],
     abilities: [
@@ -1705,9 +1705,9 @@ let pkmnData: PokemonData = {
     name: "bellsprout",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Bellsprout",
   },
-  70: {
+  "70": {
     types: ["Grass", "Poison"],
     stats: [65, 90, 50, 85, 45, 55],
     abilities: [
@@ -1727,9 +1727,9 @@ let pkmnData: PokemonData = {
     name: "weepinbell",
     base_exp: 137,
     is_mega: false,
-    names: "",
+    names: "Weepinbell",
   },
-  71: {
+  "71": {
     types: ["Grass", "Poison"],
     stats: [80, 105, 65, 100, 70, 70],
     abilities: [
@@ -1749,9 +1749,9 @@ let pkmnData: PokemonData = {
     name: "victreebel",
     base_exp: 221,
     is_mega: false,
-    names: "",
+    names: "Victreebel",
   },
-  72: {
+  "72": {
     types: ["Water", "Poison"],
     stats: [40, 40, 35, 50, 100, 70],
     abilities: [
@@ -1776,9 +1776,9 @@ let pkmnData: PokemonData = {
     name: "tentacool",
     base_exp: 67,
     is_mega: false,
-    names: "",
+    names: "Tentacool",
   },
-  73: {
+  "73": {
     types: ["Water", "Poison"],
     stats: [80, 70, 65, 80, 120, 100],
     abilities: [
@@ -1803,9 +1803,9 @@ let pkmnData: PokemonData = {
     name: "tentacruel",
     base_exp: 180,
     is_mega: false,
-    names: "",
+    names: "Tentacruel",
   },
-  74: {
+  "74": {
     types: ["Rock", "Ground"],
     stats: [40, 80, 100, 30, 30, 20],
     abilities: [
@@ -1830,9 +1830,9 @@ let pkmnData: PokemonData = {
     name: "geodude",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Geodude",
   },
-  75: {
+  "75": {
     types: ["Rock", "Ground"],
     stats: [55, 95, 115, 45, 45, 35],
     abilities: [
@@ -1857,9 +1857,9 @@ let pkmnData: PokemonData = {
     name: "graveler",
     base_exp: 137,
     is_mega: false,
-    names: "",
+    names: "Graveler",
   },
-  76: {
+  "76": {
     types: ["Rock", "Ground"],
     stats: [80, 120, 130, 55, 65, 45],
     abilities: [
@@ -1884,9 +1884,9 @@ let pkmnData: PokemonData = {
     name: "golem",
     base_exp: 223,
     is_mega: false,
-    names: "",
+    names: "Golem",
   },
-  77: {
+  "77": {
     types: ["Fire", "None"],
     stats: [50, 85, 55, 65, 65, 90],
     abilities: [
@@ -1911,9 +1911,9 @@ let pkmnData: PokemonData = {
     name: "ponyta",
     base_exp: 82,
     is_mega: false,
-    names: "",
+    names: "Ponyta",
   },
-  78: {
+  "78": {
     types: ["Fire", "None"],
     stats: [65, 100, 70, 80, 80, 105],
     abilities: [
@@ -1938,9 +1938,9 @@ let pkmnData: PokemonData = {
     name: "rapidash",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Rapidash",
   },
-  79: {
+  "79": {
     types: ["Water", "Psychic"],
     stats: [90, 65, 65, 40, 40, 15],
     abilities: [
@@ -1965,9 +1965,9 @@ let pkmnData: PokemonData = {
     name: "slowpoke",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Slowpoke",
   },
-  80: {
+  "80": {
     types: ["Water", "Psychic"],
     stats: [95, 75, 110, 100, 80, 30],
     abilities: [
@@ -1992,9 +1992,9 @@ let pkmnData: PokemonData = {
     name: "slowbro",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Slowbro",
   },
-  81: {
+  "81": {
     types: ["Electric", "Steel"],
     stats: [25, 35, 70, 95, 55, 45],
     abilities: [
@@ -2019,9 +2019,9 @@ let pkmnData: PokemonData = {
     name: "magnemite",
     base_exp: 65,
     is_mega: false,
-    names: "",
+    names: "Magnemite",
   },
-  82: {
+  "82": {
     types: ["Electric", "Steel"],
     stats: [50, 60, 95, 120, 70, 70],
     abilities: [
@@ -2046,9 +2046,9 @@ let pkmnData: PokemonData = {
     name: "magneton",
     base_exp: 163,
     is_mega: false,
-    names: "",
+    names: "Magneton",
   },
-  83: {
+  "83": {
     types: ["Normal", "Flying"],
     stats: [52, 90, 55, 58, 62, 60],
     abilities: [
@@ -2073,9 +2073,9 @@ let pkmnData: PokemonData = {
     name: "farfetchd",
     base_exp: 132,
     is_mega: false,
-    names: "",
+    names: "Farfetch’d",
   },
-  84: {
+  "84": {
     types: ["Normal", "Flying"],
     stats: [35, 85, 45, 35, 35, 75],
     abilities: [
@@ -2100,9 +2100,9 @@ let pkmnData: PokemonData = {
     name: "doduo",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Doduo",
   },
-  85: {
+  "85": {
     types: ["Normal", "Flying"],
     stats: [60, 110, 70, 60, 60, 110],
     abilities: [
@@ -2127,9 +2127,9 @@ let pkmnData: PokemonData = {
     name: "dodrio",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Dodrio",
   },
-  86: {
+  "86": {
     types: ["Water", "None"],
     stats: [65, 45, 55, 45, 70, 45],
     abilities: [
@@ -2154,9 +2154,9 @@ let pkmnData: PokemonData = {
     name: "seel",
     base_exp: 65,
     is_mega: false,
-    names: "",
+    names: "Seel",
   },
-  87: {
+  "87": {
     types: ["Water", "Ice"],
     stats: [90, 70, 80, 70, 95, 70],
     abilities: [
@@ -2181,9 +2181,9 @@ let pkmnData: PokemonData = {
     name: "dewgong",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Dewgong",
   },
-  88: {
+  "88": {
     types: ["Poison", "None"],
     stats: [80, 80, 50, 40, 50, 25],
     abilities: [
@@ -2208,9 +2208,9 @@ let pkmnData: PokemonData = {
     name: "grimer",
     base_exp: 65,
     is_mega: false,
-    names: "",
+    names: "Grimer",
   },
-  89: {
+  "89": {
     types: ["Poison", "None"],
     stats: [105, 105, 75, 65, 100, 50],
     abilities: [
@@ -2235,9 +2235,9 @@ let pkmnData: PokemonData = {
     name: "muk",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Muk",
   },
-  90: {
+  "90": {
     types: ["Water", "None"],
     stats: [30, 65, 100, 45, 25, 40],
     abilities: [
@@ -2262,9 +2262,9 @@ let pkmnData: PokemonData = {
     name: "shellder",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Shellder",
   },
-  91: {
+  "91": {
     types: ["Water", "Ice"],
     stats: [50, 95, 180, 85, 45, 70],
     abilities: [
@@ -2289,9 +2289,9 @@ let pkmnData: PokemonData = {
     name: "cloyster",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Cloyster",
   },
-  92: {
+  "92": {
     types: ["Ghost", "Poison"],
     stats: [30, 35, 30, 100, 35, 80],
     abilities: [
@@ -2306,9 +2306,9 @@ let pkmnData: PokemonData = {
     name: "gastly",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Gastly",
   },
-  93: {
+  "93": {
     types: ["Ghost", "Poison"],
     stats: [45, 50, 45, 115, 55, 95],
     abilities: [
@@ -2323,9 +2323,9 @@ let pkmnData: PokemonData = {
     name: "haunter",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Haunter",
   },
-  94: {
+  "94": {
     types: ["Ghost", "Poison"],
     stats: [60, 65, 60, 130, 75, 110],
     abilities: [
@@ -2340,9 +2340,9 @@ let pkmnData: PokemonData = {
     name: "gengar",
     base_exp: 250,
     is_mega: false,
-    names: "",
+    names: "Gengar",
   },
-  95: {
+  "95": {
     types: ["Rock", "Ground"],
     stats: [35, 45, 160, 30, 45, 70],
     abilities: [
@@ -2367,9 +2367,9 @@ let pkmnData: PokemonData = {
     name: "onix",
     base_exp: 77,
     is_mega: false,
-    names: "",
+    names: "Onix",
   },
-  96: {
+  "96": {
     types: ["Psychic", "None"],
     stats: [60, 48, 45, 43, 90, 42],
     abilities: [
@@ -2394,9 +2394,9 @@ let pkmnData: PokemonData = {
     name: "drowzee",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Drowzee",
   },
-  97: {
+  "97": {
     types: ["Psychic", "None"],
     stats: [85, 73, 70, 73, 115, 67],
     abilities: [
@@ -2421,9 +2421,9 @@ let pkmnData: PokemonData = {
     name: "hypno",
     base_exp: 169,
     is_mega: false,
-    names: "",
+    names: "Hypno",
   },
-  98: {
+  "98": {
     types: ["Water", "None"],
     stats: [30, 105, 90, 25, 25, 50],
     abilities: [
@@ -2448,9 +2448,9 @@ let pkmnData: PokemonData = {
     name: "krabby",
     base_exp: 65,
     is_mega: false,
-    names: "",
+    names: "Krabby",
   },
-  99: {
+  "99": {
     types: ["Water", "None"],
     stats: [55, 130, 115, 50, 50, 75],
     abilities: [
@@ -2475,9 +2475,9 @@ let pkmnData: PokemonData = {
     name: "kingler",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Kingler",
   },
-  100: {
+  "100": {
     types: ["Electric", "None"],
     stats: [40, 30, 50, 55, 55, 100],
     abilities: [
@@ -2502,9 +2502,9 @@ let pkmnData: PokemonData = {
     name: "voltorb",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Voltorb",
   },
-  101: {
+  "101": {
     types: ["Electric", "None"],
     stats: [60, 50, 70, 80, 80, 150],
     abilities: [
@@ -2529,9 +2529,9 @@ let pkmnData: PokemonData = {
     name: "electrode",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Electrode",
   },
-  102: {
+  "102": {
     types: ["Grass", "Psychic"],
     stats: [60, 40, 80, 60, 45, 40],
     abilities: [
@@ -2551,9 +2551,9 @@ let pkmnData: PokemonData = {
     name: "exeggcute",
     base_exp: 65,
     is_mega: false,
-    names: "",
+    names: "Exeggcute",
   },
-  103: {
+  "103": {
     types: ["Grass", "Psychic"],
     stats: [95, 95, 85, 125, 75, 55],
     abilities: [
@@ -2573,9 +2573,9 @@ let pkmnData: PokemonData = {
     name: "exeggutor",
     base_exp: 186,
     is_mega: false,
-    names: "",
+    names: "Exeggutor",
   },
-  104: {
+  "104": {
     types: ["Ground", "None"],
     stats: [50, 50, 95, 40, 50, 35],
     abilities: [
@@ -2600,9 +2600,9 @@ let pkmnData: PokemonData = {
     name: "cubone",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Cubone",
   },
-  105: {
+  "105": {
     types: ["Ground", "None"],
     stats: [60, 80, 110, 50, 80, 45],
     abilities: [
@@ -2627,9 +2627,9 @@ let pkmnData: PokemonData = {
     name: "marowak",
     base_exp: 149,
     is_mega: false,
-    names: "",
+    names: "Marowak",
   },
-  106: {
+  "106": {
     types: ["Fighting", "None"],
     stats: [50, 120, 53, 35, 110, 87],
     abilities: [
@@ -2654,9 +2654,9 @@ let pkmnData: PokemonData = {
     name: "hitmonlee",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Hitmonlee",
   },
-  107: {
+  "107": {
     types: ["Fighting", "None"],
     stats: [50, 105, 79, 35, 110, 76],
     abilities: [
@@ -2681,9 +2681,9 @@ let pkmnData: PokemonData = {
     name: "hitmonchan",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Hitmonchan",
   },
-  108: {
+  "108": {
     types: ["Normal", "None"],
     stats: [90, 55, 75, 60, 75, 30],
     abilities: [
@@ -2708,9 +2708,9 @@ let pkmnData: PokemonData = {
     name: "lickitung",
     base_exp: 77,
     is_mega: false,
-    names: "",
+    names: "Lickitung",
   },
-  109: {
+  "109": {
     types: ["Poison", "None"],
     stats: [40, 65, 95, 60, 45, 35],
     abilities: [
@@ -2735,9 +2735,9 @@ let pkmnData: PokemonData = {
     name: "koffing",
     base_exp: 68,
     is_mega: false,
-    names: "",
+    names: "Koffing",
   },
-  110: {
+  "110": {
     types: ["Poison", "None"],
     stats: [65, 90, 120, 85, 70, 60],
     abilities: [
@@ -2762,9 +2762,9 @@ let pkmnData: PokemonData = {
     name: "weezing",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Weezing",
   },
-  111: {
+  "111": {
     types: ["Ground", "Rock"],
     stats: [80, 85, 95, 30, 30, 25],
     abilities: [
@@ -2789,9 +2789,9 @@ let pkmnData: PokemonData = {
     name: "rhyhorn",
     base_exp: 69,
     is_mega: false,
-    names: "",
+    names: "Rhyhorn",
   },
-  112: {
+  "112": {
     types: ["Ground", "Rock"],
     stats: [105, 130, 120, 45, 45, 40],
     abilities: [
@@ -2816,9 +2816,9 @@ let pkmnData: PokemonData = {
     name: "rhydon",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Rhydon",
   },
-  113: {
+  "113": {
     types: ["Normal", "None"],
     stats: [250, 5, 5, 35, 105, 50],
     abilities: [
@@ -2843,9 +2843,9 @@ let pkmnData: PokemonData = {
     name: "chansey",
     base_exp: 395,
     is_mega: false,
-    names: "",
+    names: "Chansey",
   },
-  114: {
+  "114": {
     types: ["Grass", "None"],
     stats: [65, 55, 115, 100, 40, 60],
     abilities: [
@@ -2870,9 +2870,9 @@ let pkmnData: PokemonData = {
     name: "tangela",
     base_exp: 87,
     is_mega: false,
-    names: "",
+    names: "Tangela",
   },
-  115: {
+  "115": {
     types: ["Normal", "None"],
     stats: [105, 95, 80, 40, 80, 90],
     abilities: [
@@ -2897,9 +2897,9 @@ let pkmnData: PokemonData = {
     name: "kangaskhan",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Kangaskhan",
   },
-  116: {
+  "116": {
     types: ["Water", "None"],
     stats: [30, 40, 70, 70, 25, 60],
     abilities: [
@@ -2924,9 +2924,9 @@ let pkmnData: PokemonData = {
     name: "horsea",
     base_exp: 59,
     is_mega: false,
-    names: "",
+    names: "Horsea",
   },
-  117: {
+  "117": {
     types: ["Water", "None"],
     stats: [55, 65, 95, 95, 45, 85],
     abilities: [
@@ -2951,9 +2951,9 @@ let pkmnData: PokemonData = {
     name: "seadra",
     base_exp: 154,
     is_mega: false,
-    names: "",
+    names: "Seadra",
   },
-  118: {
+  "118": {
     types: ["Water", "None"],
     stats: [45, 67, 60, 35, 50, 63],
     abilities: [
@@ -2978,9 +2978,9 @@ let pkmnData: PokemonData = {
     name: "goldeen",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Goldeen",
   },
-  119: {
+  "119": {
     types: ["Water", "None"],
     stats: [80, 92, 65, 65, 80, 68],
     abilities: [
@@ -3005,9 +3005,9 @@ let pkmnData: PokemonData = {
     name: "seaking",
     base_exp: 158,
     is_mega: false,
-    names: "",
+    names: "Seaking",
   },
-  120: {
+  "120": {
     types: ["Water", "None"],
     stats: [30, 45, 55, 70, 55, 85],
     abilities: [
@@ -3032,9 +3032,9 @@ let pkmnData: PokemonData = {
     name: "staryu",
     base_exp: 68,
     is_mega: false,
-    names: "",
+    names: "Staryu",
   },
-  121: {
+  "121": {
     types: ["Water", "Psychic"],
     stats: [60, 75, 85, 100, 85, 115],
     abilities: [
@@ -3059,9 +3059,9 @@ let pkmnData: PokemonData = {
     name: "starmie",
     base_exp: 182,
     is_mega: false,
-    names: "",
+    names: "Starmie",
   },
-  122: {
+  "122": {
     types: ["Psychic", "Fairy"],
     stats: [40, 45, 65, 100, 120, 90],
     abilities: [
@@ -3086,9 +3086,9 @@ let pkmnData: PokemonData = {
     name: "mr-mime",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Mr. Mime",
   },
-  123: {
+  "123": {
     types: ["Bug", "Flying"],
     stats: [70, 110, 80, 55, 80, 105],
     abilities: [
@@ -3113,9 +3113,9 @@ let pkmnData: PokemonData = {
     name: "scyther",
     base_exp: 100,
     is_mega: false,
-    names: "",
+    names: "Scyther",
   },
-  124: {
+  "124": {
     types: ["Ice", "Psychic"],
     stats: [65, 50, 35, 115, 95, 95],
     abilities: [
@@ -3140,9 +3140,9 @@ let pkmnData: PokemonData = {
     name: "jynx",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Jynx",
   },
-  125: {
+  "125": {
     types: ["Electric", "None"],
     stats: [65, 83, 57, 95, 85, 105],
     abilities: [
@@ -3162,9 +3162,9 @@ let pkmnData: PokemonData = {
     name: "electabuzz",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Electabuzz",
   },
-  126: {
+  "126": {
     types: ["Fire", "None"],
     stats: [65, 95, 57, 100, 85, 93],
     abilities: [
@@ -3184,9 +3184,9 @@ let pkmnData: PokemonData = {
     name: "magmar",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Magmar",
   },
-  127: {
+  "127": {
     types: ["Bug", "None"],
     stats: [65, 125, 100, 55, 70, 85],
     abilities: [
@@ -3211,9 +3211,9 @@ let pkmnData: PokemonData = {
     name: "pinsir",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Pinsir",
   },
-  128: {
+  "128": {
     types: ["Normal", "None"],
     stats: [75, 100, 95, 40, 70, 110],
     abilities: [
@@ -3238,9 +3238,9 @@ let pkmnData: PokemonData = {
     name: "tauros",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Tauros",
   },
-  129: {
+  "129": {
     types: ["Water", "None"],
     stats: [20, 10, 55, 15, 20, 80],
     abilities: [
@@ -3260,9 +3260,9 @@ let pkmnData: PokemonData = {
     name: "magikarp",
     base_exp: 40,
     is_mega: false,
-    names: "",
+    names: "Magikarp",
   },
-  130: {
+  "130": {
     types: ["Water", "Flying"],
     stats: [95, 125, 79, 60, 100, 81],
     abilities: [
@@ -3282,9 +3282,9 @@ let pkmnData: PokemonData = {
     name: "gyarados",
     base_exp: 189,
     is_mega: false,
-    names: "",
+    names: "Gyarados",
   },
-  131: {
+  "131": {
     types: ["Water", "Ice"],
     stats: [130, 85, 80, 85, 95, 60],
     abilities: [
@@ -3309,9 +3309,9 @@ let pkmnData: PokemonData = {
     name: "lapras",
     base_exp: 187,
     is_mega: false,
-    names: "",
+    names: "Lapras",
   },
-  132: {
+  "132": {
     types: ["Normal", "None"],
     stats: [48, 48, 48, 48, 48, 48],
     abilities: [
@@ -3331,9 +3331,9 @@ let pkmnData: PokemonData = {
     name: "ditto",
     base_exp: 101,
     is_mega: false,
-    names: "",
+    names: "Ditto",
   },
-  133: {
+  "133": {
     types: ["Normal", "None"],
     stats: [55, 55, 50, 45, 65, 55],
     abilities: [
@@ -3358,9 +3358,9 @@ let pkmnData: PokemonData = {
     name: "eevee",
     base_exp: 65,
     is_mega: false,
-    names: "",
+    names: "Eevee",
   },
-  134: {
+  "134": {
     types: ["Water", "None"],
     stats: [130, 65, 60, 110, 95, 65],
     abilities: [
@@ -3380,9 +3380,9 @@ let pkmnData: PokemonData = {
     name: "vaporeon",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Vaporeon",
   },
-  135: {
+  "135": {
     types: ["Electric", "None"],
     stats: [65, 65, 60, 110, 95, 130],
     abilities: [
@@ -3402,9 +3402,9 @@ let pkmnData: PokemonData = {
     name: "jolteon",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Jolteon",
   },
-  136: {
+  "136": {
     types: ["Fire", "None"],
     stats: [65, 130, 60, 95, 110, 65],
     abilities: [
@@ -3424,9 +3424,9 @@ let pkmnData: PokemonData = {
     name: "flareon",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Flareon",
   },
-  137: {
+  "137": {
     types: ["Normal", "None"],
     stats: [65, 60, 70, 85, 75, 40],
     abilities: [
@@ -3451,9 +3451,9 @@ let pkmnData: PokemonData = {
     name: "porygon",
     base_exp: 79,
     is_mega: false,
-    names: "",
+    names: "Porygon",
   },
-  138: {
+  "138": {
     types: ["Rock", "Water"],
     stats: [35, 40, 100, 90, 55, 35],
     abilities: [
@@ -3478,9 +3478,9 @@ let pkmnData: PokemonData = {
     name: "omanyte",
     base_exp: 71,
     is_mega: false,
-    names: "",
+    names: "Omanyte",
   },
-  139: {
+  "139": {
     types: ["Rock", "Water"],
     stats: [70, 60, 125, 115, 70, 55],
     abilities: [
@@ -3505,9 +3505,9 @@ let pkmnData: PokemonData = {
     name: "omastar",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Omastar",
   },
-  140: {
+  "140": {
     types: ["Rock", "Water"],
     stats: [30, 80, 90, 55, 45, 55],
     abilities: [
@@ -3532,9 +3532,9 @@ let pkmnData: PokemonData = {
     name: "kabuto",
     base_exp: 71,
     is_mega: false,
-    names: "",
+    names: "Kabuto",
   },
-  141: {
+  "141": {
     types: ["Rock", "Water"],
     stats: [60, 115, 105, 65, 70, 80],
     abilities: [
@@ -3559,9 +3559,9 @@ let pkmnData: PokemonData = {
     name: "kabutops",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Kabutops",
   },
-  142: {
+  "142": {
     types: ["Rock", "Flying"],
     stats: [80, 105, 65, 60, 75, 130],
     abilities: [
@@ -3586,9 +3586,9 @@ let pkmnData: PokemonData = {
     name: "aerodactyl",
     base_exp: 180,
     is_mega: false,
-    names: "",
+    names: "Aerodactyl",
   },
-  143: {
+  "143": {
     types: ["Normal", "None"],
     stats: [160, 110, 65, 65, 110, 30],
     abilities: [
@@ -3613,9 +3613,9 @@ let pkmnData: PokemonData = {
     name: "snorlax",
     base_exp: 189,
     is_mega: false,
-    names: "",
+    names: "Snorlax",
   },
-  144: {
+  "144": {
     types: ["Ice", "Flying"],
     stats: [90, 85, 100, 95, 125, 85],
     abilities: [
@@ -3635,9 +3635,9 @@ let pkmnData: PokemonData = {
     name: "articuno",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Articuno",
   },
-  145: {
+  "145": {
     types: ["Electric", "Flying"],
     stats: [90, 90, 85, 125, 90, 100],
     abilities: [
@@ -3657,9 +3657,9 @@ let pkmnData: PokemonData = {
     name: "zapdos",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Zapdos",
   },
-  146: {
+  "146": {
     types: ["Fire", "Flying"],
     stats: [90, 100, 90, 125, 85, 90],
     abilities: [
@@ -3679,9 +3679,9 @@ let pkmnData: PokemonData = {
     name: "moltres",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Moltres",
   },
-  147: {
+  "147": {
     types: ["Dragon", "None"],
     stats: [41, 64, 45, 50, 50, 50],
     abilities: [
@@ -3701,9 +3701,9 @@ let pkmnData: PokemonData = {
     name: "dratini",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Dratini",
   },
-  148: {
+  "148": {
     types: ["Dragon", "None"],
     stats: [61, 84, 65, 70, 70, 70],
     abilities: [
@@ -3723,9 +3723,9 @@ let pkmnData: PokemonData = {
     name: "dragonair",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Dragonair",
   },
-  149: {
+  "149": {
     types: ["Dragon", "Flying"],
     stats: [91, 134, 95, 100, 100, 80],
     abilities: [
@@ -3745,9 +3745,9 @@ let pkmnData: PokemonData = {
     name: "dragonite",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Dragonite",
   },
-  150: {
+  "150": {
     types: ["Psychic", "None"],
     stats: [106, 110, 90, 154, 90, 130],
     abilities: [
@@ -3767,9 +3767,9 @@ let pkmnData: PokemonData = {
     name: "mewtwo",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Mewtwo",
   },
-  151: {
+  "151": {
     types: ["Psychic", "None"],
     stats: [100, 100, 100, 100, 100, 100],
     abilities: [
@@ -3784,9 +3784,9 @@ let pkmnData: PokemonData = {
     name: "mew",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Mew",
   },
-  152: {
+  "152": {
     types: ["Grass", "None"],
     stats: [45, 49, 65, 49, 65, 45],
     abilities: [
@@ -3806,9 +3806,9 @@ let pkmnData: PokemonData = {
     name: "chikorita",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Chikorita",
   },
-  153: {
+  "153": {
     types: ["Grass", "None"],
     stats: [60, 62, 80, 63, 80, 60],
     abilities: [
@@ -3828,9 +3828,9 @@ let pkmnData: PokemonData = {
     name: "bayleef",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Bayleef",
   },
-  154: {
+  "154": {
     types: ["Grass", "None"],
     stats: [80, 82, 100, 83, 100, 80],
     abilities: [
@@ -3850,9 +3850,9 @@ let pkmnData: PokemonData = {
     name: "meganium",
     base_exp: 236,
     is_mega: false,
-    names: "",
+    names: "Meganium",
   },
-  155: {
+  "155": {
     types: ["Fire", "None"],
     stats: [39, 52, 43, 60, 50, 65],
     abilities: [
@@ -3872,9 +3872,9 @@ let pkmnData: PokemonData = {
     name: "cyndaquil",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Cyndaquil",
   },
-  156: {
+  "156": {
     types: ["Fire", "None"],
     stats: [58, 64, 58, 80, 65, 80],
     abilities: [
@@ -3894,9 +3894,9 @@ let pkmnData: PokemonData = {
     name: "quilava",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Quilava",
   },
-  157: {
+  "157": {
     types: ["Fire", "None"],
     stats: [78, 84, 78, 109, 85, 100],
     abilities: [
@@ -3916,9 +3916,9 @@ let pkmnData: PokemonData = {
     name: "typhlosion",
     base_exp: 240,
     is_mega: false,
-    names: "",
+    names: "Typhlosion",
   },
-  158: {
+  "158": {
     types: ["Water", "None"],
     stats: [50, 65, 64, 44, 48, 43],
     abilities: [
@@ -3938,9 +3938,9 @@ let pkmnData: PokemonData = {
     name: "totodile",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Totodile",
   },
-  159: {
+  "159": {
     types: ["Water", "None"],
     stats: [65, 80, 80, 59, 63, 58],
     abilities: [
@@ -3960,9 +3960,9 @@ let pkmnData: PokemonData = {
     name: "croconaw",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Croconaw",
   },
-  160: {
+  "160": {
     types: ["Water", "None"],
     stats: [85, 105, 100, 79, 83, 78],
     abilities: [
@@ -3982,9 +3982,9 @@ let pkmnData: PokemonData = {
     name: "feraligatr",
     base_exp: 239,
     is_mega: false,
-    names: "",
+    names: "Feraligatr",
   },
-  161: {
+  "161": {
     types: ["Normal", "None"],
     stats: [35, 46, 34, 35, 45, 20],
     abilities: [
@@ -4009,9 +4009,9 @@ let pkmnData: PokemonData = {
     name: "sentret",
     base_exp: 43,
     is_mega: false,
-    names: "",
+    names: "Sentret",
   },
-  162: {
+  "162": {
     types: ["Normal", "None"],
     stats: [85, 76, 64, 45, 55, 90],
     abilities: [
@@ -4036,9 +4036,9 @@ let pkmnData: PokemonData = {
     name: "furret",
     base_exp: 145,
     is_mega: false,
-    names: "",
+    names: "Furret",
   },
-  163: {
+  "163": {
     types: ["Normal", "Flying"],
     stats: [60, 30, 30, 36, 56, 50],
     abilities: [
@@ -4063,9 +4063,9 @@ let pkmnData: PokemonData = {
     name: "hoothoot",
     base_exp: 52,
     is_mega: false,
-    names: "",
+    names: "Hoothoot",
   },
-  164: {
+  "164": {
     types: ["Normal", "Flying"],
     stats: [100, 50, 50, 86, 96, 70],
     abilities: [
@@ -4090,9 +4090,9 @@ let pkmnData: PokemonData = {
     name: "noctowl",
     base_exp: 158,
     is_mega: false,
-    names: "",
+    names: "Noctowl",
   },
-  165: {
+  "165": {
     types: ["Bug", "Flying"],
     stats: [40, 20, 30, 40, 80, 55],
     abilities: [
@@ -4117,9 +4117,9 @@ let pkmnData: PokemonData = {
     name: "ledyba",
     base_exp: 53,
     is_mega: false,
-    names: "",
+    names: "Ledyba",
   },
-  166: {
+  "166": {
     types: ["Bug", "Flying"],
     stats: [55, 35, 50, 55, 110, 85],
     abilities: [
@@ -4144,9 +4144,9 @@ let pkmnData: PokemonData = {
     name: "ledian",
     base_exp: 137,
     is_mega: false,
-    names: "",
+    names: "Ledian",
   },
-  167: {
+  "167": {
     types: ["Bug", "Poison"],
     stats: [40, 60, 40, 40, 40, 30],
     abilities: [
@@ -4171,9 +4171,9 @@ let pkmnData: PokemonData = {
     name: "spinarak",
     base_exp: 50,
     is_mega: false,
-    names: "",
+    names: "Spinarak",
   },
-  168: {
+  "168": {
     types: ["Bug", "Poison"],
     stats: [70, 90, 70, 60, 70, 40],
     abilities: [
@@ -4198,9 +4198,9 @@ let pkmnData: PokemonData = {
     name: "ariados",
     base_exp: 140,
     is_mega: false,
-    names: "",
+    names: "Ariados",
   },
-  169: {
+  "169": {
     types: ["Poison", "Flying"],
     stats: [85, 90, 80, 70, 80, 130],
     abilities: [
@@ -4220,9 +4220,9 @@ let pkmnData: PokemonData = {
     name: "crobat",
     base_exp: 268,
     is_mega: false,
-    names: "",
+    names: "Crobat",
   },
-  170: {
+  "170": {
     types: ["Water", "Electric"],
     stats: [75, 38, 38, 56, 56, 67],
     abilities: [
@@ -4247,9 +4247,9 @@ let pkmnData: PokemonData = {
     name: "chinchou",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Chinchou",
   },
-  171: {
+  "171": {
     types: ["Water", "Electric"],
     stats: [125, 58, 58, 76, 76, 67],
     abilities: [
@@ -4274,9 +4274,9 @@ let pkmnData: PokemonData = {
     name: "lanturn",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Lanturn",
   },
-  172: {
+  "172": {
     types: ["Electric", "None"],
     stats: [20, 40, 15, 35, 35, 60],
     abilities: [
@@ -4296,9 +4296,9 @@ let pkmnData: PokemonData = {
     name: "pichu",
     base_exp: 41,
     is_mega: false,
-    names: "",
+    names: "Pichu",
   },
-  173: {
+  "173": {
     types: ["Fairy", "None"],
     stats: [50, 25, 28, 45, 55, 15],
     abilities: [
@@ -4323,9 +4323,9 @@ let pkmnData: PokemonData = {
     name: "cleffa",
     base_exp: 44,
     is_mega: false,
-    names: "",
+    names: "Cleffa",
   },
-  174: {
+  "174": {
     types: ["Normal", "Fairy"],
     stats: [90, 30, 15, 40, 20, 15],
     abilities: [
@@ -4350,9 +4350,9 @@ let pkmnData: PokemonData = {
     name: "igglybuff",
     base_exp: 42,
     is_mega: false,
-    names: "",
+    names: "Igglybuff",
   },
-  175: {
+  "175": {
     types: ["Fairy", "None"],
     stats: [35, 20, 65, 40, 65, 20],
     abilities: [
@@ -4377,9 +4377,9 @@ let pkmnData: PokemonData = {
     name: "togepi",
     base_exp: 49,
     is_mega: false,
-    names: "",
+    names: "Togepi",
   },
-  176: {
+  "176": {
     types: ["Fairy", "Flying"],
     stats: [55, 40, 85, 80, 105, 40],
     abilities: [
@@ -4404,9 +4404,9 @@ let pkmnData: PokemonData = {
     name: "togetic",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Togetic",
   },
-  177: {
+  "177": {
     types: ["Psychic", "Flying"],
     stats: [40, 50, 45, 70, 45, 70],
     abilities: [
@@ -4431,9 +4431,9 @@ let pkmnData: PokemonData = {
     name: "natu",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Natu",
   },
-  178: {
+  "178": {
     types: ["Psychic", "Flying"],
     stats: [65, 75, 70, 95, 70, 95],
     abilities: [
@@ -4458,9 +4458,9 @@ let pkmnData: PokemonData = {
     name: "xatu",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Xatu",
   },
-  179: {
+  "179": {
     types: ["Electric", "None"],
     stats: [55, 40, 40, 65, 45, 35],
     abilities: [
@@ -4480,9 +4480,9 @@ let pkmnData: PokemonData = {
     name: "mareep",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Mareep",
   },
-  180: {
+  "180": {
     types: ["Electric", "None"],
     stats: [70, 55, 55, 80, 60, 45],
     abilities: [
@@ -4502,9 +4502,9 @@ let pkmnData: PokemonData = {
     name: "flaaffy",
     base_exp: 128,
     is_mega: false,
-    names: "",
+    names: "Flaaffy",
   },
-  181: {
+  "181": {
     types: ["Electric", "None"],
     stats: [90, 75, 85, 115, 90, 55],
     abilities: [
@@ -4524,9 +4524,9 @@ let pkmnData: PokemonData = {
     name: "ampharos",
     base_exp: 230,
     is_mega: false,
-    names: "",
+    names: "Ampharos",
   },
-  182: {
+  "182": {
     types: ["Grass", "None"],
     stats: [75, 80, 95, 90, 100, 50],
     abilities: [
@@ -4546,9 +4546,9 @@ let pkmnData: PokemonData = {
     name: "bellossom",
     base_exp: 245,
     is_mega: false,
-    names: "",
+    names: "Bellossom",
   },
-  183: {
+  "183": {
     types: ["Water", "Fairy"],
     stats: [70, 20, 50, 20, 50, 40],
     abilities: [
@@ -4573,9 +4573,9 @@ let pkmnData: PokemonData = {
     name: "marill",
     base_exp: 88,
     is_mega: false,
-    names: "",
+    names: "Marill",
   },
-  184: {
+  "184": {
     types: ["Water", "Fairy"],
     stats: [100, 50, 80, 60, 80, 50],
     abilities: [
@@ -4600,9 +4600,9 @@ let pkmnData: PokemonData = {
     name: "azumarill",
     base_exp: 210,
     is_mega: false,
-    names: "",
+    names: "Azumarill",
   },
-  185: {
+  "185": {
     types: ["Rock", "None"],
     stats: [70, 100, 115, 30, 65, 30],
     abilities: [
@@ -4627,9 +4627,9 @@ let pkmnData: PokemonData = {
     name: "sudowoodo",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Sudowoodo",
   },
-  186: {
+  "186": {
     types: ["Water", "None"],
     stats: [90, 75, 75, 90, 100, 70],
     abilities: [
@@ -4654,9 +4654,9 @@ let pkmnData: PokemonData = {
     name: "politoed",
     base_exp: 250,
     is_mega: false,
-    names: "",
+    names: "Politoed",
   },
-  187: {
+  "187": {
     types: ["Grass", "Flying"],
     stats: [35, 35, 40, 35, 55, 50],
     abilities: [
@@ -4681,9 +4681,9 @@ let pkmnData: PokemonData = {
     name: "hoppip",
     base_exp: 50,
     is_mega: false,
-    names: "",
+    names: "Hoppip",
   },
-  188: {
+  "188": {
     types: ["Grass", "Flying"],
     stats: [55, 45, 50, 45, 65, 80],
     abilities: [
@@ -4708,9 +4708,9 @@ let pkmnData: PokemonData = {
     name: "skiploom",
     base_exp: 119,
     is_mega: false,
-    names: "",
+    names: "Skiploom",
   },
-  189: {
+  "189": {
     types: ["Grass", "Flying"],
     stats: [75, 55, 70, 55, 95, 110],
     abilities: [
@@ -4735,9 +4735,9 @@ let pkmnData: PokemonData = {
     name: "jumpluff",
     base_exp: 207,
     is_mega: false,
-    names: "",
+    names: "Jumpluff",
   },
-  190: {
+  "190": {
     types: ["Normal", "None"],
     stats: [55, 70, 55, 40, 55, 85],
     abilities: [
@@ -4762,9 +4762,9 @@ let pkmnData: PokemonData = {
     name: "aipom",
     base_exp: 72,
     is_mega: false,
-    names: "",
+    names: "Aipom",
   },
-  191: {
+  "191": {
     types: ["Grass", "None"],
     stats: [30, 30, 30, 30, 30, 30],
     abilities: [
@@ -4789,9 +4789,9 @@ let pkmnData: PokemonData = {
     name: "sunkern",
     base_exp: 36,
     is_mega: false,
-    names: "",
+    names: "Sunkern",
   },
-  192: {
+  "192": {
     types: ["Grass", "None"],
     stats: [75, 75, 55, 105, 85, 30],
     abilities: [
@@ -4816,9 +4816,9 @@ let pkmnData: PokemonData = {
     name: "sunflora",
     base_exp: 149,
     is_mega: false,
-    names: "",
+    names: "Sunflora",
   },
-  193: {
+  "193": {
     types: ["Bug", "Flying"],
     stats: [65, 65, 45, 75, 45, 95],
     abilities: [
@@ -4843,9 +4843,9 @@ let pkmnData: PokemonData = {
     name: "yanma",
     base_exp: 78,
     is_mega: false,
-    names: "",
+    names: "Yanma",
   },
-  194: {
+  "194": {
     types: ["Water", "Ground"],
     stats: [55, 45, 45, 25, 25, 15],
     abilities: [
@@ -4870,9 +4870,9 @@ let pkmnData: PokemonData = {
     name: "wooper",
     base_exp: 42,
     is_mega: false,
-    names: "",
+    names: "Wooper",
   },
-  195: {
+  "195": {
     types: ["Water", "Ground"],
     stats: [95, 85, 85, 65, 65, 35],
     abilities: [
@@ -4897,9 +4897,9 @@ let pkmnData: PokemonData = {
     name: "quagsire",
     base_exp: 151,
     is_mega: false,
-    names: "",
+    names: "Quagsire",
   },
-  196: {
+  "196": {
     types: ["Psychic", "None"],
     stats: [65, 65, 60, 130, 95, 110],
     abilities: [
@@ -4919,9 +4919,9 @@ let pkmnData: PokemonData = {
     name: "espeon",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Espeon",
   },
-  197: {
+  "197": {
     types: ["Dark", "None"],
     stats: [95, 65, 110, 60, 130, 65],
     abilities: [
@@ -4941,9 +4941,9 @@ let pkmnData: PokemonData = {
     name: "umbreon",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Umbreon",
   },
-  198: {
+  "198": {
     types: ["Dark", "Flying"],
     stats: [60, 85, 42, 85, 42, 91],
     abilities: [
@@ -4968,9 +4968,9 @@ let pkmnData: PokemonData = {
     name: "murkrow",
     base_exp: 81,
     is_mega: false,
-    names: "",
+    names: "Murkrow",
   },
-  199: {
+  "199": {
     types: ["Water", "Psychic"],
     stats: [95, 75, 80, 100, 110, 30],
     abilities: [
@@ -4995,9 +4995,9 @@ let pkmnData: PokemonData = {
     name: "slowking",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Slowking",
   },
-  200: {
+  "200": {
     types: ["Ghost", "None"],
     stats: [60, 60, 60, 85, 85, 85],
     abilities: [
@@ -5012,9 +5012,9 @@ let pkmnData: PokemonData = {
     name: "misdreavus",
     base_exp: 87,
     is_mega: false,
-    names: "",
+    names: "Misdreavus",
   },
-  201: {
+  "201": {
     types: ["Psychic", "None"],
     stats: [48, 72, 48, 72, 48, 48],
     abilities: [
@@ -5058,9 +5058,9 @@ let pkmnData: PokemonData = {
     name: "unown",
     base_exp: 118,
     is_mega: false,
-    names: "Unown A",
+    names: "Unown",
   },
-  202: {
+  "202": {
     types: ["Psychic", "None"],
     stats: [190, 33, 58, 33, 58, 33],
     abilities: [
@@ -5080,9 +5080,9 @@ let pkmnData: PokemonData = {
     name: "wobbuffet",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Wobbuffet",
   },
-  203: {
+  "203": {
     types: ["Normal", "Psychic"],
     stats: [70, 80, 65, 90, 65, 85],
     abilities: [
@@ -5107,9 +5107,9 @@ let pkmnData: PokemonData = {
     name: "girafarig",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Girafarig",
   },
-  204: {
+  "204": {
     types: ["Bug", "None"],
     stats: [50, 65, 90, 35, 35, 15],
     abilities: [
@@ -5129,9 +5129,9 @@ let pkmnData: PokemonData = {
     name: "pineco",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Pineco",
   },
-  205: {
+  "205": {
     types: ["Bug", "Steel"],
     stats: [75, 90, 140, 60, 60, 40],
     abilities: [
@@ -5151,9 +5151,9 @@ let pkmnData: PokemonData = {
     name: "forretress",
     base_exp: 163,
     is_mega: false,
-    names: "",
+    names: "Forretress",
   },
-  206: {
+  "206": {
     types: ["Normal", "None"],
     stats: [100, 70, 70, 65, 65, 45],
     abilities: [
@@ -5178,9 +5178,9 @@ let pkmnData: PokemonData = {
     name: "dunsparce",
     base_exp: 145,
     is_mega: false,
-    names: "",
+    names: "Dunsparce",
   },
-  207: {
+  "207": {
     types: ["Ground", "Flying"],
     stats: [65, 75, 105, 35, 65, 85],
     abilities: [
@@ -5205,9 +5205,9 @@ let pkmnData: PokemonData = {
     name: "gligar",
     base_exp: 86,
     is_mega: false,
-    names: "",
+    names: "Gligar",
   },
-  208: {
+  "208": {
     types: ["Steel", "Ground"],
     stats: [75, 85, 200, 55, 65, 30],
     abilities: [
@@ -5232,9 +5232,9 @@ let pkmnData: PokemonData = {
     name: "steelix",
     base_exp: 179,
     is_mega: false,
-    names: "",
+    names: "Steelix",
   },
-  209: {
+  "209": {
     types: ["Fairy", "None"],
     stats: [60, 80, 50, 40, 40, 30],
     abilities: [
@@ -5259,9 +5259,9 @@ let pkmnData: PokemonData = {
     name: "snubbull",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Snubbull",
   },
-  210: {
+  "210": {
     types: ["Fairy", "None"],
     stats: [90, 120, 75, 60, 60, 45],
     abilities: [
@@ -5286,9 +5286,9 @@ let pkmnData: PokemonData = {
     name: "granbull",
     base_exp: 158,
     is_mega: false,
-    names: "",
+    names: "Granbull",
   },
-  211: {
+  "211": {
     types: ["Water", "Poison"],
     stats: [65, 95, 85, 55, 55, 85],
     abilities: [
@@ -5313,9 +5313,9 @@ let pkmnData: PokemonData = {
     name: "qwilfish",
     base_exp: 88,
     is_mega: false,
-    names: "",
+    names: "Qwilfish",
   },
-  212: {
+  "212": {
     types: ["Bug", "Steel"],
     stats: [70, 130, 100, 55, 80, 65],
     abilities: [
@@ -5340,9 +5340,9 @@ let pkmnData: PokemonData = {
     name: "scizor",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Scizor",
   },
-  213: {
+  "213": {
     types: ["Bug", "Rock"],
     stats: [20, 10, 230, 10, 230, 5],
     abilities: [
@@ -5367,9 +5367,9 @@ let pkmnData: PokemonData = {
     name: "shuckle",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Shuckle",
   },
-  214: {
+  "214": {
     types: ["Bug", "Fighting"],
     stats: [80, 125, 75, 40, 95, 85],
     abilities: [
@@ -5394,9 +5394,9 @@ let pkmnData: PokemonData = {
     name: "heracross",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Heracross",
   },
-  215: {
+  "215": {
     types: ["Dark", "Ice"],
     stats: [55, 95, 55, 35, 75, 115],
     abilities: [
@@ -5421,9 +5421,9 @@ let pkmnData: PokemonData = {
     name: "sneasel",
     base_exp: 86,
     is_mega: false,
-    names: "",
+    names: "Sneasel",
   },
-  216: {
+  "216": {
     types: ["Normal", "None"],
     stats: [60, 80, 50, 50, 50, 40],
     abilities: [
@@ -5448,9 +5448,9 @@ let pkmnData: PokemonData = {
     name: "teddiursa",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Teddiursa",
   },
-  217: {
+  "217": {
     types: ["Normal", "None"],
     stats: [90, 130, 75, 75, 75, 55],
     abilities: [
@@ -5475,9 +5475,9 @@ let pkmnData: PokemonData = {
     name: "ursaring",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Ursaring",
   },
-  218: {
+  "218": {
     types: ["Fire", "None"],
     stats: [40, 40, 40, 70, 40, 20],
     abilities: [
@@ -5502,9 +5502,9 @@ let pkmnData: PokemonData = {
     name: "slugma",
     base_exp: 50,
     is_mega: false,
-    names: "",
+    names: "Slugma",
   },
-  219: {
+  "219": {
     types: ["Fire", "Rock"],
     stats: [60, 50, 120, 90, 80, 30],
     abilities: [
@@ -5529,9 +5529,9 @@ let pkmnData: PokemonData = {
     name: "magcargo",
     base_exp: 151,
     is_mega: false,
-    names: "",
+    names: "Magcargo",
   },
-  220: {
+  "220": {
     types: ["Ice", "Ground"],
     stats: [50, 50, 40, 30, 30, 50],
     abilities: [
@@ -5556,9 +5556,9 @@ let pkmnData: PokemonData = {
     name: "swinub",
     base_exp: 50,
     is_mega: false,
-    names: "",
+    names: "Swinub",
   },
-  221: {
+  "221": {
     types: ["Ice", "Ground"],
     stats: [100, 100, 80, 60, 60, 50],
     abilities: [
@@ -5583,9 +5583,9 @@ let pkmnData: PokemonData = {
     name: "piloswine",
     base_exp: 158,
     is_mega: false,
-    names: "",
+    names: "Piloswine",
   },
-  222: {
+  "222": {
     types: ["Water", "Rock"],
     stats: [65, 55, 95, 65, 95, 35],
     abilities: [
@@ -5610,9 +5610,9 @@ let pkmnData: PokemonData = {
     name: "corsola",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Corsola",
   },
-  223: {
+  "223": {
     types: ["Water", "None"],
     stats: [35, 65, 35, 65, 35, 65],
     abilities: [
@@ -5637,9 +5637,9 @@ let pkmnData: PokemonData = {
     name: "remoraid",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Remoraid",
   },
-  224: {
+  "224": {
     types: ["Water", "None"],
     stats: [75, 105, 75, 105, 75, 45],
     abilities: [
@@ -5664,9 +5664,9 @@ let pkmnData: PokemonData = {
     name: "octillery",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Octillery",
   },
-  225: {
+  "225": {
     types: ["Ice", "Flying"],
     stats: [45, 55, 45, 65, 45, 75],
     abilities: [
@@ -5691,9 +5691,9 @@ let pkmnData: PokemonData = {
     name: "delibird",
     base_exp: 116,
     is_mega: false,
-    names: "",
+    names: "Delibird",
   },
-  226: {
+  "226": {
     types: ["Water", "Flying"],
     stats: [85, 40, 70, 80, 140, 70],
     abilities: [
@@ -5718,9 +5718,9 @@ let pkmnData: PokemonData = {
     name: "mantine",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Mantine",
   },
-  227: {
+  "227": {
     types: ["Steel", "Flying"],
     stats: [65, 80, 140, 40, 70, 70],
     abilities: [
@@ -5745,9 +5745,9 @@ let pkmnData: PokemonData = {
     name: "skarmory",
     base_exp: 163,
     is_mega: false,
-    names: "",
+    names: "Skarmory",
   },
-  228: {
+  "228": {
     types: ["Dark", "Fire"],
     stats: [45, 60, 30, 80, 50, 65],
     abilities: [
@@ -5772,9 +5772,9 @@ let pkmnData: PokemonData = {
     name: "houndour",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Houndour",
   },
-  229: {
+  "229": {
     types: ["Dark", "Fire"],
     stats: [75, 90, 50, 110, 80, 95],
     abilities: [
@@ -5799,9 +5799,9 @@ let pkmnData: PokemonData = {
     name: "houndoom",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Houndoom",
   },
-  230: {
+  "230": {
     types: ["Water", "Dragon"],
     stats: [75, 95, 95, 95, 95, 85],
     abilities: [
@@ -5826,9 +5826,9 @@ let pkmnData: PokemonData = {
     name: "kingdra",
     base_exp: 270,
     is_mega: false,
-    names: "",
+    names: "Kingdra",
   },
-  231: {
+  "231": {
     types: ["Ground", "None"],
     stats: [90, 60, 60, 40, 40, 40],
     abilities: [
@@ -5848,9 +5848,9 @@ let pkmnData: PokemonData = {
     name: "phanpy",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Phanpy",
   },
-  232: {
+  "232": {
     types: ["Ground", "None"],
     stats: [90, 120, 120, 60, 60, 50],
     abilities: [
@@ -5870,9 +5870,9 @@ let pkmnData: PokemonData = {
     name: "donphan",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Donphan",
   },
-  233: {
+  "233": {
     types: ["Normal", "None"],
     stats: [85, 80, 90, 105, 95, 60],
     abilities: [
@@ -5897,9 +5897,9 @@ let pkmnData: PokemonData = {
     name: "porygon2",
     base_exp: 180,
     is_mega: false,
-    names: "",
+    names: "Porygon2",
   },
-  234: {
+  "234": {
     types: ["Normal", "None"],
     stats: [73, 95, 62, 85, 65, 85],
     abilities: [
@@ -5924,9 +5924,9 @@ let pkmnData: PokemonData = {
     name: "stantler",
     base_exp: 163,
     is_mega: false,
-    names: "",
+    names: "Stantler",
   },
-  235: {
+  "235": {
     types: ["Normal", "None"],
     stats: [55, 20, 35, 20, 45, 75],
     abilities: [
@@ -5951,9 +5951,9 @@ let pkmnData: PokemonData = {
     name: "smeargle",
     base_exp: 88,
     is_mega: false,
-    names: "",
+    names: "Smeargle",
   },
-  236: {
+  "236": {
     types: ["Fighting", "None"],
     stats: [35, 35, 35, 35, 35, 35],
     abilities: [
@@ -5978,9 +5978,9 @@ let pkmnData: PokemonData = {
     name: "tyrogue",
     base_exp: 42,
     is_mega: false,
-    names: "",
+    names: "Tyrogue",
   },
-  237: {
+  "237": {
     types: ["Fighting", "None"],
     stats: [50, 95, 95, 35, 110, 70],
     abilities: [
@@ -6005,9 +6005,9 @@ let pkmnData: PokemonData = {
     name: "hitmontop",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Hitmontop",
   },
-  238: {
+  "238": {
     types: ["Ice", "Psychic"],
     stats: [45, 30, 15, 85, 65, 65],
     abilities: [
@@ -6032,9 +6032,9 @@ let pkmnData: PokemonData = {
     name: "smoochum",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Smoochum",
   },
-  239: {
+  "239": {
     types: ["Electric", "None"],
     stats: [45, 63, 37, 65, 55, 95],
     abilities: [
@@ -6054,9 +6054,9 @@ let pkmnData: PokemonData = {
     name: "elekid",
     base_exp: 72,
     is_mega: false,
-    names: "",
+    names: "Elekid",
   },
-  240: {
+  "240": {
     types: ["Fire", "None"],
     stats: [45, 75, 37, 70, 55, 83],
     abilities: [
@@ -6076,9 +6076,9 @@ let pkmnData: PokemonData = {
     name: "magby",
     base_exp: 73,
     is_mega: false,
-    names: "",
+    names: "Magby",
   },
-  241: {
+  "241": {
     types: ["Normal", "None"],
     stats: [95, 80, 105, 40, 70, 100],
     abilities: [
@@ -6103,9 +6103,9 @@ let pkmnData: PokemonData = {
     name: "miltank",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Miltank",
   },
-  242: {
+  "242": {
     types: ["Normal", "None"],
     stats: [255, 10, 10, 75, 135, 55],
     abilities: [
@@ -6130,9 +6130,9 @@ let pkmnData: PokemonData = {
     name: "blissey",
     base_exp: 635,
     is_mega: false,
-    names: "",
+    names: "Blissey",
   },
-  243: {
+  "243": {
     types: ["Electric", "None"],
     stats: [90, 85, 75, 115, 100, 115],
     abilities: [
@@ -6152,9 +6152,9 @@ let pkmnData: PokemonData = {
     name: "raikou",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Raikou",
   },
-  244: {
+  "244": {
     types: ["Fire", "None"],
     stats: [115, 115, 85, 90, 75, 100],
     abilities: [
@@ -6174,9 +6174,9 @@ let pkmnData: PokemonData = {
     name: "entei",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Entei",
   },
-  245: {
+  "245": {
     types: ["Water", "None"],
     stats: [100, 75, 115, 90, 115, 85],
     abilities: [
@@ -6196,9 +6196,9 @@ let pkmnData: PokemonData = {
     name: "suicune",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Suicune",
   },
-  246: {
+  "246": {
     types: ["Rock", "Ground"],
     stats: [50, 64, 50, 45, 50, 41],
     abilities: [
@@ -6218,9 +6218,9 @@ let pkmnData: PokemonData = {
     name: "larvitar",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Larvitar",
   },
-  247: {
+  "247": {
     types: ["Rock", "Ground"],
     stats: [70, 84, 70, 65, 70, 51],
     abilities: [
@@ -6235,9 +6235,9 @@ let pkmnData: PokemonData = {
     name: "pupitar",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Pupitar",
   },
-  248: {
+  "248": {
     types: ["Rock", "Dark"],
     stats: [100, 134, 110, 95, 100, 61],
     abilities: [
@@ -6257,9 +6257,9 @@ let pkmnData: PokemonData = {
     name: "tyranitar",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Tyranitar",
   },
-  249: {
+  "249": {
     types: ["Psychic", "Flying"],
     stats: [106, 90, 130, 90, 154, 110],
     abilities: [
@@ -6279,9 +6279,9 @@ let pkmnData: PokemonData = {
     name: "lugia",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Lugia",
   },
-  250: {
+  "250": {
     types: ["Fire", "Flying"],
     stats: [106, 130, 90, 110, 154, 90],
     abilities: [
@@ -6301,9 +6301,9 @@ let pkmnData: PokemonData = {
     name: "ho-oh",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Ho-Oh",
   },
-  251: {
+  "251": {
     types: ["Psychic", "Grass"],
     stats: [100, 100, 100, 100, 100, 100],
     abilities: [
@@ -6318,9 +6318,9 @@ let pkmnData: PokemonData = {
     name: "celebi",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Celebi",
   },
-  252: {
+  "252": {
     types: ["Grass", "None"],
     stats: [40, 45, 35, 65, 55, 70],
     abilities: [
@@ -6340,9 +6340,9 @@ let pkmnData: PokemonData = {
     name: "treecko",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Treecko",
   },
-  253: {
+  "253": {
     types: ["Grass", "None"],
     stats: [50, 65, 45, 85, 65, 95],
     abilities: [
@@ -6362,9 +6362,9 @@ let pkmnData: PokemonData = {
     name: "grovyle",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Grovyle",
   },
-  254: {
+  "254": {
     types: ["Grass", "None"],
     stats: [70, 85, 65, 105, 85, 120],
     abilities: [
@@ -6384,9 +6384,9 @@ let pkmnData: PokemonData = {
     name: "sceptile",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Sceptile",
   },
-  255: {
+  "255": {
     types: ["Fire", "None"],
     stats: [45, 60, 40, 70, 50, 45],
     abilities: [
@@ -6406,9 +6406,9 @@ let pkmnData: PokemonData = {
     name: "torchic",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Torchic",
   },
-  256: {
+  "256": {
     types: ["Fire", "Fighting"],
     stats: [60, 85, 60, 85, 60, 55],
     abilities: [
@@ -6428,9 +6428,9 @@ let pkmnData: PokemonData = {
     name: "combusken",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Combusken",
   },
-  257: {
+  "257": {
     types: ["Fire", "Fighting"],
     stats: [80, 120, 70, 110, 70, 80],
     abilities: [
@@ -6450,9 +6450,9 @@ let pkmnData: PokemonData = {
     name: "blaziken",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Blaziken",
   },
-  258: {
+  "258": {
     types: ["Water", "None"],
     stats: [50, 70, 50, 50, 50, 40],
     abilities: [
@@ -6472,9 +6472,9 @@ let pkmnData: PokemonData = {
     name: "mudkip",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Mudkip",
   },
-  259: {
+  "259": {
     types: ["Water", "Ground"],
     stats: [70, 85, 70, 60, 70, 50],
     abilities: [
@@ -6494,9 +6494,9 @@ let pkmnData: PokemonData = {
     name: "marshtomp",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Marshtomp",
   },
-  260: {
+  "260": {
     types: ["Water", "Ground"],
     stats: [100, 110, 90, 85, 90, 60],
     abilities: [
@@ -6516,9 +6516,9 @@ let pkmnData: PokemonData = {
     name: "swampert",
     base_exp: 268,
     is_mega: false,
-    names: "",
+    names: "Swampert",
   },
-  261: {
+  "261": {
     types: ["Dark", "None"],
     stats: [35, 55, 35, 30, 30, 35],
     abilities: [
@@ -6543,9 +6543,9 @@ let pkmnData: PokemonData = {
     name: "poochyena",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Poochyena",
   },
-  262: {
+  "262": {
     types: ["Dark", "None"],
     stats: [70, 90, 70, 60, 60, 70],
     abilities: [
@@ -6570,9 +6570,9 @@ let pkmnData: PokemonData = {
     name: "mightyena",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Mightyena",
   },
-  263: {
+  "263": {
     types: ["Normal", "None"],
     stats: [38, 30, 41, 30, 41, 60],
     abilities: [
@@ -6597,9 +6597,9 @@ let pkmnData: PokemonData = {
     name: "zigzagoon",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Zigzagoon",
   },
-  264: {
+  "264": {
     types: ["Normal", "None"],
     stats: [78, 70, 61, 50, 61, 100],
     abilities: [
@@ -6624,9 +6624,9 @@ let pkmnData: PokemonData = {
     name: "linoone",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Linoone",
   },
-  265: {
+  "265": {
     types: ["Bug", "None"],
     stats: [45, 45, 35, 20, 30, 20],
     abilities: [
@@ -6646,9 +6646,9 @@ let pkmnData: PokemonData = {
     name: "wurmple",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Wurmple",
   },
-  266: {
+  "266": {
     types: ["Bug", "None"],
     stats: [50, 35, 55, 25, 25, 15],
     abilities: [
@@ -6663,9 +6663,9 @@ let pkmnData: PokemonData = {
     name: "silcoon",
     base_exp: 72,
     is_mega: false,
-    names: "",
+    names: "Silcoon",
   },
-  267: {
+  "267": {
     types: ["Bug", "Flying"],
     stats: [60, 70, 50, 100, 50, 65],
     abilities: [
@@ -6685,9 +6685,9 @@ let pkmnData: PokemonData = {
     name: "beautifly",
     base_exp: 178,
     is_mega: false,
-    names: "",
+    names: "Beautifly",
   },
-  268: {
+  "268": {
     types: ["Bug", "None"],
     stats: [50, 35, 55, 25, 25, 15],
     abilities: [
@@ -6702,9 +6702,9 @@ let pkmnData: PokemonData = {
     name: "cascoon",
     base_exp: 72,
     is_mega: false,
-    names: "",
+    names: "Cascoon",
   },
-  269: {
+  "269": {
     types: ["Bug", "Poison"],
     stats: [60, 50, 70, 50, 90, 65],
     abilities: [
@@ -6724,9 +6724,9 @@ let pkmnData: PokemonData = {
     name: "dustox",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Dustox",
   },
-  270: {
+  "270": {
     types: ["Water", "Grass"],
     stats: [40, 30, 30, 40, 50, 30],
     abilities: [
@@ -6751,9 +6751,9 @@ let pkmnData: PokemonData = {
     name: "lotad",
     base_exp: 44,
     is_mega: false,
-    names: "",
+    names: "Lotad",
   },
-  271: {
+  "271": {
     types: ["Water", "Grass"],
     stats: [60, 50, 50, 60, 70, 50],
     abilities: [
@@ -6778,9 +6778,9 @@ let pkmnData: PokemonData = {
     name: "lombre",
     base_exp: 119,
     is_mega: false,
-    names: "",
+    names: "Lombre",
   },
-  272: {
+  "272": {
     types: ["Water", "Grass"],
     stats: [80, 70, 70, 90, 100, 70],
     abilities: [
@@ -6805,9 +6805,9 @@ let pkmnData: PokemonData = {
     name: "ludicolo",
     base_exp: 240,
     is_mega: false,
-    names: "",
+    names: "Ludicolo",
   },
-  273: {
+  "273": {
     types: ["Grass", "None"],
     stats: [40, 40, 50, 30, 30, 30],
     abilities: [
@@ -6832,9 +6832,9 @@ let pkmnData: PokemonData = {
     name: "seedot",
     base_exp: 44,
     is_mega: false,
-    names: "",
+    names: "Seedot",
   },
-  274: {
+  "274": {
     types: ["Grass", "Dark"],
     stats: [70, 70, 40, 60, 40, 60],
     abilities: [
@@ -6859,9 +6859,9 @@ let pkmnData: PokemonData = {
     name: "nuzleaf",
     base_exp: 119,
     is_mega: false,
-    names: "",
+    names: "Nuzleaf",
   },
-  275: {
+  "275": {
     types: ["Grass", "Dark"],
     stats: [90, 100, 60, 90, 60, 80],
     abilities: [
@@ -6886,9 +6886,9 @@ let pkmnData: PokemonData = {
     name: "shiftry",
     base_exp: 240,
     is_mega: false,
-    names: "",
+    names: "Shiftry",
   },
-  276: {
+  "276": {
     types: ["Normal", "Flying"],
     stats: [40, 55, 30, 30, 30, 85],
     abilities: [
@@ -6908,9 +6908,9 @@ let pkmnData: PokemonData = {
     name: "taillow",
     base_exp: 54,
     is_mega: false,
-    names: "",
+    names: "Taillow",
   },
-  277: {
+  "277": {
     types: ["Normal", "Flying"],
     stats: [60, 85, 60, 75, 50, 125],
     abilities: [
@@ -6930,9 +6930,9 @@ let pkmnData: PokemonData = {
     name: "swellow",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Swellow",
   },
-  278: {
+  "278": {
     types: ["Water", "Flying"],
     stats: [40, 30, 30, 55, 30, 85],
     abilities: [
@@ -6957,9 +6957,9 @@ let pkmnData: PokemonData = {
     name: "wingull",
     base_exp: 54,
     is_mega: false,
-    names: "",
+    names: "Wingull",
   },
-  279: {
+  "279": {
     types: ["Water", "Flying"],
     stats: [60, 50, 100, 95, 70, 65],
     abilities: [
@@ -6984,9 +6984,9 @@ let pkmnData: PokemonData = {
     name: "pelipper",
     base_exp: 154,
     is_mega: false,
-    names: "",
+    names: "Pelipper",
   },
-  280: {
+  "280": {
     types: ["Psychic", "Fairy"],
     stats: [28, 25, 25, 45, 35, 40],
     abilities: [
@@ -7011,9 +7011,9 @@ let pkmnData: PokemonData = {
     name: "ralts",
     base_exp: 40,
     is_mega: false,
-    names: "",
+    names: "Ralts",
   },
-  281: {
+  "281": {
     types: ["Psychic", "Fairy"],
     stats: [38, 35, 35, 65, 55, 50],
     abilities: [
@@ -7038,9 +7038,9 @@ let pkmnData: PokemonData = {
     name: "kirlia",
     base_exp: 97,
     is_mega: false,
-    names: "",
+    names: "Kirlia",
   },
-  282: {
+  "282": {
     types: ["Psychic", "Fairy"],
     stats: [68, 65, 65, 125, 115, 80],
     abilities: [
@@ -7065,9 +7065,9 @@ let pkmnData: PokemonData = {
     name: "gardevoir",
     base_exp: 259,
     is_mega: false,
-    names: "",
+    names: "Gardevoir",
   },
-  283: {
+  "283": {
     types: ["Bug", "Water"],
     stats: [40, 30, 32, 50, 52, 65],
     abilities: [
@@ -7087,9 +7087,9 @@ let pkmnData: PokemonData = {
     name: "surskit",
     base_exp: 54,
     is_mega: false,
-    names: "",
+    names: "Surskit",
   },
-  284: {
+  "284": {
     types: ["Bug", "Flying"],
     stats: [70, 60, 62, 100, 82, 80],
     abilities: [
@@ -7109,9 +7109,9 @@ let pkmnData: PokemonData = {
     name: "masquerain",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Masquerain",
   },
-  285: {
+  "285": {
     types: ["Grass", "None"],
     stats: [60, 40, 60, 40, 60, 35],
     abilities: [
@@ -7136,9 +7136,9 @@ let pkmnData: PokemonData = {
     name: "shroomish",
     base_exp: 59,
     is_mega: false,
-    names: "",
+    names: "Shroomish",
   },
-  286: {
+  "286": {
     types: ["Grass", "Fighting"],
     stats: [60, 130, 80, 60, 60, 70],
     abilities: [
@@ -7163,9 +7163,9 @@ let pkmnData: PokemonData = {
     name: "breloom",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Breloom",
   },
-  287: {
+  "287": {
     types: ["Normal", "None"],
     stats: [60, 60, 60, 35, 35, 30],
     abilities: [
@@ -7180,9 +7180,9 @@ let pkmnData: PokemonData = {
     name: "slakoth",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Slakoth",
   },
-  288: {
+  "288": {
     types: ["Normal", "None"],
     stats: [80, 80, 80, 55, 55, 90],
     abilities: [
@@ -7197,9 +7197,9 @@ let pkmnData: PokemonData = {
     name: "vigoroth",
     base_exp: 154,
     is_mega: false,
-    names: "",
+    names: "Vigoroth",
   },
-  289: {
+  "289": {
     types: ["Normal", "None"],
     stats: [150, 160, 100, 95, 65, 100],
     abilities: [
@@ -7214,9 +7214,9 @@ let pkmnData: PokemonData = {
     name: "slaking",
     base_exp: 252,
     is_mega: false,
-    names: "",
+    names: "Slaking",
   },
-  290: {
+  "290": {
     types: ["Bug", "Ground"],
     stats: [31, 45, 90, 30, 30, 40],
     abilities: [
@@ -7236,9 +7236,9 @@ let pkmnData: PokemonData = {
     name: "nincada",
     base_exp: 53,
     is_mega: false,
-    names: "",
+    names: "Nincada",
   },
-  291: {
+  "291": {
     types: ["Bug", "Flying"],
     stats: [61, 90, 45, 50, 50, 160],
     abilities: [
@@ -7258,9 +7258,9 @@ let pkmnData: PokemonData = {
     name: "ninjask",
     base_exp: 160,
     is_mega: false,
-    names: "",
+    names: "Ninjask",
   },
-  292: {
+  "292": {
     types: ["Bug", "Ghost"],
     stats: [1, 90, 45, 30, 30, 40],
     abilities: [
@@ -7275,9 +7275,9 @@ let pkmnData: PokemonData = {
     name: "shedinja",
     base_exp: 83,
     is_mega: false,
-    names: "",
+    names: "Shedinja",
   },
-  293: {
+  "293": {
     types: ["Normal", "None"],
     stats: [64, 51, 23, 51, 23, 28],
     abilities: [
@@ -7297,9 +7297,9 @@ let pkmnData: PokemonData = {
     name: "whismur",
     base_exp: 48,
     is_mega: false,
-    names: "",
+    names: "Whismur",
   },
-  294: {
+  "294": {
     types: ["Normal", "None"],
     stats: [84, 71, 43, 71, 43, 48],
     abilities: [
@@ -7319,9 +7319,9 @@ let pkmnData: PokemonData = {
     name: "loudred",
     base_exp: 126,
     is_mega: false,
-    names: "",
+    names: "Loudred",
   },
-  295: {
+  "295": {
     types: ["Normal", "None"],
     stats: [104, 91, 63, 91, 73, 68],
     abilities: [
@@ -7341,9 +7341,9 @@ let pkmnData: PokemonData = {
     name: "exploud",
     base_exp: 245,
     is_mega: false,
-    names: "",
+    names: "Exploud",
   },
-  296: {
+  "296": {
     types: ["Fighting", "None"],
     stats: [72, 60, 30, 20, 30, 25],
     abilities: [
@@ -7368,9 +7368,9 @@ let pkmnData: PokemonData = {
     name: "makuhita",
     base_exp: 47,
     is_mega: false,
-    names: "",
+    names: "Makuhita",
   },
-  297: {
+  "297": {
     types: ["Fighting", "None"],
     stats: [144, 120, 60, 40, 60, 50],
     abilities: [
@@ -7395,9 +7395,9 @@ let pkmnData: PokemonData = {
     name: "hariyama",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Hariyama",
   },
-  298: {
+  "298": {
     types: ["Normal", "Fairy"],
     stats: [50, 20, 40, 20, 40, 20],
     abilities: [
@@ -7422,9 +7422,9 @@ let pkmnData: PokemonData = {
     name: "azurill",
     base_exp: 38,
     is_mega: false,
-    names: "",
+    names: "Azurill",
   },
-  299: {
+  "299": {
     types: ["Rock", "None"],
     stats: [30, 45, 135, 45, 90, 30],
     abilities: [
@@ -7449,9 +7449,9 @@ let pkmnData: PokemonData = {
     name: "nosepass",
     base_exp: 75,
     is_mega: false,
-    names: "",
+    names: "Nosepass",
   },
-  300: {
+  "300": {
     types: ["Normal", "None"],
     stats: [50, 45, 45, 35, 35, 50],
     abilities: [
@@ -7476,9 +7476,9 @@ let pkmnData: PokemonData = {
     name: "skitty",
     base_exp: 52,
     is_mega: false,
-    names: "",
+    names: "Skitty",
   },
-  301: {
+  "301": {
     types: ["Normal", "None"],
     stats: [70, 65, 65, 55, 55, 90],
     abilities: [
@@ -7503,9 +7503,9 @@ let pkmnData: PokemonData = {
     name: "delcatty",
     base_exp: 140,
     is_mega: false,
-    names: "",
+    names: "Delcatty",
   },
-  302: {
+  "302": {
     types: ["Dark", "Ghost"],
     stats: [50, 75, 75, 65, 65, 50],
     abilities: [
@@ -7530,9 +7530,9 @@ let pkmnData: PokemonData = {
     name: "sableye",
     base_exp: 133,
     is_mega: false,
-    names: "",
+    names: "Sableye",
   },
-  303: {
+  "303": {
     types: ["Steel", "Fairy"],
     stats: [50, 85, 85, 55, 55, 50],
     abilities: [
@@ -7557,9 +7557,9 @@ let pkmnData: PokemonData = {
     name: "mawile",
     base_exp: 133,
     is_mega: false,
-    names: "",
+    names: "Mawile",
   },
-  304: {
+  "304": {
     types: ["Steel", "Rock"],
     stats: [50, 70, 100, 40, 40, 30],
     abilities: [
@@ -7584,9 +7584,9 @@ let pkmnData: PokemonData = {
     name: "aron",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Aron",
   },
-  305: {
+  "305": {
     types: ["Steel", "Rock"],
     stats: [60, 90, 140, 50, 50, 40],
     abilities: [
@@ -7611,9 +7611,9 @@ let pkmnData: PokemonData = {
     name: "lairon",
     base_exp: 151,
     is_mega: false,
-    names: "",
+    names: "Lairon",
   },
-  306: {
+  "306": {
     types: ["Steel", "Rock"],
     stats: [70, 110, 180, 60, 60, 50],
     abilities: [
@@ -7638,9 +7638,9 @@ let pkmnData: PokemonData = {
     name: "aggron",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Aggron",
   },
-  307: {
+  "307": {
     types: ["Fighting", "Psychic"],
     stats: [30, 40, 55, 40, 55, 60],
     abilities: [
@@ -7660,9 +7660,9 @@ let pkmnData: PokemonData = {
     name: "meditite",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Meditite",
   },
-  308: {
+  "308": {
     types: ["Fighting", "Psychic"],
     stats: [60, 60, 75, 60, 75, 80],
     abilities: [
@@ -7682,9 +7682,9 @@ let pkmnData: PokemonData = {
     name: "medicham",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Medicham",
   },
-  309: {
+  "309": {
     types: ["Electric", "None"],
     stats: [40, 45, 40, 65, 40, 65],
     abilities: [
@@ -7709,9 +7709,9 @@ let pkmnData: PokemonData = {
     name: "electrike",
     base_exp: 59,
     is_mega: false,
-    names: "",
+    names: "Electrike",
   },
-  310: {
+  "310": {
     types: ["Electric", "None"],
     stats: [70, 75, 60, 105, 60, 105],
     abilities: [
@@ -7736,9 +7736,9 @@ let pkmnData: PokemonData = {
     name: "manectric",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Manectric",
   },
-  311: {
+  "311": {
     types: ["Electric", "None"],
     stats: [60, 50, 40, 85, 75, 95],
     abilities: [
@@ -7758,9 +7758,9 @@ let pkmnData: PokemonData = {
     name: "plusle",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Plusle",
   },
-  312: {
+  "312": {
     types: ["Electric", "None"],
     stats: [60, 40, 50, 75, 85, 95],
     abilities: [
@@ -7780,9 +7780,9 @@ let pkmnData: PokemonData = {
     name: "minun",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Minun",
   },
-  313: {
+  "313": {
     types: ["Bug", "None"],
     stats: [65, 73, 75, 47, 85, 85],
     abilities: [
@@ -7807,9 +7807,9 @@ let pkmnData: PokemonData = {
     name: "volbeat",
     base_exp: 151,
     is_mega: false,
-    names: "",
+    names: "Volbeat",
   },
-  314: {
+  "314": {
     types: ["Bug", "None"],
     stats: [65, 47, 75, 73, 85, 85],
     abilities: [
@@ -7834,9 +7834,9 @@ let pkmnData: PokemonData = {
     name: "illumise",
     base_exp: 151,
     is_mega: false,
-    names: "",
+    names: "Illumise",
   },
-  315: {
+  "315": {
     types: ["Grass", "Poison"],
     stats: [50, 60, 45, 100, 80, 65],
     abilities: [
@@ -7861,9 +7861,9 @@ let pkmnData: PokemonData = {
     name: "roselia",
     base_exp: 140,
     is_mega: false,
-    names: "",
+    names: "Roselia",
   },
-  316: {
+  "316": {
     types: ["Poison", "None"],
     stats: [70, 43, 53, 43, 53, 40],
     abilities: [
@@ -7888,9 +7888,9 @@ let pkmnData: PokemonData = {
     name: "gulpin",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Gulpin",
   },
-  317: {
+  "317": {
     types: ["Poison", "None"],
     stats: [100, 73, 83, 73, 83, 55],
     abilities: [
@@ -7915,9 +7915,9 @@ let pkmnData: PokemonData = {
     name: "swalot",
     base_exp: 163,
     is_mega: false,
-    names: "",
+    names: "Swalot",
   },
-  318: {
+  "318": {
     types: ["Water", "Dark"],
     stats: [45, 90, 20, 65, 20, 65],
     abilities: [
@@ -7937,9 +7937,9 @@ let pkmnData: PokemonData = {
     name: "carvanha",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Carvanha",
   },
-  319: {
+  "319": {
     types: ["Water", "Dark"],
     stats: [70, 120, 40, 95, 40, 95],
     abilities: [
@@ -7959,9 +7959,9 @@ let pkmnData: PokemonData = {
     name: "sharpedo",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Sharpedo",
   },
-  320: {
+  "320": {
     types: ["Water", "None"],
     stats: [130, 70, 35, 70, 35, 60],
     abilities: [
@@ -7986,9 +7986,9 @@ let pkmnData: PokemonData = {
     name: "wailmer",
     base_exp: 80,
     is_mega: false,
-    names: "",
+    names: "Wailmer",
   },
-  321: {
+  "321": {
     types: ["Water", "None"],
     stats: [170, 90, 45, 90, 45, 60],
     abilities: [
@@ -8013,9 +8013,9 @@ let pkmnData: PokemonData = {
     name: "wailord",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Wailord",
   },
-  322: {
+  "322": {
     types: ["Fire", "Ground"],
     stats: [60, 60, 40, 65, 45, 35],
     abilities: [
@@ -8040,9 +8040,9 @@ let pkmnData: PokemonData = {
     name: "numel",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Numel",
   },
-  323: {
+  "323": {
     types: ["Fire", "Ground"],
     stats: [70, 100, 70, 105, 75, 40],
     abilities: [
@@ -8067,9 +8067,9 @@ let pkmnData: PokemonData = {
     name: "camerupt",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Camerupt",
   },
-  324: {
+  "324": {
     types: ["Fire", "None"],
     stats: [70, 85, 140, 85, 70, 20],
     abilities: [
@@ -8094,9 +8094,9 @@ let pkmnData: PokemonData = {
     name: "torkoal",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Torkoal",
   },
-  325: {
+  "325": {
     types: ["Psychic", "None"],
     stats: [60, 25, 35, 70, 80, 60],
     abilities: [
@@ -8121,9 +8121,9 @@ let pkmnData: PokemonData = {
     name: "spoink",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Spoink",
   },
-  326: {
+  "326": {
     types: ["Psychic", "None"],
     stats: [80, 45, 65, 90, 110, 80],
     abilities: [
@@ -8148,9 +8148,9 @@ let pkmnData: PokemonData = {
     name: "grumpig",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Grumpig",
   },
-  327: {
+  "327": {
     types: ["Normal", "None"],
     stats: [60, 60, 60, 60, 60, 60],
     abilities: [
@@ -8175,9 +8175,9 @@ let pkmnData: PokemonData = {
     name: "spinda",
     base_exp: 126,
     is_mega: false,
-    names: "",
+    names: "Spinda",
   },
-  328: {
+  "328": {
     types: ["Ground", "None"],
     stats: [45, 100, 45, 45, 45, 10],
     abilities: [
@@ -8202,9 +8202,9 @@ let pkmnData: PokemonData = {
     name: "trapinch",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Trapinch",
   },
-  329: {
+  "329": {
     types: ["Ground", "Dragon"],
     stats: [50, 70, 50, 50, 50, 70],
     abilities: [
@@ -8219,9 +8219,9 @@ let pkmnData: PokemonData = {
     name: "vibrava",
     base_exp: 119,
     is_mega: false,
-    names: "",
+    names: "Vibrava",
   },
-  330: {
+  "330": {
     types: ["Ground", "Dragon"],
     stats: [80, 100, 80, 80, 80, 100],
     abilities: [
@@ -8236,9 +8236,9 @@ let pkmnData: PokemonData = {
     name: "flygon",
     base_exp: 260,
     is_mega: false,
-    names: "",
+    names: "Flygon",
   },
-  331: {
+  "331": {
     types: ["Grass", "None"],
     stats: [50, 85, 40, 85, 40, 35],
     abilities: [
@@ -8258,9 +8258,9 @@ let pkmnData: PokemonData = {
     name: "cacnea",
     base_exp: 67,
     is_mega: false,
-    names: "",
+    names: "Cacnea",
   },
-  332: {
+  "332": {
     types: ["Grass", "Dark"],
     stats: [70, 115, 60, 115, 60, 55],
     abilities: [
@@ -8280,9 +8280,9 @@ let pkmnData: PokemonData = {
     name: "cacturne",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Cacturne",
   },
-  333: {
+  "333": {
     types: ["Normal", "Flying"],
     stats: [45, 40, 60, 40, 75, 50],
     abilities: [
@@ -8302,9 +8302,9 @@ let pkmnData: PokemonData = {
     name: "swablu",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Swablu",
   },
-  334: {
+  "334": {
     types: ["Dragon", "Flying"],
     stats: [75, 70, 90, 70, 105, 80],
     abilities: [
@@ -8324,9 +8324,9 @@ let pkmnData: PokemonData = {
     name: "altaria",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Altaria",
   },
-  335: {
+  "335": {
     types: ["Normal", "None"],
     stats: [73, 115, 60, 60, 60, 90],
     abilities: [
@@ -8346,9 +8346,9 @@ let pkmnData: PokemonData = {
     name: "zangoose",
     base_exp: 160,
     is_mega: false,
-    names: "",
+    names: "Zangoose",
   },
-  336: {
+  "336": {
     types: ["Poison", "None"],
     stats: [73, 100, 60, 100, 60, 65],
     abilities: [
@@ -8368,9 +8368,9 @@ let pkmnData: PokemonData = {
     name: "seviper",
     base_exp: 160,
     is_mega: false,
-    names: "",
+    names: "Seviper",
   },
-  337: {
+  "337": {
     types: ["Rock", "Psychic"],
     stats: [90, 55, 65, 95, 85, 70],
     abilities: [
@@ -8385,9 +8385,9 @@ let pkmnData: PokemonData = {
     name: "lunatone",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Lunatone",
   },
-  338: {
+  "338": {
     types: ["Rock", "Psychic"],
     stats: [90, 95, 85, 55, 65, 70],
     abilities: [
@@ -8402,9 +8402,9 @@ let pkmnData: PokemonData = {
     name: "solrock",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Solrock",
   },
-  339: {
+  "339": {
     types: ["Water", "Ground"],
     stats: [50, 48, 43, 46, 41, 60],
     abilities: [
@@ -8429,9 +8429,9 @@ let pkmnData: PokemonData = {
     name: "barboach",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Barboach",
   },
-  340: {
+  "340": {
     types: ["Water", "Ground"],
     stats: [110, 78, 73, 76, 71, 60],
     abilities: [
@@ -8456,9 +8456,9 @@ let pkmnData: PokemonData = {
     name: "whiscash",
     base_exp: 164,
     is_mega: false,
-    names: "",
+    names: "Whiscash",
   },
-  341: {
+  "341": {
     types: ["Water", "None"],
     stats: [43, 80, 65, 50, 35, 35],
     abilities: [
@@ -8483,9 +8483,9 @@ let pkmnData: PokemonData = {
     name: "corphish",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Corphish",
   },
-  342: {
+  "342": {
     types: ["Water", "Dark"],
     stats: [63, 120, 85, 90, 55, 55],
     abilities: [
@@ -8510,9 +8510,9 @@ let pkmnData: PokemonData = {
     name: "crawdaunt",
     base_exp: 164,
     is_mega: false,
-    names: "",
+    names: "Crawdaunt",
   },
-  343: {
+  "343": {
     types: ["Ground", "Psychic"],
     stats: [40, 40, 55, 40, 70, 55],
     abilities: [
@@ -8527,9 +8527,9 @@ let pkmnData: PokemonData = {
     name: "baltoy",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Baltoy",
   },
-  344: {
+  "344": {
     types: ["Ground", "Psychic"],
     stats: [60, 70, 105, 70, 120, 75],
     abilities: [
@@ -8544,9 +8544,9 @@ let pkmnData: PokemonData = {
     name: "claydol",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Claydol",
   },
-  345: {
+  "345": {
     types: ["Rock", "Grass"],
     stats: [66, 41, 77, 61, 87, 23],
     abilities: [
@@ -8566,9 +8566,9 @@ let pkmnData: PokemonData = {
     name: "lileep",
     base_exp: 71,
     is_mega: false,
-    names: "",
+    names: "Lileep",
   },
-  346: {
+  "346": {
     types: ["Rock", "Grass"],
     stats: [86, 81, 97, 81, 107, 43],
     abilities: [
@@ -8588,9 +8588,9 @@ let pkmnData: PokemonData = {
     name: "cradily",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Cradily",
   },
-  347: {
+  "347": {
     types: ["Rock", "Bug"],
     stats: [45, 95, 50, 40, 50, 75],
     abilities: [
@@ -8610,9 +8610,9 @@ let pkmnData: PokemonData = {
     name: "anorith",
     base_exp: 71,
     is_mega: false,
-    names: "",
+    names: "Anorith",
   },
-  348: {
+  "348": {
     types: ["Rock", "Bug"],
     stats: [75, 125, 100, 70, 80, 45],
     abilities: [
@@ -8632,9 +8632,9 @@ let pkmnData: PokemonData = {
     name: "armaldo",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Armaldo",
   },
-  349: {
+  "349": {
     types: ["Water", "None"],
     stats: [20, 15, 20, 10, 55, 80],
     abilities: [
@@ -8659,9 +8659,9 @@ let pkmnData: PokemonData = {
     name: "feebas",
     base_exp: 40,
     is_mega: false,
-    names: "",
+    names: "Feebas",
   },
-  350: {
+  "350": {
     types: ["Water", "None"],
     stats: [95, 60, 79, 100, 125, 81],
     abilities: [
@@ -8686,9 +8686,9 @@ let pkmnData: PokemonData = {
     name: "milotic",
     base_exp: 189,
     is_mega: false,
-    names: "",
+    names: "Milotic",
   },
-  351: {
+  "351": {
     types: ["Normal", "None"],
     stats: [70, 70, 70, 70, 70, 70],
     abilities: [
@@ -8703,9 +8703,9 @@ let pkmnData: PokemonData = {
     name: "castform",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Castform",
   },
-  352: {
+  "352": {
     types: ["Normal", "None"],
     stats: [60, 90, 70, 60, 120, 40],
     abilities: [
@@ -8725,9 +8725,9 @@ let pkmnData: PokemonData = {
     name: "kecleon",
     base_exp: 154,
     is_mega: false,
-    names: "",
+    names: "Kecleon",
   },
-  353: {
+  "353": {
     types: ["Ghost", "None"],
     stats: [44, 75, 35, 63, 33, 45],
     abilities: [
@@ -8752,9 +8752,9 @@ let pkmnData: PokemonData = {
     name: "shuppet",
     base_exp: 59,
     is_mega: false,
-    names: "",
+    names: "Shuppet",
   },
-  354: {
+  "354": {
     types: ["Ghost", "None"],
     stats: [64, 115, 65, 83, 63, 65],
     abilities: [
@@ -8779,9 +8779,9 @@ let pkmnData: PokemonData = {
     name: "banette",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Banette",
   },
-  355: {
+  "355": {
     types: ["Ghost", "None"],
     stats: [20, 40, 90, 30, 90, 25],
     abilities: [
@@ -8801,9 +8801,9 @@ let pkmnData: PokemonData = {
     name: "duskull",
     base_exp: 59,
     is_mega: false,
-    names: "",
+    names: "Duskull",
   },
-  356: {
+  "356": {
     types: ["Ghost", "None"],
     stats: [40, 70, 130, 60, 130, 25],
     abilities: [
@@ -8823,9 +8823,9 @@ let pkmnData: PokemonData = {
     name: "dusclops",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Dusclops",
   },
-  357: {
+  "357": {
     types: ["Grass", "Flying"],
     stats: [99, 68, 83, 72, 87, 51],
     abilities: [
@@ -8850,9 +8850,9 @@ let pkmnData: PokemonData = {
     name: "tropius",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Tropius",
   },
-  358: {
+  "358": {
     types: ["Psychic", "None"],
     stats: [75, 50, 80, 95, 90, 65],
     abilities: [
@@ -8867,9 +8867,9 @@ let pkmnData: PokemonData = {
     name: "chimecho",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Chimecho",
   },
-  359: {
+  "359": {
     types: ["Dark", "None"],
     stats: [65, 130, 60, 75, 60, 75],
     abilities: [
@@ -8894,9 +8894,9 @@ let pkmnData: PokemonData = {
     name: "absol",
     base_exp: 163,
     is_mega: false,
-    names: "",
+    names: "Absol",
   },
-  360: {
+  "360": {
     types: ["Psychic", "None"],
     stats: [95, 23, 48, 23, 48, 23],
     abilities: [
@@ -8916,9 +8916,9 @@ let pkmnData: PokemonData = {
     name: "wynaut",
     base_exp: 52,
     is_mega: false,
-    names: "",
+    names: "Wynaut",
   },
-  361: {
+  "361": {
     types: ["Ice", "None"],
     stats: [50, 50, 50, 50, 50, 50],
     abilities: [
@@ -8943,9 +8943,9 @@ let pkmnData: PokemonData = {
     name: "snorunt",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Snorunt",
   },
-  362: {
+  "362": {
     types: ["Ice", "None"],
     stats: [80, 80, 80, 80, 80, 80],
     abilities: [
@@ -8970,9 +8970,9 @@ let pkmnData: PokemonData = {
     name: "glalie",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Glalie",
   },
-  363: {
+  "363": {
     types: ["Ice", "Water"],
     stats: [70, 40, 50, 55, 50, 25],
     abilities: [
@@ -8997,9 +8997,9 @@ let pkmnData: PokemonData = {
     name: "spheal",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Spheal",
   },
-  364: {
+  "364": {
     types: ["Ice", "Water"],
     stats: [90, 60, 70, 75, 70, 45],
     abilities: [
@@ -9024,9 +9024,9 @@ let pkmnData: PokemonData = {
     name: "sealeo",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Sealeo",
   },
-  365: {
+  "365": {
     types: ["Ice", "Water"],
     stats: [110, 80, 90, 95, 90, 65],
     abilities: [
@@ -9051,9 +9051,9 @@ let pkmnData: PokemonData = {
     name: "walrein",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Walrein",
   },
-  366: {
+  "366": {
     types: ["Water", "None"],
     stats: [35, 64, 85, 74, 55, 32],
     abilities: [
@@ -9073,9 +9073,9 @@ let pkmnData: PokemonData = {
     name: "clamperl",
     base_exp: 69,
     is_mega: false,
-    names: "",
+    names: "Clamperl",
   },
-  367: {
+  "367": {
     types: ["Water", "None"],
     stats: [55, 104, 105, 94, 75, 52],
     abilities: [
@@ -9095,9 +9095,9 @@ let pkmnData: PokemonData = {
     name: "huntail",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Huntail",
   },
-  368: {
+  "368": {
     types: ["Water", "None"],
     stats: [55, 84, 105, 114, 75, 52],
     abilities: [
@@ -9117,9 +9117,9 @@ let pkmnData: PokemonData = {
     name: "gorebyss",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Gorebyss",
   },
-  369: {
+  "369": {
     types: ["Water", "Rock"],
     stats: [100, 90, 130, 45, 65, 55],
     abilities: [
@@ -9144,9 +9144,9 @@ let pkmnData: PokemonData = {
     name: "relicanth",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Relicanth",
   },
-  370: {
+  "370": {
     types: ["Water", "None"],
     stats: [43, 30, 55, 40, 65, 97],
     abilities: [
@@ -9166,9 +9166,9 @@ let pkmnData: PokemonData = {
     name: "luvdisc",
     base_exp: 116,
     is_mega: false,
-    names: "",
+    names: "Luvdisc",
   },
-  371: {
+  "371": {
     types: ["Dragon", "None"],
     stats: [45, 75, 60, 40, 30, 50],
     abilities: [
@@ -9188,9 +9188,9 @@ let pkmnData: PokemonData = {
     name: "bagon",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Bagon",
   },
-  372: {
+  "372": {
     types: ["Dragon", "None"],
     stats: [65, 95, 100, 60, 50, 50],
     abilities: [
@@ -9210,9 +9210,9 @@ let pkmnData: PokemonData = {
     name: "shelgon",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Shelgon",
   },
-  373: {
+  "373": {
     types: ["Dragon", "Flying"],
     stats: [95, 135, 80, 110, 80, 100],
     abilities: [
@@ -9232,9 +9232,9 @@ let pkmnData: PokemonData = {
     name: "salamence",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Salamence",
   },
-  374: {
+  "374": {
     types: ["Steel", "Psychic"],
     stats: [40, 55, 80, 35, 60, 30],
     abilities: [
@@ -9254,9 +9254,9 @@ let pkmnData: PokemonData = {
     name: "beldum",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Beldum",
   },
-  375: {
+  "375": {
     types: ["Steel", "Psychic"],
     stats: [60, 75, 100, 55, 80, 50],
     abilities: [
@@ -9276,9 +9276,9 @@ let pkmnData: PokemonData = {
     name: "metang",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Metang",
   },
-  376: {
+  "376": {
     types: ["Steel", "Psychic"],
     stats: [80, 135, 130, 95, 90, 70],
     abilities: [
@@ -9298,9 +9298,9 @@ let pkmnData: PokemonData = {
     name: "metagross",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Metagross",
   },
-  377: {
+  "377": {
     types: ["Rock", "None"],
     stats: [80, 100, 200, 50, 100, 50],
     abilities: [
@@ -9320,9 +9320,9 @@ let pkmnData: PokemonData = {
     name: "regirock",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Regirock",
   },
-  378: {
+  "378": {
     types: ["Ice", "None"],
     stats: [80, 50, 100, 100, 200, 50],
     abilities: [
@@ -9342,9 +9342,9 @@ let pkmnData: PokemonData = {
     name: "regice",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Regice",
   },
-  379: {
+  "379": {
     types: ["Steel", "None"],
     stats: [80, 75, 150, 75, 150, 50],
     abilities: [
@@ -9364,9 +9364,9 @@ let pkmnData: PokemonData = {
     name: "registeel",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Registeel",
   },
-  380: {
+  "380": {
     types: ["Dragon", "Psychic"],
     stats: [80, 80, 90, 110, 130, 110],
     abilities: [
@@ -9381,9 +9381,9 @@ let pkmnData: PokemonData = {
     name: "latias",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Latias",
   },
-  381: {
+  "381": {
     types: ["Dragon", "Psychic"],
     stats: [80, 90, 80, 130, 110, 110],
     abilities: [
@@ -9398,9 +9398,9 @@ let pkmnData: PokemonData = {
     name: "latios",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Latios",
   },
-  382: {
+  "382": {
     types: ["Water", "None"],
     stats: [100, 100, 90, 150, 140, 90],
     abilities: [
@@ -9415,9 +9415,9 @@ let pkmnData: PokemonData = {
     name: "kyogre",
     base_exp: 335,
     is_mega: false,
-    names: "",
+    names: "Kyogre",
   },
-  383: {
+  "383": {
     types: ["Ground", "None"],
     stats: [100, 150, 140, 100, 90, 90],
     abilities: [
@@ -9432,9 +9432,9 @@ let pkmnData: PokemonData = {
     name: "groudon",
     base_exp: 335,
     is_mega: false,
-    names: "",
+    names: "Groudon",
   },
-  384: {
+  "384": {
     types: ["Dragon", "Flying"],
     stats: [105, 150, 90, 150, 90, 95],
     abilities: [
@@ -9449,9 +9449,9 @@ let pkmnData: PokemonData = {
     name: "rayquaza",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Rayquaza",
   },
-  385: {
+  "385": {
     types: ["Steel", "Psychic"],
     stats: [100, 100, 100, 100, 100, 100],
     abilities: [
@@ -9466,9 +9466,9 @@ let pkmnData: PokemonData = {
     name: "jirachi",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Jirachi",
   },
-  386: {
+  "386": {
     types: ["Psychic", "None"],
     stats: [50, 150, 50, 150, 50, 150],
     abilities: [
@@ -9485,7 +9485,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Normal Deoxys",
   },
-  387: {
+  "387": {
     types: ["Grass", "None"],
     stats: [55, 68, 64, 45, 55, 31],
     abilities: [
@@ -9505,9 +9505,9 @@ let pkmnData: PokemonData = {
     name: "turtwig",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Turtwig",
   },
-  388: {
+  "388": {
     types: ["Grass", "None"],
     stats: [75, 89, 85, 55, 65, 36],
     abilities: [
@@ -9527,9 +9527,9 @@ let pkmnData: PokemonData = {
     name: "grotle",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Grotle",
   },
-  389: {
+  "389": {
     types: ["Grass", "Ground"],
     stats: [95, 109, 105, 75, 85, 56],
     abilities: [
@@ -9549,9 +9549,9 @@ let pkmnData: PokemonData = {
     name: "torterra",
     base_exp: 236,
     is_mega: false,
-    names: "",
+    names: "Torterra",
   },
-  390: {
+  "390": {
     types: ["Fire", "None"],
     stats: [44, 58, 44, 58, 44, 61],
     abilities: [
@@ -9571,9 +9571,9 @@ let pkmnData: PokemonData = {
     name: "chimchar",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Chimchar",
   },
-  391: {
+  "391": {
     types: ["Fire", "Fighting"],
     stats: [64, 78, 52, 78, 52, 81],
     abilities: [
@@ -9593,9 +9593,9 @@ let pkmnData: PokemonData = {
     name: "monferno",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Monferno",
   },
-  392: {
+  "392": {
     types: ["Fire", "Fighting"],
     stats: [76, 104, 71, 104, 71, 108],
     abilities: [
@@ -9615,9 +9615,9 @@ let pkmnData: PokemonData = {
     name: "infernape",
     base_exp: 240,
     is_mega: false,
-    names: "",
+    names: "Infernape",
   },
-  393: {
+  "393": {
     types: ["Water", "None"],
     stats: [53, 51, 53, 61, 56, 40],
     abilities: [
@@ -9637,9 +9637,9 @@ let pkmnData: PokemonData = {
     name: "piplup",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Piplup",
   },
-  394: {
+  "394": {
     types: ["Water", "None"],
     stats: [64, 66, 68, 81, 76, 50],
     abilities: [
@@ -9659,9 +9659,9 @@ let pkmnData: PokemonData = {
     name: "prinplup",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Prinplup",
   },
-  395: {
+  "395": {
     types: ["Water", "Steel"],
     stats: [84, 86, 88, 111, 101, 60],
     abilities: [
@@ -9681,9 +9681,9 @@ let pkmnData: PokemonData = {
     name: "empoleon",
     base_exp: 239,
     is_mega: false,
-    names: "",
+    names: "Empoleon",
   },
-  396: {
+  "396": {
     types: ["Normal", "Flying"],
     stats: [40, 55, 30, 30, 30, 60],
     abilities: [
@@ -9703,9 +9703,9 @@ let pkmnData: PokemonData = {
     name: "starly",
     base_exp: 49,
     is_mega: false,
-    names: "",
+    names: "Starly",
   },
-  397: {
+  "397": {
     types: ["Normal", "Flying"],
     stats: [55, 75, 50, 40, 40, 80],
     abilities: [
@@ -9725,9 +9725,9 @@ let pkmnData: PokemonData = {
     name: "staravia",
     base_exp: 119,
     is_mega: false,
-    names: "",
+    names: "Staravia",
   },
-  398: {
+  "398": {
     types: ["Normal", "Flying"],
     stats: [85, 120, 70, 50, 60, 100],
     abilities: [
@@ -9747,9 +9747,9 @@ let pkmnData: PokemonData = {
     name: "staraptor",
     base_exp: 218,
     is_mega: false,
-    names: "",
+    names: "Staraptor",
   },
-  399: {
+  "399": {
     types: ["Normal", "None"],
     stats: [59, 45, 40, 35, 40, 31],
     abilities: [
@@ -9774,9 +9774,9 @@ let pkmnData: PokemonData = {
     name: "bidoof",
     base_exp: 50,
     is_mega: false,
-    names: "",
+    names: "Bidoof",
   },
-  400: {
+  "400": {
     types: ["Normal", "Water"],
     stats: [79, 85, 60, 55, 60, 71],
     abilities: [
@@ -9801,9 +9801,9 @@ let pkmnData: PokemonData = {
     name: "bibarel",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Bibarel",
   },
-  401: {
+  "401": {
     types: ["Bug", "None"],
     stats: [37, 25, 41, 25, 41, 25],
     abilities: [
@@ -9823,9 +9823,9 @@ let pkmnData: PokemonData = {
     name: "kricketot",
     base_exp: 39,
     is_mega: false,
-    names: "",
+    names: "Kricketot",
   },
-  402: {
+  "402": {
     types: ["Bug", "None"],
     stats: [77, 85, 51, 55, 51, 65],
     abilities: [
@@ -9845,9 +9845,9 @@ let pkmnData: PokemonData = {
     name: "kricketune",
     base_exp: 134,
     is_mega: false,
-    names: "",
+    names: "Kricketune",
   },
-  403: {
+  "403": {
     types: ["Electric", "None"],
     stats: [45, 65, 34, 40, 34, 45],
     abilities: [
@@ -9872,9 +9872,9 @@ let pkmnData: PokemonData = {
     name: "shinx",
     base_exp: 53,
     is_mega: false,
-    names: "",
+    names: "Shinx",
   },
-  404: {
+  "404": {
     types: ["Electric", "None"],
     stats: [60, 85, 49, 60, 49, 60],
     abilities: [
@@ -9899,9 +9899,9 @@ let pkmnData: PokemonData = {
     name: "luxio",
     base_exp: 127,
     is_mega: false,
-    names: "",
+    names: "Luxio",
   },
-  405: {
+  "405": {
     types: ["Electric", "None"],
     stats: [80, 120, 79, 95, 79, 70],
     abilities: [
@@ -9926,9 +9926,9 @@ let pkmnData: PokemonData = {
     name: "luxray",
     base_exp: 262,
     is_mega: false,
-    names: "",
+    names: "Luxray",
   },
-  406: {
+  "406": {
     types: ["Grass", "Poison"],
     stats: [40, 30, 35, 50, 70, 55],
     abilities: [
@@ -9953,9 +9953,9 @@ let pkmnData: PokemonData = {
     name: "budew",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Budew",
   },
-  407: {
+  "407": {
     types: ["Grass", "Poison"],
     stats: [60, 70, 65, 125, 105, 90],
     abilities: [
@@ -9980,9 +9980,9 @@ let pkmnData: PokemonData = {
     name: "roserade",
     base_exp: 258,
     is_mega: false,
-    names: "",
+    names: "Roserade",
   },
-  408: {
+  "408": {
     types: ["Rock", "None"],
     stats: [67, 125, 40, 30, 30, 58],
     abilities: [
@@ -10002,9 +10002,9 @@ let pkmnData: PokemonData = {
     name: "cranidos",
     base_exp: 70,
     is_mega: false,
-    names: "",
+    names: "Cranidos",
   },
-  409: {
+  "409": {
     types: ["Rock", "None"],
     stats: [97, 165, 60, 65, 50, 58],
     abilities: [
@@ -10024,9 +10024,9 @@ let pkmnData: PokemonData = {
     name: "rampardos",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Rampardos",
   },
-  410: {
+  "410": {
     types: ["Rock", "Steel"],
     stats: [30, 42, 118, 42, 88, 30],
     abilities: [
@@ -10046,9 +10046,9 @@ let pkmnData: PokemonData = {
     name: "shieldon",
     base_exp: 70,
     is_mega: false,
-    names: "",
+    names: "Shieldon",
   },
-  411: {
+  "411": {
     types: ["Rock", "Steel"],
     stats: [60, 52, 168, 47, 138, 30],
     abilities: [
@@ -10068,9 +10068,9 @@ let pkmnData: PokemonData = {
     name: "bastiodon",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Bastiodon",
   },
-  412: {
+  "412": {
     types: ["Bug", "None"],
     stats: [40, 29, 45, 29, 45, 36],
     abilities: [
@@ -10090,9 +10090,9 @@ let pkmnData: PokemonData = {
     name: "burmy",
     base_exp: 45,
     is_mega: false,
-    names: "Plant Burmy",
+    names: "Burmy",
   },
-  413: {
+  "413": {
     types: ["Bug", "Grass"],
     stats: [60, 59, 85, 79, 105, 36],
     abilities: [
@@ -10114,7 +10114,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Plant Wormadam",
   },
-  414: {
+  "414": {
     types: ["Bug", "Flying"],
     stats: [70, 94, 50, 94, 50, 66],
     abilities: [
@@ -10134,9 +10134,9 @@ let pkmnData: PokemonData = {
     name: "mothim",
     base_exp: 148,
     is_mega: false,
-    names: "",
+    names: "Mothim",
   },
-  415: {
+  "415": {
     types: ["Bug", "Flying"],
     stats: [30, 30, 42, 30, 42, 70],
     abilities: [
@@ -10156,9 +10156,9 @@ let pkmnData: PokemonData = {
     name: "combee",
     base_exp: 49,
     is_mega: false,
-    names: "",
+    names: "Combee",
   },
-  416: {
+  "416": {
     types: ["Bug", "Flying"],
     stats: [70, 80, 102, 80, 102, 40],
     abilities: [
@@ -10178,9 +10178,9 @@ let pkmnData: PokemonData = {
     name: "vespiquen",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Vespiquen",
   },
-  417: {
+  "417": {
     types: ["Electric", "None"],
     stats: [60, 45, 70, 45, 90, 95],
     abilities: [
@@ -10205,9 +10205,9 @@ let pkmnData: PokemonData = {
     name: "pachirisu",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Pachirisu",
   },
-  418: {
+  "418": {
     types: ["Water", "None"],
     stats: [55, 65, 35, 60, 30, 85],
     abilities: [
@@ -10227,9 +10227,9 @@ let pkmnData: PokemonData = {
     name: "buizel",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Buizel",
   },
-  419: {
+  "419": {
     types: ["Water", "None"],
     stats: [85, 105, 55, 85, 50, 115],
     abilities: [
@@ -10249,9 +10249,9 @@ let pkmnData: PokemonData = {
     name: "floatzel",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Floatzel",
   },
-  420: {
+  "420": {
     types: ["Grass", "None"],
     stats: [45, 35, 45, 62, 53, 35],
     abilities: [
@@ -10266,9 +10266,9 @@ let pkmnData: PokemonData = {
     name: "cherubi",
     base_exp: 55,
     is_mega: false,
-    names: "",
+    names: "Cherubi",
   },
-  421: {
+  "421": {
     types: ["Grass", "None"],
     stats: [70, 60, 70, 87, 78, 85],
     abilities: [
@@ -10283,9 +10283,9 @@ let pkmnData: PokemonData = {
     name: "cherrim",
     base_exp: 158,
     is_mega: false,
-    names: "Overcast Cherrim",
+    names: "Cherrim",
   },
-  422: {
+  "422": {
     types: ["Water", "None"],
     stats: [76, 48, 48, 57, 62, 34],
     abilities: [
@@ -10310,9 +10310,9 @@ let pkmnData: PokemonData = {
     name: "shellos",
     base_exp: 65,
     is_mega: false,
-    names: "West Shellos",
+    names: "Shellos",
   },
-  423: {
+  "423": {
     types: ["Water", "Ground"],
     stats: [111, 83, 68, 92, 82, 39],
     abilities: [
@@ -10337,9 +10337,9 @@ let pkmnData: PokemonData = {
     name: "gastrodon",
     base_exp: 166,
     is_mega: false,
-    names: "West Gastrodon",
+    names: "Gastrodon",
   },
-  424: {
+  "424": {
     types: ["Normal", "None"],
     stats: [75, 100, 66, 60, 66, 115],
     abilities: [
@@ -10364,9 +10364,9 @@ let pkmnData: PokemonData = {
     name: "ambipom",
     base_exp: 169,
     is_mega: false,
-    names: "",
+    names: "Ambipom",
   },
-  425: {
+  "425": {
     types: ["Ghost", "Flying"],
     stats: [90, 50, 34, 60, 44, 70],
     abilities: [
@@ -10391,9 +10391,9 @@ let pkmnData: PokemonData = {
     name: "drifloon",
     base_exp: 70,
     is_mega: false,
-    names: "",
+    names: "Drifloon",
   },
-  426: {
+  "426": {
     types: ["Ghost", "Flying"],
     stats: [150, 80, 44, 90, 54, 80],
     abilities: [
@@ -10418,9 +10418,9 @@ let pkmnData: PokemonData = {
     name: "drifblim",
     base_exp: 174,
     is_mega: false,
-    names: "",
+    names: "Drifblim",
   },
-  427: {
+  "427": {
     types: ["Normal", "None"],
     stats: [55, 66, 44, 44, 56, 85],
     abilities: [
@@ -10445,9 +10445,9 @@ let pkmnData: PokemonData = {
     name: "buneary",
     base_exp: 70,
     is_mega: false,
-    names: "",
+    names: "Buneary",
   },
-  428: {
+  "428": {
     types: ["Normal", "None"],
     stats: [65, 76, 84, 54, 96, 105],
     abilities: [
@@ -10472,9 +10472,9 @@ let pkmnData: PokemonData = {
     name: "lopunny",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Lopunny",
   },
-  429: {
+  "429": {
     types: ["Ghost", "None"],
     stats: [60, 60, 60, 105, 105, 105],
     abilities: [
@@ -10489,9 +10489,9 @@ let pkmnData: PokemonData = {
     name: "mismagius",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Mismagius",
   },
-  430: {
+  "430": {
     types: ["Dark", "Flying"],
     stats: [100, 125, 52, 105, 52, 71],
     abilities: [
@@ -10516,9 +10516,9 @@ let pkmnData: PokemonData = {
     name: "honchkrow",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Honchkrow",
   },
-  431: {
+  "431": {
     types: ["Normal", "None"],
     stats: [49, 55, 42, 42, 37, 85],
     abilities: [
@@ -10543,9 +10543,9 @@ let pkmnData: PokemonData = {
     name: "glameow",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Glameow",
   },
-  432: {
+  "432": {
     types: ["Normal", "None"],
     stats: [71, 82, 64, 64, 59, 112],
     abilities: [
@@ -10570,9 +10570,9 @@ let pkmnData: PokemonData = {
     name: "purugly",
     base_exp: 158,
     is_mega: false,
-    names: "",
+    names: "Purugly",
   },
-  433: {
+  "433": {
     types: ["Psychic", "None"],
     stats: [45, 30, 50, 65, 50, 45],
     abilities: [
@@ -10587,9 +10587,9 @@ let pkmnData: PokemonData = {
     name: "chingling",
     base_exp: 57,
     is_mega: false,
-    names: "",
+    names: "Chingling",
   },
-  434: {
+  "434": {
     types: ["Poison", "Dark"],
     stats: [63, 63, 47, 41, 41, 74],
     abilities: [
@@ -10614,9 +10614,9 @@ let pkmnData: PokemonData = {
     name: "stunky",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Stunky",
   },
-  435: {
+  "435": {
     types: ["Poison", "Dark"],
     stats: [103, 93, 67, 71, 61, 84],
     abilities: [
@@ -10641,9 +10641,9 @@ let pkmnData: PokemonData = {
     name: "skuntank",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Skuntank",
   },
-  436: {
+  "436": {
     types: ["Steel", "Psychic"],
     stats: [57, 24, 86, 24, 86, 23],
     abilities: [
@@ -10668,9 +10668,9 @@ let pkmnData: PokemonData = {
     name: "bronzor",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Bronzor",
   },
-  437: {
+  "437": {
     types: ["Steel", "Psychic"],
     stats: [67, 89, 116, 79, 116, 33],
     abilities: [
@@ -10695,9 +10695,9 @@ let pkmnData: PokemonData = {
     name: "bronzong",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Bronzong",
   },
-  438: {
+  "438": {
     types: ["Rock", "None"],
     stats: [50, 80, 95, 10, 45, 10],
     abilities: [
@@ -10722,9 +10722,9 @@ let pkmnData: PokemonData = {
     name: "bonsly",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Bonsly",
   },
-  439: {
+  "439": {
     types: ["Psychic", "Fairy"],
     stats: [20, 25, 45, 70, 90, 60],
     abilities: [
@@ -10749,9 +10749,9 @@ let pkmnData: PokemonData = {
     name: "mime-jr",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Mime Jr.",
   },
-  440: {
+  "440": {
     types: ["Normal", "None"],
     stats: [100, 5, 5, 15, 65, 30],
     abilities: [
@@ -10776,9 +10776,9 @@ let pkmnData: PokemonData = {
     name: "happiny",
     base_exp: 110,
     is_mega: false,
-    names: "",
+    names: "Happiny",
   },
-  441: {
+  "441": {
     types: ["Normal", "Flying"],
     stats: [76, 65, 45, 92, 42, 91],
     abilities: [
@@ -10803,9 +10803,9 @@ let pkmnData: PokemonData = {
     name: "chatot",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Chatot",
   },
-  442: {
+  "442": {
     types: ["Ghost", "Dark"],
     stats: [50, 92, 108, 92, 108, 35],
     abilities: [
@@ -10825,9 +10825,9 @@ let pkmnData: PokemonData = {
     name: "spiritomb",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Spiritomb",
   },
-  443: {
+  "443": {
     types: ["Dragon", "Ground"],
     stats: [58, 70, 45, 40, 45, 42],
     abilities: [
@@ -10847,9 +10847,9 @@ let pkmnData: PokemonData = {
     name: "gible",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Gible",
   },
-  444: {
+  "444": {
     types: ["Dragon", "Ground"],
     stats: [68, 90, 65, 50, 55, 82],
     abilities: [
@@ -10869,9 +10869,9 @@ let pkmnData: PokemonData = {
     name: "gabite",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Gabite",
   },
-  445: {
+  "445": {
     types: ["Dragon", "Ground"],
     stats: [108, 130, 95, 80, 85, 102],
     abilities: [
@@ -10891,9 +10891,9 @@ let pkmnData: PokemonData = {
     name: "garchomp",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Garchomp",
   },
-  446: {
+  "446": {
     types: ["Normal", "None"],
     stats: [135, 85, 40, 40, 85, 5],
     abilities: [
@@ -10918,9 +10918,9 @@ let pkmnData: PokemonData = {
     name: "munchlax",
     base_exp: 78,
     is_mega: false,
-    names: "",
+    names: "Munchlax",
   },
-  447: {
+  "447": {
     types: ["Fighting", "None"],
     stats: [40, 70, 40, 35, 40, 60],
     abilities: [
@@ -10945,9 +10945,9 @@ let pkmnData: PokemonData = {
     name: "riolu",
     base_exp: 57,
     is_mega: false,
-    names: "",
+    names: "Riolu",
   },
-  448: {
+  "448": {
     types: ["Fighting", "Steel"],
     stats: [70, 110, 70, 115, 70, 90],
     abilities: [
@@ -10972,9 +10972,9 @@ let pkmnData: PokemonData = {
     name: "lucario",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Lucario",
   },
-  449: {
+  "449": {
     types: ["Ground", "None"],
     stats: [68, 72, 78, 38, 42, 32],
     abilities: [
@@ -10994,9 +10994,9 @@ let pkmnData: PokemonData = {
     name: "hippopotas",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Hippopotas",
   },
-  450: {
+  "450": {
     types: ["Ground", "None"],
     stats: [108, 112, 118, 68, 72, 47],
     abilities: [
@@ -11016,9 +11016,9 @@ let pkmnData: PokemonData = {
     name: "hippowdon",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Hippowdon",
   },
-  451: {
+  "451": {
     types: ["Poison", "Bug"],
     stats: [40, 50, 90, 30, 55, 65],
     abilities: [
@@ -11043,9 +11043,9 @@ let pkmnData: PokemonData = {
     name: "skorupi",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Skorupi",
   },
-  452: {
+  "452": {
     types: ["Poison", "Dark"],
     stats: [70, 90, 110, 60, 75, 95],
     abilities: [
@@ -11070,9 +11070,9 @@ let pkmnData: PokemonData = {
     name: "drapion",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Drapion",
   },
-  453: {
+  "453": {
     types: ["Poison", "Fighting"],
     stats: [48, 61, 40, 61, 40, 50],
     abilities: [
@@ -11097,9 +11097,9 @@ let pkmnData: PokemonData = {
     name: "croagunk",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Croagunk",
   },
-  454: {
+  "454": {
     types: ["Poison", "Fighting"],
     stats: [83, 106, 65, 86, 65, 85],
     abilities: [
@@ -11124,9 +11124,9 @@ let pkmnData: PokemonData = {
     name: "toxicroak",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Toxicroak",
   },
-  455: {
+  "455": {
     types: ["Grass", "None"],
     stats: [74, 100, 72, 90, 72, 46],
     abilities: [
@@ -11141,9 +11141,9 @@ let pkmnData: PokemonData = {
     name: "carnivine",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Carnivine",
   },
-  456: {
+  "456": {
     types: ["Water", "None"],
     stats: [49, 49, 56, 49, 61, 66],
     abilities: [
@@ -11168,9 +11168,9 @@ let pkmnData: PokemonData = {
     name: "finneon",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Finneon",
   },
-  457: {
+  "457": {
     types: ["Water", "None"],
     stats: [69, 69, 76, 69, 86, 91],
     abilities: [
@@ -11195,9 +11195,9 @@ let pkmnData: PokemonData = {
     name: "lumineon",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Lumineon",
   },
-  458: {
+  "458": {
     types: ["Water", "Flying"],
     stats: [45, 20, 50, 60, 120, 50],
     abilities: [
@@ -11222,9 +11222,9 @@ let pkmnData: PokemonData = {
     name: "mantyke",
     base_exp: 69,
     is_mega: false,
-    names: "",
+    names: "Mantyke",
   },
-  459: {
+  "459": {
     types: ["Grass", "Ice"],
     stats: [60, 62, 50, 62, 60, 40],
     abilities: [
@@ -11244,9 +11244,9 @@ let pkmnData: PokemonData = {
     name: "snover",
     base_exp: 67,
     is_mega: false,
-    names: "",
+    names: "Snover",
   },
-  460: {
+  "460": {
     types: ["Grass", "Ice"],
     stats: [90, 92, 75, 92, 85, 60],
     abilities: [
@@ -11266,9 +11266,9 @@ let pkmnData: PokemonData = {
     name: "abomasnow",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Abomasnow",
   },
-  461: {
+  "461": {
     types: ["Dark", "Ice"],
     stats: [70, 120, 65, 45, 85, 125],
     abilities: [
@@ -11288,9 +11288,9 @@ let pkmnData: PokemonData = {
     name: "weavile",
     base_exp: 179,
     is_mega: false,
-    names: "",
+    names: "Weavile",
   },
-  462: {
+  "462": {
     types: ["Electric", "Steel"],
     stats: [70, 70, 115, 130, 90, 60],
     abilities: [
@@ -11315,9 +11315,9 @@ let pkmnData: PokemonData = {
     name: "magnezone",
     base_exp: 268,
     is_mega: false,
-    names: "",
+    names: "Magnezone",
   },
-  463: {
+  "463": {
     types: ["Normal", "None"],
     stats: [110, 85, 95, 80, 95, 50],
     abilities: [
@@ -11342,9 +11342,9 @@ let pkmnData: PokemonData = {
     name: "lickilicky",
     base_exp: 180,
     is_mega: false,
-    names: "",
+    names: "Lickilicky",
   },
-  464: {
+  "464": {
     types: ["Ground", "Rock"],
     stats: [115, 140, 130, 55, 55, 40],
     abilities: [
@@ -11369,9 +11369,9 @@ let pkmnData: PokemonData = {
     name: "rhyperior",
     base_exp: 268,
     is_mega: false,
-    names: "",
+    names: "Rhyperior",
   },
-  465: {
+  "465": {
     types: ["Grass", "None"],
     stats: [100, 100, 125, 110, 50, 50],
     abilities: [
@@ -11396,9 +11396,9 @@ let pkmnData: PokemonData = {
     name: "tangrowth",
     base_exp: 187,
     is_mega: false,
-    names: "",
+    names: "Tangrowth",
   },
-  466: {
+  "466": {
     types: ["Electric", "None"],
     stats: [75, 123, 67, 95, 85, 95],
     abilities: [
@@ -11418,9 +11418,9 @@ let pkmnData: PokemonData = {
     name: "electivire",
     base_exp: 270,
     is_mega: false,
-    names: "",
+    names: "Electivire",
   },
-  467: {
+  "467": {
     types: ["Fire", "None"],
     stats: [75, 95, 67, 125, 95, 83],
     abilities: [
@@ -11440,9 +11440,9 @@ let pkmnData: PokemonData = {
     name: "magmortar",
     base_exp: 270,
     is_mega: false,
-    names: "",
+    names: "Magmortar",
   },
-  468: {
+  "468": {
     types: ["Fairy", "Flying"],
     stats: [85, 50, 95, 120, 115, 80],
     abilities: [
@@ -11467,9 +11467,9 @@ let pkmnData: PokemonData = {
     name: "togekiss",
     base_exp: 273,
     is_mega: false,
-    names: "",
+    names: "Togekiss",
   },
-  469: {
+  "469": {
     types: ["Bug", "Flying"],
     stats: [86, 76, 86, 116, 56, 95],
     abilities: [
@@ -11494,9 +11494,9 @@ let pkmnData: PokemonData = {
     name: "yanmega",
     base_exp: 180,
     is_mega: false,
-    names: "",
+    names: "Yanmega",
   },
-  470: {
+  "470": {
     types: ["Grass", "None"],
     stats: [65, 110, 130, 60, 65, 95],
     abilities: [
@@ -11516,9 +11516,9 @@ let pkmnData: PokemonData = {
     name: "leafeon",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Leafeon",
   },
-  471: {
+  "471": {
     types: ["Ice", "None"],
     stats: [65, 60, 110, 130, 95, 65],
     abilities: [
@@ -11538,9 +11538,9 @@ let pkmnData: PokemonData = {
     name: "glaceon",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Glaceon",
   },
-  472: {
+  "472": {
     types: ["Ground", "Flying"],
     stats: [75, 95, 125, 45, 75, 95],
     abilities: [
@@ -11565,9 +11565,9 @@ let pkmnData: PokemonData = {
     name: "gliscor",
     base_exp: 179,
     is_mega: false,
-    names: "",
+    names: "Gliscor",
   },
-  473: {
+  "473": {
     types: ["Ice", "Ground"],
     stats: [110, 130, 80, 70, 60, 80],
     abilities: [
@@ -11592,9 +11592,9 @@ let pkmnData: PokemonData = {
     name: "mamoswine",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Mamoswine",
   },
-  474: {
+  "474": {
     types: ["Normal", "None"],
     stats: [85, 80, 70, 135, 75, 90],
     abilities: [
@@ -11619,9 +11619,9 @@ let pkmnData: PokemonData = {
     name: "porygon-z",
     base_exp: 268,
     is_mega: false,
-    names: "",
+    names: "Porygon-Z",
   },
-  475: {
+  "475": {
     types: ["Psychic", "Fighting"],
     stats: [68, 125, 65, 65, 115, 80],
     abilities: [
@@ -11641,9 +11641,9 @@ let pkmnData: PokemonData = {
     name: "gallade",
     base_exp: 259,
     is_mega: false,
-    names: "",
+    names: "Gallade",
   },
-  476: {
+  "476": {
     types: ["Rock", "Steel"],
     stats: [60, 55, 145, 75, 150, 40],
     abilities: [
@@ -11668,9 +11668,9 @@ let pkmnData: PokemonData = {
     name: "probopass",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Probopass",
   },
-  477: {
+  "477": {
     types: ["Ghost", "None"],
     stats: [45, 100, 135, 65, 135, 45],
     abilities: [
@@ -11690,9 +11690,9 @@ let pkmnData: PokemonData = {
     name: "dusknoir",
     base_exp: 263,
     is_mega: false,
-    names: "",
+    names: "Dusknoir",
   },
-  478: {
+  "478": {
     types: ["Ice", "Ghost"],
     stats: [70, 80, 70, 80, 70, 110],
     abilities: [
@@ -11712,9 +11712,9 @@ let pkmnData: PokemonData = {
     name: "froslass",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Froslass",
   },
-  479: {
+  "479": {
     types: ["Electric", "Ghost"],
     stats: [50, 50, 77, 95, 77, 91],
     abilities: [
@@ -11729,9 +11729,9 @@ let pkmnData: PokemonData = {
     name: "rotom",
     base_exp: 154,
     is_mega: false,
-    names: "",
+    names: "Rotom",
   },
-  480: {
+  "480": {
     types: ["Psychic", "None"],
     stats: [75, 75, 130, 75, 130, 95],
     abilities: [
@@ -11746,9 +11746,9 @@ let pkmnData: PokemonData = {
     name: "uxie",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Uxie",
   },
-  481: {
+  "481": {
     types: ["Psychic", "None"],
     stats: [80, 105, 105, 105, 105, 80],
     abilities: [
@@ -11763,9 +11763,9 @@ let pkmnData: PokemonData = {
     name: "mesprit",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Mesprit",
   },
-  482: {
+  "482": {
     types: ["Psychic", "None"],
     stats: [75, 125, 70, 125, 70, 115],
     abilities: [
@@ -11780,9 +11780,9 @@ let pkmnData: PokemonData = {
     name: "azelf",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Azelf",
   },
-  483: {
+  "483": {
     types: ["Steel", "Dragon"],
     stats: [100, 120, 120, 150, 100, 90],
     abilities: [
@@ -11802,9 +11802,9 @@ let pkmnData: PokemonData = {
     name: "dialga",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Dialga",
   },
-  484: {
+  "484": {
     types: ["Water", "Dragon"],
     stats: [90, 120, 100, 150, 120, 100],
     abilities: [
@@ -11824,9 +11824,9 @@ let pkmnData: PokemonData = {
     name: "palkia",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Palkia",
   },
-  485: {
+  "485": {
     types: ["Fire", "Steel"],
     stats: [91, 90, 106, 130, 106, 77],
     abilities: [
@@ -11846,9 +11846,9 @@ let pkmnData: PokemonData = {
     name: "heatran",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Heatran",
   },
-  486: {
+  "486": {
     types: ["Normal", "None"],
     stats: [110, 160, 110, 80, 110, 100],
     abilities: [
@@ -11863,9 +11863,9 @@ let pkmnData: PokemonData = {
     name: "regigigas",
     base_exp: 335,
     is_mega: false,
-    names: "",
+    names: "Regigigas",
   },
-  487: {
+  "487": {
     types: ["Ghost", "Dragon"],
     stats: [150, 100, 120, 100, 120, 90],
     abilities: [
@@ -11887,7 +11887,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Altered Giratina",
   },
-  488: {
+  "488": {
     types: ["Psychic", "None"],
     stats: [120, 70, 120, 75, 130, 85],
     abilities: [
@@ -11902,9 +11902,9 @@ let pkmnData: PokemonData = {
     name: "cresselia",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Cresselia",
   },
-  489: {
+  "489": {
     types: ["Water", "None"],
     stats: [80, 80, 80, 80, 80, 80],
     abilities: [
@@ -11919,9 +11919,9 @@ let pkmnData: PokemonData = {
     name: "phione",
     base_exp: 216,
     is_mega: false,
-    names: "",
+    names: "Phione",
   },
-  490: {
+  "490": {
     types: ["Water", "None"],
     stats: [100, 100, 100, 100, 100, 100],
     abilities: [
@@ -11936,9 +11936,9 @@ let pkmnData: PokemonData = {
     name: "manaphy",
     base_exp: 270,
     is_mega: false,
-    names: "",
+    names: "Manaphy",
   },
-  491: {
+  "491": {
     types: ["Dark", "None"],
     stats: [70, 90, 90, 135, 90, 125],
     abilities: [
@@ -11953,9 +11953,9 @@ let pkmnData: PokemonData = {
     name: "darkrai",
     base_exp: 270,
     is_mega: false,
-    names: "",
+    names: "Darkrai",
   },
-  492: {
+  "492": {
     types: ["Grass", "None"],
     stats: [100, 100, 100, 100, 100, 100],
     abilities: [
@@ -11972,7 +11972,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Land Shaymin",
   },
-  493: {
+  "493": {
     types: ["Normal", "None"],
     stats: [120, 120, 120, 120, 120, 120],
     abilities: [
@@ -12007,9 +12007,9 @@ let pkmnData: PokemonData = {
     name: "arceus",
     base_exp: 324,
     is_mega: false,
-    names: "Normal Arceus",
+    names: "Arceus",
   },
-  494: {
+  "494": {
     types: ["Psychic", "Fire"],
     stats: [100, 100, 100, 100, 100, 100],
     abilities: [
@@ -12024,9 +12024,9 @@ let pkmnData: PokemonData = {
     name: "victini",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Victini",
   },
-  495: {
+  "495": {
     types: ["Grass", "None"],
     stats: [45, 45, 55, 45, 55, 63],
     abilities: [
@@ -12046,9 +12046,9 @@ let pkmnData: PokemonData = {
     name: "snivy",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Snivy",
   },
-  496: {
+  "496": {
     types: ["Grass", "None"],
     stats: [60, 60, 75, 60, 75, 83],
     abilities: [
@@ -12068,9 +12068,9 @@ let pkmnData: PokemonData = {
     name: "servine",
     base_exp: 145,
     is_mega: false,
-    names: "",
+    names: "Servine",
   },
-  497: {
+  "497": {
     types: ["Grass", "None"],
     stats: [75, 75, 95, 75, 95, 113],
     abilities: [
@@ -12090,9 +12090,9 @@ let pkmnData: PokemonData = {
     name: "serperior",
     base_exp: 238,
     is_mega: false,
-    names: "",
+    names: "Serperior",
   },
-  498: {
+  "498": {
     types: ["Fire", "None"],
     stats: [65, 63, 45, 45, 45, 45],
     abilities: [
@@ -12112,9 +12112,9 @@ let pkmnData: PokemonData = {
     name: "tepig",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Tepig",
   },
-  499: {
+  "499": {
     types: ["Fire", "Fighting"],
     stats: [90, 93, 55, 70, 55, 55],
     abilities: [
@@ -12134,9 +12134,9 @@ let pkmnData: PokemonData = {
     name: "pignite",
     base_exp: 146,
     is_mega: false,
-    names: "",
+    names: "Pignite",
   },
-  500: {
+  "500": {
     types: ["Fire", "Fighting"],
     stats: [110, 123, 65, 100, 65, 65],
     abilities: [
@@ -12156,9 +12156,9 @@ let pkmnData: PokemonData = {
     name: "emboar",
     base_exp: 238,
     is_mega: false,
-    names: "",
+    names: "Emboar",
   },
-  501: {
+  "501": {
     types: ["Water", "None"],
     stats: [55, 55, 45, 63, 45, 45],
     abilities: [
@@ -12178,9 +12178,9 @@ let pkmnData: PokemonData = {
     name: "oshawott",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Oshawott",
   },
-  502: {
+  "502": {
     types: ["Water", "None"],
     stats: [75, 75, 60, 83, 60, 60],
     abilities: [
@@ -12200,9 +12200,9 @@ let pkmnData: PokemonData = {
     name: "dewott",
     base_exp: 145,
     is_mega: false,
-    names: "",
+    names: "Dewott",
   },
-  503: {
+  "503": {
     types: ["Water", "None"],
     stats: [95, 100, 85, 108, 70, 70],
     abilities: [
@@ -12222,9 +12222,9 @@ let pkmnData: PokemonData = {
     name: "samurott",
     base_exp: 238,
     is_mega: false,
-    names: "",
+    names: "Samurott",
   },
-  504: {
+  "504": {
     types: ["Normal", "None"],
     stats: [45, 55, 39, 35, 39, 42],
     abilities: [
@@ -12249,9 +12249,9 @@ let pkmnData: PokemonData = {
     name: "patrat",
     base_exp: 51,
     is_mega: false,
-    names: "",
+    names: "Patrat",
   },
-  505: {
+  "505": {
     types: ["Normal", "None"],
     stats: [60, 85, 69, 60, 69, 77],
     abilities: [
@@ -12276,9 +12276,9 @@ let pkmnData: PokemonData = {
     name: "watchog",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Watchog",
   },
-  506: {
+  "506": {
     types: ["Normal", "None"],
     stats: [45, 60, 45, 25, 45, 55],
     abilities: [
@@ -12303,9 +12303,9 @@ let pkmnData: PokemonData = {
     name: "lillipup",
     base_exp: 55,
     is_mega: false,
-    names: "",
+    names: "Lillipup",
   },
-  507: {
+  "507": {
     types: ["Normal", "None"],
     stats: [65, 80, 65, 35, 65, 60],
     abilities: [
@@ -12330,9 +12330,9 @@ let pkmnData: PokemonData = {
     name: "herdier",
     base_exp: 130,
     is_mega: false,
-    names: "",
+    names: "Herdier",
   },
-  508: {
+  "508": {
     types: ["Normal", "None"],
     stats: [85, 110, 90, 45, 90, 80],
     abilities: [
@@ -12357,9 +12357,9 @@ let pkmnData: PokemonData = {
     name: "stoutland",
     base_exp: 250,
     is_mega: false,
-    names: "",
+    names: "Stoutland",
   },
-  509: {
+  "509": {
     types: ["Dark", "None"],
     stats: [41, 50, 37, 50, 37, 66],
     abilities: [
@@ -12384,9 +12384,9 @@ let pkmnData: PokemonData = {
     name: "purrloin",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Purrloin",
   },
-  510: {
+  "510": {
     types: ["Dark", "None"],
     stats: [64, 88, 50, 88, 50, 106],
     abilities: [
@@ -12411,9 +12411,9 @@ let pkmnData: PokemonData = {
     name: "liepard",
     base_exp: 156,
     is_mega: false,
-    names: "",
+    names: "Liepard",
   },
-  511: {
+  "511": {
     types: ["Grass", "None"],
     stats: [50, 53, 48, 53, 48, 64],
     abilities: [
@@ -12433,9 +12433,9 @@ let pkmnData: PokemonData = {
     name: "pansage",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Pansage",
   },
-  512: {
+  "512": {
     types: ["Grass", "None"],
     stats: [75, 98, 63, 98, 63, 101],
     abilities: [
@@ -12455,9 +12455,9 @@ let pkmnData: PokemonData = {
     name: "simisage",
     base_exp: 174,
     is_mega: false,
-    names: "",
+    names: "Simisage",
   },
-  513: {
+  "513": {
     types: ["Fire", "None"],
     stats: [50, 53, 48, 53, 48, 64],
     abilities: [
@@ -12477,9 +12477,9 @@ let pkmnData: PokemonData = {
     name: "pansear",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Pansear",
   },
-  514: {
+  "514": {
     types: ["Fire", "None"],
     stats: [75, 98, 63, 98, 63, 101],
     abilities: [
@@ -12499,9 +12499,9 @@ let pkmnData: PokemonData = {
     name: "simisear",
     base_exp: 174,
     is_mega: false,
-    names: "",
+    names: "Simisear",
   },
-  515: {
+  "515": {
     types: ["Water", "None"],
     stats: [50, 53, 48, 53, 48, 64],
     abilities: [
@@ -12521,9 +12521,9 @@ let pkmnData: PokemonData = {
     name: "panpour",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Panpour",
   },
-  516: {
+  "516": {
     types: ["Water", "None"],
     stats: [75, 98, 63, 98, 63, 101],
     abilities: [
@@ -12543,9 +12543,9 @@ let pkmnData: PokemonData = {
     name: "simipour",
     base_exp: 174,
     is_mega: false,
-    names: "",
+    names: "Simipour",
   },
-  517: {
+  "517": {
     types: ["Psychic", "None"],
     stats: [76, 25, 45, 67, 55, 24],
     abilities: [
@@ -12570,9 +12570,9 @@ let pkmnData: PokemonData = {
     name: "munna",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Munna",
   },
-  518: {
+  "518": {
     types: ["Psychic", "None"],
     stats: [116, 55, 85, 107, 95, 29],
     abilities: [
@@ -12597,9 +12597,9 @@ let pkmnData: PokemonData = {
     name: "musharna",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Musharna",
   },
-  519: {
+  "519": {
     types: ["Normal", "Flying"],
     stats: [50, 55, 50, 36, 30, 43],
     abilities: [
@@ -12624,9 +12624,9 @@ let pkmnData: PokemonData = {
     name: "pidove",
     base_exp: 53,
     is_mega: false,
-    names: "",
+    names: "Pidove",
   },
-  520: {
+  "520": {
     types: ["Normal", "Flying"],
     stats: [62, 77, 62, 50, 42, 65],
     abilities: [
@@ -12651,9 +12651,9 @@ let pkmnData: PokemonData = {
     name: "tranquill",
     base_exp: 125,
     is_mega: false,
-    names: "",
+    names: "Tranquill",
   },
-  521: {
+  "521": {
     types: ["Normal", "Flying"],
     stats: [80, 115, 80, 65, 55, 93],
     abilities: [
@@ -12678,9 +12678,9 @@ let pkmnData: PokemonData = {
     name: "unfezant",
     base_exp: 244,
     is_mega: false,
-    names: "",
+    names: "Unfezant",
   },
-  522: {
+  "522": {
     types: ["Electric", "None"],
     stats: [45, 60, 32, 50, 32, 76],
     abilities: [
@@ -12705,9 +12705,9 @@ let pkmnData: PokemonData = {
     name: "blitzle",
     base_exp: 59,
     is_mega: false,
-    names: "",
+    names: "Blitzle",
   },
-  523: {
+  "523": {
     types: ["Electric", "None"],
     stats: [75, 100, 63, 80, 63, 116],
     abilities: [
@@ -12732,9 +12732,9 @@ let pkmnData: PokemonData = {
     name: "zebstrika",
     base_exp: 174,
     is_mega: false,
-    names: "",
+    names: "Zebstrika",
   },
-  524: {
+  "524": {
     types: ["Rock", "None"],
     stats: [55, 75, 85, 25, 25, 15],
     abilities: [
@@ -12759,9 +12759,9 @@ let pkmnData: PokemonData = {
     name: "roggenrola",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Roggenrola",
   },
-  525: {
+  "525": {
     types: ["Rock", "None"],
     stats: [70, 105, 105, 50, 40, 20],
     abilities: [
@@ -12786,9 +12786,9 @@ let pkmnData: PokemonData = {
     name: "boldore",
     base_exp: 137,
     is_mega: false,
-    names: "",
+    names: "Boldore",
   },
-  526: {
+  "526": {
     types: ["Rock", "None"],
     stats: [85, 135, 130, 60, 80, 25],
     abilities: [
@@ -12813,9 +12813,9 @@ let pkmnData: PokemonData = {
     name: "gigalith",
     base_exp: 258,
     is_mega: false,
-    names: "",
+    names: "Gigalith",
   },
-  527: {
+  "527": {
     types: ["Psychic", "Flying"],
     stats: [65, 45, 43, 55, 43, 72],
     abilities: [
@@ -12840,9 +12840,9 @@ let pkmnData: PokemonData = {
     name: "woobat",
     base_exp: 65,
     is_mega: false,
-    names: "",
+    names: "Woobat",
   },
-  528: {
+  "528": {
     types: ["Psychic", "Flying"],
     stats: [67, 57, 55, 77, 55, 114],
     abilities: [
@@ -12867,9 +12867,9 @@ let pkmnData: PokemonData = {
     name: "swoobat",
     base_exp: 149,
     is_mega: false,
-    names: "",
+    names: "Swoobat",
   },
-  529: {
+  "529": {
     types: ["Ground", "None"],
     stats: [60, 85, 40, 30, 45, 68],
     abilities: [
@@ -12894,9 +12894,9 @@ let pkmnData: PokemonData = {
     name: "drilbur",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Drilbur",
   },
-  530: {
+  "530": {
     types: ["Ground", "Steel"],
     stats: [110, 135, 60, 50, 65, 88],
     abilities: [
@@ -12921,9 +12921,9 @@ let pkmnData: PokemonData = {
     name: "excadrill",
     base_exp: 178,
     is_mega: false,
-    names: "",
+    names: "Excadrill",
   },
-  531: {
+  "531": {
     types: ["Normal", "None"],
     stats: [103, 60, 86, 60, 86, 50],
     abilities: [
@@ -12948,9 +12948,9 @@ let pkmnData: PokemonData = {
     name: "audino",
     base_exp: 390,
     is_mega: false,
-    names: "",
+    names: "Audino",
   },
-  532: {
+  "532": {
     types: ["Fighting", "None"],
     stats: [75, 80, 55, 25, 35, 35],
     abilities: [
@@ -12975,9 +12975,9 @@ let pkmnData: PokemonData = {
     name: "timburr",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Timburr",
   },
-  533: {
+  "533": {
     types: ["Fighting", "None"],
     stats: [85, 105, 85, 40, 50, 40],
     abilities: [
@@ -13002,9 +13002,9 @@ let pkmnData: PokemonData = {
     name: "gurdurr",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Gurdurr",
   },
-  534: {
+  "534": {
     types: ["Fighting", "None"],
     stats: [105, 140, 95, 55, 65, 45],
     abilities: [
@@ -13029,9 +13029,9 @@ let pkmnData: PokemonData = {
     name: "conkeldurr",
     base_exp: 253,
     is_mega: false,
-    names: "",
+    names: "Conkeldurr",
   },
-  535: {
+  "535": {
     types: ["Water", "None"],
     stats: [50, 50, 40, 50, 40, 64],
     abilities: [
@@ -13056,9 +13056,9 @@ let pkmnData: PokemonData = {
     name: "tympole",
     base_exp: 59,
     is_mega: false,
-    names: "",
+    names: "Tympole",
   },
-  536: {
+  "536": {
     types: ["Water", "Ground"],
     stats: [75, 65, 55, 65, 55, 69],
     abilities: [
@@ -13083,9 +13083,9 @@ let pkmnData: PokemonData = {
     name: "palpitoad",
     base_exp: 134,
     is_mega: false,
-    names: "",
+    names: "Palpitoad",
   },
-  537: {
+  "537": {
     types: ["Water", "Ground"],
     stats: [105, 95, 75, 85, 75, 74],
     abilities: [
@@ -13110,9 +13110,9 @@ let pkmnData: PokemonData = {
     name: "seismitoad",
     base_exp: 255,
     is_mega: false,
-    names: "",
+    names: "Seismitoad",
   },
-  538: {
+  "538": {
     types: ["Fighting", "None"],
     stats: [120, 100, 85, 30, 85, 45],
     abilities: [
@@ -13137,9 +13137,9 @@ let pkmnData: PokemonData = {
     name: "throh",
     base_exp: 163,
     is_mega: false,
-    names: "",
+    names: "Throh",
   },
-  539: {
+  "539": {
     types: ["Fighting", "None"],
     stats: [75, 125, 75, 30, 75, 85],
     abilities: [
@@ -13164,9 +13164,9 @@ let pkmnData: PokemonData = {
     name: "sawk",
     base_exp: 163,
     is_mega: false,
-    names: "",
+    names: "Sawk",
   },
-  540: {
+  "540": {
     types: ["Bug", "Grass"],
     stats: [45, 53, 70, 40, 60, 42],
     abilities: [
@@ -13191,9 +13191,9 @@ let pkmnData: PokemonData = {
     name: "sewaddle",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Sewaddle",
   },
-  541: {
+  "541": {
     types: ["Bug", "Grass"],
     stats: [55, 63, 90, 50, 80, 42],
     abilities: [
@@ -13218,9 +13218,9 @@ let pkmnData: PokemonData = {
     name: "swadloon",
     base_exp: 133,
     is_mega: false,
-    names: "",
+    names: "Swadloon",
   },
-  542: {
+  "542": {
     types: ["Bug", "Grass"],
     stats: [75, 103, 80, 70, 80, 92],
     abilities: [
@@ -13245,9 +13245,9 @@ let pkmnData: PokemonData = {
     name: "leavanny",
     base_exp: 225,
     is_mega: false,
-    names: "",
+    names: "Leavanny",
   },
-  543: {
+  "543": {
     types: ["Bug", "Poison"],
     stats: [30, 45, 59, 30, 39, 57],
     abilities: [
@@ -13272,9 +13272,9 @@ let pkmnData: PokemonData = {
     name: "venipede",
     base_exp: 52,
     is_mega: false,
-    names: "",
+    names: "Venipede",
   },
-  544: {
+  "544": {
     types: ["Bug", "Poison"],
     stats: [40, 55, 99, 40, 79, 47],
     abilities: [
@@ -13299,9 +13299,9 @@ let pkmnData: PokemonData = {
     name: "whirlipede",
     base_exp: 126,
     is_mega: false,
-    names: "",
+    names: "Whirlipede",
   },
-  545: {
+  "545": {
     types: ["Bug", "Poison"],
     stats: [60, 100, 89, 55, 69, 112],
     abilities: [
@@ -13326,9 +13326,9 @@ let pkmnData: PokemonData = {
     name: "scolipede",
     base_exp: 243,
     is_mega: false,
-    names: "",
+    names: "Scolipede",
   },
-  546: {
+  "546": {
     types: ["Grass", "Fairy"],
     stats: [40, 27, 60, 37, 50, 66],
     abilities: [
@@ -13353,9 +13353,9 @@ let pkmnData: PokemonData = {
     name: "cottonee",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Cottonee",
   },
-  547: {
+  "547": {
     types: ["Grass", "Fairy"],
     stats: [60, 67, 85, 77, 75, 116],
     abilities: [
@@ -13380,9 +13380,9 @@ let pkmnData: PokemonData = {
     name: "whimsicott",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Whimsicott",
   },
-  548: {
+  "548": {
     types: ["Grass", "None"],
     stats: [45, 35, 50, 70, 50, 30],
     abilities: [
@@ -13407,9 +13407,9 @@ let pkmnData: PokemonData = {
     name: "petilil",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Petilil",
   },
-  549: {
+  "549": {
     types: ["Grass", "None"],
     stats: [70, 60, 75, 110, 75, 90],
     abilities: [
@@ -13434,9 +13434,9 @@ let pkmnData: PokemonData = {
     name: "lilligant",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Lilligant",
   },
-  550: {
+  "550": {
     types: ["Water", "None"],
     stats: [70, 92, 65, 80, 55, 98],
     abilities: [
@@ -13463,7 +13463,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Red-Striped Basculin",
   },
-  551: {
+  "551": {
     types: ["Ground", "Dark"],
     stats: [50, 72, 35, 35, 35, 65],
     abilities: [
@@ -13488,9 +13488,9 @@ let pkmnData: PokemonData = {
     name: "sandile",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Sandile",
   },
-  552: {
+  "552": {
     types: ["Ground", "Dark"],
     stats: [60, 82, 45, 45, 45, 74],
     abilities: [
@@ -13515,9 +13515,9 @@ let pkmnData: PokemonData = {
     name: "krokorok",
     base_exp: 123,
     is_mega: false,
-    names: "",
+    names: "Krokorok",
   },
-  553: {
+  "553": {
     types: ["Ground", "Dark"],
     stats: [95, 117, 80, 65, 70, 92],
     abilities: [
@@ -13542,9 +13542,9 @@ let pkmnData: PokemonData = {
     name: "krookodile",
     base_exp: 260,
     is_mega: false,
-    names: "",
+    names: "Krookodile",
   },
-  554: {
+  "554": {
     types: ["Fire", "None"],
     stats: [70, 90, 45, 15, 45, 50],
     abilities: [
@@ -13564,9 +13564,9 @@ let pkmnData: PokemonData = {
     name: "darumaka",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Darumaka",
   },
-  555: {
+  "555": {
     types: ["Fire", "None"],
     stats: [105, 140, 55, 30, 55, 95],
     abilities: [
@@ -13588,7 +13588,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Standard Darmanitan",
   },
-  556: {
+  "556": {
     types: ["Grass", "None"],
     stats: [75, 86, 67, 106, 67, 60],
     abilities: [
@@ -13613,9 +13613,9 @@ let pkmnData: PokemonData = {
     name: "maractus",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Maractus",
   },
-  557: {
+  "557": {
     types: ["Bug", "Rock"],
     stats: [50, 65, 85, 35, 35, 55],
     abilities: [
@@ -13640,9 +13640,9 @@ let pkmnData: PokemonData = {
     name: "dwebble",
     base_exp: 65,
     is_mega: false,
-    names: "",
+    names: "Dwebble",
   },
-  558: {
+  "558": {
     types: ["Bug", "Rock"],
     stats: [70, 105, 125, 65, 75, 45],
     abilities: [
@@ -13667,9 +13667,9 @@ let pkmnData: PokemonData = {
     name: "crustle",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Crustle",
   },
-  559: {
+  "559": {
     types: ["Dark", "Fighting"],
     stats: [50, 75, 70, 35, 70, 48],
     abilities: [
@@ -13694,9 +13694,9 @@ let pkmnData: PokemonData = {
     name: "scraggy",
     base_exp: 70,
     is_mega: false,
-    names: "",
+    names: "Scraggy",
   },
-  560: {
+  "560": {
     types: ["Dark", "Fighting"],
     stats: [65, 90, 115, 45, 115, 58],
     abilities: [
@@ -13721,9 +13721,9 @@ let pkmnData: PokemonData = {
     name: "scrafty",
     base_exp: 171,
     is_mega: false,
-    names: "",
+    names: "Scrafty",
   },
-  561: {
+  "561": {
     types: ["Psychic", "Flying"],
     stats: [72, 58, 80, 103, 80, 97],
     abilities: [
@@ -13748,9 +13748,9 @@ let pkmnData: PokemonData = {
     name: "sigilyph",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Sigilyph",
   },
-  562: {
+  "562": {
     types: ["Ghost", "None"],
     stats: [38, 30, 85, 55, 65, 30],
     abilities: [
@@ -13765,9 +13765,9 @@ let pkmnData: PokemonData = {
     name: "yamask",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Yamask",
   },
-  563: {
+  "563": {
     types: ["Ghost", "None"],
     stats: [58, 50, 145, 95, 105, 30],
     abilities: [
@@ -13782,9 +13782,9 @@ let pkmnData: PokemonData = {
     name: "cofagrigus",
     base_exp: 169,
     is_mega: false,
-    names: "",
+    names: "Cofagrigus",
   },
-  564: {
+  "564": {
     types: ["Water", "Rock"],
     stats: [54, 78, 103, 53, 45, 22],
     abilities: [
@@ -13809,9 +13809,9 @@ let pkmnData: PokemonData = {
     name: "tirtouga",
     base_exp: 71,
     is_mega: false,
-    names: "",
+    names: "Tirtouga",
   },
-  565: {
+  "565": {
     types: ["Water", "Rock"],
     stats: [74, 108, 133, 83, 65, 32],
     abilities: [
@@ -13836,9 +13836,9 @@ let pkmnData: PokemonData = {
     name: "carracosta",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Carracosta",
   },
-  566: {
+  "566": {
     types: ["Rock", "Flying"],
     stats: [55, 112, 45, 74, 45, 70],
     abilities: [
@@ -13853,9 +13853,9 @@ let pkmnData: PokemonData = {
     name: "archen",
     base_exp: 71,
     is_mega: false,
-    names: "",
+    names: "Archen",
   },
-  567: {
+  "567": {
     types: ["Rock", "Flying"],
     stats: [75, 140, 65, 112, 65, 110],
     abilities: [
@@ -13870,9 +13870,9 @@ let pkmnData: PokemonData = {
     name: "archeops",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Archeops",
   },
-  568: {
+  "568": {
     types: ["Poison", "None"],
     stats: [50, 50, 62, 40, 62, 65],
     abilities: [
@@ -13897,9 +13897,9 @@ let pkmnData: PokemonData = {
     name: "trubbish",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Trubbish",
   },
-  569: {
+  "569": {
     types: ["Poison", "None"],
     stats: [80, 95, 82, 60, 82, 75],
     abilities: [
@@ -13924,9 +13924,9 @@ let pkmnData: PokemonData = {
     name: "garbodor",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Garbodor",
   },
-  570: {
+  "570": {
     types: ["Dark", "None"],
     stats: [40, 65, 40, 80, 40, 65],
     abilities: [
@@ -13941,9 +13941,9 @@ let pkmnData: PokemonData = {
     name: "zorua",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Zorua",
   },
-  571: {
+  "571": {
     types: ["Dark", "None"],
     stats: [60, 105, 60, 120, 60, 105],
     abilities: [
@@ -13958,9 +13958,9 @@ let pkmnData: PokemonData = {
     name: "zoroark",
     base_exp: 179,
     is_mega: false,
-    names: "",
+    names: "Zoroark",
   },
-  572: {
+  "572": {
     types: ["Normal", "None"],
     stats: [55, 50, 40, 40, 40, 75],
     abilities: [
@@ -13985,9 +13985,9 @@ let pkmnData: PokemonData = {
     name: "minccino",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Minccino",
   },
-  573: {
+  "573": {
     types: ["Normal", "None"],
     stats: [75, 95, 60, 65, 60, 115],
     abilities: [
@@ -14012,9 +14012,9 @@ let pkmnData: PokemonData = {
     name: "cinccino",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Cinccino",
   },
-  574: {
+  "574": {
     types: ["Psychic", "None"],
     stats: [45, 30, 50, 55, 65, 45],
     abilities: [
@@ -14039,9 +14039,9 @@ let pkmnData: PokemonData = {
     name: "gothita",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Gothita",
   },
-  575: {
+  "575": {
     types: ["Psychic", "None"],
     stats: [60, 45, 70, 75, 85, 55],
     abilities: [
@@ -14066,9 +14066,9 @@ let pkmnData: PokemonData = {
     name: "gothorita",
     base_exp: 137,
     is_mega: false,
-    names: "",
+    names: "Gothorita",
   },
-  576: {
+  "576": {
     types: ["Psychic", "None"],
     stats: [70, 55, 95, 95, 110, 65],
     abilities: [
@@ -14093,9 +14093,9 @@ let pkmnData: PokemonData = {
     name: "gothitelle",
     base_exp: 245,
     is_mega: false,
-    names: "",
+    names: "Gothitelle",
   },
-  577: {
+  "577": {
     types: ["Psychic", "None"],
     stats: [45, 30, 40, 105, 50, 20],
     abilities: [
@@ -14120,9 +14120,9 @@ let pkmnData: PokemonData = {
     name: "solosis",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Solosis",
   },
-  578: {
+  "578": {
     types: ["Psychic", "None"],
     stats: [65, 40, 50, 125, 60, 30],
     abilities: [
@@ -14147,9 +14147,9 @@ let pkmnData: PokemonData = {
     name: "duosion",
     base_exp: 130,
     is_mega: false,
-    names: "",
+    names: "Duosion",
   },
-  579: {
+  "579": {
     types: ["Psychic", "None"],
     stats: [110, 65, 75, 125, 85, 30],
     abilities: [
@@ -14174,9 +14174,9 @@ let pkmnData: PokemonData = {
     name: "reuniclus",
     base_exp: 245,
     is_mega: false,
-    names: "",
+    names: "Reuniclus",
   },
-  580: {
+  "580": {
     types: ["Water", "Flying"],
     stats: [62, 44, 50, 44, 50, 55],
     abilities: [
@@ -14201,9 +14201,9 @@ let pkmnData: PokemonData = {
     name: "ducklett",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Ducklett",
   },
-  581: {
+  "581": {
     types: ["Water", "Flying"],
     stats: [75, 87, 63, 87, 63, 98],
     abilities: [
@@ -14228,9 +14228,9 @@ let pkmnData: PokemonData = {
     name: "swanna",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Swanna",
   },
-  582: {
+  "582": {
     types: ["Ice", "None"],
     stats: [36, 50, 50, 65, 60, 44],
     abilities: [
@@ -14255,9 +14255,9 @@ let pkmnData: PokemonData = {
     name: "vanillite",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Vanillite",
   },
-  583: {
+  "583": {
     types: ["Ice", "None"],
     stats: [51, 65, 65, 80, 75, 59],
     abilities: [
@@ -14282,9 +14282,9 @@ let pkmnData: PokemonData = {
     name: "vanillish",
     base_exp: 138,
     is_mega: false,
-    names: "",
+    names: "Vanillish",
   },
-  584: {
+  "584": {
     types: ["Ice", "None"],
     stats: [71, 95, 85, 110, 95, 79],
     abilities: [
@@ -14309,9 +14309,9 @@ let pkmnData: PokemonData = {
     name: "vanilluxe",
     base_exp: 268,
     is_mega: false,
-    names: "",
+    names: "Vanilluxe",
   },
-  585: {
+  "585": {
     types: ["Normal", "Grass"],
     stats: [60, 60, 50, 40, 50, 75],
     abilities: [
@@ -14341,9 +14341,9 @@ let pkmnData: PokemonData = {
     name: "deerling",
     base_exp: 67,
     is_mega: false,
-    names: "Spring Deerling",
+    names: "Deerling",
   },
-  586: {
+  "586": {
     types: ["Normal", "Grass"],
     stats: [80, 100, 70, 60, 70, 95],
     abilities: [
@@ -14373,9 +14373,9 @@ let pkmnData: PokemonData = {
     name: "sawsbuck",
     base_exp: 166,
     is_mega: false,
-    names: "Spring Sawsbuck",
+    names: "Sawsbuck",
   },
-  587: {
+  "587": {
     types: ["Electric", "Flying"],
     stats: [55, 75, 60, 75, 60, 103],
     abilities: [
@@ -14395,9 +14395,9 @@ let pkmnData: PokemonData = {
     name: "emolga",
     base_exp: 150,
     is_mega: false,
-    names: "",
+    names: "Emolga",
   },
-  588: {
+  "588": {
     types: ["Bug", "None"],
     stats: [50, 75, 45, 40, 45, 60],
     abilities: [
@@ -14422,9 +14422,9 @@ let pkmnData: PokemonData = {
     name: "karrablast",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Karrablast",
   },
-  589: {
+  "589": {
     types: ["Bug", "Steel"],
     stats: [70, 135, 105, 60, 105, 20],
     abilities: [
@@ -14449,9 +14449,9 @@ let pkmnData: PokemonData = {
     name: "escavalier",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Escavalier",
   },
-  590: {
+  "590": {
     types: ["Grass", "Poison"],
     stats: [69, 55, 45, 55, 55, 15],
     abilities: [
@@ -14471,9 +14471,9 @@ let pkmnData: PokemonData = {
     name: "foongus",
     base_exp: 59,
     is_mega: false,
-    names: "",
+    names: "Foongus",
   },
-  591: {
+  "591": {
     types: ["Grass", "Poison"],
     stats: [114, 85, 70, 85, 80, 30],
     abilities: [
@@ -14493,9 +14493,9 @@ let pkmnData: PokemonData = {
     name: "amoonguss",
     base_exp: 162,
     is_mega: false,
-    names: "",
+    names: "Amoonguss",
   },
-  592: {
+  "592": {
     types: ["Water", "Ghost"],
     stats: [55, 40, 50, 65, 85, 40],
     abilities: [
@@ -14520,9 +14520,9 @@ let pkmnData: PokemonData = {
     name: "frillish",
     base_exp: 67,
     is_mega: false,
-    names: "",
+    names: "Frillish",
   },
-  593: {
+  "593": {
     types: ["Water", "Ghost"],
     stats: [100, 60, 70, 85, 105, 60],
     abilities: [
@@ -14547,9 +14547,9 @@ let pkmnData: PokemonData = {
     name: "jellicent",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Jellicent",
   },
-  594: {
+  "594": {
     types: ["Water", "None"],
     stats: [165, 75, 80, 40, 45, 65],
     abilities: [
@@ -14574,9 +14574,9 @@ let pkmnData: PokemonData = {
     name: "alomomola",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Alomomola",
   },
-  595: {
+  "595": {
     types: ["Bug", "Electric"],
     stats: [50, 47, 50, 57, 50, 65],
     abilities: [
@@ -14601,9 +14601,9 @@ let pkmnData: PokemonData = {
     name: "joltik",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Joltik",
   },
-  596: {
+  "596": {
     types: ["Bug", "Electric"],
     stats: [70, 77, 60, 97, 60, 108],
     abilities: [
@@ -14628,9 +14628,9 @@ let pkmnData: PokemonData = {
     name: "galvantula",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Galvantula",
   },
-  597: {
+  "597": {
     types: ["Grass", "Steel"],
     stats: [44, 50, 91, 24, 86, 10],
     abilities: [
@@ -14645,9 +14645,9 @@ let pkmnData: PokemonData = {
     name: "ferroseed",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Ferroseed",
   },
-  598: {
+  "598": {
     types: ["Grass", "Steel"],
     stats: [74, 94, 131, 54, 116, 20],
     abilities: [
@@ -14667,9 +14667,9 @@ let pkmnData: PokemonData = {
     name: "ferrothorn",
     base_exp: 171,
     is_mega: false,
-    names: "",
+    names: "Ferrothorn",
   },
-  599: {
+  "599": {
     types: ["Steel", "None"],
     stats: [40, 55, 70, 45, 60, 30],
     abilities: [
@@ -14694,9 +14694,9 @@ let pkmnData: PokemonData = {
     name: "klink",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Klink",
   },
-  600: {
+  "600": {
     types: ["Steel", "None"],
     stats: [60, 80, 95, 70, 85, 50],
     abilities: [
@@ -14721,9 +14721,9 @@ let pkmnData: PokemonData = {
     name: "klang",
     base_exp: 154,
     is_mega: false,
-    names: "",
+    names: "Klang",
   },
-  601: {
+  "601": {
     types: ["Steel", "None"],
     stats: [60, 100, 115, 70, 85, 90],
     abilities: [
@@ -14748,9 +14748,9 @@ let pkmnData: PokemonData = {
     name: "klinklang",
     base_exp: 260,
     is_mega: false,
-    names: "",
+    names: "Klinklang",
   },
-  602: {
+  "602": {
     types: ["Electric", "None"],
     stats: [35, 55, 40, 45, 40, 60],
     abilities: [
@@ -14765,9 +14765,9 @@ let pkmnData: PokemonData = {
     name: "tynamo",
     base_exp: 55,
     is_mega: false,
-    names: "",
+    names: "Tynamo",
   },
-  603: {
+  "603": {
     types: ["Electric", "None"],
     stats: [65, 85, 70, 75, 70, 40],
     abilities: [
@@ -14782,9 +14782,9 @@ let pkmnData: PokemonData = {
     name: "eelektrik",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Eelektrik",
   },
-  604: {
+  "604": {
     types: ["Electric", "None"],
     stats: [85, 115, 80, 105, 80, 50],
     abilities: [
@@ -14799,9 +14799,9 @@ let pkmnData: PokemonData = {
     name: "eelektross",
     base_exp: 232,
     is_mega: false,
-    names: "",
+    names: "Eelektross",
   },
-  605: {
+  "605": {
     types: ["Psychic", "None"],
     stats: [55, 55, 55, 85, 55, 30],
     abilities: [
@@ -14826,9 +14826,9 @@ let pkmnData: PokemonData = {
     name: "elgyem",
     base_exp: 67,
     is_mega: false,
-    names: "",
+    names: "Elgyem",
   },
-  606: {
+  "606": {
     types: ["Psychic", "None"],
     stats: [75, 75, 75, 125, 95, 40],
     abilities: [
@@ -14853,9 +14853,9 @@ let pkmnData: PokemonData = {
     name: "beheeyem",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Beheeyem",
   },
-  607: {
+  "607": {
     types: ["Ghost", "Fire"],
     stats: [50, 30, 55, 65, 55, 20],
     abilities: [
@@ -14880,9 +14880,9 @@ let pkmnData: PokemonData = {
     name: "litwick",
     base_exp: 55,
     is_mega: false,
-    names: "",
+    names: "Litwick",
   },
-  608: {
+  "608": {
     types: ["Ghost", "Fire"],
     stats: [60, 40, 60, 95, 60, 55],
     abilities: [
@@ -14907,9 +14907,9 @@ let pkmnData: PokemonData = {
     name: "lampent",
     base_exp: 130,
     is_mega: false,
-    names: "",
+    names: "Lampent",
   },
-  609: {
+  "609": {
     types: ["Ghost", "Fire"],
     stats: [60, 55, 90, 145, 90, 80],
     abilities: [
@@ -14934,9 +14934,9 @@ let pkmnData: PokemonData = {
     name: "chandelure",
     base_exp: 260,
     is_mega: false,
-    names: "",
+    names: "Chandelure",
   },
-  610: {
+  "610": {
     types: ["Dragon", "None"],
     stats: [46, 87, 60, 30, 40, 57],
     abilities: [
@@ -14961,9 +14961,9 @@ let pkmnData: PokemonData = {
     name: "axew",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Axew",
   },
-  611: {
+  "611": {
     types: ["Dragon", "None"],
     stats: [66, 117, 70, 40, 50, 67],
     abilities: [
@@ -14988,9 +14988,9 @@ let pkmnData: PokemonData = {
     name: "fraxure",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Fraxure",
   },
-  612: {
+  "612": {
     types: ["Dragon", "None"],
     stats: [76, 147, 90, 60, 70, 97],
     abilities: [
@@ -15015,9 +15015,9 @@ let pkmnData: PokemonData = {
     name: "haxorus",
     base_exp: 270,
     is_mega: false,
-    names: "",
+    names: "Haxorus",
   },
-  613: {
+  "613": {
     types: ["Ice", "None"],
     stats: [55, 70, 40, 60, 40, 40],
     abilities: [
@@ -15042,9 +15042,9 @@ let pkmnData: PokemonData = {
     name: "cubchoo",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Cubchoo",
   },
-  614: {
+  "614": {
     types: ["Ice", "None"],
     stats: [95, 130, 80, 70, 80, 50],
     abilities: [
@@ -15069,9 +15069,9 @@ let pkmnData: PokemonData = {
     name: "beartic",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Beartic",
   },
-  615: {
+  "615": {
     types: ["Ice", "None"],
     stats: [80, 50, 50, 95, 135, 105],
     abilities: [
@@ -15086,9 +15086,9 @@ let pkmnData: PokemonData = {
     name: "cryogonal",
     base_exp: 180,
     is_mega: false,
-    names: "",
+    names: "Cryogonal",
   },
-  616: {
+  "616": {
     types: ["Bug", "None"],
     stats: [50, 40, 85, 40, 65, 25],
     abilities: [
@@ -15113,9 +15113,9 @@ let pkmnData: PokemonData = {
     name: "shelmet",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Shelmet",
   },
-  617: {
+  "617": {
     types: ["Bug", "None"],
     stats: [80, 70, 40, 100, 60, 145],
     abilities: [
@@ -15140,9 +15140,9 @@ let pkmnData: PokemonData = {
     name: "accelgor",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Accelgor",
   },
-  618: {
+  "618": {
     types: ["Ground", "Electric"],
     stats: [109, 66, 84, 81, 99, 32],
     abilities: [
@@ -15167,9 +15167,9 @@ let pkmnData: PokemonData = {
     name: "stunfisk",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Stunfisk",
   },
-  619: {
+  "619": {
     types: ["Fighting", "None"],
     stats: [45, 85, 50, 55, 50, 65],
     abilities: [
@@ -15194,9 +15194,9 @@ let pkmnData: PokemonData = {
     name: "mienfoo",
     base_exp: 70,
     is_mega: false,
-    names: "",
+    names: "Mienfoo",
   },
-  620: {
+  "620": {
     types: ["Fighting", "None"],
     stats: [65, 125, 60, 95, 60, 105],
     abilities: [
@@ -15221,9 +15221,9 @@ let pkmnData: PokemonData = {
     name: "mienshao",
     base_exp: 179,
     is_mega: false,
-    names: "",
+    names: "Mienshao",
   },
-  621: {
+  "621": {
     types: ["Dragon", "None"],
     stats: [77, 120, 90, 60, 90, 48],
     abilities: [
@@ -15248,9 +15248,9 @@ let pkmnData: PokemonData = {
     name: "druddigon",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Druddigon",
   },
-  622: {
+  "622": {
     types: ["Ground", "Ghost"],
     stats: [59, 74, 50, 35, 50, 35],
     abilities: [
@@ -15275,9 +15275,9 @@ let pkmnData: PokemonData = {
     name: "golett",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Golett",
   },
-  623: {
+  "623": {
     types: ["Ground", "Ghost"],
     stats: [89, 124, 80, 55, 80, 55],
     abilities: [
@@ -15302,9 +15302,9 @@ let pkmnData: PokemonData = {
     name: "golurk",
     base_exp: 169,
     is_mega: false,
-    names: "",
+    names: "Golurk",
   },
-  624: {
+  "624": {
     types: ["Dark", "Steel"],
     stats: [45, 85, 70, 40, 40, 60],
     abilities: [
@@ -15329,9 +15329,9 @@ let pkmnData: PokemonData = {
     name: "pawniard",
     base_exp: 68,
     is_mega: false,
-    names: "",
+    names: "Pawniard",
   },
-  625: {
+  "625": {
     types: ["Dark", "Steel"],
     stats: [65, 125, 100, 60, 70, 70],
     abilities: [
@@ -15356,9 +15356,9 @@ let pkmnData: PokemonData = {
     name: "bisharp",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Bisharp",
   },
-  626: {
+  "626": {
     types: ["Normal", "None"],
     stats: [95, 110, 95, 40, 95, 55],
     abilities: [
@@ -15383,9 +15383,9 @@ let pkmnData: PokemonData = {
     name: "bouffalant",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Bouffalant",
   },
-  627: {
+  "627": {
     types: ["Normal", "Flying"],
     stats: [70, 83, 50, 37, 50, 60],
     abilities: [
@@ -15410,9 +15410,9 @@ let pkmnData: PokemonData = {
     name: "rufflet",
     base_exp: 70,
     is_mega: false,
-    names: "",
+    names: "Rufflet",
   },
-  628: {
+  "628": {
     types: ["Normal", "Flying"],
     stats: [100, 123, 75, 57, 75, 80],
     abilities: [
@@ -15437,9 +15437,9 @@ let pkmnData: PokemonData = {
     name: "braviary",
     base_exp: 179,
     is_mega: false,
-    names: "",
+    names: "Braviary",
   },
-  629: {
+  "629": {
     types: ["Dark", "Flying"],
     stats: [70, 55, 75, 45, 65, 60],
     abilities: [
@@ -15464,9 +15464,9 @@ let pkmnData: PokemonData = {
     name: "vullaby",
     base_exp: 74,
     is_mega: false,
-    names: "",
+    names: "Vullaby",
   },
-  630: {
+  "630": {
     types: ["Dark", "Flying"],
     stats: [110, 65, 105, 55, 95, 80],
     abilities: [
@@ -15491,9 +15491,9 @@ let pkmnData: PokemonData = {
     name: "mandibuzz",
     base_exp: 179,
     is_mega: false,
-    names: "",
+    names: "Mandibuzz",
   },
-  631: {
+  "631": {
     types: ["Fire", "None"],
     stats: [85, 97, 66, 105, 66, 65],
     abilities: [
@@ -15518,9 +15518,9 @@ let pkmnData: PokemonData = {
     name: "heatmor",
     base_exp: 169,
     is_mega: false,
-    names: "",
+    names: "Heatmor",
   },
-  632: {
+  "632": {
     types: ["Bug", "Steel"],
     stats: [58, 109, 112, 48, 48, 109],
     abilities: [
@@ -15545,9 +15545,9 @@ let pkmnData: PokemonData = {
     name: "durant",
     base_exp: 169,
     is_mega: false,
-    names: "",
+    names: "Durant",
   },
-  633: {
+  "633": {
     types: ["Dark", "Dragon"],
     stats: [52, 65, 50, 45, 50, 38],
     abilities: [
@@ -15562,9 +15562,9 @@ let pkmnData: PokemonData = {
     name: "deino",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Deino",
   },
-  634: {
+  "634": {
     types: ["Dark", "Dragon"],
     stats: [72, 85, 70, 65, 70, 58],
     abilities: [
@@ -15579,9 +15579,9 @@ let pkmnData: PokemonData = {
     name: "zweilous",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Zweilous",
   },
-  635: {
+  "635": {
     types: ["Dark", "Dragon"],
     stats: [92, 105, 90, 125, 90, 98],
     abilities: [
@@ -15596,9 +15596,9 @@ let pkmnData: PokemonData = {
     name: "hydreigon",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Hydreigon",
   },
-  636: {
+  "636": {
     types: ["Bug", "Fire"],
     stats: [55, 85, 55, 50, 55, 60],
     abilities: [
@@ -15618,9 +15618,9 @@ let pkmnData: PokemonData = {
     name: "larvesta",
     base_exp: 72,
     is_mega: false,
-    names: "",
+    names: "Larvesta",
   },
-  637: {
+  "637": {
     types: ["Bug", "Fire"],
     stats: [85, 60, 65, 135, 105, 100],
     abilities: [
@@ -15640,9 +15640,9 @@ let pkmnData: PokemonData = {
     name: "volcarona",
     base_exp: 275,
     is_mega: false,
-    names: "",
+    names: "Volcarona",
   },
-  638: {
+  "638": {
     types: ["Steel", "Fighting"],
     stats: [91, 90, 129, 90, 72, 108],
     abilities: [
@@ -15657,9 +15657,9 @@ let pkmnData: PokemonData = {
     name: "cobalion",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Cobalion",
   },
-  639: {
+  "639": {
     types: ["Rock", "Fighting"],
     stats: [91, 129, 90, 72, 90, 108],
     abilities: [
@@ -15674,9 +15674,9 @@ let pkmnData: PokemonData = {
     name: "terrakion",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Terrakion",
   },
-  640: {
+  "640": {
     types: ["Grass", "Fighting"],
     stats: [91, 90, 72, 90, 129, 108],
     abilities: [
@@ -15691,9 +15691,9 @@ let pkmnData: PokemonData = {
     name: "virizion",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Virizion",
   },
-  641: {
+  "641": {
     types: ["Flying", "None"],
     stats: [79, 115, 70, 125, 80, 111],
     abilities: [
@@ -15715,7 +15715,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Incarnate Tornadus",
   },
-  642: {
+  "642": {
     types: ["Electric", "Flying"],
     stats: [79, 115, 70, 125, 80, 111],
     abilities: [
@@ -15737,7 +15737,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Incarnate Thundurus",
   },
-  643: {
+  "643": {
     types: ["Dragon", "Fire"],
     stats: [100, 120, 100, 150, 120, 90],
     abilities: [
@@ -15752,9 +15752,9 @@ let pkmnData: PokemonData = {
     name: "reshiram",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Reshiram",
   },
-  644: {
+  "644": {
     types: ["Dragon", "Electric"],
     stats: [100, 150, 120, 120, 100, 90],
     abilities: [
@@ -15769,9 +15769,9 @@ let pkmnData: PokemonData = {
     name: "zekrom",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Zekrom",
   },
-  645: {
+  "645": {
     types: ["Ground", "Flying"],
     stats: [89, 125, 90, 115, 80, 101],
     abilities: [
@@ -15793,7 +15793,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Incarnate Landorus",
   },
-  646: {
+  "646": {
     types: ["Dragon", "Ice"],
     stats: [125, 130, 90, 130, 90, 95],
     abilities: [
@@ -15808,9 +15808,9 @@ let pkmnData: PokemonData = {
     name: "kyurem",
     base_exp: 330,
     is_mega: false,
-    names: "",
+    names: "Kyurem",
   },
-  647: {
+  "647": {
     types: ["Water", "Fighting"],
     stats: [91, 72, 90, 129, 90, 108],
     abilities: [
@@ -15827,7 +15827,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Ordinary Keldeo",
   },
-  648: {
+  "648": {
     types: ["Normal", "Psychic"],
     stats: [100, 77, 77, 128, 128, 90],
     abilities: [
@@ -15844,7 +15844,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Aria Meloetta",
   },
-  649: {
+  "649": {
     types: ["Bug", "Steel"],
     stats: [71, 120, 95, 120, 95, 99],
     abilities: [
@@ -15865,9 +15865,9 @@ let pkmnData: PokemonData = {
     name: "genesect",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Genesect",
   },
-  650: {
+  "650": {
     types: ["Grass", "None"],
     stats: [56, 61, 65, 48, 45, 38],
     abilities: [
@@ -15887,9 +15887,9 @@ let pkmnData: PokemonData = {
     name: "chespin",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Chespin",
   },
-  651: {
+  "651": {
     types: ["Grass", "None"],
     stats: [61, 78, 95, 56, 58, 57],
     abilities: [
@@ -15909,9 +15909,9 @@ let pkmnData: PokemonData = {
     name: "quilladin",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Quilladin",
   },
-  652: {
+  "652": {
     types: ["Grass", "Fighting"],
     stats: [88, 107, 122, 74, 75, 64],
     abilities: [
@@ -15931,9 +15931,9 @@ let pkmnData: PokemonData = {
     name: "chesnaught",
     base_exp: 239,
     is_mega: false,
-    names: "",
+    names: "Chesnaught",
   },
-  653: {
+  "653": {
     types: ["Fire", "None"],
     stats: [40, 45, 40, 62, 60, 60],
     abilities: [
@@ -15953,9 +15953,9 @@ let pkmnData: PokemonData = {
     name: "fennekin",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Fennekin",
   },
-  654: {
+  "654": {
     types: ["Fire", "None"],
     stats: [59, 59, 58, 90, 70, 73],
     abilities: [
@@ -15975,9 +15975,9 @@ let pkmnData: PokemonData = {
     name: "braixen",
     base_exp: 143,
     is_mega: false,
-    names: "",
+    names: "Braixen",
   },
-  655: {
+  "655": {
     types: ["Fire", "Psychic"],
     stats: [75, 69, 72, 114, 100, 104],
     abilities: [
@@ -15997,9 +15997,9 @@ let pkmnData: PokemonData = {
     name: "delphox",
     base_exp: 240,
     is_mega: false,
-    names: "",
+    names: "Delphox",
   },
-  656: {
+  "656": {
     types: ["Water", "None"],
     stats: [41, 56, 40, 62, 44, 71],
     abilities: [
@@ -16019,9 +16019,9 @@ let pkmnData: PokemonData = {
     name: "froakie",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Froakie",
   },
-  657: {
+  "657": {
     types: ["Water", "None"],
     stats: [54, 63, 52, 83, 56, 97],
     abilities: [
@@ -16041,9 +16041,9 @@ let pkmnData: PokemonData = {
     name: "frogadier",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Frogadier",
   },
-  658: {
+  "658": {
     types: ["Water", "Dark"],
     stats: [72, 95, 67, 103, 71, 122],
     abilities: [
@@ -16063,9 +16063,9 @@ let pkmnData: PokemonData = {
     name: "greninja",
     base_exp: 239,
     is_mega: false,
-    names: "",
+    names: "Greninja",
   },
-  659: {
+  "659": {
     types: ["Normal", "None"],
     stats: [38, 36, 38, 32, 36, 57],
     abilities: [
@@ -16090,9 +16090,9 @@ let pkmnData: PokemonData = {
     name: "bunnelby",
     base_exp: 47,
     is_mega: false,
-    names: "",
+    names: "Bunnelby",
   },
-  660: {
+  "660": {
     types: ["Normal", "Ground"],
     stats: [85, 56, 77, 50, 77, 78],
     abilities: [
@@ -16117,9 +16117,9 @@ let pkmnData: PokemonData = {
     name: "diggersby",
     base_exp: 148,
     is_mega: false,
-    names: "",
+    names: "Diggersby",
   },
-  661: {
+  "661": {
     types: ["Normal", "Flying"],
     stats: [45, 50, 43, 40, 38, 62],
     abilities: [
@@ -16139,9 +16139,9 @@ let pkmnData: PokemonData = {
     name: "fletchling",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Fletchling",
   },
-  662: {
+  "662": {
     types: ["Fire", "Flying"],
     stats: [62, 73, 55, 56, 52, 84],
     abilities: [
@@ -16161,9 +16161,9 @@ let pkmnData: PokemonData = {
     name: "fletchinder",
     base_exp: 134,
     is_mega: false,
-    names: "",
+    names: "Fletchinder",
   },
-  663: {
+  "663": {
     types: ["Fire", "Flying"],
     stats: [78, 81, 71, 74, 69, 126],
     abilities: [
@@ -16183,9 +16183,9 @@ let pkmnData: PokemonData = {
     name: "talonflame",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Talonflame",
   },
-  664: {
+  "664": {
     types: ["Bug", "None"],
     stats: [38, 35, 40, 27, 25, 35],
     abilities: [
@@ -16231,9 +16231,9 @@ let pkmnData: PokemonData = {
     name: "scatterbug",
     base_exp: 40,
     is_mega: false,
-    names: "",
+    names: "Scatterbug",
   },
-  665: {
+  "665": {
     types: ["Bug", "None"],
     stats: [45, 22, 60, 27, 30, 29],
     abilities: [
@@ -16274,9 +16274,9 @@ let pkmnData: PokemonData = {
     name: "spewpa",
     base_exp: 75,
     is_mega: false,
-    names: "",
+    names: "Spewpa",
   },
-  666: {
+  "666": {
     types: ["Bug", "Flying"],
     stats: [80, 52, 50, 90, 50, 89],
     abilities: [
@@ -16322,9 +16322,9 @@ let pkmnData: PokemonData = {
     name: "vivillon",
     base_exp: 185,
     is_mega: false,
-    names: "Meadow Vivillon",
+    names: "Vivillon",
   },
-  667: {
+  "667": {
     types: ["Fire", "Normal"],
     stats: [62, 50, 58, 73, 54, 72],
     abilities: [
@@ -16349,9 +16349,9 @@ let pkmnData: PokemonData = {
     name: "litleo",
     base_exp: 74,
     is_mega: false,
-    names: "",
+    names: "Litleo",
   },
-  668: {
+  "668": {
     types: ["Fire", "Normal"],
     stats: [86, 68, 72, 109, 66, 106],
     abilities: [
@@ -16376,9 +16376,9 @@ let pkmnData: PokemonData = {
     name: "pyroar",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Pyroar",
   },
-  669: {
+  "669": {
     types: ["Fairy", "None"],
     stats: [44, 38, 39, 61, 79, 42],
     abilities: [
@@ -16404,9 +16404,9 @@ let pkmnData: PokemonData = {
     name: "flabebe",
     base_exp: 61,
     is_mega: false,
-    names: "Red Flabébé",
+    names: "Flabébé",
   },
-  670: {
+  "670": {
     types: ["Fairy", "None"],
     stats: [54, 45, 47, 75, 98, 52],
     abilities: [
@@ -16432,9 +16432,9 @@ let pkmnData: PokemonData = {
     name: "floette",
     base_exp: 130,
     is_mega: false,
-    names: "Red Floette",
+    names: "Floette",
   },
-  671: {
+  "671": {
     types: ["Fairy", "None"],
     stats: [78, 65, 68, 112, 154, 75],
     abilities: [
@@ -16460,9 +16460,9 @@ let pkmnData: PokemonData = {
     name: "florges",
     base_exp: 248,
     is_mega: false,
-    names: "Red Florges",
+    names: "Florges",
   },
-  672: {
+  "672": {
     types: ["Grass", "None"],
     stats: [66, 65, 48, 62, 57, 52],
     abilities: [
@@ -16482,9 +16482,9 @@ let pkmnData: PokemonData = {
     name: "skiddo",
     base_exp: 70,
     is_mega: false,
-    names: "",
+    names: "Skiddo",
   },
-  673: {
+  "673": {
     types: ["Grass", "None"],
     stats: [123, 100, 62, 97, 81, 68],
     abilities: [
@@ -16504,9 +16504,9 @@ let pkmnData: PokemonData = {
     name: "gogoat",
     base_exp: 186,
     is_mega: false,
-    names: "",
+    names: "Gogoat",
   },
-  674: {
+  "674": {
     types: ["Fighting", "None"],
     stats: [67, 82, 62, 46, 48, 43],
     abilities: [
@@ -16531,9 +16531,9 @@ let pkmnData: PokemonData = {
     name: "pancham",
     base_exp: 70,
     is_mega: false,
-    names: "",
+    names: "Pancham",
   },
-  675: {
+  "675": {
     types: ["Fighting", "Dark"],
     stats: [95, 124, 78, 69, 71, 58],
     abilities: [
@@ -16558,9 +16558,9 @@ let pkmnData: PokemonData = {
     name: "pangoro",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Pangoro",
   },
-  676: {
+  "676": {
     types: ["Normal", "None"],
     stats: [75, 80, 60, 65, 90, 102],
     abilities: [
@@ -16586,9 +16586,9 @@ let pkmnData: PokemonData = {
     name: "furfrou",
     base_exp: 165,
     is_mega: false,
-    names: "Natural Furfrou",
+    names: "Furfrou",
   },
-  677: {
+  "677": {
     types: ["Psychic", "None"],
     stats: [62, 48, 54, 63, 60, 68],
     abilities: [
@@ -16613,9 +16613,9 @@ let pkmnData: PokemonData = {
     name: "espurr",
     base_exp: 71,
     is_mega: false,
-    names: "",
+    names: "Espurr",
   },
-  678: {
+  "678": {
     types: ["Psychic", "None"],
     stats: [74, 48, 76, 83, 81, 104],
     abilities: [
@@ -16642,7 +16642,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Male Meowstic",
   },
-  679: {
+  "679": {
     types: ["Steel", "Ghost"],
     stats: [45, 80, 100, 35, 37, 28],
     abilities: [
@@ -16657,9 +16657,9 @@ let pkmnData: PokemonData = {
     name: "honedge",
     base_exp: 65,
     is_mega: false,
-    names: "",
+    names: "Honedge",
   },
-  680: {
+  "680": {
     types: ["Steel", "Ghost"],
     stats: [59, 110, 150, 45, 49, 35],
     abilities: [
@@ -16674,9 +16674,9 @@ let pkmnData: PokemonData = {
     name: "doublade",
     base_exp: 157,
     is_mega: false,
-    names: "",
+    names: "Doublade",
   },
-  681: {
+  "681": {
     types: ["Steel", "Ghost"],
     stats: [60, 50, 140, 50, 140, 60],
     abilities: [
@@ -16693,7 +16693,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Shield Aegislash",
   },
-  682: {
+  "682": {
     types: ["Fairy", "None"],
     stats: [78, 52, 60, 63, 65, 23],
     abilities: [
@@ -16713,9 +16713,9 @@ let pkmnData: PokemonData = {
     name: "spritzee",
     base_exp: 68,
     is_mega: false,
-    names: "",
+    names: "Spritzee",
   },
-  683: {
+  "683": {
     types: ["Fairy", "None"],
     stats: [101, 72, 72, 99, 89, 29],
     abilities: [
@@ -16735,9 +16735,9 @@ let pkmnData: PokemonData = {
     name: "aromatisse",
     base_exp: 162,
     is_mega: false,
-    names: "",
+    names: "Aromatisse",
   },
-  684: {
+  "684": {
     types: ["Fairy", "None"],
     stats: [62, 48, 66, 59, 57, 49],
     abilities: [
@@ -16757,9 +16757,9 @@ let pkmnData: PokemonData = {
     name: "swirlix",
     base_exp: 68,
     is_mega: false,
-    names: "",
+    names: "Swirlix",
   },
-  685: {
+  "685": {
     types: ["Fairy", "None"],
     stats: [82, 80, 86, 85, 75, 72],
     abilities: [
@@ -16779,9 +16779,9 @@ let pkmnData: PokemonData = {
     name: "slurpuff",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Slurpuff",
   },
-  686: {
+  "686": {
     types: ["Dark", "Psychic"],
     stats: [53, 54, 53, 37, 46, 45],
     abilities: [
@@ -16806,9 +16806,9 @@ let pkmnData: PokemonData = {
     name: "inkay",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Inkay",
   },
-  687: {
+  "687": {
     types: ["Dark", "Psychic"],
     stats: [86, 92, 88, 68, 75, 73],
     abilities: [
@@ -16833,9 +16833,9 @@ let pkmnData: PokemonData = {
     name: "malamar",
     base_exp: 169,
     is_mega: false,
-    names: "",
+    names: "Malamar",
   },
-  688: {
+  "688": {
     types: ["Rock", "Water"],
     stats: [42, 52, 67, 39, 56, 50],
     abilities: [
@@ -16860,9 +16860,9 @@ let pkmnData: PokemonData = {
     name: "binacle",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Binacle",
   },
-  689: {
+  "689": {
     types: ["Rock", "Water"],
     stats: [72, 105, 115, 54, 86, 68],
     abilities: [
@@ -16887,9 +16887,9 @@ let pkmnData: PokemonData = {
     name: "barbaracle",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Barbaracle",
   },
-  690: {
+  "690": {
     types: ["Poison", "Water"],
     stats: [50, 60, 60, 60, 60, 30],
     abilities: [
@@ -16914,9 +16914,9 @@ let pkmnData: PokemonData = {
     name: "skrelp",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Skrelp",
   },
-  691: {
+  "691": {
     types: ["Poison", "Dragon"],
     stats: [65, 75, 90, 97, 123, 44],
     abilities: [
@@ -16941,9 +16941,9 @@ let pkmnData: PokemonData = {
     name: "dragalge",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Dragalge",
   },
-  692: {
+  "692": {
     types: ["Water", "None"],
     stats: [50, 53, 62, 58, 63, 44],
     abilities: [
@@ -16958,9 +16958,9 @@ let pkmnData: PokemonData = {
     name: "clauncher",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Clauncher",
   },
-  693: {
+  "693": {
     types: ["Water", "None"],
     stats: [71, 73, 88, 120, 89, 59],
     abilities: [
@@ -16975,9 +16975,9 @@ let pkmnData: PokemonData = {
     name: "clawitzer",
     base_exp: 100,
     is_mega: false,
-    names: "",
+    names: "Clawitzer",
   },
-  694: {
+  "694": {
     types: ["Electric", "Normal"],
     stats: [44, 38, 33, 61, 43, 70],
     abilities: [
@@ -17002,9 +17002,9 @@ let pkmnData: PokemonData = {
     name: "helioptile",
     base_exp: 58,
     is_mega: false,
-    names: "",
+    names: "Helioptile",
   },
-  695: {
+  "695": {
     types: ["Electric", "Normal"],
     stats: [62, 55, 52, 109, 94, 109],
     abilities: [
@@ -17029,9 +17029,9 @@ let pkmnData: PokemonData = {
     name: "heliolisk",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Heliolisk",
   },
-  696: {
+  "696": {
     types: ["Rock", "Dragon"],
     stats: [58, 89, 77, 45, 45, 48],
     abilities: [
@@ -17051,9 +17051,9 @@ let pkmnData: PokemonData = {
     name: "tyrunt",
     base_exp: 72,
     is_mega: false,
-    names: "",
+    names: "Tyrunt",
   },
-  697: {
+  "697": {
     types: ["Rock", "Dragon"],
     stats: [82, 121, 119, 69, 59, 71],
     abilities: [
@@ -17073,9 +17073,9 @@ let pkmnData: PokemonData = {
     name: "tyrantrum",
     base_exp: 182,
     is_mega: false,
-    names: "",
+    names: "Tyrantrum",
   },
-  698: {
+  "698": {
     types: ["Rock", "Ice"],
     stats: [77, 59, 50, 67, 63, 46],
     abilities: [
@@ -17095,9 +17095,9 @@ let pkmnData: PokemonData = {
     name: "amaura",
     base_exp: 72,
     is_mega: false,
-    names: "",
+    names: "Amaura",
   },
-  699: {
+  "699": {
     types: ["Rock", "Ice"],
     stats: [123, 77, 72, 99, 92, 58],
     abilities: [
@@ -17117,9 +17117,9 @@ let pkmnData: PokemonData = {
     name: "aurorus",
     base_exp: 104,
     is_mega: false,
-    names: "",
+    names: "Aurorus",
   },
-  700: {
+  "700": {
     types: ["Fairy", "None"],
     stats: [95, 65, 65, 110, 130, 60],
     abilities: [
@@ -17139,9 +17139,9 @@ let pkmnData: PokemonData = {
     name: "sylveon",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Sylveon",
   },
-  701: {
+  "701": {
     types: ["Fighting", "Flying"],
     stats: [78, 92, 75, 74, 63, 118],
     abilities: [
@@ -17166,9 +17166,9 @@ let pkmnData: PokemonData = {
     name: "hawlucha",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Hawlucha",
   },
-  702: {
+  "702": {
     types: ["Electric", "Fairy"],
     stats: [67, 58, 57, 81, 67, 101],
     abilities: [
@@ -17193,9 +17193,9 @@ let pkmnData: PokemonData = {
     name: "dedenne",
     base_exp: 151,
     is_mega: false,
-    names: "",
+    names: "Dedenne",
   },
-  703: {
+  "703": {
     types: ["Rock", "Fairy"],
     stats: [50, 50, 150, 50, 150, 50],
     abilities: [
@@ -17215,9 +17215,9 @@ let pkmnData: PokemonData = {
     name: "carbink",
     base_exp: 100,
     is_mega: false,
-    names: "",
+    names: "Carbink",
   },
-  704: {
+  "704": {
     types: ["Dragon", "None"],
     stats: [45, 50, 35, 55, 75, 40],
     abilities: [
@@ -17242,9 +17242,9 @@ let pkmnData: PokemonData = {
     name: "goomy",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Goomy",
   },
-  705: {
+  "705": {
     types: ["Dragon", "None"],
     stats: [68, 75, 53, 83, 113, 60],
     abilities: [
@@ -17269,9 +17269,9 @@ let pkmnData: PokemonData = {
     name: "sliggoo",
     base_exp: 158,
     is_mega: false,
-    names: "",
+    names: "Sliggoo",
   },
-  706: {
+  "706": {
     types: ["Dragon", "None"],
     stats: [90, 100, 70, 110, 150, 80],
     abilities: [
@@ -17296,9 +17296,9 @@ let pkmnData: PokemonData = {
     name: "goodra",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Goodra",
   },
-  707: {
+  "707": {
     types: ["Steel", "Fairy"],
     stats: [57, 80, 91, 80, 87, 75],
     abilities: [
@@ -17318,9 +17318,9 @@ let pkmnData: PokemonData = {
     name: "klefki",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Klefki",
   },
-  708: {
+  "708": {
     types: ["Ghost", "Grass"],
     stats: [43, 70, 48, 50, 60, 38],
     abilities: [
@@ -17345,9 +17345,9 @@ let pkmnData: PokemonData = {
     name: "phantump",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Phantump",
   },
-  709: {
+  "709": {
     types: ["Ghost", "Grass"],
     stats: [85, 110, 76, 65, 82, 56],
     abilities: [
@@ -17372,9 +17372,9 @@ let pkmnData: PokemonData = {
     name: "trevenant",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Trevenant",
   },
-  710: {
+  "710": {
     types: ["Ghost", "Grass"],
     stats: [49, 66, 70, 44, 55, 51],
     abilities: [
@@ -17401,7 +17401,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Average Pumpkaboo",
   },
-  711: {
+  "711": {
     types: ["Ghost", "Grass"],
     stats: [65, 90, 122, 58, 75, 84],
     abilities: [
@@ -17428,7 +17428,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Average Gourgeist",
   },
-  712: {
+  "712": {
     types: ["Ice", "None"],
     stats: [55, 69, 85, 32, 35, 28],
     abilities: [
@@ -17453,9 +17453,9 @@ let pkmnData: PokemonData = {
     name: "bergmite",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Bergmite",
   },
-  713: {
+  "713": {
     types: ["Ice", "None"],
     stats: [95, 117, 184, 44, 46, 28],
     abilities: [
@@ -17480,9 +17480,9 @@ let pkmnData: PokemonData = {
     name: "avalugg",
     base_exp: 180,
     is_mega: false,
-    names: "",
+    names: "Avalugg",
   },
-  714: {
+  "714": {
     types: ["Flying", "Dragon"],
     stats: [40, 30, 35, 45, 40, 55],
     abilities: [
@@ -17507,9 +17507,9 @@ let pkmnData: PokemonData = {
     name: "noibat",
     base_exp: 49,
     is_mega: false,
-    names: "",
+    names: "Noibat",
   },
-  715: {
+  "715": {
     types: ["Flying", "Dragon"],
     stats: [85, 70, 80, 97, 80, 123],
     abilities: [
@@ -17534,9 +17534,9 @@ let pkmnData: PokemonData = {
     name: "noivern",
     base_exp: 187,
     is_mega: false,
-    names: "",
+    names: "Noivern",
   },
-  716: {
+  "716": {
     types: ["Fairy", "None"],
     stats: [126, 131, 95, 131, 98, 99],
     abilities: [
@@ -17551,9 +17551,9 @@ let pkmnData: PokemonData = {
     name: "xerneas",
     base_exp: 340,
     is_mega: false,
-    names: "Active Xerneas",
+    names: "Xerneas",
   },
-  717: {
+  "717": {
     types: ["Dark", "Flying"],
     stats: [126, 131, 95, 131, 98, 99],
     abilities: [
@@ -17568,9 +17568,9 @@ let pkmnData: PokemonData = {
     name: "yveltal",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Yveltal",
   },
-  718: {
+  "718": {
     types: ["Dragon", "Ground"],
     stats: [108, 100, 121, 81, 95, 95],
     abilities: [
@@ -17587,7 +17587,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "",
   },
-  719: {
+  "719": {
     types: ["Rock", "Fairy"],
     stats: [50, 100, 150, 100, 150, 50],
     abilities: [
@@ -17602,9 +17602,9 @@ let pkmnData: PokemonData = {
     name: "diancie",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Diancie",
   },
-  720: {
+  "720": {
     types: ["Psychic", "Ghost"],
     stats: [80, 110, 60, 150, 130, 70],
     abilities: [
@@ -17619,9 +17619,9 @@ let pkmnData: PokemonData = {
     name: "hoopa",
     base_exp: 270,
     is_mega: false,
-    names: "Confined Hoopa",
+    names: "Hoopa",
   },
-  721: {
+  "721": {
     types: ["Fire", "Water"],
     stats: [80, 110, 120, 130, 90, 70],
     abilities: [
@@ -17636,9 +17636,9 @@ let pkmnData: PokemonData = {
     name: "volcanion",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Volcanion",
   },
-  722: {
+  "722": {
     types: ["Grass", "Flying"],
     stats: [68, 55, 55, 50, 50, 42],
     abilities: [
@@ -17658,9 +17658,9 @@ let pkmnData: PokemonData = {
     name: "rowlet",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Rowlet",
   },
-  723: {
+  "723": {
     types: ["Grass", "Flying"],
     stats: [78, 75, 75, 70, 70, 52],
     abilities: [
@@ -17680,9 +17680,9 @@ let pkmnData: PokemonData = {
     name: "dartrix",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Dartrix",
   },
-  724: {
+  "724": {
     types: ["Grass", "Ghost"],
     stats: [78, 107, 75, 100, 100, 70],
     abilities: [
@@ -17702,9 +17702,9 @@ let pkmnData: PokemonData = {
     name: "decidueye",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Decidueye",
   },
-  725: {
+  "725": {
     types: ["Fire", "None"],
     stats: [45, 65, 40, 60, 40, 70],
     abilities: [
@@ -17724,9 +17724,9 @@ let pkmnData: PokemonData = {
     name: "litten",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Litten",
   },
-  726: {
+  "726": {
     types: ["Fire", "None"],
     stats: [65, 85, 50, 80, 50, 90],
     abilities: [
@@ -17746,9 +17746,9 @@ let pkmnData: PokemonData = {
     name: "torracat",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Torracat",
   },
-  727: {
+  "727": {
     types: ["Fire", "Dark"],
     stats: [95, 115, 90, 80, 90, 60],
     abilities: [
@@ -17768,9 +17768,9 @@ let pkmnData: PokemonData = {
     name: "incineroar",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Incineroar",
   },
-  728: {
+  "728": {
     types: ["Water", "None"],
     stats: [50, 54, 54, 66, 56, 40],
     abilities: [
@@ -17790,9 +17790,9 @@ let pkmnData: PokemonData = {
     name: "popplio",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Popplio",
   },
-  729: {
+  "729": {
     types: ["Water", "None"],
     stats: [60, 69, 69, 91, 81, 50],
     abilities: [
@@ -17812,9 +17812,9 @@ let pkmnData: PokemonData = {
     name: "brionne",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Brionne",
   },
-  730: {
+  "730": {
     types: ["Water", "Fairy"],
     stats: [80, 74, 74, 126, 116, 60],
     abilities: [
@@ -17834,9 +17834,9 @@ let pkmnData: PokemonData = {
     name: "primarina",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Primarina",
   },
-  731: {
+  "731": {
     types: ["Normal", "Flying"],
     stats: [35, 75, 30, 30, 30, 65],
     abilities: [
@@ -17861,9 +17861,9 @@ let pkmnData: PokemonData = {
     name: "pikipek",
     base_exp: 53,
     is_mega: false,
-    names: "",
+    names: "Pikipek",
   },
-  732: {
+  "732": {
     types: ["Normal", "Flying"],
     stats: [55, 85, 50, 40, 50, 75],
     abilities: [
@@ -17888,9 +17888,9 @@ let pkmnData: PokemonData = {
     name: "trumbeak",
     base_exp: 124,
     is_mega: false,
-    names: "",
+    names: "Trumbeak",
   },
-  733: {
+  "733": {
     types: ["Normal", "Flying"],
     stats: [80, 120, 75, 75, 75, 60],
     abilities: [
@@ -17915,9 +17915,9 @@ let pkmnData: PokemonData = {
     name: "toucannon",
     base_exp: 218,
     is_mega: false,
-    names: "",
+    names: "Toucannon",
   },
-  734: {
+  "734": {
     types: ["Normal", "None"],
     stats: [48, 70, 30, 30, 30, 45],
     abilities: [
@@ -17942,9 +17942,9 @@ let pkmnData: PokemonData = {
     name: "yungoos",
     base_exp: 51,
     is_mega: false,
-    names: "",
+    names: "Yungoos",
   },
-  735: {
+  "735": {
     types: ["Normal", "None"],
     stats: [88, 110, 60, 55, 60, 45],
     abilities: [
@@ -17969,9 +17969,9 @@ let pkmnData: PokemonData = {
     name: "gumshoos",
     base_exp: 146,
     is_mega: false,
-    names: "",
+    names: "Gumshoos",
   },
-  736: {
+  "736": {
     types: ["Bug", "None"],
     stats: [47, 62, 45, 55, 45, 46],
     abilities: [
@@ -17986,9 +17986,9 @@ let pkmnData: PokemonData = {
     name: "grubbin",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Grubbin",
   },
-  737: {
+  "737": {
     types: ["Bug", "Electric"],
     stats: [57, 82, 95, 55, 75, 36],
     abilities: [
@@ -18003,9 +18003,9 @@ let pkmnData: PokemonData = {
     name: "charjabug",
     base_exp: 140,
     is_mega: false,
-    names: "",
+    names: "Charjabug",
   },
-  738: {
+  "738": {
     types: ["Bug", "Electric"],
     stats: [77, 70, 90, 145, 75, 43],
     abilities: [
@@ -18020,9 +18020,9 @@ let pkmnData: PokemonData = {
     name: "vikavolt",
     base_exp: 250,
     is_mega: false,
-    names: "",
+    names: "Vikavolt",
   },
-  739: {
+  "739": {
     types: ["Fighting", "None"],
     stats: [47, 82, 57, 42, 47, 63],
     abilities: [
@@ -18047,9 +18047,9 @@ let pkmnData: PokemonData = {
     name: "crabrawler",
     base_exp: 68,
     is_mega: false,
-    names: "",
+    names: "Crabrawler",
   },
-  740: {
+  "740": {
     types: ["Fighting", "Ice"],
     stats: [97, 132, 77, 62, 67, 43],
     abilities: [
@@ -18074,9 +18074,9 @@ let pkmnData: PokemonData = {
     name: "crabominable",
     base_exp: 167,
     is_mega: false,
-    names: "",
+    names: "Crabominable",
   },
-  741: {
+  "741": {
     types: ["Fire", "Flying"],
     stats: [75, 70, 70, 98, 70, 93],
     abilities: [
@@ -18093,7 +18093,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Baile Oricorio",
   },
-  742: {
+  "742": {
     types: ["Bug", "Fairy"],
     stats: [40, 45, 40, 55, 40, 84],
     abilities: [
@@ -18118,9 +18118,9 @@ let pkmnData: PokemonData = {
     name: "cutiefly",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Cutiefly",
   },
-  743: {
+  "743": {
     types: ["Bug", "Fairy"],
     stats: [60, 55, 60, 95, 70, 124],
     abilities: [
@@ -18145,9 +18145,9 @@ let pkmnData: PokemonData = {
     name: "ribombee",
     base_exp: 162,
     is_mega: false,
-    names: "",
+    names: "Ribombee",
   },
-  744: {
+  "744": {
     types: ["Rock", "None"],
     stats: [45, 65, 40, 30, 40, 60],
     abilities: [
@@ -18172,9 +18172,9 @@ let pkmnData: PokemonData = {
     name: "rockruff",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Rockruff",
   },
-  745: {
+  "745": {
     types: ["Rock", "None"],
     stats: [75, 115, 65, 55, 65, 112],
     abilities: [
@@ -18201,7 +18201,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Midday Lycanroc",
   },
-  746: {
+  "746": {
     types: ["Water", "None"],
     stats: [45, 20, 20, 25, 25, 40],
     abilities: [
@@ -18218,7 +18218,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Solo Wishiwashi",
   },
-  747: {
+  "747": {
     types: ["Poison", "Water"],
     stats: [50, 53, 62, 43, 52, 45],
     abilities: [
@@ -18243,9 +18243,9 @@ let pkmnData: PokemonData = {
     name: "mareanie",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Mareanie",
   },
-  748: {
+  "748": {
     types: ["Poison", "Water"],
     stats: [50, 63, 152, 53, 142, 35],
     abilities: [
@@ -18270,9 +18270,9 @@ let pkmnData: PokemonData = {
     name: "toxapex",
     base_exp: 173,
     is_mega: false,
-    names: "",
+    names: "Toxapex",
   },
-  749: {
+  "749": {
     types: ["Ground", "None"],
     stats: [70, 100, 70, 45, 55, 45],
     abilities: [
@@ -18297,9 +18297,9 @@ let pkmnData: PokemonData = {
     name: "mudbray",
     base_exp: 77,
     is_mega: false,
-    names: "",
+    names: "Mudbray",
   },
-  750: {
+  "750": {
     types: ["Ground", "None"],
     stats: [100, 125, 100, 55, 85, 35],
     abilities: [
@@ -18324,9 +18324,9 @@ let pkmnData: PokemonData = {
     name: "mudsdale",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Mudsdale",
   },
-  751: {
+  "751": {
     types: ["Water", "Bug"],
     stats: [38, 40, 52, 40, 72, 27],
     abilities: [
@@ -18346,9 +18346,9 @@ let pkmnData: PokemonData = {
     name: "dewpider",
     base_exp: 54,
     is_mega: false,
-    names: "",
+    names: "Dewpider",
   },
-  752: {
+  "752": {
     types: ["Water", "Bug"],
     stats: [68, 70, 92, 50, 132, 42],
     abilities: [
@@ -18368,9 +18368,9 @@ let pkmnData: PokemonData = {
     name: "araquanid",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Araquanid",
   },
-  753: {
+  "753": {
     types: ["Grass", "None"],
     stats: [40, 55, 35, 50, 35, 35],
     abilities: [
@@ -18390,9 +18390,9 @@ let pkmnData: PokemonData = {
     name: "fomantis",
     base_exp: 50,
     is_mega: false,
-    names: "",
+    names: "Fomantis",
   },
-  754: {
+  "754": {
     types: ["Grass", "None"],
     stats: [70, 105, 90, 80, 90, 45],
     abilities: [
@@ -18412,9 +18412,9 @@ let pkmnData: PokemonData = {
     name: "lurantis",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Lurantis",
   },
-  755: {
+  "755": {
     types: ["Grass", "Fairy"],
     stats: [40, 35, 55, 65, 75, 15],
     abilities: [
@@ -18439,9 +18439,9 @@ let pkmnData: PokemonData = {
     name: "morelull",
     base_exp: 57,
     is_mega: false,
-    names: "",
+    names: "Morelull",
   },
-  756: {
+  "756": {
     types: ["Grass", "Fairy"],
     stats: [60, 45, 80, 90, 100, 30],
     abilities: [
@@ -18466,9 +18466,9 @@ let pkmnData: PokemonData = {
     name: "shiinotic",
     base_exp: 142,
     is_mega: false,
-    names: "",
+    names: "Shiinotic",
   },
-  757: {
+  "757": {
     types: ["Poison", "Fire"],
     stats: [48, 44, 40, 71, 40, 77],
     abilities: [
@@ -18488,9 +18488,9 @@ let pkmnData: PokemonData = {
     name: "salandit",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Salandit",
   },
-  758: {
+  "758": {
     types: ["Poison", "Fire"],
     stats: [68, 64, 60, 111, 60, 117],
     abilities: [
@@ -18510,9 +18510,9 @@ let pkmnData: PokemonData = {
     name: "salazzle",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Salazzle",
   },
-  759: {
+  "759": {
     types: ["Normal", "Fighting"],
     stats: [70, 75, 50, 45, 50, 50],
     abilities: [
@@ -18537,9 +18537,9 @@ let pkmnData: PokemonData = {
     name: "stufful",
     base_exp: 68,
     is_mega: false,
-    names: "",
+    names: "Stufful",
   },
-  760: {
+  "760": {
     types: ["Normal", "Fighting"],
     stats: [120, 125, 80, 55, 60, 60],
     abilities: [
@@ -18564,9 +18564,9 @@ let pkmnData: PokemonData = {
     name: "bewear",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Bewear",
   },
-  761: {
+  "761": {
     types: ["Grass", "None"],
     stats: [42, 30, 38, 30, 38, 32],
     abilities: [
@@ -18591,9 +18591,9 @@ let pkmnData: PokemonData = {
     name: "bounsweet",
     base_exp: 42,
     is_mega: false,
-    names: "",
+    names: "Bounsweet",
   },
-  762: {
+  "762": {
     types: ["Grass", "None"],
     stats: [52, 40, 48, 40, 48, 62],
     abilities: [
@@ -18618,9 +18618,9 @@ let pkmnData: PokemonData = {
     name: "steenee",
     base_exp: 102,
     is_mega: false,
-    names: "",
+    names: "Steenee",
   },
-  763: {
+  "763": {
     types: ["Grass", "None"],
     stats: [72, 120, 98, 50, 98, 72],
     abilities: [
@@ -18645,9 +18645,9 @@ let pkmnData: PokemonData = {
     name: "tsareena",
     base_exp: 255,
     is_mega: false,
-    names: "",
+    names: "Tsareena",
   },
-  764: {
+  "764": {
     types: ["Fairy", "None"],
     stats: [51, 52, 90, 82, 110, 100],
     abilities: [
@@ -18672,9 +18672,9 @@ let pkmnData: PokemonData = {
     name: "comfey",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Comfey",
   },
-  765: {
+  "765": {
     types: ["Normal", "Psychic"],
     stats: [90, 60, 80, 90, 110, 60],
     abilities: [
@@ -18699,9 +18699,9 @@ let pkmnData: PokemonData = {
     name: "oranguru",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Oranguru",
   },
-  766: {
+  "766": {
     types: ["Fighting", "None"],
     stats: [100, 120, 90, 40, 60, 80],
     abilities: [
@@ -18721,9 +18721,9 @@ let pkmnData: PokemonData = {
     name: "passimian",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Passimian",
   },
-  767: {
+  "767": {
     types: ["Bug", "Water"],
     stats: [25, 35, 40, 20, 30, 80],
     abilities: [
@@ -18738,9 +18738,9 @@ let pkmnData: PokemonData = {
     name: "wimpod",
     base_exp: 46,
     is_mega: false,
-    names: "",
+    names: "Wimpod",
   },
-  768: {
+  "768": {
     types: ["Bug", "Water"],
     stats: [75, 125, 140, 60, 90, 40],
     abilities: [
@@ -18755,9 +18755,9 @@ let pkmnData: PokemonData = {
     name: "golisopod",
     base_exp: 186,
     is_mega: false,
-    names: "",
+    names: "Golisopod",
   },
-  769: {
+  "769": {
     types: ["Ghost", "Ground"],
     stats: [55, 55, 80, 70, 45, 15],
     abilities: [
@@ -18777,9 +18777,9 @@ let pkmnData: PokemonData = {
     name: "sandygast",
     base_exp: 64,
     is_mega: false,
-    names: "",
+    names: "Sandygast",
   },
-  770: {
+  "770": {
     types: ["Ghost", "Ground"],
     stats: [85, 75, 110, 100, 75, 35],
     abilities: [
@@ -18799,9 +18799,9 @@ let pkmnData: PokemonData = {
     name: "palossand",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Palossand",
   },
-  771: {
+  "771": {
     types: ["Water", "None"],
     stats: [55, 60, 130, 30, 130, 5],
     abilities: [
@@ -18821,9 +18821,9 @@ let pkmnData: PokemonData = {
     name: "pyukumuku",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Pyukumuku",
   },
-  772: {
+  "772": {
     types: ["Normal", "None"],
     stats: [95, 95, 95, 95, 95, 59],
     abilities: [
@@ -18838,9 +18838,9 @@ let pkmnData: PokemonData = {
     name: "type-null",
     base_exp: 107,
     is_mega: false,
-    names: "",
+    names: "Type: Null",
   },
-  773: {
+  "773": {
     types: ["Normal", "None"],
     stats: [95, 95, 95, 95, 95, 95],
     abilities: [
@@ -18874,9 +18874,9 @@ let pkmnData: PokemonData = {
     name: "silvally",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Silvally",
   },
-  774: {
+  "774": {
     types: ["Rock", "Flying"],
     stats: [60, 60, 100, 60, 100, 60],
     abilities: [
@@ -18893,7 +18893,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Red Meteor Minior",
   },
-  775: {
+  "775": {
     types: ["Normal", "None"],
     stats: [65, 115, 65, 75, 95, 65],
     abilities: [
@@ -18908,9 +18908,9 @@ let pkmnData: PokemonData = {
     name: "komala",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Komala",
   },
-  776: {
+  "776": {
     types: ["Fire", "Dragon"],
     stats: [60, 78, 135, 91, 85, 36],
     abilities: [
@@ -18925,9 +18925,9 @@ let pkmnData: PokemonData = {
     name: "turtonator",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Turtonator",
   },
-  777: {
+  "777": {
     types: ["Electric", "Steel"],
     stats: [65, 98, 63, 40, 73, 96],
     abilities: [
@@ -18952,9 +18952,9 @@ let pkmnData: PokemonData = {
     name: "togedemaru",
     base_exp: 152,
     is_mega: false,
-    names: "",
+    names: "Togedemaru",
   },
-  778: {
+  "778": {
     types: ["Ghost", "Fairy"],
     stats: [55, 90, 80, 50, 105, 96],
     abilities: [
@@ -18971,7 +18971,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Disguised Mimikyu",
   },
-  779: {
+  "779": {
     types: ["Water", "Psychic"],
     stats: [68, 105, 70, 70, 70, 92],
     abilities: [
@@ -18996,9 +18996,9 @@ let pkmnData: PokemonData = {
     name: "bruxish",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Bruxish",
   },
-  780: {
+  "780": {
     types: ["Normal", "Dragon"],
     stats: [78, 60, 85, 135, 91, 36],
     abilities: [
@@ -19023,9 +19023,9 @@ let pkmnData: PokemonData = {
     name: "drampa",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Drampa",
   },
-  781: {
+  "781": {
     types: ["Ghost", "Grass"],
     stats: [70, 131, 100, 86, 90, 40],
     abilities: [
@@ -19040,9 +19040,9 @@ let pkmnData: PokemonData = {
     name: "dhelmise",
     base_exp: 181,
     is_mega: false,
-    names: "",
+    names: "Dhelmise",
   },
-  782: {
+  "782": {
     types: ["Dragon", "None"],
     stats: [45, 55, 65, 45, 45, 45],
     abilities: [
@@ -19067,9 +19067,9 @@ let pkmnData: PokemonData = {
     name: "jangmo-o",
     base_exp: 60,
     is_mega: false,
-    names: "",
+    names: "Jangmo-o",
   },
-  783: {
+  "783": {
     types: ["Dragon", "Fighting"],
     stats: [55, 75, 90, 65, 70, 65],
     abilities: [
@@ -19094,9 +19094,9 @@ let pkmnData: PokemonData = {
     name: "hakamo-o",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Hakamo-o",
   },
-  784: {
+  "784": {
     types: ["Dragon", "Fighting"],
     stats: [75, 110, 125, 100, 105, 85],
     abilities: [
@@ -19121,9 +19121,9 @@ let pkmnData: PokemonData = {
     name: "kommo-o",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Kommo-o",
   },
-  785: {
+  "785": {
     types: ["Electric", "Fairy"],
     stats: [70, 115, 85, 95, 75, 130],
     abilities: [
@@ -19143,9 +19143,9 @@ let pkmnData: PokemonData = {
     name: "tapu-koko",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Tapu Koko",
   },
-  786: {
+  "786": {
     types: ["Psychic", "Fairy"],
     stats: [70, 85, 75, 130, 115, 95],
     abilities: [
@@ -19165,9 +19165,9 @@ let pkmnData: PokemonData = {
     name: "tapu-lele",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Tapu Lele",
   },
-  787: {
+  "787": {
     types: ["Grass", "Fairy"],
     stats: [70, 130, 115, 85, 95, 75],
     abilities: [
@@ -19187,9 +19187,9 @@ let pkmnData: PokemonData = {
     name: "tapu-bulu",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Tapu Bulu",
   },
-  788: {
+  "788": {
     types: ["Water", "Fairy"],
     stats: [70, 75, 115, 95, 130, 85],
     abilities: [
@@ -19209,9 +19209,9 @@ let pkmnData: PokemonData = {
     name: "tapu-fini",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Tapu Fini",
   },
-  789: {
+  "789": {
     types: ["Psychic", "None"],
     stats: [43, 29, 31, 29, 31, 37],
     abilities: [
@@ -19226,9 +19226,9 @@ let pkmnData: PokemonData = {
     name: "cosmog",
     base_exp: 40,
     is_mega: false,
-    names: "",
+    names: "Cosmog",
   },
-  790: {
+  "790": {
     types: ["Psychic", "None"],
     stats: [43, 29, 131, 29, 131, 37],
     abilities: [
@@ -19243,9 +19243,9 @@ let pkmnData: PokemonData = {
     name: "cosmoem",
     base_exp: 140,
     is_mega: false,
-    names: "",
+    names: "Cosmoem",
   },
-  791: {
+  "791": {
     types: ["Psychic", "Steel"],
     stats: [137, 137, 107, 113, 89, 97],
     abilities: [
@@ -19260,9 +19260,9 @@ let pkmnData: PokemonData = {
     name: "solgaleo",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Solgaleo",
   },
-  792: {
+  "792": {
     types: ["Psychic", "Ghost"],
     stats: [137, 113, 89, 137, 107, 97],
     abilities: [
@@ -19277,9 +19277,9 @@ let pkmnData: PokemonData = {
     name: "lunala",
     base_exp: 340,
     is_mega: false,
-    names: "",
+    names: "Lunala",
   },
-  793: {
+  "793": {
     types: ["Rock", "Poison"],
     stats: [109, 53, 47, 127, 131, 103],
     abilities: [
@@ -19294,9 +19294,9 @@ let pkmnData: PokemonData = {
     name: "nihilego",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Nihilego",
   },
-  794: {
+  "794": {
     types: ["Bug", "Fighting"],
     stats: [107, 139, 139, 53, 53, 79],
     abilities: [
@@ -19311,9 +19311,9 @@ let pkmnData: PokemonData = {
     name: "buzzwole",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Buzzwole",
   },
-  795: {
+  "795": {
     types: ["Bug", "Fighting"],
     stats: [71, 137, 37, 137, 37, 151],
     abilities: [
@@ -19328,9 +19328,9 @@ let pkmnData: PokemonData = {
     name: "pheromosa",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Pheromosa",
   },
-  796: {
+  "796": {
     types: ["Electric", "None"],
     stats: [83, 89, 71, 173, 71, 83],
     abilities: [
@@ -19345,9 +19345,9 @@ let pkmnData: PokemonData = {
     name: "xurkitree",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Xurkitree",
   },
-  797: {
+  "797": {
     types: ["Steel", "Flying"],
     stats: [97, 101, 103, 107, 101, 61],
     abilities: [
@@ -19362,9 +19362,9 @@ let pkmnData: PokemonData = {
     name: "celesteela",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Celesteela",
   },
-  798: {
+  "798": {
     types: ["Grass", "Steel"],
     stats: [59, 181, 131, 59, 31, 109],
     abilities: [
@@ -19379,9 +19379,9 @@ let pkmnData: PokemonData = {
     name: "kartana",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Kartana",
   },
-  799: {
+  "799": {
     types: ["Dark", "Dragon"],
     stats: [223, 101, 53, 97, 53, 43],
     abilities: [
@@ -19396,9 +19396,9 @@ let pkmnData: PokemonData = {
     name: "guzzlord",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Guzzlord",
   },
-  800: {
+  "800": {
     types: ["Psychic", "None"],
     stats: [97, 107, 101, 127, 89, 79],
     abilities: [
@@ -19413,9 +19413,9 @@ let pkmnData: PokemonData = {
     name: "necrozma",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Necrozma",
   },
-  801: {
+  "801": {
     types: ["Steel", "Fairy"],
     stats: [80, 95, 115, 130, 115, 65],
     abilities: [
@@ -19430,9 +19430,9 @@ let pkmnData: PokemonData = {
     name: "magearna",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Magearna",
   },
-  802: {
+  "802": {
     types: ["Fighting", "Ghost"],
     stats: [90, 125, 80, 90, 90, 125],
     abilities: [
@@ -19447,9 +19447,9 @@ let pkmnData: PokemonData = {
     name: "marshadow",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Marshadow",
   },
-  803: {
+  "803": {
     types: ["Poison", "None"],
     stats: [67, 73, 67, 73, 67, 73],
     abilities: [
@@ -19464,9 +19464,9 @@ let pkmnData: PokemonData = {
     name: "poipole",
     base_exp: 210,
     is_mega: false,
-    names: "",
+    names: "Poipole",
   },
-  804: {
+  "804": {
     types: ["Poison", "Dragon"],
     stats: [73, 73, 73, 127, 73, 121],
     abilities: [
@@ -19481,9 +19481,9 @@ let pkmnData: PokemonData = {
     name: "naganadel",
     base_exp: 270,
     is_mega: false,
-    names: "",
+    names: "Naganadel",
   },
-  805: {
+  "805": {
     types: ["Rock", "Steel"],
     stats: [61, 131, 211, 53, 101, 13],
     abilities: [
@@ -19498,9 +19498,9 @@ let pkmnData: PokemonData = {
     name: "stakataka",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Stakataka",
   },
-  806: {
+  "806": {
     types: ["Fire", "Ghost"],
     stats: [53, 127, 53, 151, 79, 107],
     abilities: [
@@ -19515,9 +19515,9 @@ let pkmnData: PokemonData = {
     name: "blacephalon",
     base_exp: 285,
     is_mega: false,
-    names: "",
+    names: "Blacephalon",
   },
-  807: {
+  "807": {
     types: ["Electric", "None"],
     stats: [88, 112, 75, 102, 80, 143],
     abilities: [
@@ -19532,9 +19532,9 @@ let pkmnData: PokemonData = {
     name: "zeraora",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Zeraora",
   },
-  808: {
+  "808": {
     types: ["Steel", "None"],
     stats: [46, 65, 65, 55, 35, 34],
     abilities: [
@@ -19549,9 +19549,9 @@ let pkmnData: PokemonData = {
     name: "meltan",
     base_exp: 150,
     is_mega: false,
-    names: "",
+    names: "Meltan",
   },
-  809: {
+  "809": {
     types: ["Steel", "None"],
     stats: [135, 143, 143, 80, 65, 34],
     abilities: [
@@ -19566,9 +19566,9 @@ let pkmnData: PokemonData = {
     name: "melmetal",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Melmetal",
   },
-  810: {
+  "810": {
     types: ["Grass", "None"],
     stats: [50, 65, 50, 40, 40, 65],
     abilities: [
@@ -19588,9 +19588,9 @@ let pkmnData: PokemonData = {
     name: "grookey",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Grookey",
   },
-  811: {
+  "811": {
     types: ["Grass", "None"],
     stats: [70, 85, 70, 55, 60, 80],
     abilities: [
@@ -19610,9 +19610,9 @@ let pkmnData: PokemonData = {
     name: "thwackey",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Thwackey",
   },
-  812: {
+  "812": {
     types: ["Grass", "None"],
     stats: [100, 125, 90, 60, 70, 85],
     abilities: [
@@ -19632,9 +19632,9 @@ let pkmnData: PokemonData = {
     name: "rillaboom",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Rillaboom",
   },
-  813: {
+  "813": {
     types: ["Fire", "None"],
     stats: [50, 71, 40, 40, 40, 69],
     abilities: [
@@ -19654,9 +19654,9 @@ let pkmnData: PokemonData = {
     name: "scorbunny",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Scorbunny",
   },
-  814: {
+  "814": {
     types: ["Fire", "None"],
     stats: [65, 86, 60, 55, 60, 94],
     abilities: [
@@ -19676,9 +19676,9 @@ let pkmnData: PokemonData = {
     name: "raboot",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Raboot",
   },
-  815: {
+  "815": {
     types: ["Fire", "None"],
     stats: [80, 116, 75, 65, 75, 119],
     abilities: [
@@ -19698,9 +19698,9 @@ let pkmnData: PokemonData = {
     name: "cinderace",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Cinderace",
   },
-  816: {
+  "816": {
     types: ["Water", "None"],
     stats: [50, 40, 40, 70, 40, 70],
     abilities: [
@@ -19720,9 +19720,9 @@ let pkmnData: PokemonData = {
     name: "sobble",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Sobble",
   },
-  817: {
+  "817": {
     types: ["Water", "None"],
     stats: [65, 60, 55, 95, 55, 90],
     abilities: [
@@ -19742,9 +19742,9 @@ let pkmnData: PokemonData = {
     name: "drizzile",
     base_exp: 147,
     is_mega: false,
-    names: "",
+    names: "Drizzile",
   },
-  818: {
+  "818": {
     types: ["Water", "None"],
     stats: [70, 85, 65, 125, 65, 120],
     abilities: [
@@ -19764,9 +19764,9 @@ let pkmnData: PokemonData = {
     name: "inteleon",
     base_exp: 265,
     is_mega: false,
-    names: "",
+    names: "Inteleon",
   },
-  819: {
+  "819": {
     types: ["Normal", "None"],
     stats: [70, 55, 55, 35, 35, 25],
     abilities: [
@@ -19786,9 +19786,9 @@ let pkmnData: PokemonData = {
     name: "skwovet",
     base_exp: 55,
     is_mega: false,
-    names: "",
+    names: "Skwovet",
   },
-  820: {
+  "820": {
     types: ["Normal", "None"],
     stats: [120, 95, 95, 55, 75, 20],
     abilities: [
@@ -19808,9 +19808,9 @@ let pkmnData: PokemonData = {
     name: "greedent",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Greedent",
   },
-  821: {
+  "821": {
     types: ["Flying", "None"],
     stats: [38, 47, 35, 33, 35, 57],
     abilities: [
@@ -19835,9 +19835,9 @@ let pkmnData: PokemonData = {
     name: "rookidee",
     base_exp: 49,
     is_mega: false,
-    names: "",
+    names: "Rookidee",
   },
-  822: {
+  "822": {
     types: ["Flying", "None"],
     stats: [68, 67, 55, 43, 55, 77],
     abilities: [
@@ -19862,9 +19862,9 @@ let pkmnData: PokemonData = {
     name: "corvisquire",
     base_exp: 128,
     is_mega: false,
-    names: "",
+    names: "Corvisquire",
   },
-  823: {
+  "823": {
     types: ["Flying", "Steel"],
     stats: [98, 87, 105, 53, 85, 67],
     abilities: [
@@ -19889,9 +19889,9 @@ let pkmnData: PokemonData = {
     name: "corviknight",
     base_exp: 248,
     is_mega: false,
-    names: "",
+    names: "Corviknight",
   },
-  824: {
+  "824": {
     types: ["Bug", "None"],
     stats: [25, 20, 20, 25, 45, 45],
     abilities: [
@@ -19916,9 +19916,9 @@ let pkmnData: PokemonData = {
     name: "blipbug",
     base_exp: 36,
     is_mega: false,
-    names: "",
+    names: "Blipbug",
   },
-  825: {
+  "825": {
     types: ["Bug", "Psychic"],
     stats: [50, 35, 80, 50, 90, 30],
     abilities: [
@@ -19943,9 +19943,9 @@ let pkmnData: PokemonData = {
     name: "dottler",
     base_exp: 117,
     is_mega: false,
-    names: "",
+    names: "Dottler",
   },
-  826: {
+  "826": {
     types: ["Bug", "Psychic"],
     stats: [60, 45, 110, 80, 120, 90],
     abilities: [
@@ -19970,9 +19970,9 @@ let pkmnData: PokemonData = {
     name: "orbeetle",
     base_exp: 253,
     is_mega: false,
-    names: "",
+    names: "Orbeetle",
   },
-  827: {
+  "827": {
     types: ["Dark", "None"],
     stats: [40, 28, 28, 47, 52, 50],
     abilities: [
@@ -19997,9 +19997,9 @@ let pkmnData: PokemonData = {
     name: "nickit",
     base_exp: 49,
     is_mega: false,
-    names: "",
+    names: "Nickit",
   },
-  828: {
+  "828": {
     types: ["Dark", "None"],
     stats: [70, 58, 58, 87, 92, 90],
     abilities: [
@@ -20024,9 +20024,9 @@ let pkmnData: PokemonData = {
     name: "thievul",
     base_exp: 159,
     is_mega: false,
-    names: "",
+    names: "Thievul",
   },
-  829: {
+  "829": {
     types: ["Grass", "None"],
     stats: [40, 40, 60, 40, 60, 10],
     abilities: [
@@ -20051,9 +20051,9 @@ let pkmnData: PokemonData = {
     name: "gossifleur",
     base_exp: 50,
     is_mega: false,
-    names: "",
+    names: "Gossifleur",
   },
-  830: {
+  "830": {
     types: ["Grass", "None"],
     stats: [60, 50, 90, 80, 120, 60],
     abilities: [
@@ -20078,9 +20078,9 @@ let pkmnData: PokemonData = {
     name: "eldegoss",
     base_exp: 161,
     is_mega: false,
-    names: "",
+    names: "Eldegoss",
   },
-  831: {
+  "831": {
     types: ["Normal", "None"],
     stats: [42, 40, 55, 40, 45, 48],
     abilities: [
@@ -20105,9 +20105,9 @@ let pkmnData: PokemonData = {
     name: "wooloo",
     base_exp: 122,
     is_mega: false,
-    names: "",
+    names: "Wooloo",
   },
-  832: {
+  "832": {
     types: ["Normal", "None"],
     stats: [72, 80, 100, 60, 90, 88],
     abilities: [
@@ -20132,9 +20132,9 @@ let pkmnData: PokemonData = {
     name: "dubwool",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Dubwool",
   },
-  833: {
+  "833": {
     types: ["Water", "None"],
     stats: [50, 64, 50, 38, 38, 44],
     abilities: [
@@ -20159,9 +20159,9 @@ let pkmnData: PokemonData = {
     name: "chewtle",
     base_exp: 57,
     is_mega: false,
-    names: "",
+    names: "Chewtle",
   },
-  834: {
+  "834": {
     types: ["Water", "Rock"],
     stats: [90, 115, 90, 48, 68, 74],
     abilities: [
@@ -20186,9 +20186,9 @@ let pkmnData: PokemonData = {
     name: "drednaw",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Drednaw",
   },
-  835: {
+  "835": {
     types: ["Electric", "None"],
     stats: [59, 45, 50, 40, 50, 26],
     abilities: [
@@ -20208,9 +20208,9 @@ let pkmnData: PokemonData = {
     name: "yamper",
     base_exp: 54,
     is_mega: false,
-    names: "",
+    names: "Yamper",
   },
-  836: {
+  "836": {
     types: ["Electric", "None"],
     stats: [69, 90, 60, 90, 60, 121],
     abilities: [
@@ -20230,9 +20230,9 @@ let pkmnData: PokemonData = {
     name: "boltund",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Boltund",
   },
-  837: {
+  "837": {
     types: ["Rock", "None"],
     stats: [30, 40, 50, 40, 50, 30],
     abilities: [
@@ -20257,9 +20257,9 @@ let pkmnData: PokemonData = {
     name: "rolycoly",
     base_exp: 48,
     is_mega: false,
-    names: "",
+    names: "Rolycoly",
   },
-  838: {
+  "838": {
     types: ["Rock", "Fire"],
     stats: [80, 60, 90, 60, 70, 50],
     abilities: [
@@ -20284,9 +20284,9 @@ let pkmnData: PokemonData = {
     name: "carkol",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Carkol",
   },
-  839: {
+  "839": {
     types: ["Rock", "Fire"],
     stats: [110, 80, 120, 80, 90, 30],
     abilities: [
@@ -20311,9 +20311,9 @@ let pkmnData: PokemonData = {
     name: "coalossal",
     base_exp: 255,
     is_mega: false,
-    names: "",
+    names: "Coalossal",
   },
-  840: {
+  "840": {
     types: ["Grass", "Dragon"],
     stats: [40, 40, 80, 40, 40, 20],
     abilities: [
@@ -20338,9 +20338,9 @@ let pkmnData: PokemonData = {
     name: "applin",
     base_exp: 52,
     is_mega: false,
-    names: "",
+    names: "Applin",
   },
-  841: {
+  "841": {
     types: ["Grass", "Dragon"],
     stats: [70, 110, 80, 95, 60, 70],
     abilities: [
@@ -20365,9 +20365,9 @@ let pkmnData: PokemonData = {
     name: "flapple",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Flapple",
   },
-  842: {
+  "842": {
     types: ["Grass", "Dragon"],
     stats: [110, 85, 80, 100, 80, 30],
     abilities: [
@@ -20392,9 +20392,9 @@ let pkmnData: PokemonData = {
     name: "appletun",
     base_exp: 170,
     is_mega: false,
-    names: "",
+    names: "Appletun",
   },
-  843: {
+  "843": {
     types: ["Ground", "None"],
     stats: [52, 57, 75, 35, 50, 46],
     abilities: [
@@ -20419,9 +20419,9 @@ let pkmnData: PokemonData = {
     name: "silicobra",
     base_exp: 63,
     is_mega: false,
-    names: "",
+    names: "Silicobra",
   },
-  844: {
+  "844": {
     types: ["Ground", "None"],
     stats: [72, 107, 125, 65, 70, 71],
     abilities: [
@@ -20446,9 +20446,9 @@ let pkmnData: PokemonData = {
     name: "sandaconda",
     base_exp: 179,
     is_mega: false,
-    names: "",
+    names: "Sandaconda",
   },
-  845: {
+  "845": {
     types: ["Flying", "Water"],
     stats: [70, 85, 55, 85, 95, 85],
     abilities: [
@@ -20463,9 +20463,9 @@ let pkmnData: PokemonData = {
     name: "cramorant",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Cramorant",
   },
-  846: {
+  "846": {
     types: ["Water", "None"],
     stats: [41, 63, 40, 40, 30, 66],
     abilities: [
@@ -20485,9 +20485,9 @@ let pkmnData: PokemonData = {
     name: "arrokuda",
     base_exp: 56,
     is_mega: false,
-    names: "",
+    names: "Arrokuda",
   },
-  847: {
+  "847": {
     types: ["Water", "None"],
     stats: [61, 123, 60, 60, 50, 136],
     abilities: [
@@ -20507,9 +20507,9 @@ let pkmnData: PokemonData = {
     name: "barraskewda",
     base_exp: 172,
     is_mega: false,
-    names: "",
+    names: "Barraskewda",
   },
-  848: {
+  "848": {
     types: ["Electric", "Poison"],
     stats: [40, 38, 35, 54, 35, 40],
     abilities: [
@@ -20534,9 +20534,9 @@ let pkmnData: PokemonData = {
     name: "toxel",
     base_exp: 48,
     is_mega: false,
-    names: "",
+    names: "Toxel",
   },
-  849: {
+  "849": {
     types: ["Electric", "Poison"],
     stats: [75, 98, 70, 114, 70, 75],
     abilities: [
@@ -20563,7 +20563,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Amped Toxtricity",
   },
-  850: {
+  "850": {
     types: ["Fire", "Bug"],
     stats: [50, 65, 45, 50, 50, 45],
     abilities: [
@@ -20588,9 +20588,9 @@ let pkmnData: PokemonData = {
     name: "sizzlipede",
     base_exp: 61,
     is_mega: false,
-    names: "",
+    names: "Sizzlipede",
   },
-  851: {
+  "851": {
     types: ["Fire", "Bug"],
     stats: [100, 115, 65, 90, 90, 65],
     abilities: [
@@ -20615,9 +20615,9 @@ let pkmnData: PokemonData = {
     name: "centiskorch",
     base_exp: 184,
     is_mega: false,
-    names: "",
+    names: "Centiskorch",
   },
-  852: {
+  "852": {
     types: ["Fighting", "None"],
     stats: [50, 68, 60, 50, 50, 32],
     abilities: [
@@ -20637,9 +20637,9 @@ let pkmnData: PokemonData = {
     name: "clobbopus",
     base_exp: 62,
     is_mega: false,
-    names: "",
+    names: "Clobbopus",
   },
-  853: {
+  "853": {
     types: ["Fighting", "None"],
     stats: [80, 118, 90, 70, 80, 42],
     abilities: [
@@ -20659,9 +20659,9 @@ let pkmnData: PokemonData = {
     name: "grapploct",
     base_exp: 168,
     is_mega: false,
-    names: "",
+    names: "Grapploct",
   },
-  854: {
+  "854": {
     types: ["Ghost", "None"],
     stats: [40, 45, 45, 74, 54, 50],
     abilities: [
@@ -20681,9 +20681,9 @@ let pkmnData: PokemonData = {
     name: "sinistea",
     base_exp: 62,
     is_mega: false,
-    names: "Phony Sinistea",
+    names: "Sinistea",
   },
-  855: {
+  "855": {
     types: ["Ghost", "None"],
     stats: [60, 65, 65, 134, 114, 70],
     abilities: [
@@ -20703,9 +20703,9 @@ let pkmnData: PokemonData = {
     name: "polteageist",
     base_exp: 178,
     is_mega: false,
-    names: "Phony Polteageist",
+    names: "Polteageist",
   },
-  856: {
+  "856": {
     types: ["Psychic", "None"],
     stats: [42, 30, 45, 56, 53, 39],
     abilities: [
@@ -20730,9 +20730,9 @@ let pkmnData: PokemonData = {
     name: "hatenna",
     base_exp: 53,
     is_mega: false,
-    names: "",
+    names: "Hatenna",
   },
-  857: {
+  "857": {
     types: ["Psychic", "None"],
     stats: [57, 40, 65, 86, 73, 49],
     abilities: [
@@ -20757,9 +20757,9 @@ let pkmnData: PokemonData = {
     name: "hattrem",
     base_exp: 130,
     is_mega: false,
-    names: "",
+    names: "Hattrem",
   },
-  858: {
+  "858": {
     types: ["Psychic", "Fairy"],
     stats: [57, 90, 95, 136, 103, 29],
     abilities: [
@@ -20784,9 +20784,9 @@ let pkmnData: PokemonData = {
     name: "hatterene",
     base_exp: 255,
     is_mega: false,
-    names: "",
+    names: "Hatterene",
   },
-  859: {
+  "859": {
     types: ["Dark", "Fairy"],
     stats: [45, 45, 30, 55, 40, 50],
     abilities: [
@@ -20811,9 +20811,9 @@ let pkmnData: PokemonData = {
     name: "impidimp",
     base_exp: 53,
     is_mega: false,
-    names: "",
+    names: "Impidimp",
   },
-  860: {
+  "860": {
     types: ["Dark", "Fairy"],
     stats: [65, 60, 45, 75, 55, 70],
     abilities: [
@@ -20838,9 +20838,9 @@ let pkmnData: PokemonData = {
     name: "morgrem",
     base_exp: 130,
     is_mega: false,
-    names: "",
+    names: "Morgrem",
   },
-  861: {
+  "861": {
     types: ["Dark", "Fairy"],
     stats: [95, 120, 65, 95, 75, 60],
     abilities: [
@@ -20865,9 +20865,9 @@ let pkmnData: PokemonData = {
     name: "grimmsnarl",
     base_exp: 255,
     is_mega: false,
-    names: "",
+    names: "Grimmsnarl",
   },
-  862: {
+  "862": {
     types: ["Dark", "Normal"],
     stats: [93, 90, 101, 60, 81, 95],
     abilities: [
@@ -20892,9 +20892,9 @@ let pkmnData: PokemonData = {
     name: "obstagoon",
     base_exp: 260,
     is_mega: false,
-    names: "",
+    names: "Obstagoon",
   },
-  863: {
+  "863": {
     types: ["Steel", "None"],
     stats: [70, 110, 100, 50, 60, 50],
     abilities: [
@@ -20919,9 +20919,9 @@ let pkmnData: PokemonData = {
     name: "perrserker",
     base_exp: 154,
     is_mega: false,
-    names: "",
+    names: "Perrserker",
   },
-  864: {
+  "864": {
     types: ["Ghost", "None"],
     stats: [60, 95, 50, 145, 130, 30],
     abilities: [
@@ -20941,9 +20941,9 @@ let pkmnData: PokemonData = {
     name: "cursola",
     base_exp: 179,
     is_mega: false,
-    names: "",
+    names: "Cursola",
   },
-  865: {
+  "865": {
     types: ["Fighting", "None"],
     stats: [62, 135, 95, 68, 82, 65],
     abilities: [
@@ -20963,9 +20963,9 @@ let pkmnData: PokemonData = {
     name: "sirfetchd",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Sirfetch’d",
   },
-  866: {
+  "866": {
     types: ["Ice", "Psychic"],
     stats: [80, 85, 75, 110, 100, 70],
     abilities: [
@@ -20990,9 +20990,9 @@ let pkmnData: PokemonData = {
     name: "mr-rime",
     base_exp: 182,
     is_mega: false,
-    names: "",
+    names: "Mr. Rime",
   },
-  867: {
+  "867": {
     types: ["Ground", "Ghost"],
     stats: [58, 95, 145, 50, 105, 30],
     abilities: [
@@ -21007,9 +21007,9 @@ let pkmnData: PokemonData = {
     name: "runerigus",
     base_exp: 169,
     is_mega: false,
-    names: "",
+    names: "Runerigus",
   },
-  868: {
+  "868": {
     types: ["Fairy", "None"],
     stats: [45, 40, 40, 50, 61, 34],
     abilities: [
@@ -21029,9 +21029,9 @@ let pkmnData: PokemonData = {
     name: "milcery",
     base_exp: 54,
     is_mega: false,
-    names: "",
+    names: "Milcery",
   },
-  869: {
+  "869": {
     types: ["Fairy", "None"],
     stats: [65, 60, 75, 110, 121, 64],
     abilities: [
@@ -21061,9 +21061,9 @@ let pkmnData: PokemonData = {
     name: "alcremie",
     base_exp: 173,
     is_mega: false,
-    names: "Vanilla Cream Alcremie",
+    names: "Alcremie",
   },
-  870: {
+  "870": {
     types: ["Fighting", "None"],
     stats: [65, 100, 100, 70, 60, 75],
     abilities: [
@@ -21083,9 +21083,9 @@ let pkmnData: PokemonData = {
     name: "falinks",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Falinks",
   },
-  871: {
+  "871": {
     types: ["Electric", "None"],
     stats: [48, 101, 95, 91, 85, 15],
     abilities: [
@@ -21105,9 +21105,9 @@ let pkmnData: PokemonData = {
     name: "pincurchin",
     base_exp: 152,
     is_mega: false,
-    names: "",
+    names: "Pincurchin",
   },
-  872: {
+  "872": {
     types: ["Ice", "Bug"],
     stats: [30, 25, 35, 45, 30, 20],
     abilities: [
@@ -21127,9 +21127,9 @@ let pkmnData: PokemonData = {
     name: "snom",
     base_exp: 37,
     is_mega: false,
-    names: "",
+    names: "Snom",
   },
-  873: {
+  "873": {
     types: ["Ice", "Bug"],
     stats: [70, 65, 60, 125, 90, 65],
     abilities: [
@@ -21149,9 +21149,9 @@ let pkmnData: PokemonData = {
     name: "frosmoth",
     base_exp: 166,
     is_mega: false,
-    names: "",
+    names: "Frosmoth",
   },
-  874: {
+  "874": {
     types: ["Rock", "None"],
     stats: [100, 125, 135, 20, 20, 70],
     abilities: [
@@ -21166,9 +21166,9 @@ let pkmnData: PokemonData = {
     name: "stonjourner",
     base_exp: 165,
     is_mega: false,
-    names: "",
+    names: "Stonjourner",
   },
-  875: {
+  "875": {
     types: ["Ice", "None"],
     stats: [75, 80, 110, 65, 90, 50],
     abilities: [
@@ -21185,7 +21185,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Ice Eiscue",
   },
-  876: {
+  "876": {
     types: ["Psychic", "Normal"],
     stats: [60, 65, 55, 105, 95, 95],
     abilities: [
@@ -21212,7 +21212,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Male Indeedee",
   },
-  877: {
+  "877": {
     types: ["Electric", "Dark"],
     stats: [58, 95, 58, 70, 58, 97],
     abilities: [
@@ -21229,7 +21229,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Full Belly Morpeko",
   },
-  878: {
+  "878": {
     types: ["Steel", "None"],
     stats: [72, 80, 49, 40, 49, 40],
     abilities: [
@@ -21249,9 +21249,9 @@ let pkmnData: PokemonData = {
     name: "cufant",
     base_exp: 66,
     is_mega: false,
-    names: "",
+    names: "Cufant",
   },
-  879: {
+  "879": {
     types: ["Steel", "None"],
     stats: [122, 130, 69, 80, 69, 30],
     abilities: [
@@ -21271,9 +21271,9 @@ let pkmnData: PokemonData = {
     name: "copperajah",
     base_exp: 175,
     is_mega: false,
-    names: "",
+    names: "Copperajah",
   },
-  880: {
+  "880": {
     types: ["Electric", "Dragon"],
     stats: [90, 100, 90, 80, 70, 75],
     abilities: [
@@ -21298,9 +21298,9 @@ let pkmnData: PokemonData = {
     name: "dracozolt",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Dracozolt",
   },
-  881: {
+  "881": {
     types: ["Electric", "Ice"],
     stats: [90, 100, 90, 90, 80, 55],
     abilities: [
@@ -21325,9 +21325,9 @@ let pkmnData: PokemonData = {
     name: "arctozolt",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Arctozolt",
   },
-  882: {
+  "882": {
     types: ["Water", "Dragon"],
     stats: [90, 90, 100, 70, 80, 75],
     abilities: [
@@ -21352,9 +21352,9 @@ let pkmnData: PokemonData = {
     name: "dracovish",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Dracovish",
   },
-  883: {
+  "883": {
     types: ["Water", "Ice"],
     stats: [90, 90, 100, 80, 90, 55],
     abilities: [
@@ -21379,9 +21379,9 @@ let pkmnData: PokemonData = {
     name: "arctovish",
     base_exp: 177,
     is_mega: false,
-    names: "",
+    names: "Arctovish",
   },
-  884: {
+  "884": {
     types: ["Steel", "Dragon"],
     stats: [70, 95, 115, 120, 50, 85],
     abilities: [
@@ -21406,9 +21406,9 @@ let pkmnData: PokemonData = {
     name: "duraludon",
     base_exp: 187,
     is_mega: false,
-    names: "",
+    names: "Duraludon",
   },
-  885: {
+  "885": {
     types: ["Dragon", "Ghost"],
     stats: [28, 60, 30, 40, 30, 82],
     abilities: [
@@ -21433,9 +21433,9 @@ let pkmnData: PokemonData = {
     name: "dreepy",
     base_exp: 54,
     is_mega: false,
-    names: "",
+    names: "Dreepy",
   },
-  886: {
+  "886": {
     types: ["Dragon", "Ghost"],
     stats: [68, 80, 50, 60, 50, 102],
     abilities: [
@@ -21460,9 +21460,9 @@ let pkmnData: PokemonData = {
     name: "drakloak",
     base_exp: 144,
     is_mega: false,
-    names: "",
+    names: "Drakloak",
   },
-  887: {
+  "887": {
     types: ["Dragon", "Ghost"],
     stats: [88, 120, 75, 100, 75, 142],
     abilities: [
@@ -21487,9 +21487,9 @@ let pkmnData: PokemonData = {
     name: "dragapult",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Dragapult",
   },
-  888: {
+  "888": {
     types: ["Fairy", "None"],
     stats: [92, 130, 115, 80, 115, 138],
     abilities: [
@@ -21506,7 +21506,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Zacian",
   },
-  889: {
+  "889": {
     types: ["Fighting", "None"],
     stats: [92, 130, 115, 80, 115, 138],
     abilities: [
@@ -21523,7 +21523,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Zamazenta",
   },
-  890: {
+  "890": {
     types: ["Poison", "Dragon"],
     stats: [140, 85, 95, 145, 95, 130],
     abilities: [
@@ -21538,9 +21538,9 @@ let pkmnData: PokemonData = {
     name: "eternatus",
     base_exp: 345,
     is_mega: false,
-    names: "",
+    names: "Eternatus",
   },
-  891: {
+  "891": {
     types: ["Fighting", "None"],
     stats: [60, 90, 60, 53, 50, 72],
     abilities: [
@@ -21555,9 +21555,9 @@ let pkmnData: PokemonData = {
     name: "kubfu",
     base_exp: 77,
     is_mega: false,
-    names: "",
+    names: "Kubfu",
   },
-  892: {
+  "892": {
     types: ["Fighting", "Dark"],
     stats: [100, 130, 100, 63, 60, 97],
     abilities: [
@@ -21574,7 +21574,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: "Single Strike Urshifu",
   },
-  893: {
+  "893": {
     types: ["Dark", "Grass"],
     stats: [105, 120, 105, 70, 95, 105],
     abilities: [
@@ -21589,9 +21589,9 @@ let pkmnData: PokemonData = {
     name: "zarude",
     base_exp: 300,
     is_mega: false,
-    names: "",
+    names: "Zarude",
   },
-  894: {
+  "894": {
     types: ["Electric", "None"],
     stats: [80, 100, 50, 100, 50, 200],
     abilities: [
@@ -21606,9 +21606,9 @@ let pkmnData: PokemonData = {
     name: "regieleki",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Regieleki",
   },
-  895: {
+  "895": {
     types: ["Dragon", "None"],
     stats: [200, 100, 50, 100, 50, 80],
     abilities: [
@@ -21623,9 +21623,9 @@ let pkmnData: PokemonData = {
     name: "regidrago",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Regidrago",
   },
-  896: {
+  "896": {
     types: ["Ice", "None"],
     stats: [100, 145, 130, 65, 110, 30],
     abilities: [
@@ -21640,9 +21640,9 @@ let pkmnData: PokemonData = {
     name: "glastrier",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Glastrier",
   },
-  897: {
+  "897": {
     types: ["Ghost", "None"],
     stats: [100, 65, 60, 145, 80, 130],
     abilities: [
@@ -21657,9 +21657,9 @@ let pkmnData: PokemonData = {
     name: "spectrier",
     base_exp: 290,
     is_mega: false,
-    names: "",
+    names: "Spectrier",
   },
-  898: {
+  "898": {
     types: ["Psychic", "Grass"],
     stats: [100, 80, 80, 80, 80, 80],
     abilities: [
@@ -21674,9 +21674,9 @@ let pkmnData: PokemonData = {
     name: "calyrex",
     base_exp: 250,
     is_mega: false,
-    names: "",
+    names: "Calyrex",
   },
-  899: {
+  "899": {
     types: ["Normal", "Psychic"],
     stats: [103, 105, 72, 105, 75, 65],
     abilities: [
@@ -21701,9 +21701,9 @@ let pkmnData: PokemonData = {
     name: "wyrdeer",
     base_exp: null,
     is_mega: false,
-    names: "",
+    names: "Wyrdeer",
   },
-  900: {
+  "900": {
     types: ["Bug", "Rock"],
     stats: [70, 135, 95, 45, 70, 85],
     abilities: [
@@ -21728,9 +21728,9 @@ let pkmnData: PokemonData = {
     name: "kleavor",
     base_exp: null,
     is_mega: false,
-    names: "",
+    names: "Kleavor",
   },
-  901: {
+  "901": {
     types: ["Ground", "Normal"],
     stats: [130, 140, 105, 45, 80, 50],
     abilities: [
@@ -21755,9 +21755,9 @@ let pkmnData: PokemonData = {
     name: "ursaluna",
     base_exp: null,
     is_mega: false,
-    names: "",
+    names: "Ursaluna",
   },
-  902: {
+  "902": {
     types: ["Water", "Ghost"],
     stats: [120, 112, 65, 80, 75, 78],
     abilities: [
@@ -21784,7 +21784,7 @@ let pkmnData: PokemonData = {
     is_mega: false,
     names: " Male Basculegion",
   },
-  903: {
+  "903": {
     types: ["Fighting", "Poison"],
     stats: [80, 130, 60, 40, 80, 120],
     abilities: [
@@ -21804,9 +21804,9 @@ let pkmnData: PokemonData = {
     name: "sneasler",
     base_exp: null,
     is_mega: false,
-    names: "",
+    names: "Sneasler",
   },
-  904: {
+  "904": {
     types: ["Dark", "Poison"],
     stats: [85, 115, 95, 65, 65, 85],
     abilities: [
@@ -21831,9 +21831,9 @@ let pkmnData: PokemonData = {
     name: "overqwil",
     base_exp: null,
     is_mega: false,
-    names: "",
+    names: "Overqwil",
   },
-  905: {
+  "905": {
     types: ["Fairy", "Flying"],
     stats: [74, 115, 70, 135, 80, 106],
     abilities: [

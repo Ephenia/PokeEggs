@@ -92,6 +92,19 @@ main {
     color: #30C5FF;
 }
 
+.nav-locked::before {
+    content: '🔒';
+    font-family: pkmnfont;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(112 128 144 / 66%);
+    font-size: 1.3em;
+}
+
 /* Menu */
 #main-menu {
     align-items: center;

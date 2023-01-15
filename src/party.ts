@@ -19,7 +19,14 @@ function renderParty(full = false, index: number = -1) {
             //Pokemon image
             const pkmnImg = document.createElement("div");
             const img = document.createElement("img");
-            img.src = `assets/${member.isEgg ? `eggs/${member.eggSprite}` : `pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}`}.png`;
+            let sprite;
+            if (member.isEgg) {
+                sprite = `assets/${eggDesign.includes(member.sprite) ? `eggs/normal/${member.sprite}` : `eggs/${member.eggSprite}` }.png`;
+            } else {
+                sprite = `assets/pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
+            }
+            //img.src = `assets/${member.isEgg ? `eggs/${member.eggSprite}` : `pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}`}.png`;
+            img.src = sprite;
             pkmnImg.appendChild(img);
             frag.appendChild(pkmnImg);
             //Pokemon name

@@ -25,6 +25,14 @@ function Notify(name: string, args: any = null, uuid = null, resume = false) {
                 dismiss: true
             }]
             break;
+        case 'itemMissing':
+            opts.message = `You are missing the ${itemData[args].name}.`;
+            opts.status = 'danger';
+            opts.timeout = 5000;
+            opts.actions = [{
+                dismiss: true
+            }]
+            break;
         default:
         // code block
     }

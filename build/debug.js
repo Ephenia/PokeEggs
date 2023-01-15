@@ -9,6 +9,7 @@ function clearParty() {
 function clearItemBag() {
     player.items = {};
     renderItemBag(player.prefs.bag);
+    renderMain(player.prefs.nav);
 }
 function randomitem() {
     const items = Object.entries(itemData);

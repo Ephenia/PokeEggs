@@ -42,6 +42,7 @@ You may also [join my Discord server](https://discord.gg/nfbT8zJSkd) (can also c
 • Pokémon icons from the project [PokéSprite](https://github.com/msikma/pokesprite).<br>
 • [PokéAPI](https://github.com/PokeAPI/pokeapi) for getting data for various things.<br>
 • [Pokéclicker](https://github.com/pokeclicker/pokeclicker) for their Pokémon fonts they use.
+• Egg sprites used from [Pokemon Reborn & Rejuvenation](https://www.rebornevo.com/pr/index.html/).
 
 # License
 The sprite images and or assets used are © Nintendo/Creatures Inc./GAME FREAK Inc.

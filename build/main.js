@@ -85,27 +85,15 @@ function loadMain() {
 //For initilization purposes always
 function renderMain(index) {
     const getView = document.querySelectorAll('[view-index]');
-    for (const view of getView) {
-        view.setAttribute('style', 'display: none');
+    if (navOptions[index].cond()) {
+        for (const view of getView) {
+            view.setAttribute('style', 'display: none');
+        }
+        getView[index].setAttribute('style', 'display:flex');
+        player.prefs.nav = index;
+        //navOptions[player.prefs.nav].nav();
     }
-    getView[index].setAttribute('style', 'display:flex');
-    if (index === 0) {
-        //For Party
-        renderParty(true);
-    }
-    else if (index === 1) {
-        //For Pokemon Box
-        renderPokeBox();
-    }
-    else if (index === 2) {
-        //For Item Bag
-        renderItemBag(player.prefs.bag);
-    }
-    else if (index === 3) {
-        //For Poke Radar
-        renderPokeRadar();
-    }
-    player.prefs.nav = index;
+    navOptions[index].nav();
     navSelect();
 }
 function renderLead() {

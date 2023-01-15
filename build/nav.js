@@ -5,27 +5,72 @@ const navOptions = {
     0: {
         name: 'Party',
         src: 'assets/items/poke-ball.png',
-        nav() { renderParty(true); }
+        nav() { renderParty(true); },
+        cond() { return true; }
     },
     1: {
-        name: 'Pokémon Box',
-        src: 'assets/items/pokemon-box-link.png',
-        nav() { }
+        name: 'Pokédex',
+        src: 'assets/items/rule-book.png',
+        nav() { },
+        cond() { return true; }
     },
     2: {
-        name: 'Item Bag',
-        src: 'assets/items/forage-bag.png',
-        nav() { }
+        name: 'Pokémon Box',
+        src: 'assets/items/pokemon-box-link.png',
+        nav() { renderPokeBox(); },
+        cond() { return true; }
     },
     3: {
-        name: 'Poké Radar',
-        src: 'assets/items/poke-radar.png',
-        nav() { }
+        name: 'Item Bag',
+        src: 'assets/items/forage-bag.png',
+        nav() { renderItemBag(player.prefs.bag); },
+        cond() { return true; }
     },
     4: {
+        name: 'Poké Radar',
+        src: 'assets/items/poke-radar.png',
+        nav() {
+            this.cond() ? renderPokeRadar() : Notify('itemMissing', 408);
+        },
+        cond() {
+            return checkItemAmnt(408) > 0 ? true : false;
+        }
+    },
+    5: {
         name: 'Daycare',
         src: 'assets/npc/daycare-man.png',
-        nav() { }
+        nav() { },
+        cond() { return true; }
+    },
+    6: {
+        name: 'Buff Caster',
+        src: 'assets/items/mega-bracelet.png',
+        nav() {
+            this.cond() ? true : Notify('itemMissing', 785);
+        },
+        cond() {
+            return checkItemAmnt(785) > 0 ? true : false;
+        }
+    },
+    7: {
+        name: 'Crafting',
+        src: 'assets/items/works-key.png',
+        nav() {
+            this.cond() ? true : Notify('itemMissing', 415);
+        },
+        cond() {
+            return checkItemAmnt(415) > 0 ? true : false;
+        }
+    },
+    8: {
+        name: 'Mining',
+        src: 'assets/items/explorer-kit.png',
+        nav() {
+            this.cond() ? true : Notify('itemMissing', 405);
+        },
+        cond() {
+            return checkItemAmnt(405) > 0 ? true : false;
+        }
     }
 };
 function buildNav() {
@@ -41,7 +86,7 @@ function buildNav() {
             if (player.prefs.nav === +opt)
                 return;
             renderMain(+opt);
-            thisOpt.nav();
+            //thisOpt.nav();
         });
         //Nav icon
         const navImg = document.createElement('img');
@@ -59,5 +104,6 @@ function buildNav() {
 function navSelect() {
     for (let i = 0; i < navOpts.length; i++) {
         player.prefs.nav === i ? navOpts[i].classList.add('nav-select') : navOpts[i].classList.remove('nav-select');
+        !navOptions[i].cond() ? navOpts[i].classList.add('nav-locked') : navOpts[i].classList.remove('nav-locked');
     }
 }
