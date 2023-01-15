@@ -41,7 +41,7 @@ You may also [join my Discord server](https://discord.gg/nfbT8zJSkd) (can also c
 • Smogon's various Sprite Projects that can be found [over on their forums](https://www.smogon.com/forums/forums/smeargles-laptop.325/).<br>
 • Pokémon icons from the project [PokéSprite](https://github.com/msikma/pokesprite).<br>
 • [PokéAPI](https://github.com/PokeAPI/pokeapi) for getting data for various things.<br>
-• [Pokéclicker](https://github.com/pokeclicker/pokeclicker) for their Pokémon fonts they use.
+• [Pokéclicker](https://github.com/pokeclicker/pokeclicker) for their Pokémon fonts they use.<br>
 • Egg sprites used from [Pokemon Reborn & Rejuvenation](https://www.rebornevo.com/pr/index.html/).
 
 # License
