@@ -35,7 +35,8 @@ You may also [join my Discord server](https://discord.gg/nfbT8zJSkd) (can also c
 # Libraries Used
 • [LocalForage](https://github.com/localForage/localForage)<br>
 • [Hotkeys](https://github.com/jaywcjlove/hotkeys)<br>
-• [js-snackbar](https://github.com/mickelsonmichael/js-snackbar)
+• [js-snackbar](https://github.com/mickelsonmichael/js-snackbar)<br>
+• [chroma.js](https://github.com/gka/chroma.js/)
 
 # Other Resources Used
 • Smogon's various Sprite Projects that can be found [over on their forums](https://www.smogon.com/forums/forums/smeargles-laptop.325/).<br>

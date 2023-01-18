@@ -1,3 +1,15 @@
+January 17th, 2023
+
+• Fixed when having only items with 0 quantity existing in an Item Bag slot won't display message for the slot being empty.
+• Added item "Developer's Letter" which is given upon save creation, this will help aid in ease of testing (classified as Misc).
+• Color coating for Nature stat modifiers within Pokémon tooltips, red indicates negative while green indicates positive.
+• Color coated IVs within Pokémon tooltips, ranging from red (worst) to green (best), and then blue (perfect 31).
+• Random Nature generation for eggs on creation.
+• Added more data regarding Pokémon (Nature data).
+• Added quotes for Eggs within their tooltips, which additionally indicate their hatching progression.
+• Ability generation for eggs on creation.
+• Added tooltips for Pokémon and Eggs within your Party (to show information about them).
+
 January 14th, 2023
 
 • A message for notifying requirements when clicking on a locked Navigation area.

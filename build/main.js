@@ -61,6 +61,7 @@ function initialize() {
             yield newEggHandler();
             yield createSave();
             loadMain();
+            gainItem(10000);
         }
     });
 }

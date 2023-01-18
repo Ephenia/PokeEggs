@@ -17,7 +17,7 @@ function renderItemBag(index) {
         return;
     disposeElement(itemBagView);
     const frag = document.createDocumentFragment();
-    const typeItems = Object.entries(player.items).filter(([key, value]) => value.type === invNames[player.prefs.bag][0]);
+    const typeItems = Object.entries(player.items).filter(([key, value]) => value.type === invNames[player.prefs.bag][0] && value.quantity !== 0);
     if (typeItems.length > 0) {
         itemBagView.classList.remove('empty-pocket');
         for (const index of typeItems) {

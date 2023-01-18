@@ -162,6 +162,11 @@ main {
     z-index: 1;
 }
 
+.party-slot > div > img {
+    pointer-events: all;
+    cursor: pointer;
+}
+
 .party-slot>* {
     display: flex;
     justify-content: center;

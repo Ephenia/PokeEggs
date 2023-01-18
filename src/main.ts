@@ -52,6 +52,7 @@ async function initialize() {
         await newEggHandler();
         await createSave();
         loadMain();
+        gainItem(10000);
     }
 }
 

@@ -307,5 +307,16 @@ const itemData = {
         type: 'key',
         usable: false,
         voidable: true
+    },
+    10000: {
+        buffdesc: '',
+        countable: false,
+        desc: 'A letter from the developer. Contains various items for testing.',
+        duration: Infinity,
+        name: 'Developer\'s Letter',
+        src: 'old-letter',
+        type: 'misc',
+        usable: true,
+        voidable: true
     }
 };

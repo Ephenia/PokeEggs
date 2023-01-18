@@ -21,6 +21,8 @@ function renderParty(full = false, index = -1) {
             //Pokemon image
             const pkmnImg = document.createElement("div");
             const img = document.createElement("img");
+            img.setAttribute('data-src', `${index}`);
+            img.setAttribute('tooltip-src', 'party-pkmn');
             let sprite;
             if (member.isEgg) {
                 sprite = `assets/${eggDesign.includes(member.sprite) ? `eggs/normal/${member.sprite}` : `eggs/${member.eggSprite}`}.png`;
