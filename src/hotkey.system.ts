@@ -1,8 +1,10 @@
 // @ts-nocheck
 hotkeys('f5', async function (event, handler) {
     event.preventDefault();
-    await preserveOnSave();
-    await createSave();
+    if (player.settings.onRefreshSave.state) {
+        await preserveOnSave();
+        await createSave();
+    }
     preventSave = true;
     location.reload();
 });

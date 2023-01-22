@@ -12,7 +12,7 @@ window.addEventListener('mousemove', (e) => {
         remClasses(tooltipCont);
         tooltipStyle(element, tooltipType);
     } else {
-        mainTooltip.style.display = 'none';
+        if (!player.settings.stickyTooltip.state) mainTooltip.style.display = 'none';
     }
 });
 
@@ -49,6 +49,7 @@ function tooltipStyle(element: HTMLElement, type: string) {
         tooltipCont.classList.add('tooltip-party-pkmn');
         const slotSrc = element.getAttribute('data-src')!;
         const member = player.party[+slotSrc];
+        const pokeData = pkmnData[member.id];
         //Pkmn Image
         const pkmnImg = document.createElement("div");
         pkmnImg.classList.add('tooltip-party-pkmn-icon');
@@ -73,6 +74,19 @@ function tooltipStyle(element: HTMLElement, type: string) {
         const levelDiv = document.createElement("div");
         levelDiv.textContent = member.isEgg ? '' : `Level: ${member.level}`;
         frag.appendChild(levelDiv);
+        //Experience
+        if (!member.isEgg) {
+            const lastLevel = member.exp - getLevelEXP(member.id, member.level);
+            const toLevel = nextLevelEXP(member.id, member.level);
+            const progBar = document.createElement("progress");
+            progBar.value = lastLevel;
+            progBar.max = toLevel;
+            frag.appendChild(progBar);
+            const expDiv = document.createElement("div");
+            expDiv.classList.add('tooltip-party-pkmn-exp');
+            expDiv.textContent = `${member.level !== 100 ? `${lastLevel.toLocaleString()} / ${toLevel.toLocaleString()}` : member.exp.toLocaleString()}`;
+            frag.appendChild(expDiv);
+        }
         //Gender
         if (!member.isEgg) {
             const genderIcon = document.createElement("img");
@@ -82,7 +96,7 @@ function tooltipStyle(element: HTMLElement, type: string) {
         }
         //Ability
         const abilityDiv = document.createElement("div");
-        abilityDiv.textContent = member.isEgg ? '' : `Ability: ${member.ability}`;
+        abilityDiv.textContent = member.isEgg ? '' : `Ability: ${abilityData[member.ability].names}`;
         frag.appendChild(abilityDiv);
         //Nature
         const natureDiv = document.createElement("div");
@@ -111,7 +125,7 @@ function tooltipStyle(element: HTMLElement, type: string) {
                 IView.textContent = member.isEgg ? '' : IV;
                 statCol.appendChild(IView);
                 const statVal = document.createElement("div");
-                statVal.textContent = `${pkmnData[member.id].stats[i]}`;
+                statVal.textContent = `${pokeData.stats[i]}`;
                 statCol.appendChild(statVal);
                 statDiv.appendChild(statCol);
             }

@@ -47,7 +47,29 @@ let player = {
         highestRegion: 0,
     },
     notifyTrack: {},
-    statistics: {}
+    statistics: {},
+    settings: {
+        doAutoSave: {
+            name: '[Save] Auto Save',
+            state: false
+        },
+        onExitSave: {
+            name: '[Save] Attempt Save on Game Exit',
+            state: true
+        },
+        onRefreshSave: {
+            name: '[Save] Save on Refresh',
+            state: true
+        },
+        eggReadyNotif: {
+            name: '[Notify] Egg Ready to Hatch',
+            state: true
+        },
+        stickyTooltip: {
+            name: '[Debug] Sticky Tooltips',
+            state: false
+        }
+    }
 };
 initialize();
 function initialize() {
@@ -80,7 +102,8 @@ function loadMain() {
     if (!player.flags.kantoStarter)
         openModal('starterselect', 'Select Starter');
     setInterval(function () {
-        //createSave();
+        if (player.settings.doAutoSave.state)
+            createSave();
     }, 60000);
 }
 //For initilization purposes always

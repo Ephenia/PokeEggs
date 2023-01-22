@@ -1,3 +1,15 @@
+January 22nd, 2023
+
+• You can now double-click on a Pokémon in the Starter Selection to confirm it (no longer need to scroll down to the Select button).
+• Setting added for attempting to save the game on tab/browser close (On by Default).
+• Setting added for making the game save on refresh or not (On by Default).
+• Setting added for Auto Saving every minute (Off by Default).
+• Support for save exporting as well as importing via file, you can find this in Settings for now.
+• Setting added for toggling notification for when an egg is ready to hatch (On by Default).
+• Functional level and Experience bars within Pokémon tooltips.
+• Added more data regarding Pokémon (Ability data).
+• [Old] EXP formulas for the different Experience groups.
+
 January 17th, 2023
 
 • Fixed when having only items with 0 quantity existing in an Item Bag slot won't display message for the slot being empty.

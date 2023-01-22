@@ -104,6 +104,10 @@
     text-align: center;
 }
 
+.tooltip-party-pkmn-exp {
+    font-size: 0.75em;
+}
+
 .tooltip-party-pkmn-info {
     font-size: 0.75em;
     color: skyblue;

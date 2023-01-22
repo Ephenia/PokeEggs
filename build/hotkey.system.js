@@ -12,8 +12,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 hotkeys('f5', function (event, handler) {
     return __awaiter(this, void 0, void 0, function* () {
         event.preventDefault();
-        yield preserveOnSave();
-        yield createSave();
+        if (player.settings.onRefreshSave.state) {
+            yield preserveOnSave();
+            yield createSave();
+        }
         preventSave = true;
         location.reload();
     });

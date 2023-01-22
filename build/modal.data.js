@@ -46,6 +46,9 @@ function pickStarter() {
                     label.classList.add('modal-select-starter-active');
                     document.getElementById('btn-select-starter').removeAttribute('disabled');
                 });
+                label.addEventListener("dblclick", function () {
+                    confirmStarter();
+                });
             }
             else {
                 label.classList.add('modal-select-starter-disabled');
@@ -69,16 +72,62 @@ function pickStarter() {
     btn.textContent = 'Select';
     btn.disabled = true;
     btn.addEventListener('click', () => {
-        const id = document.querySelector('input[name="starter"]:checked').getAttribute('value');
-        addEgg(+id);
-        closeModal();
-        player.flags.kantoStarter = true;
+        confirmStarter();
     });
     modalContent.appendChild(btn);
     modalContent.classList.add('modal-select-starter');
     modalPersist = true;
+    function confirmStarter() {
+        const id = document.querySelector('input[name="starter"]:checked').getAttribute('value');
+        addEgg(+id);
+        closeModal();
+        player.flags.kantoStarter = true;
+    }
 }
 function createSettings() {
+    const frag = new DocumentFragment();
+    for (const setting in player.settings) {
+        console.log(setting);
+        console.log(player.settings[setting]);
+        frag.appendChild(createCheckSetting(setting, player.settings[setting]));
+    }
+    const exportSave = document.createElement("button");
+    exportSave.textContent = 'Export Save';
+    exportSave.addEventListener('click', () => {
+        downloadSave(playerBase64());
+    });
+    frag.appendChild(exportSave);
+    const chooseSave = document.createElement("input");
+    chooseSave.type = 'file';
+    chooseSave.accept = '.txt';
+    chooseSave.addEventListener("change", function (event) {
+        readSingleFile(event);
+    });
+    frag.appendChild(chooseSave);
+    modalContent.appendChild(frag);
+    modalContent.classList.add('modal-settings');
+}
+function createCheckSetting(name, setting) {
+    const frag = new DocumentFragment();
+    const settingCont = document.createElement("div");
+    settingCont.classList.add('modal-settings-checkbox');
+    //Checkbox
+    const checkInput = document.createElement("input");
+    checkInput.type = 'checkbox';
+    checkInput.id = name;
+    checkInput.name = name;
+    checkInput.checked = setting.state;
+    checkInput.addEventListener('input', () => {
+        player.settings[name].state = !setting.state;
+    });
+    settingCont.appendChild(checkInput);
+    //Label
+    const checkLabel = document.createElement("label");
+    checkLabel.setAttribute('for', name);
+    checkLabel.textContent = ` ${setting.name}`;
+    settingCont.appendChild(checkLabel);
+    frag.appendChild(settingCont);
+    return frag;
 }
 function createChangelog() {
     fetch('./changelog.txt')

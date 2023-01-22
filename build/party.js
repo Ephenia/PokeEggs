@@ -124,7 +124,8 @@ function progressEgg(index, delay = 0) {
         }
         if (thisEgg.progress === thisEgg.ehp) {
             clearInterval(eggLoop);
-            Notify('eggReady');
+            if (player.settings.eggReadyNotif.state)
+                Notify('eggReady');
         }
     }
 }

@@ -21,7 +21,8 @@ interface PlayerLayout {
     prefs: PlayerPreference,
     flags: Flags,
     notifyTrack: Notifications,
-    statistics: Statistics
+    statistics: Statistics,
+    settings: Settings
 }
 
 interface Pokemon {
@@ -74,6 +75,18 @@ interface ItemData {
 
 interface PokemonData {
     [key: number]: {
+        [key: string]: any
+    }
+}
+
+interface AbilityData {
+    [key: number]: {
+        [key: string]: any
+    }
+}
+
+interface Settings {
+    [key: string]: {
         [key: string]: any
     }
 }

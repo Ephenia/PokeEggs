@@ -115,16 +115,16 @@ const expGroup = {
         if (level < 2)
             return 0;
         if (level < 51) {
-            return (Math.pow(level, 3) * (100 - level)) / 50;
+            return Math.floor((Math.pow(level, 3) * (100 - level)) / 50);
         }
         else if (level < 68) {
-            return (Math.pow(level, 3) * (150 - level)) / 100;
+            return Math.floor((Math.pow(level, 3) * (150 - level)) / 100);
         }
         else if (level < 98) {
-            return (Math.pow(level, 3) * ((1911 - (level * 10)) / 3)) / 500;
+            return Math.floor((Math.pow(level, 3) * ((1911 - (level * 10)) / 3)) / 500);
         }
         else if (level < 101) {
-            return (Math.pow(level, 3) * (160 - level)) / 100;
+            return Math.floor((Math.pow(level, 3) * (160 - level)) / 100);
         }
         else {
             return -1;
@@ -133,40 +133,63 @@ const expGroup = {
     fast(level) {
         if (level < 2)
             return 0;
-        return (Math.pow(level, 3) * 4) / 5;
+        return Math.floor((Math.pow(level, 3) * 4) / 5);
     },
     medium_fast(level) {
         if (level < 2)
             return 0;
-        return Math.pow(level, 3);
+        return Math.floor(Math.pow(level, 3));
     },
     medium_slow(level) {
         if (level < 2)
             return 0;
-        return (6 / 5 * Math.pow(level, 3)) - (15 * Math.pow(level, 2)) + (100 * level) - 140;
+        return Math.floor((6 / 5 * Math.pow(level, 3)) - (15 * Math.pow(level, 2)) + (100 * level) - 140);
     },
     slow(level) {
         if (level < 2)
             return 0;
-        return (Math.pow(level, 3) * 5) / 4;
+        return Math.floor((Math.pow(level, 3) * 5) / 4);
     },
     fluctuating(level) {
         if (level < 2)
             return 0;
         if (level < 15) {
-            return Math.pow(level, 3) * ((((level + 1) / 3) + 24) / 50);
+            return Math.floor(Math.pow(level, 3) * ((((level + 1) / 3) + 24) / 50));
         }
         else if (level < 36) {
-            return Math.pow(level, 3) * ((level + 14) / 50);
+            return Math.floor(Math.pow(level, 3) * ((level + 14) / 50));
         }
         else if (level < 101) {
-            return Math.pow(level, 3) * (((level / 2) + 32) / 50);
+            return Math.floor(Math.pow(level, 3) * (((level / 2) + 32) / 50));
         }
         else {
             return -1;
         }
     }
 };
+function getLevelEXP(pokeID, level) {
+    const group = speciesData[pokeID].growth_rate;
+    return expGroup[group](level);
+}
+function nextLevelEXP(pokeID, level) {
+    const group = speciesData[pokeID].growth_rate;
+    return expGroup[group](Math.min(level + 1, 100)) - expGroup[group](level);
+}
+function gainEXP(slot, exp) {
+    const member = player.party[slot];
+    member.exp += exp;
+    const trueLvl = validateLevel(member.id, member.exp);
+    if (member.level !== trueLvl)
+        member.level = trueLvl;
+    renderParty(false, slot);
+}
+function validateLevel(pokeID, exp) {
+    for (let i = 100; i !== 0; i--) {
+        if (exp >= getLevelEXP(pokeID, i)) {
+            return i;
+        }
+    }
+}
 //For party
 function emptyMember() {
     return { id: null, isEgg: null, name: null, level: 0, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null, ability: null, nature: null };

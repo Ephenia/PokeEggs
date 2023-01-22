@@ -162,7 +162,7 @@ main {
     z-index: 1;
 }
 
-.party-slot > div > img {
+.party-slot>div>img {
     pointer-events: all;
     cursor: pointer;
 }
@@ -211,7 +211,7 @@ main {
     background-color: #1e2124;
 }
 
-#pkmn-menu > button {
+#pkmn-menu>button {
     padding: 5px;
     width: -webkit-fill-available;
     cursor: pointer;
@@ -237,7 +237,7 @@ main {
     column-gap: 11px;
 }
 
-.pkmn-box-slot > img {
+.pkmn-box-slot>img {
     pointer-events: none;
 }
 
@@ -304,7 +304,7 @@ main {
     text-align: center;
 }
 
-.item-bag-view-row > div {
+.item-bag-view-row>div {
     display: flex;
     justify-content: center;
     width: calc(100% / 4);
@@ -336,7 +336,7 @@ main {
     justify-content: center;
 }
 
-#poke-radar-chain-info > div {
+#poke-radar-chain-info>div {
     display: flex;
     min-height: 100px;
     flex-direction: column;
@@ -347,7 +347,7 @@ main {
     justify-content: space-between;
 }
 
-#poke-radar-chain-info > div > div {
+#poke-radar-chain-info>div>div {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -370,7 +370,7 @@ main {
     align-items: center;
 }
 
-#poke-radar-cost > div {
+#poke-radar-cost>div {
     display: flex;
     align-items: center;
     margin-left: -16px;
@@ -490,4 +490,23 @@ main {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+/* Progress Bars */
+progress {
+    border: 0;
+    height: 10px;
+    border-radius: 5px;
+}
+progress::-webkit-progress-bar {
+    border: 1px solid #7289da;
+    height: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+progress::-webkit-progress-value {
+    border: 0;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #50C878;
 }

@@ -5,7 +5,7 @@
     justify-content: center;
     position: absolute;
     width: -webkit-fill-available;
-    z-index: 10;
+    z-index: 12;
 }
 
 #modal-main {
@@ -32,6 +32,13 @@
     overflow-x: auto;
     padding: 10px;
     width: 90%;
+}
+
+.modal-settings {
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    gap: 5px;
 }
 
 .modal-changelog {
@@ -73,4 +80,9 @@
 
 .modal-select-starter-active {
     background-color: rgb(154 205 50 / 50%);
+}
+
+.modal-settings-checkbox {
+    cursor: pointer !important;
+    height: max-content;
 }
