@@ -79,6 +79,7 @@ const menuOptions: MenuLayout = {
         debug: false,
         custom() {
             createSave();
+            Notify('createSave');
         }
     },
     9: {

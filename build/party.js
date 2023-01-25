@@ -163,8 +163,10 @@ function pauseEggTimer(full = false, index = -1) {
     }
     function pauseEgg(member, index) {
         member.eggPause = Date.now();
-        player.eggHandler[index] = null;
-        member.frozen = true;
+        if (saveStatePause) {
+            player.eggHandler[index] = null;
+            member.frozen = true;
+        }
     }
 }
 function convertEgg(member) {

@@ -1,26 +1,32 @@
 //@ts-nocheck
 function Notify(name: string, args: any = null, uuid = null, resume = false) {
-    let opts = { message: null, dismissible: true, status: null, timeout: 0, actions: null };
+    let opts = { message: null, dismissible: true, status: null, timeout: 5000, actions: null };
     const notifUUID = uuid !== null ? uuid : UUID();
     switch (name) {
+        case 'createSave':
+            opts.message = `Game saved.`;
+            opts.status = 'green';
+            opts.actions = [{
+                dismiss: true
+            }]
+            break;
         case 'eggReady':
             opts.message = `<div class="toast-align"><img class="toast-egg-icon" src="${dataImg.eggIcon}">Egg is ready to hatch!</div>`;
             opts.status = 'alert';
-            opts.timeout = 5000;
+            opts.timeout = 0;
             opts.actions = [{
                 text: 'Party',
                 function: function () {
-                    player.prefs.nav = 0;
+                    player.prefs.nav = nameToNav('Party');
                     renderMain(player.prefs.nav);
                     dismissNotif();
                 },
                 dismiss: true
             }]
             break;
-        case 'itemUnusable':
-            opts.message = `Item function is not yet implemented.`;
+        case 'errorMsg':
+            opts.message = args;
             opts.status = 'danger';
-            opts.timeout = 5000;
             opts.actions = [{
                 dismiss: true
             }]
@@ -28,7 +34,17 @@ function Notify(name: string, args: any = null, uuid = null, resume = false) {
         case 'itemMissing':
             opts.message = `You are missing the ${itemData[args].name}.`;
             opts.status = 'danger';
-            opts.timeout = 5000;
+            opts.actions = [{
+                dismiss: true
+            }]
+            break;
+        case 'itemRecieve':
+            opts.message = `<div class="toast-align">Obtained ${args[1]}x <div class="toast-item-icon"><img src="assets/items/${itemData[args[0]].src}.png"></div>${itemData[args[0]].name}.</div>`;
+            opts.status = 'green';
+            break;
+        case 'itemUnusable':
+            opts.message = `Item function is not yet implemented.`;
+            opts.status = 'danger';
             opts.actions = [{
                 dismiss: true
             }]

@@ -8,12 +8,12 @@ localforage.config({
     description: ''
 });
 
-let preventSave: boolean = false;
+let preventForceSave: boolean = false;
+let saveStatePause: boolean = false;
 let clearSave: boolean = false;
 
 window.addEventListener('beforeunload', async function (e) {
-    if (player.settings.onExitSave.state && !clearSave && !preventSave) {
-        await preserveOnSave();
+    if (player.settings.onExitSave.state && !clearSave && !preventForceSave) {
         await createSave();
     }
 }, false);
@@ -37,10 +37,10 @@ async function hasSave(): boolean {
 }
 
 async function createSave() {
+    await preserveOnSave();
     localforage.setItem('PE_Player', player).then(function (value) {
         console.log(value);
         colorLog('Saved game!', 'info');
-        preserveOnSave();
     }).catch(function (err) {
         console.log(err);
     });

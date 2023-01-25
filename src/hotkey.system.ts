@@ -2,10 +2,10 @@
 hotkeys('f5', async function (event, handler) {
     event.preventDefault();
     if (player.settings.onRefreshSave.state) {
-        await preserveOnSave();
         await createSave();
     }
-    preventSave = true;
+    preventForceSave = true;
+    saveStatePause = true;
     location.reload();
 });
 

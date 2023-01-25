@@ -13,10 +13,10 @@ hotkeys('f5', function (event, handler) {
     return __awaiter(this, void 0, void 0, function* () {
         event.preventDefault();
         if (player.settings.onRefreshSave.state) {
-            yield preserveOnSave();
             yield createSave();
         }
-        preventSave = true;
+        preventForceSave = true;
+        saveStatePause = true;
         location.reload();
     });
 });

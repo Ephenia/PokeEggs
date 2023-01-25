@@ -209,10 +209,16 @@ function gainItem(itemID: number, amount: number = 1) {
     if (getItem.type === 'key') amount = 1;
     if (!player.items.hasOwnProperty(itemID)) {
         player.items = Object.assign({ [itemID]: { type: getItem.type, quantity: amount } }, player.items);
+        if (player.settings.obtainItem.state) Notify('itemRecieve', [itemID, amount]);
     } else if (player.items.hasOwnProperty(itemID)) {
-        if (getItem.type !== 'key') player.items[itemID].quantity += amount;
+        if (getItem.type !== 'key') {
+            player.items[itemID].quantity += amount;
+            if (player.settings.obtainItem.state) Notify('itemRecieve', [itemID, amount]);
+        } else {
+            Notify('errorMsg', `You already own this item.`);
+        }
     } else {
-        console.log('Can\'t add item for an unknown reason.')
+        Notify('errorMsg', 'Can\'t add item for an unknown reason.')
     }
     renderItemBag(player.prefs.bag);
     renderMain(player.prefs.nav);
@@ -230,6 +236,14 @@ function checkItemAmnt(itemID: number) {
 
 function itemImg(itemID: number) {
     return `<img src="assets/items/${itemData[itemID].src}.png">`;
+}
+
+//For Navigation
+
+function nameToNav(name: string) {
+    return Object.entries(navOptions).findIndex(function([key, value]) {
+        return value.name === name;
+    });
 }
 
 //Sorting

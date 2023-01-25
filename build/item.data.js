@@ -77,6 +77,17 @@ const itemData = {
         usable: true,
         voidable: true
     },
+    419: {
+        buffdesc: '',
+        countable: true,
+        desc: 'A very convenient map that can be viewed anytime. It even shows you your present location in the region.',
+        duration: Infinity,
+        name: 'Town Map',
+        src: 'town-map',
+        type: 'key',
+        usable: true,
+        voidable: true
+    },
     591: {
         buffdesc: '',
         countable: false,
@@ -283,7 +294,7 @@ const itemData = {
         name: 'Mega Bracelet',
         src: 'mega-bracelet',
         type: 'key',
-        usable: true,
+        usable: false,
         voidable: true
     },
     878: {
@@ -316,6 +327,17 @@ const itemData = {
         name: 'Developer\'s Letter',
         src: 'old-letter',
         type: 'misc',
+        usable: true,
+        voidable: true
+    },
+    10001: {
+        buffdesc: '',
+        countable: false,
+        desc: 'A bracelet that allows you to cast buffs using the essence of items.',
+        duration: Infinity,
+        name: 'Buff Caster',
+        src: 'mega-bracelet',
+        type: 'key',
         usable: true,
         voidable: true
     }

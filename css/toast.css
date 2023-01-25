@@ -1,9 +1,16 @@
 .toast-align {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .toast-egg-icon {
     position: relative;
-    margin-top: -8px;
+    width: 32px;
+    height: 32px;
+}
+
+.toast-item-icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
 }

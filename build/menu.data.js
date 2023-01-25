@@ -80,6 +80,7 @@ const menuOptions = {
         debug: false,
         custom() {
             createSave();
+            Notify('createSave');
         }
     },
     9: {

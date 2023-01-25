@@ -44,11 +44,15 @@ let player = {
     },
     flags: {
         kantoStarter: false,
-        highestRegion: 0,
+        highestRegion: 1,
     },
     notifyTrack: {},
     statistics: {},
     settings: {
+        obtainItem: {
+            name: '[Item] Obtain Item',
+            state: true
+        },
         doAutoSave: {
             name: '[Save] Auto Save',
             state: false
@@ -102,9 +106,11 @@ function loadMain() {
     if (!player.flags.kantoStarter)
         openModal('starterselect', 'Select Starter');
     setInterval(function () {
-        if (player.settings.doAutoSave.state)
+        if (player.settings.doAutoSave.state) {
             createSave();
-    }, 60000);
+            Notify('createSave');
+        }
+    }, 10000);
 }
 //For initilization purposes always
 function renderMain(index) {
@@ -224,6 +230,7 @@ function renderPokeBox() {
             //const getPoke = pkmnData[member.id];
             const pkmnDiv = document.createElement('div');
             pkmnDiv.classList.add('pkmn-box-slot');
+            pkmnDiv.setAttribute('tooltip-src', 'box-pkmn');
             pkmnDiv.setAttribute('data-src', poke);
             pkmnDiv.setAttribute('pkmn-menu', 'box');
             const pkmnIcon = document.createElement('img');

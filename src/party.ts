@@ -23,7 +23,7 @@ function renderParty(full = false, index: number = -1) {
             img.setAttribute('tooltip-src', 'party-pkmn');
             let sprite;
             if (member.isEgg) {
-                sprite = `assets/${eggDesign.includes(member.sprite) ? `eggs/normal/${member.sprite}` : `eggs/${member.eggSprite}` }.png`;
+                sprite = `assets/${eggDesign.includes(member.sprite) ? `eggs/normal/${member.sprite}` : `eggs/${member.eggSprite}`}.png`;
             } else {
                 sprite = `assets/pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
             }
@@ -161,8 +161,10 @@ function pauseEggTimer(full: boolean = false, index: number = -1) {
     }
     function pauseEgg(member: any, index: number) {
         member.eggPause = Date.now();
-        player.eggHandler[index] = null;
-        member.frozen = true;
+        if (saveStatePause) {
+            player.eggHandler[index] = null;
+            member.frozen = true;
+        }
     }
 }
 

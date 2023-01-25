@@ -23,14 +23,14 @@ const modalData: any = {
 
 function pickStarter() {
     const starters: any = {
-        0: [1, 4, 7], //Kanto
-        1: [152, 155, 158], //Jhoto
-        2: [252, 255, 258], //Hoenn
-        3: [387, 390, 393], //Sinnoh
-        4: [495, 498, 501], //Unova
-        5: [650, 653, 656], //Kalos
-        6: [722, 725, 728], // Alola
-        7: [810, 813, 816] //Galar
+        1: [1, 4, 7], //Kanto
+        2: [152, 155, 158], //Jhoto
+        3: [252, 255, 258], //Hoenn
+        4: [387, 390, 393], //Sinnoh
+        5: [495, 498, 501], //Unova
+        6: [650, 653, 656], //Kalos
+        7: [722, 725, 728], // Alola
+        8: [810, 813, 816] //Galar
     }
     for (const region in starters) {
         const unlocked = player.flags.highestRegion >= region;

@@ -28,50 +28,40 @@ const navOptions: NavLayout = {
         cond() { return true; }
     },
     4: {
-        name: 'Poké Radar',
-        src: 'assets/items/poke-radar.png',
-        nav() {
-            this.cond() ? renderPokeRadar() : Notify('itemMissing', 408);
-        },
-        cond() {
-            return checkItemAmnt(408) > 0 ? true : false;
-        }
+        name: 'World Map',
+        src: 'assets/items/town-map.png',
+        nav() { this.cond() ? true : Notify('itemMissing', 419); },
+        cond() { return checkItemAmnt(419) > 0 ? true : false; }
     },
     5: {
+        name: 'Poké Radar',
+        src: 'assets/items/poke-radar.png',
+        nav() { this.cond() ? renderPokeRadar() : Notify('itemMissing', 408); },
+        cond() { return checkItemAmnt(408) > 0 ? true : false; }
+    },
+    6: {
         name: 'Daycare',
         src: 'assets/npc/daycare-man.png',
         nav() { },
         cond() { return true; }
     },
-    6: {
+    7: {
         name: 'Buff Caster',
         src: 'assets/items/mega-bracelet.png',
-        nav() {
-            this.cond() ? true : Notify('itemMissing', 785);
-        },
-        cond() {
-            return checkItemAmnt(785) > 0 ? true : false;
-        }
-    },
-    7: {
-        name: 'Crafting',
-        src: 'assets/items/works-key.png',
-        nav() {
-            this.cond() ? true : Notify('itemMissing', 415);
-        },
-        cond() {
-            return checkItemAmnt(415) > 0 ? true : false;
-        }
+        nav() { this.cond() ? true : Notify('itemMissing', 10001); },
+        cond() { return checkItemAmnt(10001) > 0 ? true : false; }
     },
     8: {
+        name: 'Crafting',
+        src: 'assets/items/works-key.png',
+        nav() { this.cond() ? true : Notify('itemMissing', 415); },
+        cond() { return checkItemAmnt(415) > 0 ? true : false; }
+    },
+    9: {
         name: 'Mining',
         src: 'assets/items/explorer-kit.png',
-        nav() {
-            this.cond() ? true : Notify('itemMissing', 405);
-        },
-        cond() {
-            return checkItemAmnt(405) > 0 ? true : false;
-        }
+        nav() { this.cond() ? true : Notify('itemMissing', 405); },
+        cond() { return checkItemAmnt(405) > 0 ? true : false; }
     }
 }
 

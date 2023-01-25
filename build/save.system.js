@@ -17,12 +17,12 @@ localforage.config({
     storeName: 'keyvaluepairs',
     description: ''
 });
-let preventSave = false;
+let preventForceSave = false;
+let saveStatePause = false;
 let clearSave = false;
 window.addEventListener('beforeunload', function (e) {
     return __awaiter(this, void 0, void 0, function* () {
-        if (player.settings.onExitSave.state && !clearSave && !preventSave) {
-            yield preserveOnSave();
+        if (player.settings.onExitSave.state && !clearSave && !preventForceSave) {
             yield createSave();
         }
     });
@@ -50,10 +50,10 @@ function hasSave() {
 }
 function createSave() {
     return __awaiter(this, void 0, void 0, function* () {
+        yield preserveOnSave();
         localforage.setItem('PE_Player', player).then(function (value) {
             console.log(value);
             colorLog('Saved game!', 'info');
-            preserveOnSave();
         }).catch(function (err) {
             console.log(err);
         });

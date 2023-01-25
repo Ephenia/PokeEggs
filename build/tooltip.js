@@ -48,9 +48,15 @@ function tooltipStyle(element, type) {
         //For Party Pokemon
     }
     else if (type === 'party-pkmn') {
+        pkmnTooltip(element, 'party');
+    }
+    else if (type === 'box-pkmn') {
+        pkmnTooltip(element, 'box');
+    }
+    function pkmnTooltip(element, type) {
         tooltipCont.classList.add('tooltip-party-pkmn');
         const slotSrc = element.getAttribute('data-src');
-        const member = player.party[+slotSrc];
+        const member = type === 'party' ? player.party[+slotSrc] : player.pokemonBox[+slotSrc];
         const pokeData = pkmnData[member.id];
         //Pkmn Image
         const pkmnImg = document.createElement("div");
