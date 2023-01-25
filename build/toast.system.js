@@ -14,7 +14,6 @@ function Notify(name, args = null, uuid = null, resume = false) {
         case 'eggReady':
             opts.message = `<div class="toast-align"><img class="toast-egg-icon" src="${dataImg.eggIcon}">Egg is ready to hatch!</div>`;
             opts.status = 'alert';
-            opts.timeout = 0;
             opts.actions = [{
                     text: 'Party',
                     function: function () {

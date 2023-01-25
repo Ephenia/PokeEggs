@@ -1,6 +1,7 @@
 January 25th, 2023
 
-• Pokémon tooltips now show withing Pokémon Box.
+• Setting added for toggling notification when obtaining an item (On by Default).
+• Pokémon tooltips now show within Pokémon Box.
 • Notification added for when you obtain an item.
 • Fixed syncing issues with eggs/buffs when auto saving occurs as well as manually saving.
 • Notification for when a save happens when auto saving occurs or saving the game through the Menu.
