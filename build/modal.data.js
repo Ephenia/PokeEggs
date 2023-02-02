@@ -79,7 +79,7 @@ function pickStarter() {
     modalPersist = true;
     function confirmStarter() {
         const id = document.querySelector('input[name="starter"]:checked').getAttribute('value');
-        addEgg(+id);
+        addEgg(+id, true);
         closeModal();
         player.flags.kantoStarter = true;
     }
@@ -141,7 +141,7 @@ function createDebugTools() {
     const frag = new DocumentFragment();
     const tests = {
         0: ['Cast a random Item Buff.', 'Cast Buff', 'randomBuff()'],
-        1: ['Add an egg to the party.', 'Add Egg', 'addEgg(1)'],
+        1: ['Add an egg to the party.', 'Add Egg', 'addEgg(129)'],
         2: ['Clears the party.', 'Clear Party', 'clearParty()'],
         3: ['Add a random item to the Item Bag.', 'Add Item', 'randomitem()'],
         4: ['Clears the Item Bag.', 'Clear Item Bag', 'clearItemBag()']

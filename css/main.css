@@ -237,6 +237,10 @@ main {
     column-gap: 11px;
 }
 
+.pkmn-box-slot {
+    cursor: pointer;
+}
+
 .pkmn-box-slot>img {
     pointer-events: none;
 }
@@ -376,6 +380,98 @@ main {
     margin-left: -16px;
 }
 
+/* Daycare */
+
+#daycare-cont {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#daycare-cont-pkmn-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#daycare-cont-pkmn-view>div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    row-gap: 5px;
+    width: 300px;
+    max-height: 250px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#daycare-cont-pkmn-view>div:nth-child(1)>div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+#daycare-cont-pkmn-view>div:nth-child(1)>div>div:nth-child(1) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    flex-direction: column;
+    background-color: rgb(114 137 218 / 25%);
+}
+
+#daycare-cont-pkmn-info {
+    font-size: 0.9em;
+}
+
+#daycare-cont-daycare-man {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#daycare-cont-egg-list {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#daycare-cont-egg-list>div {
+    cursor: pointer;
+    width: 96px;
+    height: 96px;
+}
+
+.no-dc-eggs {
+    align-items: center;
+    justify-content: center;
+}
+
+#daycare-cont-prog-bar {
+    height: 5px;
+    width: 98%;
+    background-color: #ddd;
+    position: relative;
+    border-radius: 5px;
+}
+
+#daycare-cont-prog-bar > div{
+    height: 100%;
+    width: 0;
+    background-color: #50C878;
+    position: relative;
+    transition: width 1s ease-in-out;
+    border-radius: 5px;
+}
+
 /* Buffs */
 #buff-cont {
     align-items: center;
@@ -498,15 +594,51 @@ progress {
     height: 10px;
     border-radius: 5px;
 }
+
 progress::-webkit-progress-bar {
     border: 1px solid #7289da;
     height: 10px;
     border-radius: 5px;
     background-color: transparent;
 }
+
 progress::-webkit-progress-value {
     border: 0;
     height: 10px;
     border-radius: 5px;
     background-color: #50C878;
+}
+
+/* Speech Bubbles */
+
+.speech-bubble {
+    max-width: 300px;
+    position: relative;
+    display: inline-block;
+    background-color: rgb(114 137 218 / 25%);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #7289da;
+    margin-right: 16px;
+    font-size: 0.85em;
+}
+
+.speech-bubble:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.cancel-button:before {
+    content: "❌";
+    font-size: 0.85em;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    cursor: pointer;
 }

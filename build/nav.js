@@ -41,7 +41,7 @@ const navOptions = {
     6: {
         name: 'Daycare',
         src: 'assets/npc/daycare-man.png',
-        nav() { },
+        nav() { renderDaycare(); },
         cond() { return true; }
     },
     7: {

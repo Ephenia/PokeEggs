@@ -27,6 +27,16 @@ let player: PlayerLayout = {
         hatchNormal: 0,
         hatchShiny: 0
     },
+    daycareHandler: {
+        pokemon: {},
+        eggs: {},
+        breedState: false,
+        breedComp: null,
+        domParent: null,
+        breedKarma: 0,
+        eggKarma: 0,
+        eggChance: null
+    },
     eggHandler: {},
     prefs: {
         nav: 0,
@@ -75,6 +85,7 @@ async function initialize() {
     } else {
         await newLead();
         await newParty();
+        await newDaycare()
         await newEggHandler();
         await createSave();
         loadMain();
@@ -92,6 +103,7 @@ function loadMain() {
     renderMain(player.prefs.nav);
     changeItemBag(player.prefs.bag);
     resumeBuffs();
+    checkBreeding(true);
     resumeEggs();
     resumeNotify();
     if (!player.flags.kantoStarter) openModal('starterselect', 'Select Starter');
@@ -139,8 +151,7 @@ function renderLead() {
 
 function createParty() {
     const frag = new DocumentFragment();
-    const partyLen = Object.keys(player.party).length;
-    for (let i = 0; i < partyLen; i++) {
+    for (let i = 0; i < objLen(player.party); i++) {
         const slot = document.createElement("div");
         slot.classList.add('party-slot', 'main-bg');
         slot.setAttribute('data-src', `${i}`);
@@ -189,6 +200,14 @@ function createItemBag() {
     itemBagView = document.getElementById('item-bag-view')!;
 }
 
+function newDaycare() {
+    let newDaycare: any = new Object();
+    for (let i = 0; i < 2; i++) {
+        newDaycare[i] = Object.assign(emptyMember(), newDaycare[i]);
+    }
+    player.daycareHandler.pokemon = newDaycare;
+}
+
 //For new initilization purposes
 async function newLead() {
     player.leadPoke = Object.assign(emptyMember(), player.leadPoke);
@@ -212,8 +231,7 @@ function renderPokeBox() {
     if (isHidden(pkmnBoxCont)) return;
     disposeElement(pkmnBoxView);
     const frag = document.createDocumentFragment();
-    const boxLen = Object.keys(player.pokemonBox).length;
-    if (boxLen !== 0) {
+    if (objLen(player.pokemonBox) !== 0) {
         pkmnBoxView.classList.remove('empty-box');
         for (const poke in player.pokemonBox) {
             const member = player.pokemonBox[poke];

@@ -1,5 +1,4 @@
 "use strict";
-const pkmnMenu = document.getElementById('pkmn-menu');
 //For elements
 function disposeElement(element) {
     if (element.innerHTML !== '') {
@@ -7,10 +6,17 @@ function disposeElement(element) {
     }
 }
 function isHidden(element) {
-    return element.offsetParent === null;
+    return element === null ? true : element.offsetParent === null;
 }
 function remClasses(element) {
     element.classList.remove(...element.classList);
+}
+function hideElement(element) {
+    element.style.display = 'none';
+}
+//For Objects
+function objLen(obj) {
+    return Object.keys(obj).length;
 }
 //Random functions
 function randInt(int) {
@@ -22,8 +28,11 @@ function randRange(min, max) {
 function UUID() {
     return Date.now().toString(36) + Math.random().toString(36).substring(2);
 }
+function everyArr(arr) {
+    return arr.every((val, i, arr) => val === arr[0]);
+}
 //For Pokemon
-function createEgg(pokeID, random = false) {
+function createEgg(pokeID, random = false, starter = false) {
     const thisPoke = random ? canBeEgg() : speciesData[pokeID];
     console.log(thisPoke);
     const toHatch = thisPoke.hatch_counter * 257;
@@ -35,7 +44,7 @@ function createEgg(pokeID, random = false) {
     else {
         shiny = 0 === randInt(4096);
     }
-    return { id: pokeID, isEgg: true, name: thisPoke.names, level: 1, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(pokeID), ability: calcAbility(pokeID), nature: genNature() };
+    return { id: pokeID, isEgg: true, name: thisPoke.names, level: 1, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(pokeID), ability: calcAbility(pokeID), nature: genNature(), starter: starter };
 }
 function randPoke() {
     const pkmnLen = Object.keys(pkmnData).length;
@@ -192,15 +201,13 @@ function validateLevel(pokeID, exp) {
 }
 //For party
 function emptyMember() {
-    return { id: null, isEgg: null, name: null, level: 0, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null, ability: null, nature: null };
+    return { id: null, isEgg: null, name: null, level: 0, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null, ability: null, nature: null, starter: null };
 }
-function findEmptyParty() {
-    const findNull = Object.entries(player.party).find(([key, value]) => {
-        if (value.isEgg === null) {
-            return [key, value];
-        }
+function findEmptySlot(object) {
+    const findNull = Object.entries(object).map(function (index) {
+        return (index[1].isEgg === null);
     });
-    return findNull ? +findNull[0] : -1;
+    return findNull.includes(true) ? findNull.indexOf(true) : -1;
 }
 //For Items
 function gainItem(itemID, amount = 1) {
@@ -288,4 +295,7 @@ function colorRange(IV) {
     // @ts-ignore
     const colorRange = chroma.scale(['#EE4B2B', '#ADFF2F']).mode('lch').colors(31);
     return IV == 31 ? 'deepskyblue' : colorRange[IV];
+}
+function NPC(name) {
+    return `<b style="color:lightskyblue">${name}:</b>`;
 }

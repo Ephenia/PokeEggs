@@ -1,4 +1,5 @@
 "use strict";
+const pkmnMenu = document.getElementById('pkmn-menu');
 const dataImg = {
     'eggIcon': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAATdJREFUWEftVaEOwjAQfTh+oxIkEoncL0wOBxKHBYdkjslJ7CQSHBLkLH8AbuS23VKWkdyRLQtJK5b2erv37t21HaDnMegZH46AU8Ap8PcKZNY98lMyP/0EIAe+3RYV/ngc8lwVU+VcImTrgwczAfxR8HGRRmGC5Soimziu2LEOTus6AbJpSagJHK5ezqUJnOxpekJZDlFskRNnv98FCBYFgfqI77n0mA4NTslLXAoVgefz+PXxZALpFfCnRqxCawSI2SYuVOiMAB07Y2bgbO0+oNrbQ9oHKgWoB2beEOdXWtWbJvG5WHP2XfUAxc/sy6cOziS284SmouRETpa0GavANjt7sj0uQBR1RyBXgT62EkyizFycvcqx4fzZDxFvaxWV1enr4W9hQ824BcyPEI6AU8Ap0LsCbw3FYyE2M9K7AAAAAElFTkSuQmCC'
 };
@@ -22,28 +23,65 @@ function sendToLead(index, type) {
     player.leadPoke = member;
     renderLead();
 }
-function sendToBox(index) {
-    const member = player.party[index];
+function sendToBox(index, type) {
+    const storageLen = Object.keys(player.pokemonBox).length;
+    let member;
+    if (type === 'party') {
+        member = player.party[index];
+        player.party[index] = emptyMember();
+        renderParty(false, index);
+    }
+    else if (type === 'daycare') {
+        member = player.daycareHandler.pokemon[index];
+        player.daycareHandler.pokemon[index] = emptyMember();
+        renderDaycare();
+    }
     if (member.isEgg) {
         player.eggHandler[index] = null;
         pauseEggTimer(false, index);
     }
-    const storageLen = Object.keys(player.pokemonBox).length;
     player.pokemonBox = Object.assign({ [storageLen]: member }, player.pokemonBox);
-    player.party[index] = emptyMember();
-    renderParty(false, index);
 }
-function sendToParty(index) {
-    const slot = findEmptyParty();
+function sendToParty(index, type) {
+    const slot = findEmptySlot(player.party);
     if (slot !== -1) {
-        const member = player.pokemonBox[index];
+        let member;
+        if (type === 'box') {
+            member = player.pokemonBox[index];
+            delete player.pokemonBox[index];
+            sortBox();
+            renderPokeBox();
+        }
+        else if (type === 'daycare') {
+            member = player.daycareHandler.eggs[index];
+            delete player.daycareHandler.eggs[index];
+            renderDaycare();
+        }
         player.party[slot] = member;
         if (member.isEgg)
             progressEgg(slot);
+    }
+}
+function sendToDaycare(index, type) {
+    const slot = findEmptySlot(player.daycareHandler.pokemon);
+    let member;
+    if (slot === -1) {
+        Notify('errorMsg', 'Daycare is full.');
+        return true;
+    }
+    if (type === 'party') {
+        member = player.party[index];
+        player.party[index] = emptyMember();
+        renderParty(false, index);
+    }
+    else if (type === 'box') {
+        member = player.pokemonBox[index];
         delete player.pokemonBox[index];
         sortBox();
         renderPokeBox();
     }
+    player.daycareHandler.pokemon[slot] = member;
+    checkBreeding();
 }
 //For Salvaging Pokemon
 function salvagePoke(index, type) {
@@ -100,52 +138,68 @@ document.querySelectorAll('[pkmn-menu]').forEach(item => {
 function buildPartyMenu(index) {
     disposeElement(pkmnMenu);
     const member = player.party[index];
-    const menuItems = ['Lead', 'Box', 'Salvage'];
+    const menuItems = ['Lead', 'Box', 'Salvage', 'Daycare'];
     for (const opt in menuItems) {
         const menuOpt = document.createElement('button');
         menuOpt.classList.add('menu-item');
         menuOpt.innerHTML = menuItems[opt];
         if (member.isEgg) {
-            if (opt === '0' || opt === '2') {
+            if (opt === '0' || opt === '2' || opt === '3') {
                 menuOpt.disabled = true;
             }
+        }
+        else if (member.starter) {
+            if (opt === '2')
+                menuOpt.disabled = true;
         }
         menuOpt.addEventListener('click', (e) => {
             if (opt === '0') {
                 sendToLead(index, 'party');
             }
             else if (opt === '1') {
-                sendToBox(index);
+                sendToBox(index, 'party');
             }
             else if (opt === '2') {
                 salvagePoke(index, 'party');
+            }
+            else if (opt === '3') {
+                sendToDaycare(index, 'party');
             }
         });
         pkmnMenu.appendChild(menuOpt);
     }
 }
 function buildBoxMenu(index) {
+    if (!isHidden(pkmnMenu))
+        hideElement(mainTooltip);
     disposeElement(pkmnMenu);
     const member = player.pokemonBox[index];
-    const menuItems = ['Lead', 'Party', 'Salvage'];
+    const menuItems = ['Lead', 'Party', 'Salvage', 'Daycare'];
     for (const opt in menuItems) {
         const menuOpt = document.createElement('button');
         menuOpt.classList.add('menu-item');
         menuOpt.innerHTML = menuItems[opt];
         if (member.isEgg) {
-            if (opt === '0' || findEmptyParty() === -1 && opt === '1' || opt === '2') {
+            if (opt === '0' || findEmptySlot(player.party) === -1 && opt === '1' || opt === '2' || opt === '3') {
                 menuOpt.disabled = true;
             }
+        }
+        else if (member.starter) {
+            if (opt === '2')
+                menuOpt.disabled = true;
         }
         menuOpt.addEventListener('click', (e) => {
             if (opt === '0') {
                 sendToLead(index, 'box');
             }
             else if (opt === '1') {
-                sendToParty(index);
+                sendToParty(index, 'box');
             }
             else if (opt === '2') {
                 salvagePoke(index, 'box');
+            }
+            else if (opt === '3') {
+                sendToDaycare(index, 'box');
             }
         });
         pkmnMenu.appendChild(menuOpt);

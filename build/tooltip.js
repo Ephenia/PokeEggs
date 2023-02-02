@@ -2,6 +2,8 @@
 const mainTooltip = document.getElementById('tooltip');
 const tooltipCont = document.getElementById('tooltip-cont');
 window.addEventListener('mousemove', (e) => {
+    if (!isHidden(pkmnMenu))
+        return;
     const element = e.target;
     const tooltipType = element.getAttribute('tooltip-src');
     if (tooltipType) {
@@ -97,7 +99,7 @@ function tooltipStyle(element, type) {
             frag.appendChild(expDiv);
         }
         //Gender
-        if (!member.isEgg) {
+        if (!member.isEgg && member.gender !== 'genderless') {
             const genderIcon = document.createElement("img");
             genderIcon.classList.add('tooltip-party-pkmn-gender');
             genderIcon.src = `assets/gender/${member.gender}.png`;

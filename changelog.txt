@@ -1,3 +1,16 @@
+February 2nd, 2023
+
+• A message displays in the Daycare's egg collection area when you have no eggs to collect.
+• Fixed an issue with broken gender images displaying for gender-neutral Pokémon within tooltips.
+• 2 Pokémon that are unable to breed won't attempt to breed now (if there's no dominant parent).
+• Progression bar to visualize breeding ticks and to additionally indicate that 2 Pokémon are actually breeding.
+• Daycare egg collection and being able to claim eggs from the Daycare (requires open Party slots).
+• Pokémon that you remove from the Daycare will be sent to the Pokémon Box.
+• In the action Menu for Pokémon (right click), you can send Pokémon to the Daycare now.
+• Started working on the Daycare system.
+• Starter Pokémon are now impossible to be salvaged.
+• The Starter that you initially pick is now truly a Starter Pokémon.
+
 January 25th, 2023
 
 • Setting added for toggling notification when obtaining an item (On by Default).

@@ -31,6 +31,20 @@ function Notify(name, args = null, uuid = null, resume = false) {
                     dismiss: true
                 }];
             break;
+        case 'warnMsg':
+            opts.message = args;
+            opts.status = 'alert';
+            opts.actions = [{
+                    dismiss: true
+                }];
+            break;
+        case 'successMsg':
+            opts.message = args;
+            opts.status = 'success';
+            opts.actions = [{
+                    dismiss: true
+                }];
+            break;
         case 'itemMissing':
             opts.message = `You are missing the ${itemData[args].name}.`;
             opts.status = 'danger';

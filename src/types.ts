@@ -17,6 +17,7 @@ interface PlayerLayout {
     pokemonBox: Pokemon,
     buffHandler: BuffSystem,
     radarHandler: PokeRadar,
+    daycareHandler: Daycare,
     eggHandler: EggSystem,
     prefs: PlayerPreference,
     flags: Flags,
@@ -44,6 +45,12 @@ interface BuffSystem {
 }
 
 interface PokeRadar {
+    [key: string]: any
+}
+
+interface Daycare {
+    pokemon: Pokemon,
+    eggs: Pokemon,
     [key: string]: any
 }
 
