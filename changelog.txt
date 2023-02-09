@@ -1,3 +1,16 @@
+February 8th, 2023
+
+• You can now search for Pokémon within Debug Mode and easily spawn eggs of them.
+• Added a prompt upon loading the game to wipe your save if your save is outdated.
+• Implemented breeding logic with Ditto (currently is able to breed with anything).
+• Fixed Pokémon breeding even if they were incompatible.
+• Compatibility level value for 2 Pokémon in the Daycare now shows with the Daycare Man is saying (at the end in parentheses).
+• Going into Debug Mode no longer reloads the page.
+• Some support for Pokémon formes/variants. 
+• There is a notification badge for egg collection in the Daycare (unclaimed eggs).
+• Notification badge support for Navigation items.
+• Made adjustments to the breeding formula.
+
 February 2nd, 2023
 
 • A message displays in the Daycare's egg collection area when you have no eggs to collect.

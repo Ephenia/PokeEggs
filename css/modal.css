@@ -86,3 +86,34 @@
     cursor: pointer !important;
     height: max-content;
 }
+
+.modal-create-egg {
+    display: flex;
+    text-align: center;
+    row-gap: 5px;
+}
+
+.modal-create-egg > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+    align-items: center;
+}
+
+.modal-create-egg-types {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.modal-create-egg-types > button {
+    flex-basis: 16.6%;
+}
+
+.modal-create-egg-gem-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

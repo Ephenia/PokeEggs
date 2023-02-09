@@ -22,7 +22,7 @@ function renderDaycare() {
     daycareMan.appendChild(dcManIcon);
     const dcManText = document.createElement('div');
     dcManText.classList.add('speech-bubble');
-    dcManText.innerHTML = `${NPC('Daycare Man')} ${daycare.breedComp === null ? 'Hello! Welcome to the Daycare.' : daycareCompMsg[daycare.breedComp]}`;
+    dcManText.innerHTML = `${NPC('Daycare Man')} ${daycare.breedComp === null ? 'Hello! Welcome to the Daycare.' : `${daycareCompMsg[daycare.breedComp]} (${daycare.breedComp})`}`;
     daycareMan.appendChild(dcManText);
     frag.appendChild(daycareMan);
     //Pokemon View
@@ -44,7 +44,7 @@ function renderDaycare() {
         pkmnInfo.id = 'daycare-cont-pkmn-info';
         if (member.isEgg !== null) {
             pkmnIcon = document.createElement('img');
-            pkmnIcon.src = `assets/pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
+            pkmnIcon.src = `assets/pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.forme}.png`;
             //Gender
             if (member.gender !== 'genderless') {
                 genderIcon = document.createElement("img");
@@ -119,7 +119,8 @@ function checkBreeding(skipCheck = false) {
         breedLoop = setInterval(() => {
             const daycare = player.daycareHandler;
             const radar = player.radarHandler;
-            if (findEmptySlot(daycare.pokemon) === -1 && daycare.domParent !== null) {
+            const comp = daycare.breedComp;
+            if (findEmptySlot(daycare.pokemon) === -1 && daycare.domParent !== null && comp !== 0) {
                 const eggProg = document.querySelector('#daycare-cont-prog-bar > div');
                 if (!isHidden(eggProg)) {
                     eggProg.style.transition = 'width 0.5s ease-in-out';
@@ -130,13 +131,13 @@ function checkBreeding(skipCheck = false) {
                     }, 500);
                 }
                 const eggChance = [0, 20, 50, 50, 70];
-                const comp = player.daycareHandler.breedComp;
                 const parentID = daycare.pokemon[daycare.domParent].id;
-                const eggCycle = speciesData[parentID].hatch_counter;
+                const eggCycle = findSpecies(pkmnData[parentID].species).hatch_counter;
                 const chainBonus = radar.active && radar.lastHatch === parentID ? Math.min(radar.chain, 40) : 0;
                 const karmaBonus = Math.min(daycare.eggKarma, 100);
-                const tickRate = daycare.eggChance = Math.max((Math.max(257 - eggChance[comp] - chainBonus - karmaBonus, 0) * eggCycle) - daycare.breedKarma, 0);
-                if (randInt(tickRate) === 0) {
+                const tickRate = daycare.eggChance = Math.max((Math.max(Math.round(sumBaseStat(parentID)) - eggChance[comp] - chainBonus - eggCycle, 0) * eggCycle) - daycare.breedKarma, 0);
+                //const tickRate = daycare.eggChance = Math.max((Math.max(257 - eggChance[comp] - chainBonus - karmaBonus, 0) * eggCycle) - daycare.breedKarma, 0);
+                if (tickRate === 0 || randInt(tickRate) === 0) {
                     if (randRange(1, 100) <= eggChance[comp]) {
                         console.log('!!!EGG GENERATED!!!');
                         Notify('successMsg', `Your Pokémon generated an egg!`);
@@ -144,6 +145,7 @@ function checkBreeding(skipCheck = false) {
                         daycare.eggs = Object.assign({ [eggsLen]: createEgg(parentID) }, daycare.eggs);
                         daycare.breedKarma = 0;
                         daycare.eggKarma -= daycare.eggKarma > 0 ? 1 : 0;
+                        navNotify(nameToNav('Daycare'));
                         renderDaycare();
                     }
                     else {
@@ -154,14 +156,17 @@ function checkBreeding(skipCheck = false) {
                 }
                 else {
                     //Notify('warnMsg', `Check failed (${tickRate}). Egg karma is (${karmaBonus})`);
-                    daycare.breedKarma += randRange(1, comp + 1);
+                    const toAdd = weightedRandom(1, (1 + comp + eggCycle + chainBonus + karmaBonus) * (randInt(eggCycle) === 0 ? 2 : 1));
+                    if (player.settings.debugNotifs.state)
+                        Notify('warnMsg', `Breed karma increased by ${toAdd}.`);
+                    daycare.breedKarma += toAdd;
                 }
                 const eggProgDebug = document.getElementById('daycare-cont-prog-debug');
                 if (!isHidden(eggProgDebug))
                     eggProgDebug.textContent = `Odds: ${fracToPerc(daycare.eggChance)}% (${daycare.eggChance})`;
             }
             else {
-                stopBreeding();
+                //stopBreeding();
             }
         }, 1000);
     }
@@ -186,11 +191,14 @@ function breedingComp() {
     const daycare = player.daycareHandler;
     let compLevel = 0;
     const checkOT = ['Player', 'Player'];
+    const pokeIDs = [];
     const evoChain = [];
     const genders = [];
     for (const index in daycare.pokemon) {
         const member = daycare.pokemon[index];
-        evoChain.push(speciesData[member.id].evolution_chain);
+        const species = findSpecies(pkmnData[member.id].species);
+        pokeIDs.push(member.id);
+        evoChain.push(species.evolution_chain);
         genders.push(member.gender);
     }
     const sameOT = everyArr(checkOT) ? 0 : 1;
@@ -202,6 +210,11 @@ function breedingComp() {
             compLevel = 3;
         }
     }
+    else if (!everyArr(evoChain)) {
+        if (countArr(pokeIDs, 132) === 1) {
+            compLevel = 1;
+        }
+    }
     if (compLevel !== 0) {
         return compLevel += sameOT;
     }
@@ -211,11 +224,19 @@ function breedingComp() {
 }
 function domParent() {
     const daycare = player.daycareHandler;
+    const pokeIDs = [];
     const genders = [];
     for (const index in daycare.pokemon) {
         const member = daycare.pokemon[index];
+        pokeIDs.push(member.id);
         genders.push(member.gender);
     }
-    const pos = genders.indexOf('female');
+    let pos;
+    if (countArr(pokeIDs, 132) === 1) {
+        pos = pokeIDs.indexOf(132) === 0 ? 1 : 0;
+    }
+    else {
+        pos = genders.indexOf('female');
+    }
     return pos !== -1 ? pos : null;
 }

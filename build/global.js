@@ -18,6 +18,13 @@ function hideElement(element) {
 function objLen(obj) {
     return Object.keys(obj).length;
 }
+//For Arrays
+function numToArr(max) {
+    return Array.from({ length: max }, (_, index) => index + 1);
+}
+function countArr(arr, int) {
+    return arr.filter(i => i === int).length;
+}
 //Random functions
 function randInt(int) {
     return Math.floor(Math.random() * int);
@@ -31,11 +38,15 @@ function UUID() {
 function everyArr(arr) {
     return arr.every((val, i, arr) => val === arr[0]);
 }
+function weightedRandom(min, max) {
+    return Math.round(max / (Math.random() * max + min));
+}
 //For Pokemon
 function createEgg(pokeID, random = false, starter = false) {
-    const thisPoke = random ? canBeEgg() : speciesData[pokeID];
+    const thisPoke = pkmnData[pokeID];
     console.log(thisPoke);
-    const toHatch = thisPoke.hatch_counter * 257;
+    const species = findSpecies(thisPoke.species);
+    const toHatch = species.hatch_counter * 257;
     let shiny;
     const radar = player.radarHandler;
     if (radar.active && radar.lastHatch === pokeID) {
@@ -44,7 +55,15 @@ function createEgg(pokeID, random = false, starter = false) {
     else {
         shiny = 0 === randInt(4096);
     }
-    return { id: pokeID, isEgg: true, name: thisPoke.names, level: 1, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(pokeID), ability: calcAbility(pokeID), nature: genNature(), starter: starter };
+    return { id: pokeID, isEgg: true, name: thisPoke.names, level: 1, exp: 0, ehp: toHatch, progress: 0, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(species.gender_rate), ability: calcAbility(pokeID), nature: genNature(), starter: starter, variant: thisPoke.name, forme: thisPoke.forms[0] };
+}
+function findVariant(variant) {
+    const findPoke = Object.entries(pkmnData).find(([key, value]) => value.name === variant);
+    return findPoke ? findPoke[1] : -1;
+}
+function findSpecies(pokeName) {
+    const findSpecies = Object.entries(speciesData).find(([key, value]) => value.name === pokeName);
+    return findSpecies ? findSpecies[1] : -1;
 }
 function randPoke() {
     const pkmnLen = Object.keys(pkmnData).length;
@@ -56,15 +75,15 @@ function canBeEgg() {
         if (!value.evolves_from_species)
             pkmnArr.push(value);
     });
-    return pkmnArr[randInt(pkmnArr.length)];
+    return randInt(pkmnArr.length);
 }
 function genIVs() {
     return new Array(6).fill(null, 0).map(() => {
         return randInt(32);
     });
 }
-function calcGender(pokeID) {
-    const rate = speciesData[pokeID].gender_rate;
+function calcGender(rate) {
+    //const rate = speciesData[pokeID].gender_rate;
     const gender = (100 / 8) * rate;
     return rate === -1 ? 'genderless' : randInt(101) <= gender ? 'female' : 'male';
 }
@@ -177,11 +196,11 @@ const expGroup = {
     }
 };
 function getLevelEXP(pokeID, level) {
-    const group = speciesData[pokeID].growth_rate;
+    const group = findSpecies(pkmnData[pokeID].species).growth_rate;
     return expGroup[group](level);
 }
 function nextLevelEXP(pokeID, level) {
-    const group = speciesData[pokeID].growth_rate;
+    const group = findSpecies(pkmnData[pokeID].species).growth_rate;
     return expGroup[group](Math.min(level + 1, 100)) - expGroup[group](level);
 }
 function gainEXP(slot, exp) {
@@ -199,9 +218,14 @@ function validateLevel(pokeID, exp) {
         }
     }
 }
+//Stat Calculation
+function sumBaseStat(pokeID) {
+    const stats = pkmnData[pokeID].stats;
+    return stats.reduce((total, num) => total + num, 0);
+}
 //For party
 function emptyMember() {
-    return { id: null, isEgg: null, name: null, level: 0, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null, ability: null, nature: null, starter: null };
+    return { id: null, isEgg: null, name: null, level: null, exp: null, ehp: null, progress: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null, ability: null, nature: null, starter: null, variant: null, forme: null };
 }
 function findEmptySlot(object) {
     const findNull = Object.entries(object).map(function (index) {
@@ -264,12 +288,22 @@ function sortBox() {
 }
 //Conversion
 function fracToPerc(denom) {
-    const decimal = (1 / denom) * 100;
+    const decimal = (1 / Math.max(1, denom)) * 100;
     return decimal.toFixed(4);
 }
 //Format
 function formNum(int) {
     return int.toLocaleString('en-US');
+}
+function notifyNum(int) {
+    let str = String(int);
+    if (int === 0) {
+        str = '';
+    }
+    else if (int > 99) {
+        str = '99+';
+    }
+    return str;
 }
 function colorLog(message, type = 'log') {
     let color = 'unset';
@@ -298,4 +332,8 @@ function colorRange(IV) {
 }
 function NPC(name) {
     return `<b style="color:lightskyblue">${name}:</b>`;
+}
+function formatDate(dateString) {
+    let date = new Date(dateString);
+    return date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 }

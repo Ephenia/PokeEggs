@@ -23,7 +23,8 @@ interface PlayerLayout {
     flags: Flags,
     notifyTrack: Notifications,
     statistics: Statistics,
-    settings: Settings
+    settings: Settings,
+    version: string
 }
 
 interface Pokemon {

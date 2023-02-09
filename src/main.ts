@@ -1,3 +1,4 @@
+const gameVersion: string = '2-8-2023';
 const pkmnBoxCont = document.getElementById('pkmn-box-cont')!;
 const leadPokeCont = document.getElementById('lead-pkmn')!;
 const pokeRadarCont = document.getElementById('poke-radar-cont')!;
@@ -41,7 +42,9 @@ let player: PlayerLayout = {
     prefs: {
         nav: 0,
         bag: 0,
-        debug: false
+        debug: false,
+        createEgg: 'Normal',
+        debugSearch: ''
     },
     flags: {
         kantoStarter: false,
@@ -70,11 +73,20 @@ let player: PlayerLayout = {
             name: '[Notify] Egg Ready to Hatch',
             state: true
         },
+        debugNotifs: {
+            name: '[Debug] Debug Notifications',
+            state: false
+        },
         stickyTooltip: {
             name: '[Debug] Sticky Tooltips',
             state: false
+        },
+        instaHatchEggs: {
+            name: '[Debug] Instantly Hatch Eggs',
+            state: false
         }
-    }
+    },
+    version: gameVersion
 };
 
 initialize();
@@ -106,13 +118,21 @@ function loadMain() {
     checkBreeding(true);
     resumeEggs();
     resumeNotify();
+    navNotifs();
     if (!player.flags.kantoStarter) openModal('starterselect', 'Select Starter');
     setInterval(function () {
         if (player.settings.doAutoSave.state) {
             createSave();
             Notify('createSave');
         }
-    }, 10000);
+    }, 60000);
+    if (gameVersion !== player.version) {
+        if (confirm(`The game is running on the latest update of ${formatDate(gameVersion)}\r\nYour save version is currently from ${formatDate(player.version)}\r\nWould you like to wipe your save for convenience sake?\r\n(Note: This is here due to the game still being in early development and to help in the testing phase for now)`)) {
+            deleteSave();
+        } else {
+            // The user clicked Cancel
+        }
+    }
 }
 
 //For initilization purposes always
@@ -138,7 +158,7 @@ function renderLead() {
     if (member.isEgg !== null) {
         //Pokemon Icon
         const pkmnIcon = document.createElement('img');
-        pkmnIcon.src = `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
+        pkmnIcon.src = `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.forme}.png`;
         view.appendChild(pkmnIcon);
         leadPokeCont.classList.add('lead-pkmn-active');
     } else {
@@ -200,7 +220,7 @@ function createItemBag() {
     itemBagView = document.getElementById('item-bag-view')!;
 }
 
-function newDaycare() {
+async function newDaycare() {
     let newDaycare: any = new Object();
     for (let i = 0; i < 2; i++) {
         newDaycare[i] = Object.assign(emptyMember(), newDaycare[i]);
@@ -242,7 +262,7 @@ function renderPokeBox() {
             pkmnDiv.setAttribute('data-src', poke);
             pkmnDiv.setAttribute('pkmn-menu', 'box');
             const pkmnIcon = document.createElement('img');
-            pkmnIcon.src = member.isEgg ? 'assets/pkmnicon/egg.png' : `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
+            pkmnIcon.src = member.isEgg ? 'assets/pkmnicon/egg.png' : `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.forme}.png`;
             pkmnIcon.setAttribute('loading', 'lazy');
             pkmnDiv.appendChild(pkmnIcon);
             frag.appendChild(pkmnDiv);

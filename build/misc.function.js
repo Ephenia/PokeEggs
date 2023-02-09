@@ -55,6 +55,7 @@ function sendToParty(index, type) {
         else if (type === 'daycare') {
             member = player.daycareHandler.eggs[index];
             delete player.daycareHandler.eggs[index];
+            navNotify(nameToNav('Daycare'));
             renderDaycare();
         }
         player.party[slot] = member;

@@ -1,3 +1,8 @@
+:root {
+    --main-bg-color: #282b30;
+    --pkmn-bg-view: rgb(114 137 218 / 25%);
+}
+
 body {
     background: url(../assets/background/background.png) no-repeat center center fixed;
     background-color: #1e2124;
@@ -13,7 +18,7 @@ main {
 
 /* General styling */
 .main-bg {
-    background-color: #282b30;
+    background-color: var(--main-bg-color);
 }
 
 .main-content {
@@ -88,6 +93,11 @@ main {
     background-color: #36393e;
 }
 
+.navigation-icon {
+    width: 32px;
+    height: 32px;
+}
+
 .nav-select {
     color: #30C5FF;
 }
@@ -103,6 +113,35 @@ main {
     justify-content: center;
     background-color: rgb(112 128 144 / 66%);
     font-size: 1.3em;
+}
+
+.nav-notification {
+    position: relative;
+}
+
+.nav-notification::before {
+    content: attr(data-content);
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: #FA3E3E;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    outline-style: solid;
+    outline-width: 1px;
+    font-size: 0.8em;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.nav-notification[data-content=""]::before {
+    display: none;
 }
 
 /* Menu */
@@ -346,7 +385,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: rgb(114 137 218 / 25%);
+    background-color: var(--pkmn-bg-view);
     width: 100%;
     justify-content: space-between;
 }
@@ -421,7 +460,7 @@ main {
     width: 96px;
     height: 96px;
     flex-direction: column;
-    background-color: rgb(114 137 218 / 25%);
+    background-color: var(--pkmn-bg-view);
 }
 
 #daycare-cont-pkmn-info {
@@ -463,7 +502,7 @@ main {
     border-radius: 5px;
 }
 
-#daycare-cont-prog-bar > div{
+#daycare-cont-prog-bar>div {
     height: 100%;
     width: 0;
     background-color: #50C878;
@@ -556,8 +595,18 @@ main {
 }
 
 /* Extra */
+.shiny-name {
+    background-image: linear-gradient(to right, #ffd700, #ffa500);
+    -webkit-background-image: linear-gradient(to right, #ffd700, #ffa500);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    width: min-content;
+}
+
 .shiny-name::before {
-    content: url(../assets/shiny/small.png);
+    content: '✨';
+    color: initial;
     margin-right: 4px;
 }
 
@@ -615,7 +664,7 @@ progress::-webkit-progress-value {
     max-width: 300px;
     position: relative;
     display: inline-block;
-    background-color: rgb(114 137 218 / 25%);
+    background-color: var(--pkmn-bg-view);
     border-radius: 10px;
     padding: 10px;
     border: 1px solid #7289da;
@@ -641,4 +690,33 @@ progress::-webkit-progress-value {
     left: 2px;
     top: 0px;
     cursor: pointer;
+}
+
+#debug-search-poke {
+    position: relative;
+    display: inline-block;
+}
+
+#debug-search-poke-sel {
+    cursor: pointer;
+}
+
+#debug-search-poke-res {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    row-gap: 10px;
+    margin-top: 5px;
+}
+
+.debug-search-poke-opt {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: var(--pkmn-bg-view);
+    padding: 5px 0px 5px 0px;
+    width: 50%;
 }

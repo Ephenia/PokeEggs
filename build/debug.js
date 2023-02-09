@@ -2,7 +2,11 @@
 function clearParty() {
     pauseEggTimer(true);
     for (const slot in player.party) {
-        player.party[slot] = emptyMember();
+        const member = player.party[slot];
+        if (member.isEgg !== null && !member.starter) {
+            player.eggHandler[+slot] = null;
+            player.party[slot] = emptyMember();
+        }
     }
     renderParty(true);
 }
@@ -34,5 +38,13 @@ function addEgg(pokeID, starter = false) {
         player.party[nullIndex] = createEgg(pokeID, false, starter);
         renderParty(false, nullIndex);
         progressEgg(nullIndex);
+    }
+}
+function salvageParty() {
+    for (const slot in player.party) {
+        const member = player.party[slot];
+        if (member.isEgg !== null && !member.isEgg && !member.starter) {
+            salvagePoke(+slot, 'party');
+        }
     }
 }

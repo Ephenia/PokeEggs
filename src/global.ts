@@ -4,7 +4,7 @@ function disposeElement(element: HTMLElement) {
 }
 
 function isHidden(element: HTMLElement) {
-    return element === null ? true: element.offsetParent === null;
+    return element === null ? true : element.offsetParent === null;
 }
 
 function remClasses(element: HTMLElement) {
@@ -16,9 +16,17 @@ function hideElement(element: HTMLElement) {
 }
 
 //For Objects
-
 function objLen(obj: object) {
     return Object.keys(obj).length;
+}
+
+//For Arrays
+function numToArr(max: number) {
+    return Array.from({ length: max }, (_, index) => index + 1);
+}
+
+function countArr(arr: Array<number>, int: number) {
+    return arr.filter(i => i === int).length;
 }
 
 //Random functions
@@ -38,11 +46,16 @@ function everyArr(arr: Array<any>) {
     return arr.every((val, i, arr) => val === arr[0]);
 }
 
+function weightedRandom(min: number, max: number) {
+    return Math.round(max / (Math.random() * max + min));
+}
+
 //For Pokemon
 function createEgg(pokeID: number, random = false, starter = false) {
-    const thisPoke = random ? canBeEgg() : speciesData[pokeID];
+    const thisPoke = pkmnData[pokeID];
     console.log(thisPoke)
-    const toHatch = thisPoke.hatch_counter * 257;
+    const species = findSpecies(thisPoke.species);
+    const toHatch = species.hatch_counter * 257;
     let shiny;
     const radar = player.radarHandler;
     if (radar.active && radar.lastHatch === pokeID) {
@@ -50,7 +63,17 @@ function createEgg(pokeID: number, random = false, starter = false) {
     } else {
         shiny = 0 === randInt(4096);
     }
-    return { id: pokeID, isEgg: true, name: thisPoke.names, level: 1, exp: 0, ehp: toHatch, progress: 0, sprite: thisPoke.name, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(pokeID), ability: calcAbility(pokeID), nature: genNature(), starter: starter };
+    return { id: pokeID, isEgg: true, name: thisPoke.names, level: 1, exp: 0, ehp: toHatch, progress: 0, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(species.gender_rate), ability: calcAbility(pokeID), nature: genNature(), starter: starter, variant: thisPoke.name, forme: thisPoke.forms[0] };
+}
+
+function findVariant(variant: string) {
+    const findPoke = Object.entries(pkmnData).find(([key, value]) => value.name === variant);
+    return findPoke ? findPoke[1] : -1;
+}
+
+function findSpecies(pokeName: string) {
+    const findSpecies = Object.entries(speciesData).find(([key, value]) => value.name === pokeName);
+    return findSpecies ? findSpecies[1] : -1;
 }
 
 function randPoke(): Object {
@@ -63,7 +86,7 @@ function canBeEgg() {
     Object.entries(speciesData).filter(([key, value]) => {
         if (!value.evolves_from_species) pkmnArr.push(value);
     });
-    return pkmnArr[randInt(pkmnArr.length)];
+    return randInt(pkmnArr.length);
 }
 
 function genIVs() {
@@ -72,8 +95,8 @@ function genIVs() {
     });
 }
 
-function calcGender(pokeID: number) {
-    const rate = speciesData[pokeID].gender_rate;
+function calcGender(rate: number) {
+    //const rate = speciesData[pokeID].gender_rate;
     const gender = (100 / 8) * rate;
     return rate === -1 ? 'genderless' : randInt(101) <= gender ? 'female' : 'male';
 }
@@ -175,12 +198,12 @@ const expGroup: any = {
 }
 
 function getLevelEXP(pokeID: number, level: number) {
-    const group = speciesData[pokeID].growth_rate;
+    const group = findSpecies(pkmnData[pokeID].species).growth_rate;
     return expGroup[group](level);
 }
 
 function nextLevelEXP(pokeID: number, level: number) {
-    const group = speciesData[pokeID].growth_rate;
+    const group = findSpecies(pkmnData[pokeID].species).growth_rate;
     return expGroup[group](Math.min(level + 1, 100)) - expGroup[group](level);
 }
 
@@ -200,14 +223,20 @@ function validateLevel(pokeID: number, exp: number) {
     }
 }
 
+//Stat Calculation
+function sumBaseStat(pokeID: number) {
+    const stats: Array<number> = pkmnData[pokeID].stats;
+    return stats.reduce((total, num) => total + num, 0);
+}
+
 //For party
 function emptyMember() {
-    return { id: null, isEgg: null, name: null, level: 0, exp: 0, ehp: null, progress: null, sprite: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null, ability: null, nature: null, starter: null };
+    return { id: null, isEgg: null, name: null, level: null, exp: null, ehp: null, progress: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null, ability: null, nature: null, starter: null, variant: null, forme: null };
 }
 
 function findEmptySlot(object: object): number {
-    const findNull = Object.entries(object).map(function(index) {
-      return (index[1].isEgg === null)
+    const findNull = Object.entries(object).map(function (index) {
+        return (index[1].isEgg === null)
     });
     return findNull.includes(true) ? findNull.indexOf(true) : -1;
 }
@@ -249,9 +278,8 @@ function itemImg(itemID: number) {
 }
 
 //For Navigation
-
 function nameToNav(name: string) {
-    return Object.entries(navOptions).findIndex(function([key, value]) {
+    return Object.entries(navOptions).findIndex(function ([key, value]) {
         return value.name === name;
     });
 }
@@ -267,13 +295,23 @@ function sortBox() {
 
 //Conversion
 function fracToPerc(denom: number) {
-    const decimal = (1 / denom) * 100;
+    const decimal = (1 / Math.max(1, denom)) * 100;
     return decimal.toFixed(4);
 }
 
 //Format
 function formNum(int: number) {
     return int.toLocaleString('en-US');
+}
+
+function notifyNum(int: number) {
+    let str = String(int);
+    if (int === 0) {
+        str = '';
+    } else if (int > 99) {
+        str = '99+';
+    }
+    return str;
 }
 
 function colorLog(message: string, type: string = 'log') {
@@ -305,4 +343,9 @@ function colorRange(IV: number): string {
 
 function NPC(name: string) {
     return `<b style="color:lightskyblue">${name}:</b>`;
+}
+
+function formatDate(dateString: string): string {
+    let date = new Date(dateString);
+    return date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 }

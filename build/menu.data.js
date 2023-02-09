@@ -109,7 +109,14 @@ const menuOptions = {
         debug: false,
         custom() {
             player.prefs.debug = !player.prefs.debug;
-            location.reload();
         }
+    },
+    12: {
+        name: 'Create Egg',
+        description: '',
+        src: 'createGemEgg',
+        modal: true,
+        debug: true,
+        custom: null
     }
 };

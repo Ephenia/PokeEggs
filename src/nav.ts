@@ -79,9 +79,14 @@ function buildNav() {
             //thisOpt.nav();
         });
         //Nav icon
+        const navIconCont = document.createElement('div');
+        navIconCont.classList.add('navigation-icon');
+        navIconCont.classList.add('nav-notification');
+        navIconCont.setAttribute('data-content', '');
         const navImg = document.createElement('img');
         navImg.setAttribute('src', thisOpt.src);
-        navDiv.appendChild(navImg);
+        navIconCont.appendChild(navImg);
+        navDiv.appendChild(navIconCont);
         //Nav name
         const navName = document.createElement('div');
         navName.textContent = thisOpt.name;
@@ -96,5 +101,22 @@ function navSelect() {
     for (let i = 0; i < navOpts.length; i++) {
         player.prefs.nav === i ? navOpts[i].classList.add('nav-select') : navOpts[i].classList.remove('nav-select');
         !navOptions[i].cond() ? navOpts[i].classList.add('nav-locked') : navOpts[i].classList.remove('nav-locked');
+    }
+}
+
+function navNotify(index: number) {
+    const navIcon = navOpts[index].querySelector('div');
+    switch (index) {
+        case 6:
+            navIcon.setAttribute('data-content', notifyNum(objLen(player.daycareHandler.eggs)));
+            break;
+        default:
+        //
+    }
+}
+
+function navNotifs() {
+    for (let i = 0; i < navOpts.length; i++) {
+        navNotify(i);
     }
 }

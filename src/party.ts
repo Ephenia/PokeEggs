@@ -23,19 +23,21 @@ function renderParty(full = false, index: number = -1) {
             img.setAttribute('tooltip-src', 'party-pkmn');
             let sprite;
             if (member.isEgg) {
-                sprite = `assets/${eggDesign.includes(member.sprite) ? `eggs/normal/${member.sprite}` : `eggs/${member.eggSprite}`}.png`;
+                sprite = `assets/${eggDesign.includes(member.forme) ? `eggs/normal/${member.forme}` : `eggs/${member.eggSprite}`}.png`;
             } else {
-                sprite = `assets/pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}.png`;
+                sprite = `assets/pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.forme}.png`;
             }
             //img.src = `assets/${member.isEgg ? `eggs/${member.eggSprite}` : `pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}`}.png`;
             img.src = sprite;
             pkmnImg.appendChild(img);
             frag.appendChild(pkmnImg);
             //Pokemon name
+            const pkmnNameCont = document.createElement("div");
             const pkmnName = document.createElement("div");
             if (!member.isEgg && member.isShiny) pkmnName.classList.add('shiny-name');
             pkmnName.innerText = member.isEgg ? 'Egg' : `${member.name}`;
-            frag.appendChild(pkmnName);
+            pkmnNameCont.appendChild(pkmnName);
+            frag.appendChild(pkmnNameCont);
             //Pokemon EHP
             const pkmnEHP = document.createElement("div");
             pkmnEHP.classList.add('egg-progress');
@@ -55,13 +57,7 @@ function renderParty(full = false, index: number = -1) {
             eggHatch.setAttribute('data-src', `${index}`);
             eggHatch.setAttribute('pkmn-menu', 'party');
             eggHatch.addEventListener('click', () => {
-                eggHatch.style.display = 'none';
-                player.eggHandler[index] = null;
-                convertEgg(member);
-                disposeParty(false, index);
-                drawPoke(index);
-                console.log(member)
-                advanceChain(member.id, member.isShiny);
+                hatchEgg(index);
             });
             frag.appendChild(eggHatch);
         } else {
@@ -107,7 +103,7 @@ function progressEgg(index: number, delay: number = 0) {
             return;
         }
         if (init) {
-            thisEgg.progress = Math.min(thisEgg.ehp, thisEgg.progress += randRange(200, 250));
+            thisEgg.progress = player.settings.instaHatchEggs.state ? thisEgg.ehp : Math.min(thisEgg.ehp, thisEgg.progress += randRange(200, 250));
             thisEgg.lastTick = Date.now();
         }
         if (!isHidden(partyCont)) {
@@ -122,6 +118,7 @@ function progressEgg(index: number, delay: number = 0) {
         if (thisEgg.progress === thisEgg.ehp) {
             clearInterval(eggLoop);
             if (player.settings.eggReadyNotif.state) Notify('eggReady');
+            if (player.settings.instaHatchEggs.state) hatchEgg(index);
         }
     }
 }
@@ -166,6 +163,18 @@ function pauseEggTimer(full: boolean = false, index: number = -1) {
             member.frozen = true;
         }
     }
+}
+
+function hatchEgg(index: number) {
+    const member = player.party[index];
+    const eggHatch = partySlots[index].querySelector('.egg-hatcher');
+    if (!isHidden(eggHatch)) eggHatch.style.display = 'none';
+    player.eggHandler[index] = null;
+    convertEgg(member);
+    disposeParty(false, index);
+    renderParty(false, index);
+    console.log(member)
+    advanceChain(member.id, member.isShiny);
 }
 
 function convertEgg(member: any) {
