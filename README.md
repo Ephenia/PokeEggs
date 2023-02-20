@@ -36,10 +36,12 @@ You may also [join my Discord server](https://discord.gg/nfbT8zJSkd) (can also c
 • [LocalForage](https://github.com/localForage/localForage)<br>
 • [Hotkeys](https://github.com/jaywcjlove/hotkeys)<br>
 • [js-snackbar](https://github.com/mickelsonmichael/js-snackbar)<br>
-• [chroma.js](https://github.com/gka/chroma.js/)
+• [chroma.js](https://github.com/gka/chroma.js/)<br>
+• [chancejs](https://github.com/chancejs/chancejs)<br>
+• [HackTimer](https://github.com/turuslan/HackTimer)
 
 # Other Resources Used
-• Smogon's various Sprite Projects that can be found [over on their forums](https://www.smogon.com/forums/forums/smeargles-laptop.325/).<br>
+• Smogon's various Sprite Projects that can be found [over on their forums](https://www.smogon.com/forums/threads/smogon-sprite-project.3647722/).<br>
 • Pokémon icons from the project [PokéSprite](https://github.com/msikma/pokesprite).<br>
 • [PokéAPI](https://github.com/PokeAPI/pokeapi) for getting data for various things.<br>
 • [Pokéclicker](https://github.com/pokeclicker/pokeclicker) for their Pokémon fonts they use.<br>

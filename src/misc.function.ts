@@ -5,7 +5,7 @@ const dataImg = {
 }
 
 //Possible to have en egg design
-const eggDesign = ["abra", "absol", "aerodactyl", "aipom", "alomomola", "amaura", "anorith", "applin", "archen", "aron", "arrokuda", "audino", "axew", "azurill", "bagon", "baltoy", "barboach", "basculin", "beldum", "bellsprout", "bergmite", "bidoof", "binacle", "blipbug", "blitzle", "bonsly", "bouffalant", "bounsweet", "bronzor", "bruxish", "budew", "buizel", "bulbasaur", "buneary", "bunnelby", "burmy", "cacnea", "carbink", "carnivine", "carvanha", "castform", "caterpie", "chansey", "charjabug", "charmander", "chatot", "cherubi", "chespin", "chewtle", "chikorita", "chimchar", "chimecho", "chinchou", "chingling", "clamperl", "clauncher", "cleffa", "clobbopus", "combee", "comfey", "corpish", "corsola", "corsola_1", "cottonee", "crabrawler", "cramorant", "cranidos", "croagunk", "cryogonal", "cubchoo", "cubone", "cufant", "cutiefly", "cyndaquil", "darumaka", "dedenne", "deerling", "deino", "delibird", "dewpider", "dhelmise", "diglett", "diglett_1", "doduo", "drampa", "dratini", "dreepy", "drifloon", "drilbur", "drowzee", "druddigon", "ducklett", "dunsparce", "durant", "duskull", "dwebble", "eevee", "eiscue", "ekans", "electrike", "elekid", "elgyem", "emolga", "espurr", "exeggcute", "falinks", "farfetchd", "feebas", "fennekin", "ferroseed", "finneon", "flabebe", "fletchling", "fomantis", "foongus", "frillish", "froakie", "furfrou", "gastly", "geodude", "geodude_1", "gible", "girafarig", "glameow", "gligar", "goldeen", "golett", "goomy", "gossifleur", "gothita", "grimer", "grimer_1", "grookey", "growlithe", "grubbin", "gulpin", "happiny", "hatenna", "hawlucha", "heatmor", "helioptile", "heracross", "hippopotas", "honedge", "hoothoot", "hoppip", "horsea", "houndour", "igglybuff", "illumise", "impidimp", "indeedee", "inkay", "jangmoo", "joltik", "kabuto", "kangaskhan", "karrablast", "kecleon", "klefki", "klink", "koffing", "krabby", "kricketot", "lapras", "larvesta", "larvitar", "ledyba", "lickitung", "lileep", "lillipup", "litleo", "litten", "litwick", "lotad", "lunatone", "luvdisc", "machop", "magby", "magikarp", "magnemite", "makuhita", "manaphy", "manaphy_icon", "mankey", "mantyke", "maractus", "mareanie", "mareep", "marill", "mawile", "meditite", "meowth", "meowth_1", "meowth_2", "mienfoo", "milcery", "miltank", "mimejr", "mimikyu", "minccino", "minior", "minun", "misdreavus", "morelull", "morpeko", "mudbray", "mudkip", "munchlax", "munna", "murkrow", "natu", "nickit", "nidoranfe", "nidoranme", "nincada", "noibat", "nosepass", "numel;", "oddish", "omanyte", "onix", "oranguru", "oricorio", "oricorio_1", "oricorio_2", "oricorio_3", "oshawott", "output.txt", "pachirisu", "pancham", "panpour", "pansage", "pansear", "paras", "passimian", "patrat", "pawniard", "petilil", "phanpy", "phantump", "pichu", "pidgey", "pidove", "pikipek", "pincurchin", "pineco", "pinsir", "piplup", "plusle", "poliwag", "ponyta", "ponyta_1", "poochyena", "popplio", "porygon", "psyduck", "pumpkaboo", "purrloin", "pyukumuku", "qwilfish", "raltss", "rattata", "rattata_1", "relicanth", "remoraid", "rhyhorn", "riolu", "rockruff", "roggenrola", "rolycoly", "rookidee", "roselia", "rotom", "rowlet", "rufflet", "sableye", "salandit", "sandile", "sandshrew", "sandshrew_1", "sandygast", "sawk", "scatterby", "scorbunny", "scraggy", "scyther", "seedot", "seel", "sentret", "seviper", "sewaddle", "shellder", "shellos", "shelmet", "shieldon", "shinx", "shroomish", "shuckle", "shuppet", "sigilyph", "silicobra", "sinistea", "sizzipede", "skarmory", "skiddo", "skitty", "skorupi", "skrelp", "skwovet", "slakoth", "slowpoke", "slowpoke_1", "slugma", "smeargle", "smoochum", "sneasel", "snivy", "snom", "snorlax", "snorunt", "snover", "snubbul", "sobble", "solosis", "solrock", "sorupi", "spearow", "spheal", "spinarak", "spinda", "spiritomb", "spoink", "spritzee", "squirtle", "stantler", "starly", "staryu", "stonjourner", "stufful", "stunfisk", "stunfisk_1", "stunky", "sudowoodo", "sunkern", "surskit", "swablu", "swinub", "swirlix", "taillow", "tangela", "tauros", "teddiursa", "tentacool", "tepig", "throh", "timburr", "tirtouga", "togedemaru", "togepi", "torchic", "torkoal", "totodile", "toxel", "trapinch", "treecko", "tropius", "trubbish", "turtonator", "turtwig", "tympole", "tynamo", "tyrogue", "tyrunt", "vanillite", "venipede", "venonat", "volbeat", "voltorb", "vullaby", "vulpix", "vulpix_1", "wailmer", "weedle", "whismur", "wimpod", "wingull", "wishiwashi", "woobat", "wooloo", "wooper", "wurmple", "wynaut", "yamask", "yamask_1", "yamper", "yanma", "yungoos", "zangoose", "zigzagoon", "zigzagoon_1", "zorua", "zubat"]
+const eggDesign = ['abra','absol','aerodactyl','aipom','alomomola','amaura','anorith','applin','archen','aron','arrokuda','articuno','audino','axew','azurill','bagon','baltoy','barboach','basculin-red-striped','beldum','bellsprout','bergmite','bidoof','binacle','blipbug','blitzle','bonsly','bouffalant','bounsweet','bronzor','bruxish','budew','buizel','bulbasaur','buneary','bunnelby','burmy-plant','cacnea','carbink','carnivine','carvanha','castform','caterpie','celebi','chansey','charjabug','charmander','chatot','cherubi','chespin','chewtle','chikorita','chimchar','chimecho','chinchou','chingling','clamperl','clauncher','cleffa','clobbopus','combee','comfey','corphish','corsola-galar','corsola','cosmog','cottonee','crabrawler','cramorant','cranidos','cresselia','croagunk','cryogonal','cubchoo','cubone','cufant','cutiefly','cyndaquil','darkrai','darumaka','dedenne','deerling','deino','delibird','dewpider','dhelmise','diancie','diglett-alola','diglett','ditto','doduo','drampa','dratini','dreepy','drifloon','drilbur','drowzee','druddigon','ducklett','dunsparce','durant','duskull','dwebble','eevee','eiscue-ice','ekans','electrike','elekid','elgyem','emolga','entei','espurr','exeggcute','falinks','farfetchd','feebas','fennekin','ferroseed','finneon','flabebe','fletchling','fomantis','foongus','frillish','froakie','furfrou','gastly','geodude-alola','geodude','gible','girafarig','glameow','gligar','goldeen','golett','goomy','gossifleur','gothita','grimer-alola','grimer','grookey','groudon','growlithe','grubbin','gulpin','happiny','hatenna','hawlucha','heatmor','heatran','helioptile','heracross','hippopotas','ho-oh','honedge','hoothoot','hoppip','horsea','houndour','igglybuff','illumise','impidimp','indeedee-male','inkay','jangmo-o','jirachi','joltik','kabuto','kangaskhan','karrablast','kecleon','klefki','klink','koffing','krabby','kricketot','kyogre','lapras','larvesta','larvitar','latias','latios','ledyba','lickitung','lileep','lillipup','litleo','litten','litwick','lotad','lugia','lunatone','luvdisc','machop','magby','magikarp','magnemite','makuhita','manaphy','mankey','mantyke','maractus','mareanie','mareep','marill','mawile','meditite','meowth-alola','meowth-galar','meowth','mew','mewtwo','mienfoo','milcery','miltank','mime-jr','mimikyu-disguised','minccino','minior','minun','misdreavus','moltres','morelull','morpeko-full-belly','mudbray','mudkip','munchlax','munna','murkrow','natu','nickit','nidoran-f','nidoran-m','nincada','noibat','nosepass','numel','oddish','omanyte','onix','oranguru','oricorio-baile','oricorio-pau','oricorio-pom-pom','oricorio-sensu','oshawott','pachirisu','pancham','panpour','pansage','pansear','paras','passimian','patrat','pawniard','petilil','phanpy','phantump','pheromosa','phione','pichu','pidgey','pidove','pikipek','pincurchin','pineco','pinsir','piplup','plusle','poliwag','ponyta-galar','ponyta','poochyena','popplio','porygon','psyduck','pumpkaboo','purrloin','pyukumuku','qwilfish','raikou','ralts','rattata-alola','rattata','rayquaza','regice','regigigas','regirock','registeel','relicanth','remoraid','rhyhorn','riolu','rockruff','roggenrola','rolycoly','rookidee','roselia','rotom','rowlet','rufflet','sableye','salandit','sandile','sandshrew-alola','sandshrew','sandygast','sawk','scatterbug','scorbunny','scraggy','scyther','seedot','seel','sentret','seviper','sewaddle','shaymin','shellder','shellos-east','shellos-west','shellos','shelmet','shieldon','shinx','shroomish','shuckle','shuppet','sigilyph','silicobra','sinistea','sizzlipede','skarmory','skiddo','skitty','skorupi','skrelp','skwovet','slakoth','slowpoke-galar','slowpoke','slugma','smeargle','smoochum','sneasel','snivy','snom','snorlax','snorunt','snover','snubbull','sobble','solosis','solrock','sorupi','spearow','spheal','spinarak','spinda','spiritomb','spoink','spritzee','squirtle','stantler','starly','staryu','stonjourner','stufful','stunfisk-galar','stunfisk','stunky','sudowoodo','suicune','sunkern','surskit','swablu','swinub','swirlix','taillow','tangela','tauros','teddiursa','tentacool','tepig','throh','timburr','tirtouga','togedemaru','togepi','torchic','torkoal','totodile','toxel','trapinch','treecko','tropius','trubbish','turtonator','turtwig','tympole','tynamo','tyrogue','tyrunt','unown','vanillite','venipede','venonat','victini','volbeat','voltorb','vullaby','vulpix-alola','vulpix','wailmer','weedle','whismur','wimpod','wingull','wishiwashi','woobat','wooloo','wooper','wurmple','wynaut','yamask-galar','yamask','yamper','yanma','yungoos','zacian','zangoose','zapdos','zigzagoon-galar','zigzagoon','zorua','zubat'];
 
 //Pokemon Handler functions
 function sendToLead(index: number, type: string) {
@@ -52,7 +52,7 @@ function sendToParty(index: number, type: string) {
             member = player.pokemonBox[index];
             delete player.pokemonBox[index];
             sortBox();
-            renderPokeBox();  
+            renderPokeBox();
         } else if (type === 'daycare') {
             member = player.daycareHandler.eggs[index];
             delete player.daycareHandler.eggs[index];
@@ -83,6 +83,51 @@ function sendToDaycare(index: number, type: string) {
     }
     player.daycareHandler.pokemon[slot] = member;
     checkBreeding();
+}
+
+//For changing forme of Pokemon
+function changeForme(index: number, type: string) {
+    let member: any;
+    if (type === 'party') {
+        member = player.party[index];
+        const thisPoke = pkmnData[member.id];
+        const species = findSpecies(thisPoke.species);
+        const getForms = pkmnData[member.id].forms;
+        const getVariants = species.varieties;
+        const formPos = getForms.indexOf(member.forme);
+        const varPos = getVariants.indexOf(member.variant);
+        let typeFOV = '';
+        if (getForms.length === 1 && getVariants.length === 1) {
+            Notify('errorMsg', 'This Pokémon does not have a forme/variant.');
+            return true;
+        }
+        if (getForms.length !== 1) {
+            typeFOV = 'forme';
+            member.FOV = 'forme';
+            if (formPos !== getForms.length - 1) {
+                member.forme = getForms[formPos + 1];
+                member.indexForme = formPos + 1;
+            } else {
+                member.forme = getForms[0];
+                member.indexForme = 0;
+            }
+        } else if (getVariants.length !== 1) {
+            typeFOV = 'variant';
+            member.FOV = 'variant';
+            if (varPos !== getVariants.length - 1) {
+                member.variant = getVariants[varPos + 1];
+                member.indexVar = varPos + 1;
+            } else {
+                member.variant = getVariants[0];
+                member.indexVar = 0;
+            }
+            member.id = +findVariant(member.variant, 0);
+            member.ability = calcAbility(member.id);
+        }
+        const pokeName = formToName(member[typeFOV]);
+        member.name = pokeName === null || pokeName === '' ? 'Name Missing' : pokeName;
+        renderParty(false, index);
+    }
 }
 
 //For Salvaging Pokemon
@@ -139,13 +184,13 @@ document.querySelectorAll('[pkmn-menu]').forEach(item => {
 function buildPartyMenu(index: number) {
     disposeElement(pkmnMenu);
     const member = player.party[index];
-    const menuItems = ['Lead', 'Box', 'Salvage', 'Daycare'];
+    const menuItems = ['Lead', 'Box', 'Salvage', 'Daycare', 'Forme'];
     for (const opt in menuItems) {
         const menuOpt = document.createElement('button');
         menuOpt.classList.add('menu-item');
         menuOpt.innerHTML = menuItems[opt];
         if (member.isEgg) {
-            if (opt === '0' || opt === '2' || opt === '3') {
+            if (opt === '0' || opt === '2' || opt === '3' ||  opt === '4') {
                 menuOpt.disabled = true;
             }
         } else if (member.starter) {
@@ -160,6 +205,8 @@ function buildPartyMenu(index: number) {
                 salvagePoke(index, 'party');
             } else if (opt === '3') {
                 sendToDaycare(index, 'party');
+            } else if (opt === '4') {
+                changeForme(index, 'party');
             }
         });
         pkmnMenu.appendChild(menuOpt);

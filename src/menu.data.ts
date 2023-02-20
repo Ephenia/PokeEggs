@@ -23,54 +23,6 @@ const menuOptions: MenuLayout = {
         debug: false,
         custom: null
     },
-    3: {
-        name: 'Modal System Test',
-        description: 'Tests the Modal System.',
-        src: 'modaltest',
-        modal: true,
-        debug: true,
-        custom: null
-    },
-    // 4: {
-    //     name: 'Buff System Test',
-    //     description: 'Tests the Buff System. Will currently cast a random buff.',
-    //     src: 'bufftest',
-    //     modal: false,
-    //     debug: true,
-    //     custom() {
-    //         randomBuff();
-    //     }
-    // },
-    // 5: {
-    //     name: 'Party System Test',
-    //     description: 'Tests the Party System.',
-    //     src: 'partytest',
-    //     modal: false,
-    //     debug: true,
-    //     custom() {
-    //         addEgg();
-    //     }
-    // },
-    // 6: {
-    //     name: 'Item System Test',
-    //     description: 'Tests the Item System.',
-    //     src: 'itemtest',
-    //     modal: false,
-    //     debug: true,
-    //     custom() {
-    //         randomitem();
-    //     }
-    // },
-    // 7: {
-    //     name: 'Clear Party',
-    //     description: 'Clears the Party.',
-    //     src: 'clearparty',
-    //     modal: false,
-    //     debug: true,
-    //     custom() {
-    //         clearParty();
-    //     }  
-    // },
     8: {
         name: 'Save Game',
         description: 'Saves your game.',
@@ -110,12 +62,12 @@ const menuOptions: MenuLayout = {
             player.prefs.debug = !player.prefs.debug;
         }
     },
-    12 : {
-        name: 'Create Egg',
-        description: '',
-        src: 'createGemEgg',
-        modal: true,
-        debug: true,
-        custom: null
-    }
+    // 12 : {
+    //     name: 'Create Egg',
+    //     description: '',
+    //     src: 'createGemEgg',
+    //     modal: true,
+    //     debug: true,
+    //     custom: null
+    // }
 }

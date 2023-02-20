@@ -1,3 +1,15 @@
+February 20th,2023
+
+• Breeding tick bar color changes, it now turns green/red respectively upon an egg generating or not (this is if the first check is passed).
+• Pokémon that require specific items to produce their baby Pokémon won't produce them (until held items are added).
+• Bred Pokémon's offspring will now be the lowest evolution possible in their evolution line.
+• Added more data (regarding Evolution).
+• Added a way to change formes/variants of Pokémon from the inside the Party menu (for testing).
+• Egg Groups are now accounted for and are taken into consideration with breeding.
+• Setting added for toggling timer throttling (Off by Default).
+• Added support for preventing game timers from being throttled (related to JavaScript throttling).
+• Added a notification for the Party being full when attempting to claim/receive an Egg.
+
 February 8th, 2023
 
 • You can now search for Pokémon within Debug Mode and easily spawn eggs of them.

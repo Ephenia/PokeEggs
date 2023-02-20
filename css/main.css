@@ -1,6 +1,9 @@
 :root {
     --main-bg-color: #282b30;
     --pkmn-bg-view: rgb(114 137 218 / 25%);
+    --progress-neutral: #0096FF;
+    --progress-success: #50C878;
+    --progress-failure: #FF4433;
 }
 
 body {
@@ -450,6 +453,7 @@ main {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+    align-items: center;
 }
 
 #daycare-cont-pkmn-view>div:nth-child(1)>div>div:nth-child(1) {
@@ -505,7 +509,7 @@ main {
 #daycare-cont-prog-bar>div {
     height: 100%;
     width: 0;
-    background-color: #50C878;
+    background-color: var(--progress-neutral);
     position: relative;
     transition: width 1s ease-in-out;
     border-radius: 5px;
@@ -655,7 +659,7 @@ progress::-webkit-progress-value {
     border: 0;
     height: 10px;
     border-radius: 5px;
-    background-color: #50C878;
+    background-color: var(--progress-success);
 }
 
 /* Speech Bubbles */

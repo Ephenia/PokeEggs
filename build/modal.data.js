@@ -191,6 +191,10 @@ function createCheckSetting(name, setting) {
     checkInput.name = name;
     checkInput.checked = setting.state;
     checkInput.addEventListener('input', () => {
+        if (name === 'disableThrottle') {
+            localStorage.setItem('HackTimer', JSON.stringify(!setting.state));
+            location.reload();
+        }
         player.settings[name].state = !setting.state;
     });
     settingCont.appendChild(checkInput);

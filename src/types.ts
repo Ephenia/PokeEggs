@@ -102,3 +102,4 @@ interface Settings {
 interface BagTabLayout {
     [key: number]: Array<string>
 }
+  

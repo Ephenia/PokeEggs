@@ -28,7 +28,7 @@ function renderParty(full = false, index = -1) {
                 sprite = `assets/${eggDesign.includes(member.forme) ? `eggs/normal/${member.forme}` : `eggs/${member.eggSprite}`}.png`;
             }
             else {
-                sprite = `assets/pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.forme}.png`;
+                sprite = `assets/pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.FOV === 'forme' ? member.forme : member.variant}.png`;
             }
             //img.src = `assets/${member.isEgg ? `eggs/${member.eggSprite}` : `pkmn/${member.isShiny ? 'shiny' : 'normal'}/${member.sprite}`}.png`;
             img.src = sprite;

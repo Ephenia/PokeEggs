@@ -1402,7 +1402,7 @@ let pkmnFormData = {
   "201": {
     is_mega: false,
     name: "unown-a",
-    names: null,
+    names: 'Unown A',
     pokemon: "unown",
     types: ["Psychic", "None"]
   },
@@ -2697,7 +2697,7 @@ let pkmnFormData = {
   "386": {
     is_mega: false,
     name: "deoxys-normal",
-    names: null,
+    names: 'Deoxys',
     pokemon: "deoxys-normal",
     types: ["Psychic", "None"]
   },
@@ -2879,21 +2879,21 @@ let pkmnFormData = {
   "412": {
     is_mega: false,
     name: "burmy-plant",
-    names: null,
+    names: 'Burmy (Plant)',
     pokemon: "burmy",
     types: ["Bug", "None"]
   },
   "413": {
     is_mega: false,
     name: "wormadam-plant",
-    names: null,
+    names: 'Wormadam (Plant)',
     pokemon: "wormadam-plant",
     types: ["Bug", "Grass"]
   },
   "414": {
     is_mega: false,
     name: "mothim-plant",
-    names: null,
+    names: 'Mothim',
     pokemon: "mothim",
     types: ["Bug", "Flying"]
   },
@@ -2942,21 +2942,21 @@ let pkmnFormData = {
   "421": {
     is_mega: false,
     name: "cherrim-overcast",
-    names: null,
+    names: 'Cherrim',
     pokemon: "cherrim",
     types: ["Grass", "None"]
   },
   "422": {
     is_mega: false,
     name: "shellos-west",
-    names: null,
+    names: 'Shellos (West)',
     pokemon: "shellos",
     types: ["Water", "None"]
   },
   "423": {
     is_mega: false,
     name: "gastrodon-west",
-    names: null,
+    names: 'Gastrodon (West)',
     pokemon: "gastrodon",
     types: ["Water", "Ground"]
   },
@@ -3404,7 +3404,7 @@ let pkmnFormData = {
   "487": {
     is_mega: false,
     name: "giratina-altered",
-    names: null,
+    names: 'Giratina',
     pokemon: "giratina-altered",
     types: ["Ghost", "Dragon"]
   },
@@ -3439,14 +3439,14 @@ let pkmnFormData = {
   "492": {
     is_mega: false,
     name: "shaymin-land",
-    names: null,
+    names: 'Shaymin',
     pokemon: "shaymin-land",
     types: ["Grass", "None"]
   },
   "493": {
     is_mega: false,
     name: "arceus-normal",
-    names: null,
+    names: 'Arceus',
     pokemon: "arceus",
     types: ["Normal", "None"]
   },
@@ -3845,7 +3845,7 @@ let pkmnFormData = {
   "550": {
     is_mega: false,
     name: "basculin-red-striped",
-    names: null,
+    names: 'Basculin (Red)',
     pokemon: "basculin-red-striped",
     types: ["Water", "None"]
   },
@@ -3880,7 +3880,7 @@ let pkmnFormData = {
   "555": {
     is_mega: false,
     name: "darmanitan-standard",
-    names: null,
+    names: 'Darmanitan',
     pokemon: "darmanitan-standard",
     types: ["Fire", "None"]
   },
@@ -4090,14 +4090,14 @@ let pkmnFormData = {
   "585": {
     is_mega: false,
     name: "deerling-spring",
-    names: null,
+    names: 'Deerling (Spring)',
     pokemon: "deerling",
     types: ["Normal", "Grass"]
   },
   "586": {
     is_mega: false,
     name: "sawsbuck-spring",
-    names: null,
+    names: 'Sawsbuck (Spring)',
     pokemon: "sawsbuck",
     types: ["Normal", "Grass"]
   },
@@ -4482,14 +4482,14 @@ let pkmnFormData = {
   "641": {
     is_mega: false,
     name: "tornadus-incarnate",
-    names: null,
+    names: 'Tornadus',
     pokemon: "tornadus-incarnate",
     types: ["Flying", "None"]
   },
   "642": {
     is_mega: false,
     name: "thundurus-incarnate",
-    names: null,
+    names: 'Thundurus',
     pokemon: "thundurus-incarnate",
     types: ["Electric", "Flying"]
   },
@@ -4510,7 +4510,7 @@ let pkmnFormData = {
   "645": {
     is_mega: false,
     name: "landorus-incarnate",
-    names: null,
+    names: 'Landorus',
     pokemon: "landorus-incarnate",
     types: ["Ground", "Flying"]
   },
@@ -4524,14 +4524,14 @@ let pkmnFormData = {
   "647": {
     is_mega: false,
     name: "keldeo-ordinary",
-    names: null,
+    names: 'Keldeo',
     pokemon: "keldeo-ordinary",
     types: ["Water", "Fighting"]
   },
   "648": {
     is_mega: false,
     name: "meloetta-aria",
-    names: null,
+    names: 'Meloetta',
     pokemon: "meloetta-aria",
     types: ["Normal", "Psychic"]
   },
@@ -4643,21 +4643,21 @@ let pkmnFormData = {
   "664": {
     is_mega: false,
     name: "scatterbug-icy-snow",
-    names: null,
+    names: 'Scatterbug',
     pokemon: "scatterbug",
     types: ["Bug", "None"]
   },
   "665": {
     is_mega: false,
     name: "spewpa-icy-snow",
-    names: null,
+    names: 'Spewpa',
     pokemon: "spewpa",
     types: ["Bug", "None"]
   },
   "666": {
     is_mega: false,
     name: "vivillon-meadow",
-    names: null,
+    names: 'Vivillon (Meadow)',
     pokemon: "vivillon",
     types: ["Bug", "Flying"]
   },
@@ -4678,21 +4678,21 @@ let pkmnFormData = {
   "669": {
     is_mega: false,
     name: "flabebe-red",
-    names: null,
+    names: 'Flabébé (Red)',
     pokemon: "flabebe",
     types: ["Fairy", "None"]
   },
   "670": {
     is_mega: false,
     name: "floette-red",
-    names: null,
+    names: 'Floette (Red)',
     pokemon: "floette",
     types: ["Fairy", "None"]
   },
   "671": {
     is_mega: false,
     name: "florges-red",
-    names: null,
+    names: 'Florges (Red)',
     pokemon: "florges",
     types: ["Fairy", "None"]
   },
@@ -4727,7 +4727,7 @@ let pkmnFormData = {
   "676": {
     is_mega: false,
     name: "furfrou-natural",
-    names: null,
+    names: "Furfrou",
     pokemon: "furfrou",
     types: ["Normal", "None"]
   },
@@ -4741,7 +4741,7 @@ let pkmnFormData = {
   "678": {
     is_mega: false,
     name: "meowstic-male",
-    names: null,
+    names: 'Meowstic',
     pokemon: "meowstic-male",
     types: ["Psychic", "None"]
   },
@@ -4762,7 +4762,7 @@ let pkmnFormData = {
   "681": {
     is_mega: false,
     name: "aegislash-shield",
-    names: null,
+    names: 'Aegislash',
     pokemon: "aegislash-shield",
     types: ["Steel", "Ghost"]
   },
@@ -4965,14 +4965,14 @@ let pkmnFormData = {
   "710": {
     is_mega: false,
     name: "pumpkaboo-average",
-    names: null,
+    names: 'Pumpkaboo',
     pokemon: "pumpkaboo-average",
     types: ["Ghost", "Grass"]
   },
   "711": {
     is_mega: false,
     name: "gourgeist-average",
-    names: null,
+    names: 'Gourgeist',
     pokemon: "gourgeist-average",
     types: ["Ghost", "Grass"]
   },
@@ -5007,7 +5007,7 @@ let pkmnFormData = {
   "716": {
     is_mega: false,
     name: "xerneas-active",
-    names: null,
+    names: 'Xerneas',
     pokemon: "xerneas",
     types: ["Fairy", "None"]
   },
@@ -5021,7 +5021,7 @@ let pkmnFormData = {
   "718": {
     is_mega: false,
     name: "zygarde-50",
-    names: null,
+    names: 'Zygarde (50%)',
     pokemon: "zygarde-50",
     types: ["Dragon", "Ground"]
   },
@@ -5182,7 +5182,7 @@ let pkmnFormData = {
   "741": {
     is_mega: false,
     name: "oricorio-baile",
-    names: null,
+    names: 'Oricorio (Baile)',
     pokemon: "oricorio-baile",
     types: ["Fire", "Flying"]
   },
@@ -5210,14 +5210,14 @@ let pkmnFormData = {
   "745": {
     is_mega: false,
     name: "lycanroc-midday",
-    names: null,
+    names: 'Lycanroc (Midday)',
     pokemon: "lycanroc-midday",
     types: ["Rock", "None"]
   },
   "746": {
     is_mega: false,
     name: "wishiwashi-solo",
-    names: null,
+    names: 'Wishiwashi',
     pokemon: "wishiwashi-solo",
     types: ["Water", "None"]
   },
@@ -5406,14 +5406,14 @@ let pkmnFormData = {
   "773": {
     is_mega: false,
     name: "silvally-normal",
-    names: null,
+    names: 'Silvally',
     pokemon: "silvally",
     types: ["Normal", "None"]
   },
   "774": {
     is_mega: false,
     name: "minior-red-meteor",
-    names: null,
+    names: 'Minior',
     pokemon: "minior-red-meteor",
     types: ["Rock", "Flying"]
   },
@@ -5441,7 +5441,7 @@ let pkmnFormData = {
   "778": {
     is_mega: false,
     name: "mimikyu-disguised",
-    names: null,
+    names: 'Mimikyu',
     pokemon: "mimikyu-disguised",
     types: ["Ghost", "Fairy"]
   },
@@ -5938,7 +5938,7 @@ let pkmnFormData = {
   "849": {
     is_mega: false,
     name: "toxtricity-amped",
-    names: null,
+    names: 'Toxtricity (Amped)',
     pokemon: "toxtricity-amped",
     types: ["Electric", "Poison"]
   },
@@ -5973,14 +5973,14 @@ let pkmnFormData = {
   "854": {
     is_mega: false,
     name: "sinistea-phony",
-    names: null,
+    names: 'Sinistea',
     pokemon: "sinistea",
     types: ["Ghost", "None"]
   },
   "855": {
     is_mega: false,
     name: "polteageist-phony",
-    names: null,
+    names: 'Polteageist',
     pokemon: "polteageist",
     types: ["Ghost", "None"]
   },
@@ -6120,21 +6120,21 @@ let pkmnFormData = {
   "875": {
     is_mega: false,
     name: "eiscue-ice",
-    names: null,
+    names: 'Eiscue',
     pokemon: "eiscue-ice",
     types: ["Ice", "None"]
   },
   "876": {
     is_mega: false,
     name: "indeedee-male",
-    names: null,
+    names: 'Indeedee',
     pokemon: "indeedee-male",
     types: ["Psychic", "Normal"]
   },
   "877": {
     is_mega: false,
     name: "morpeko-full-belly",
-    names: null,
+    names: 'Morpeko',
     pokemon: "morpeko-full-belly",
     types: ["Electric", "Dark"]
   },
@@ -6239,7 +6239,7 @@ let pkmnFormData = {
   "892": {
     is_mega: false,
     name: "urshifu-single-strike",
-    names: null,
+    names: 'Urshifu',
     pokemon: "urshifu-single-strike",
     types: ["Fighting", "Dark"]
   },
@@ -6309,7 +6309,7 @@ let pkmnFormData = {
   "902": {
     is_mega: false,
     name: "basculegion-male",
-    names: null,
+    names: 'Basculegion',
     pokemon: "basculegion-male",
     types: ["Water", "Ghost"]
   },
@@ -6330,7 +6330,7 @@ let pkmnFormData = {
   "905": {
     is_mega: false,
     name: "enamorus-incarnate",
-    names: null,
+    names: 'Enamorus',
     pokemon: "enamorus-incarnate",
     types: ["Fairy", "Flying"]
   },
@@ -7317,7 +7317,7 @@ let pkmnFormData = {
   10038: {
     is_mega: false,
     name: "cherrim-sunshine",
-    names: "Sunshine Cherrim",
+    names: "Cherrim (Sunshine)",
     pokemon: "cherrim",
     types: ["Grass", "None"]
   },
@@ -7772,84 +7772,84 @@ let pkmnFormData = {
   10103: {
     is_mega: false,
     name: "flabebe-yellow",
-    names: "Yellow Flabébé",
+    names: 'Flabébé (Yellow)',
     pokemon: "flabebe",
     types: ["Fairy", "None"]
   },
   10104: {
     is_mega: false,
     name: "flabebe-orange",
-    names: "Orange Flabébé",
+    names: 'Flabébé (Orange)',
     pokemon: "flabebe",
     types: ["Fairy", "None"]
   },
   10105: {
     is_mega: false,
     name: "flabebe-blue",
-    names: "Blue Flabébé",
+    names: 'Flabébé (Blue)',
     pokemon: "flabebe",
     types: ["Fairy", "None"]
   },
   10106: {
     is_mega: false,
     name: "flabebe-white",
-    names: "White Flabébé",
+    names: 'Flabébé (White)',
     pokemon: "flabebe",
     types: ["Fairy", "None"]
   },
   10107: {
     is_mega: false,
     name: "floette-yellow",
-    names: "Yellow Floette",
+    names: 'Floette (Yellow)',
     pokemon: "floette",
     types: ["Fairy", "None"]
   },
   10108: {
     is_mega: false,
     name: "floette-orange",
-    names: "Orange Floette",
+    names: 'Floette (Orange)',
     pokemon: "floette",
     types: ["Fairy", "None"]
   },
   10109: {
     is_mega: false,
     name: "floette-blue",
-    names: "Blue Floette",
+    names: 'Floette (Blue)',
     pokemon: "floette",
     types: ["Fairy", "None"]
   },
   10110: {
     is_mega: false,
     name: "floette-white",
-    names: "White Floette",
+    names: 'Floette (White)',
     pokemon: "floette",
     types: ["Fairy", "None"]
   },
   10111: {
     is_mega: false,
     name: "florges-yellow",
-    names: "Yellow Florges",
+    names: 'Florges (Yellow)',
     pokemon: "florges",
     types: ["Fairy", "None"]
   },
   10112: {
     is_mega: false,
     name: "florges-orange",
-    names: "Orange Florges",
+    names: 'Florges (Orange)',
     pokemon: "florges",
     types: ["Fairy", "None"]
   },
   10113: {
     is_mega: false,
     name: "florges-blue",
-    names: "Blue Florges",
+    names: 'Florges (Blue)',
     pokemon: "florges",
     types: ["Fairy", "None"]
   },
   10114: {
     is_mega: false,
     name: "florges-white",
-    names: "White Florges",
+    names: 'Florges (White)',
     pokemon: "florges",
     types: ["Fairy", "None"]
   },
@@ -8402,14 +8402,14 @@ let pkmnFormData = {
   10193: {
     is_mega: false,
     name: "rattata-alola",
-    names: "Alolan Rattata",
+    names: "Rattata (Alolan)",
     pokemon: "rattata-alola",
     types: ["Dark", "Normal"]
   },
   10194: {
     is_mega: false,
     name: "raticate-alola",
-    names: "Alolan Raticate",
+    names: "Raticate (Alolan)",
     pokemon: "raticate-alola",
     types: ["Dark", "Normal"]
   },
@@ -8465,112 +8465,112 @@ let pkmnFormData = {
   10202: {
     is_mega: false,
     name: "raichu-alola",
-    names: "Alolan Raichu",
+    names: "Raichu (Alolan)",
     pokemon: "raichu-alola",
     types: ["Electric", "Psychic"]
   },
   10203: {
     is_mega: false,
     name: "sandshrew-alola",
-    names: "Alolan Sandshrew",
+    names: "Sandshrew (Alolan)",
     pokemon: "sandshrew-alola",
     types: ["Ice", "Steel"]
   },
   10204: {
     is_mega: false,
     name: "sandslash-alola",
-    names: "Alolan Sandslash",
+    names: "Sandslash (Alolan)",
     pokemon: "sandslash-alola",
     types: ["Ice", "Steel"]
   },
   10205: {
     is_mega: false,
     name: "vulpix-alola",
-    names: "Alolan Vulpix",
+    names: "Vulpix (Alolan)",
     pokemon: "vulpix-alola",
     types: ["Ice", "None"]
   },
   10206: {
     is_mega: false,
     name: "ninetales-alola",
-    names: "Alolan Ninetales",
+    names: "Ninetales (Alolan)",
     pokemon: "ninetales-alola",
     types: ["Ice", "Fairy"]
   },
   10207: {
     is_mega: false,
     name: "diglett-alola",
-    names: "Alolan Diglett",
+    names: "Diglett (Alolan)",
     pokemon: "diglett-alola",
     types: ["Ground", "Steel"]
   },
   10208: {
     is_mega: false,
     name: "dugtrio-alola",
-    names: "Alolan Dugtrio",
+    names: "Dugtrio (Alolan)",
     pokemon: "dugtrio-alola",
     types: ["Ground", "Steel"]
   },
   10209: {
     is_mega: false,
     name: "meowth-alola",
-    names: "Alolan Meowth",
+    names: "Meowth (Alolan)",
     pokemon: "meowth-alola",
     types: ["Dark", "None"]
   },
   10210: {
     is_mega: false,
     name: "persian-alola",
-    names: "Alolan Persian",
+    names: "Persian (Alolan)",
     pokemon: "persian-alola",
     types: ["Dark", "None"]
   },
   10211: {
     is_mega: false,
     name: "geodude-alola",
-    names: "Alolan Geodude",
+    names: "Geodude (Alolan)",
     pokemon: "geodude-alola",
     types: ["Rock", "Electric"]
   },
   10212: {
     is_mega: false,
     name: "graveler-alola",
-    names: "Alolan Graveler",
+    names: "Graveler (Alolan)",
     pokemon: "graveler-alola",
     types: ["Rock", "Electric"]
   },
   10213: {
     is_mega: false,
     name: "golem-alola",
-    names: "Alolan Golem",
+    names: "Golem (Alolan)",
     pokemon: "golem-alola",
     types: ["Rock", "Electric"]
   },
   10214: {
     is_mega: false,
     name: "grimer-alola",
-    names: "Alolan Grimer",
+    names: "Grimer (Alolan)",
     pokemon: "grimer-alola",
     types: ["Poison", "Dark"]
   },
   10215: {
     is_mega: false,
     name: "muk-alola",
-    names: "Alolan Muk",
+    names: "Muk (Alolan)",
     pokemon: "muk-alola",
     types: ["Poison", "Dark"]
   },
   10216: {
     is_mega: false,
     name: "exeggutor-alola",
-    names: "Alolan Exeggutor",
+    names: "Exeggutor (Alolan)",
     pokemon: "exeggutor-alola",
     types: ["Grass", "Dragon"]
   },
   10217: {
     is_mega: false,
     name: "marowak-alola",
-    names: "Alolan Marowak",
+    names: "Marowak (Alolan)",
     pokemon: "marowak-alola",
     types: ["Fire", "Ghost"]
   },
@@ -8934,14 +8934,14 @@ let pkmnFormData = {
   10269: {
     is_mega: false,
     name: "mothim-sandy",
-    names: "",
+    names: 'Mothim',
     pokemon: "mothim",
     types: ["Bug", "Flying"]
   },
   10270: {
     is_mega: false,
     name: "mothim-trash",
-    names: "",
+    names: 'Mothim',
     pokemon: "mothim",
     types: ["Bug", "Flying"]
   },
@@ -9291,147 +9291,147 @@ let pkmnFormData = {
   10320: {
     is_mega: false,
     name: "meowth-galar",
-    names: "Galarian Meowth",
+    names: "Meowth (Galarian)",
     pokemon: "meowth-galar",
     types: ["Steel", "None"]
   },
   10321: {
     is_mega: false,
     name: "ponyta-galar",
-    names: "Galarian Ponyta",
+    names: "Ponyta (Galarian)",
     pokemon: "ponyta-galar",
     types: ["Psychic", "None"]
   },
   10322: {
     is_mega: false,
     name: "rapidash-galar",
-    names: "Galarian Rapidash",
+    names: "Rapidash (Galarian)",
     pokemon: "rapidash-galar",
     types: ["Psychic", "Fairy"]
   },
   10323: {
     is_mega: false,
     name: "slowpoke-galar",
-    names: "Galarian Slowpoke",
+    names: "Slowpoke (Galarian)",
     pokemon: "slowpoke-galar",
     types: ["Psychic", "None"]
   },
   10324: {
     is_mega: false,
     name: "slowbro-galar",
-    names: "Galarian Slowbro",
+    names: "Slowbro (Galarian)",
     pokemon: "slowbro-galar",
     types: ["Poison", "Psychic"]
   },
   10325: {
     is_mega: false,
     name: "farfetchd-galar",
-    names: "Galarian Farfetch’d",
+    names: "Farfetch’d (Galarian)",
     pokemon: "farfetchd-galar",
     types: ["Fighting", "None"]
   },
   10326: {
     is_mega: false,
     name: "weezing-galar",
-    names: "Galarian Weezing",
+    names: "Weezing (Galarian)",
     pokemon: "weezing-galar",
     types: ["Poison", "Fairy"]
   },
   10327: {
     is_mega: false,
     name: "mr-mime-galar",
-    names: "Galarian Mr. Mime",
+    names: "Mr. Mime (Galarian)",
     pokemon: "mr-mime-galar",
     types: ["Ice", "Psychic"]
   },
   10328: {
     is_mega: false,
     name: "articuno-galar",
-    names: "Galarian Articuno",
+    names: "Articuno (Galarian)",
     pokemon: "articuno-galar",
     types: ["Psychic", "Flying"]
   },
   10329: {
     is_mega: false,
     name: "zapdos-galar",
-    names: "Galarian Zapdos",
+    names: "Zapdos (Galarian)",
     pokemon: "zapdos-galar",
     types: ["Fighting", "Flying"]
   },
   10330: {
     is_mega: false,
     name: "moltres-galar",
-    names: "Galarian Moltres",
+    names: "Moltres (Galarian)",
     pokemon: "moltres-galar",
     types: ["Dark", "Flying"]
   },
   10331: {
     is_mega: false,
     name: "slowking-galar",
-    names: "Galarian Slowking",
+    names: "Slowking (Galarian)",
     pokemon: "slowking-galar",
     types: ["Poison", "Psychic"]
   },
   10332: {
     is_mega: false,
     name: "corsola-galar",
-    names: "Galarian Corsola",
+    names: "Corsola (Galarian)",
     pokemon: "corsola-galar",
     types: ["Ghost", "None"]
   },
   10333: {
     is_mega: false,
     name: "zigzagoon-galar",
-    names: "Galarian Zigzagoon",
+    names: "Zigzagoon (Galarian)",
     pokemon: "zigzagoon-galar",
     types: ["Dark", "Normal"]
   },
   10334: {
     is_mega: false,
     name: "linoone-galar",
-    names: "Galarian Linoone",
+    names: "Linoone (Galarian)",
     pokemon: "linoone-galar",
     types: ["Dark", "Normal"]
   },
   10335: {
     is_mega: false,
     name: "darumaka-galar",
-    names: "Galarian Darumaka",
+    names: "Darumaka (Galarian)",
     pokemon: "darumaka-galar",
     types: ["Ice", "None"]
   },
   10336: {
     is_mega: false,
     name: "darmanitan-galar-standard",
-    names: "Standard Galarian Darmanitan",
+    names: "Darmanitan (Galarian)",
     pokemon: "darmanitan-galar-standard",
     types: ["Ice", "None"]
   },
   10337: {
     is_mega: false,
     name: "darmanitan-galar-zen",
-    names: "Zen Galarian Darmanitan",
+    names: "Darmanitan (Zen Galarian)",
     pokemon: "darmanitan-galar-zen",
     types: ["Ice", "Fire"]
   },
   10338: {
     is_mega: false,
     name: "yamask-galar",
-    names: "Galarian Yamask",
+    names: "Yamask (Galarian)",
     pokemon: "yamask-galar",
     types: ["Ground", "Ghost"]
   },
   10339: {
     is_mega: false,
     name: "stunfisk-galar",
-    names: "Galarian Stunfisk",
+    names: "Stunfisk (Galarian)",
     pokemon: "stunfisk-galar",
     types: ["Ground", "Steel"]
   },
   10340: {
     is_mega: false,
     name: "zygarde-10",
-    names: "10% Zygarde",
+    names: "Zygarde (10%)",
     pokemon: "zygarde-10",
     types: ["Dragon", "Ground"]
   },
@@ -9599,371 +9599,371 @@ let pkmnFormData = {
   10364: {
     is_mega: false,
     name: "venusaur-gmax",
-    names: "Gigantamax Venusaur",
+    names: "Giga Venusaur",
     pokemon: "venusaur-gmax",
     types: ["Grass", "Poison"]
   },
   10365: {
     is_mega: false,
     name: "charizard-gmax",
-    names: "Gigantamax Charizard",
+    names: "Giga Charizard",
     pokemon: "charizard-gmax",
     types: ["Fire", "Flying"]
   },
   10366: {
     is_mega: false,
     name: "blastoise-gmax",
-    names: "Gigantamax Blastoise",
+    names: "Giga Blastoise",
     pokemon: "blastoise-gmax",
     types: ["Water", "None"]
   },
   10367: {
     is_mega: false,
     name: "butterfree-gmax",
-    names: "Gigantamax Butterfree",
+    names: "Giga Butterfree",
     pokemon: "butterfree-gmax",
     types: ["Bug", "Flying"]
   },
   10368: {
     is_mega: false,
     name: "pikachu-gmax",
-    names: "Gigantamax Pikachu",
+    names: "Giga Pikachu",
     pokemon: "pikachu-gmax",
     types: ["Electric", "None"]
   },
   10369: {
     is_mega: false,
     name: "meowth-gmax",
-    names: "Gigantamax Meowth",
+    names: "Giga Meowth",
     pokemon: "meowth-gmax",
     types: ["Normal", "None"]
   },
   10370: {
     is_mega: false,
     name: "machamp-gmax",
-    names: "Gigantamax Machamp",
+    names: "Giga Machamp",
     pokemon: "machamp-gmax",
     types: ["Fighting", "None"]
   },
   10371: {
     is_mega: false,
     name: "gengar-gmax",
-    names: "Gigantamax Gengar",
+    names: "Giga Gengar",
     pokemon: "gengar-gmax",
     types: ["Ghost", "Poison"]
   },
   10372: {
     is_mega: false,
     name: "kingler-gmax",
-    names: "Gigantamax Kingler",
+    names: "Giga Kingler",
     pokemon: "kingler-gmax",
     types: ["Water", "None"]
   },
   10373: {
     is_mega: false,
     name: "lapras-gmax",
-    names: "Gigantamax Lapras",
+    names: "Giga Lapras",
     pokemon: "lapras-gmax",
     types: ["Water", "Ice"]
   },
   10374: {
     is_mega: false,
     name: "eevee-gmax",
-    names: "Gigantamax Eevee",
+    names: "Giga Eevee",
     pokemon: "eevee-gmax",
     types: ["Normal", "None"]
   },
   10375: {
     is_mega: false,
     name: "snorlax-gmax",
-    names: "Gigantamax Snorlax",
+    names: "Giga Snorlax",
     pokemon: "snorlax-gmax",
     types: ["Normal", "None"]
   },
   10376: {
     is_mega: false,
     name: "garbodor-gmax",
-    names: "Gigantamax Garbodor",
+    names: "Giga Garbodor",
     pokemon: "garbodor-gmax",
     types: ["Poison", "None"]
   },
   10377: {
     is_mega: false,
     name: "melmetal-gmax",
-    names: "Gigantamax Melmetal",
+    names: "Giga Melmetal",
     pokemon: "melmetal-gmax",
     types: ["Steel", "None"]
   },
   10378: {
     is_mega: false,
     name: "rillaboom-gmax",
-    names: "Gigantamax Rillaboom",
+    names: "Giga Rillaboom",
     pokemon: "rillaboom-gmax",
     types: ["Grass", "None"]
   },
   10379: {
     is_mega: false,
     name: "cinderace-gmax",
-    names: "Gigantamax Cinderace",
+    names: "Giga Cinderace",
     pokemon: "cinderace-gmax",
     types: ["Fire", "None"]
   },
   10380: {
     is_mega: false,
     name: "inteleon-gmax",
-    names: "Gigantamax Inteleon",
+    names: "Giga Inteleon",
     pokemon: "inteleon-gmax",
     types: ["Water", "None"]
   },
   10381: {
     is_mega: false,
     name: "corviknight-gmax",
-    names: "Gigantamax Corviknight",
+    names: "Giga Corviknight",
     pokemon: "corviknight-gmax",
     types: ["Flying", "Steel"]
   },
   10382: {
     is_mega: false,
     name: "orbeetle-gmax",
-    names: "Gigantamax Orbeetle",
+    names: "Giga Orbeetle",
     pokemon: "orbeetle-gmax",
     types: ["Bug", "Psychic"]
   },
   10383: {
     is_mega: false,
     name: "drednaw-gmax",
-    names: "Gigantamax Drednaw",
+    names: "Giga Drednaw",
     pokemon: "drednaw-gmax",
     types: ["Water", "Rock"]
   },
   10384: {
     is_mega: false,
     name: "coalossal-gmax",
-    names: "Gigantamax Coalossal",
+    names: "Giga Coalossal",
     pokemon: "coalossal-gmax",
     types: ["Rock", "Fire"]
   },
   10385: {
     is_mega: false,
     name: "flapple-gmax",
-    names: "Gigantamax Flapple",
+    names: "Giga Flapple",
     pokemon: "flapple-gmax",
     types: ["Grass", "Dragon"]
   },
   10386: {
     is_mega: false,
     name: "appletun-gmax",
-    names: "Gigantamax Appletun",
+    names: "Giga Appletun",
     pokemon: "appletun-gmax",
     types: ["Grass", "Dragon"]
   },
   10387: {
     is_mega: false,
     name: "sandaconda-gmax",
-    names: "Gigantamax Sandaconda",
+    names: "Giga Sandaconda",
     pokemon: "sandaconda-gmax",
     types: ["Ground", "None"]
   },
   10388: {
     is_mega: false,
     name: "toxtricity-amped-gmax",
-    names: "Gigantamax Amped Toxtricity",
+    names: "Giga Amped Toxtricity",
     pokemon: "toxtricity-amped-gmax",
     types: ["Electric", "Poison"]
   },
   10389: {
     is_mega: false,
     name: "centiskorch-gmax",
-    names: "Gigantamax Centiskorch",
+    names: "Giga Centiskorch",
     pokemon: "centiskorch-gmax",
     types: ["Fire", "Bug"]
   },
   10390: {
     is_mega: false,
     name: "hatterene-gmax",
-    names: "Gigantamax Hatterene",
+    names: "Giga Hatterene",
     pokemon: "hatterene-gmax",
     types: ["Psychic", "Fairy"]
   },
   10391: {
     is_mega: false,
     name: "grimmsnarl-gmax",
-    names: "Gigantamax Grimmsnarl",
+    names: "Giga Grimmsnarl",
     pokemon: "grimmsnarl-gmax",
     types: ["Dark", "Fairy"]
   },
   10392: {
     is_mega: false,
     name: "alcremie-gmax",
-    names: "Gigantamax Alcremie",
+    names: "Giga Alcremie",
     pokemon: "alcremie-gmax",
     types: ["Fairy", "None"]
   },
   10393: {
     is_mega: false,
     name: "copperajah-gmax",
-    names: "Gigantamax Copperajah",
+    names: "Giga Copperajah",
     pokemon: "copperajah-gmax",
     types: ["Steel", "None"]
   },
   10394: {
     is_mega: false,
     name: "duraludon-gmax",
-    names: "Gigantamax Duraludon",
+    names: "Giga Duraludon",
     pokemon: "duraludon-gmax",
     types: ["Steel", "Dragon"]
   },
   10395: {
     is_mega: false,
     name: "urshifu-single-strike-gmax",
-    names: "Gigantamax Single Strike Urshifu",
+    names: "Giga Single Strike Urshifu",
     pokemon: "urshifu-single-strike-gmax",
     types: ["Fighting", "Dark"]
   },
   10396: {
     is_mega: false,
     name: "urshifu-rapid-strike-gmax",
-    names: "Gigantamax Rapid Strike Urshifu",
+    names: "Giga Rapid Strike Urshifu",
     pokemon: "urshifu-rapid-strike-gmax",
     types: ["Fighting", "Water"]
   },
   10397: {
     is_mega: false,
     name: "toxtricity-low-key-gmax",
-    names: "Gigantamax Low Key Toxtricity",
+    names: "Giga Low Key Toxtricity",
     pokemon: "toxtricity-low-key-gmax",
     types: ["Electric", "Poison"]
   },
   10398: {
     is_mega: false,
     name: "growlithe-hisui",
-    names: "Hisuian Growlithe",
+    names: "Growlithe (Hisuian)",
     pokemon: "growlithe-hisui",
     types: ["Fire", "Rock"]
   },
   10399: {
     is_mega: false,
     name: "arcanine-hisui",
-    names: "Hisuian Arcanine",
+    names: "Arcanine (Hisuian)",
     pokemon: "arcanine-hisui",
     types: ["Fire", "Rock"]
   },
   10400: {
     is_mega: false,
     name: "voltorb-hisui",
-    names: "Hisuian Voltorb",
+    names: "Voltorb (Hisuian)",
     pokemon: "voltorb-hisui",
     types: ["Electric", "Grass"]
   },
   10401: {
     is_mega: false,
     name: "electrode-hisui",
-    names: "Hisuian Electrode",
+    names: "Electrode (Hisuian)",
     pokemon: "electrode-hisui",
     types: ["Electric", "Grass"]
   },
   10402: {
     is_mega: false,
     name: "typhlosion-hisui",
-    names: "Hisuian Typhlosion",
+    names: "Typhlosion (Hisuian)",
     pokemon: "typhlosion-hisui",
     types: ["Fire", "Ghost"]
   },
   10403: {
     is_mega: false,
     name: "qwilfish-hisui",
-    names: "Hisuian Qwilfish",
+    names: "Qwilfish (Hisuian)",
     pokemon: "qwilfish-hisui",
     types: ["Dark", "Poison"]
   },
   10404: {
     is_mega: false,
     name: "sneasel-hisui",
-    names: "Hisuian Sneasel",
+    names: "Sneasel (Hisuian)",
     pokemon: "sneasel-hisui",
     types: ["Fighting", "Poison"]
   },
   10405: {
     is_mega: false,
     name: "samurott-hisui",
-    names: "Hisuian Samurott",
+    names: "Samurott (Hisuian)",
     pokemon: "samurott-hisui",
     types: ["Water", "Dark"]
   },
   10406: {
     is_mega: false,
     name: "lilligant-hisui",
-    names: "Hisuian Lilligant",
+    names: "Lilligant (Hisuian)",
     pokemon: "lilligant-hisui",
     types: ["Grass", "Fighting"]
   },
   10407: {
     is_mega: false,
     name: "zorua-hisui",
-    names: "Hisuian Zorua",
+    names: "Zorua (Hisuian)",
     pokemon: "zorua-hisui",
     types: ["Normal", "Ghost"]
   },
   10408: {
     is_mega: false,
     name: "zoroark-hisui",
-    names: "Hisuian Zoroark",
+    names: "Zoroark (Hisuian)",
     pokemon: "zoroark-hisui",
     types: ["Normal", "Ghost"]
   },
   10409: {
     is_mega: false,
     name: "braviary-hisui",
-    names: "Hisuian Braviary",
+    names: "Braviary (Hisuian)",
     pokemon: "braviary-hisui",
     types: ["Psychic", "Flying"]
   },
   10410: {
     is_mega: false,
     name: "sliggoo-hisui",
-    names: "Hisuian Sliggoo",
+    names: "Sliggoo (Hisuian)",
     pokemon: "sliggoo-hisui",
     types: ["Steel", "Dragon"]
   },
   10411: {
     is_mega: false,
     name: "goodra-hisui",
-    names: "Hisuian Goodra",
+    names: "Goodra (Hisuian)",
     pokemon: "goodra-hisui",
     types: ["Steel", "Dragon"]
   },
   10412: {
     is_mega: false,
     name: "avalugg-hisui",
-    names: "Hisuian Avalugg",
+    names: "Avalugg (Hisuian)",
     pokemon: "avalugg-hisui",
     types: ["Ice", "Rock"]
   },
   10413: {
     is_mega: false,
     name: "decidueye-hisui",
-    names: "Hisuian Decidueye",
+    names: "Decidueye (Hisuian)",
     pokemon: "decidueye-hisui",
     types: ["Grass", "Fighting"]
   },
   10414: {
     is_mega: false,
     name: "dialga-origin",
-    names: "Origin Dialga",
+    names: "Dialga (Origin)",
     pokemon: "dialga-origin",
     types: ["Steel", "Dragon"]
   },
   10415: {
     is_mega: false,
     name: "palkia-origin",
-    names: "Origin Palkia",
+    names: "Palkia (Origin)",
     pokemon: "palkia-origin",
     types: ["Water", "Dragon"]
   },
   10416: {
     is_mega: false,
     name: "basculin-white-striped",
-    names: "White-Striped Basculin",
+    names: "Basculin (White)",
     pokemon: "basculin-white-striped",
     types: ["Water", "None"]
   },
@@ -9977,7 +9977,7 @@ let pkmnFormData = {
   10418: {
     is_mega: false,
     name: "enamorus-therian",
-    names: "Therian Enamorus",
+    names: "Enamorus (Therian)",
     pokemon: "enamorus-therian",
     types: ["Fairy", "Flying"]
   }

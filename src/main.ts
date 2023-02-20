@@ -1,4 +1,5 @@
-const gameVersion: string = '2-8-2023';
+// main.ts
+const gameVersion: string = '2-20-2023';
 const pkmnBoxCont = document.getElementById('pkmn-box-cont')!;
 const leadPokeCont = document.getElementById('lead-pkmn')!;
 const pokeRadarCont = document.getElementById('poke-radar-cont')!;
@@ -84,6 +85,10 @@ let player: PlayerLayout = {
         instaHatchEggs: {
             name: '[Debug] Instantly Hatch Eggs',
             state: false
+        },
+        disableThrottle: {
+            name: '[Debug] Disable Timer Throttling',
+            state: false
         }
     },
     version: gameVersion
@@ -95,6 +100,7 @@ async function initialize() {
     if (await hasSave()) {
         await loadSave();
     } else {
+        localStorage.setItem('HackTimer', player.settings.disableThrottle.state);
         await newLead();
         await newParty();
         await newDaycare()
@@ -262,7 +268,7 @@ function renderPokeBox() {
             pkmnDiv.setAttribute('data-src', poke);
             pkmnDiv.setAttribute('pkmn-menu', 'box');
             const pkmnIcon = document.createElement('img');
-            pkmnIcon.src = member.isEgg ? 'assets/pkmnicon/egg.png' : `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.forme}.png`;
+            pkmnIcon.src = member.isEgg ? 'assets/pkmnicon/egg.png' : `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.FOV === 'forme' ? member.forme : member.variant}.png`;
             pkmnIcon.setAttribute('loading', 'lazy');
             pkmnDiv.appendChild(pkmnIcon);
             frag.appendChild(pkmnDiv);

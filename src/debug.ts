@@ -18,13 +18,13 @@ function clearItemBag() {
 
 function randomitem() {
     const items = Object.entries(itemData);
-    const rand = randInt(items.length);
+    const rand = randInt(items.length - 1);
     gainItem(+items[rand][0], 1);
 }
 
 function randomBuff() {
     const buffIDs = Object.keys(itemData);
-    const randBuff = +buffIDs[randInt(buffIDs.length)];
+    const randBuff = +buffIDs[randInt(buffIDs.length) - 1];
     createBuff(randBuff);
 }
 
@@ -38,9 +38,11 @@ function addEgg(pokeID: number, starter = false) {
     console.log(findNull)
     if (findNull) {
         const nullIndex = findNull[0];
-        player.party[nullIndex] = createEgg(pokeID, false, starter);
+        player.party[nullIndex] = createEgg(pokeID, starter);
         renderParty(false, nullIndex);
         progressEgg(nullIndex);
+    } else {
+        Notify('errorMsg', 'Party is full.');
     }
 }
 

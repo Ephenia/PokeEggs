@@ -69,7 +69,7 @@ function tooltipStyle(element, type) {
             sprite = 'assets/pkmnicon/egg.png';
         }
         else {
-            sprite = `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.forme}.png`;
+            sprite = `assets/pkmnicon/${member.isShiny ? 'shiny' : 'normal'}/${member.FOV === 'forme' ? member.forme : member.variant}.png`;
         }
         img.src = sprite;
         pkmnImg.appendChild(img);

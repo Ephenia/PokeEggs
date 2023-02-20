@@ -1,3 +1,5 @@
+declare const Chance: any;
+
 //For elements
 function disposeElement(element: HTMLElement) {
     if (element.innerHTML !== '') { element.innerHTML = ''; }
@@ -29,29 +31,52 @@ function countArr(arr: Array<number>, int: number) {
     return arr.filter(i => i === int).length;
 }
 
+function everyArr(arr: Array<any>) {
+    return arr.every((val, i, arr) => val === arr[0]);
+}
+
+function compareArrays(arr1: Array<string>, arr2: Array<string>, comparisonArray: Array<string>, emptyArray: Array<string>): Array<any> {
+    if (JSON.stringify(emptyArray) === JSON.stringify(arr1) || JSON.stringify(emptyArray) === JSON.stringify(arr2)) {
+        return [];
+    } else if (JSON.stringify(comparisonArray) === JSON.stringify(arr1) && JSON.stringify(comparisonArray) === JSON.stringify(arr2)) {
+        return [];
+    } else if (JSON.stringify(comparisonArray) === JSON.stringify(arr1)) {
+        return comparisonArray.concat(arr2);
+    } else if (JSON.stringify(comparisonArray) === JSON.stringify(arr2)) {
+        return comparisonArray.concat(arr1);
+    } else {
+        return arr1.filter(value => arr2.includes(value));
+    }
+}
+
 //Random functions
 function randInt(int: number): number {
-    return Math.floor(Math.random() * int);
+    //int = int < 1 ? 1 : int;
+    const chance = new Chance();
+    return chance.integer({ min: 1, max: int });
 }
 
 function randRange(min: number, max: number): number {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    const chance = new Chance();
+    return chance.integer({ min: min, max: max });
 }
 
 function UUID() {
     return Date.now().toString(36) + Math.random().toString(36).substring(2);
 }
 
-function everyArr(arr: Array<any>) {
-    return arr.every((val, i, arr) => val === arr[0]);
-}
-
 function weightedRandom(min: number, max: number) {
     return Math.round(max / (Math.random() * max + min));
 }
 
+function getCSSVar(variableName: string): string {
+    const root = document.documentElement;
+    const value = getComputedStyle(root).getPropertyValue(`--${variableName}`).trim();
+    return value;
+}
+
 //For Pokemon
-function createEgg(pokeID: number, random = false, starter = false) {
+function createEgg(pokeID: number, starter = false, forme = 0) {
     const thisPoke = pkmnData[pokeID];
     console.log(thisPoke)
     const species = findSpecies(thisPoke.species);
@@ -59,16 +84,17 @@ function createEgg(pokeID: number, random = false, starter = false) {
     let shiny;
     const radar = player.radarHandler;
     if (radar.active && radar.lastHatch === pokeID) {
-        shiny = 0 === randInt(chainOdds(radar.chain));
+        shiny = 1 === randInt(chainOdds(radar.chain));
     } else {
-        shiny = 0 === randInt(4096);
+        shiny = 1 === randInt(4096);
     }
-    return { id: pokeID, isEgg: true, name: thisPoke.names, level: 1, exp: 0, ehp: toHatch, progress: 0, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(species.gender_rate), ability: calcAbility(pokeID), nature: genNature(), starter: starter, variant: thisPoke.name, forme: thisPoke.forms[0] };
+    const variantPos = species.varieties.indexOf(thisPoke.name);
+    return { id: pokeID, isEgg: true, name: thisPoke.names, level: 1, exp: 0, ehp: toHatch, progress: 0, eggSprite: randRange(0, 2), isShiny: shiny, creation: Date.now(), lastTick: null, eggPause: null, frozen: false, UUID: UUID(), IVs: genIVs(), gender: calcGender(species.gender_rate), ability: calcAbility(pokeID), nature: genNature(), starter: starter, variant: thisPoke.name, forme: thisPoke.forms[forme], FOV: variantPos === 0 ? 'forme' : 'variant', indexForme: forme, indexVar: variantPos };
 }
 
-function findVariant(variant: string) {
+function findVariant(variant: string, index: number) {
     const findPoke = Object.entries(pkmnData).find(([key, value]) => value.name === variant);
-    return findPoke ? findPoke[1] : -1;
+    return findPoke ? findPoke[index] : -1;
 }
 
 function findSpecies(pokeName: string) {
@@ -86,30 +112,40 @@ function canBeEgg() {
     Object.entries(speciesData).filter(([key, value]) => {
         if (!value.evolves_from_species) pkmnArr.push(value);
     });
-    return randInt(pkmnArr.length);
+    return randInt(pkmnArr.length - 1);
 }
 
 function genIVs() {
     return new Array(6).fill(null, 0).map(() => {
-        return randInt(32);
+        return randInt(32) - 1;
     });
 }
 
 function calcGender(rate: number) {
     //const rate = speciesData[pokeID].gender_rate;
     const gender = (100 / 8) * rate;
-    return rate === -1 ? 'genderless' : randInt(101) <= gender ? 'female' : 'male';
+    return rate === -1 ? 'genderless' : randInt(100) <= gender ? 'female' : 'male';
 }
 
 function calcAbility(pokeID: number) {
     const abilities: Object = pkmnData[pokeID].abilities;
     const abilityList = Object.entries(abilities).filter(([key, value]) => value.hidden === false);
-    return pkmnData[pokeID].abilities[randInt(abilityList.length)].ability;
+    return pkmnData[pokeID].abilities[randInt(abilityList.length) - 1].ability;
 }
 
-function pokeToId(name: string) {
-    const findPoke = Object.entries(pkmnData).find(([key, value]) => value.names === name);
-    return findPoke ? +findPoke[0] : null;
+function pokeNameToID(name: string) {
+    const findPoke = Object.entries(pkmnData).find(([key, value]) => value.name === name);
+    return findPoke ? +findPoke[0] : 1;
+}
+
+function formToID(form: string) {
+    const findForm = Object.entries(pkmnFormData).find(([key, value]) => value.name == form);
+    return findForm ? +findForm[0] : 1;
+}
+
+function formToName(form: string) {
+    const findForm = Object.entries(pkmnFormData).find(([key, value]) => value.name == form);
+    return findForm ? findForm[1].names : null;
 }
 
 function eggMessage(progress: number, ehp: number) {
@@ -133,7 +169,7 @@ function eggMessage(progress: number, ehp: number) {
 
 function genNature() {
     const natureList = Object.keys(natureData);
-    return natureList[randInt(natureList.length)];
+    return natureList[randInt(natureList.length) - 1];
 }
 
 function calcNature(nature: string) {
@@ -231,7 +267,7 @@ function sumBaseStat(pokeID: number) {
 
 //For party
 function emptyMember() {
-    return { id: null, isEgg: null, name: null, level: null, exp: null, ehp: null, progress: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null, ability: null, nature: null, starter: null, variant: null, forme: null };
+    return { id: null, isEgg: null, name: null, level: null, exp: null, ehp: null, progress: null, eggSprite: null, isShiny: null, creation: null, lastTick: null, eggPause: null, frozen: null, UUID: null, IVs: null, gender: null, ability: null, nature: null, starter: null, variant: null, forme: null, FOV: null, indexForme: null, indexVar: null };
 }
 
 function findEmptySlot(object: object): number {
